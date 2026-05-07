@@ -76,6 +76,154 @@
     "to": "/docs/dxl/rx/rx-64"
   },
   {
+    "from": "/docs/en/dxl/x",
+    "to": "/docs/dxl/x"
+  },
+  {
+    "from": "/docs/en/dxl/x/2xc430-w250",
+    "to": "/docs/dxl/x/2xc430-w250"
+  },
+  {
+    "from": "/docs/en/dxl/x/2xl430-w250",
+    "to": "/docs/dxl/x/2xl430-w250"
+  },
+  {
+    "from": "/docs/en/dxl/x/xc330-m181",
+    "to": "/docs/dxl/x/xc330-m181"
+  },
+  {
+    "from": "/docs/en/dxl/x/xc330-m288",
+    "to": "/docs/dxl/x/xc330-m288"
+  },
+  {
+    "from": "/docs/en/dxl/x/xc330-t181",
+    "to": "/docs/dxl/x/xc330-t181"
+  },
+  {
+    "from": "/docs/en/dxl/x/xc330-t288",
+    "to": "/docs/dxl/x/xc330-t288"
+  },
+  {
+    "from": "/docs/en/dxl/x/xc430-t150bb",
+    "to": "/docs/dxl/x/xc430-t150bb"
+  },
+  {
+    "from": "/docs/en/dxl/x/xc430-t240bb",
+    "to": "/docs/dxl/x/xc430-t240bb"
+  },
+  {
+    "from": "/docs/en/dxl/x/xc430-w150",
+    "to": "/docs/dxl/x/xc430-w150"
+  },
+  {
+    "from": "/docs/en/dxl/x/xc430-w240",
+    "to": "/docs/dxl/x/xc430-w240"
+  },
+  {
+    "from": "/docs/en/dxl/x/xd430-t210",
+    "to": "/docs/dxl/x/xd430-t210"
+  },
+  {
+    "from": "/docs/en/dxl/x/xd430-t350",
+    "to": "/docs/dxl/x/xd430-t350"
+  },
+  {
+    "from": "/docs/en/dxl/x/xd540-t150",
+    "to": "/docs/dxl/x/xd540-t150"
+  },
+  {
+    "from": "/docs/en/dxl/x/xd540-t270",
+    "to": "/docs/dxl/x/xd540-t270"
+  },
+  {
+    "from": "/docs/en/dxl/x/xh430-v210",
+    "to": "/docs/dxl/x/xh430-v210"
+  },
+  {
+    "from": "/docs/en/dxl/x/xh430-v350",
+    "to": "/docs/dxl/x/xh430-v350"
+  },
+  {
+    "from": "/docs/en/dxl/x/xh430-w210",
+    "to": "/docs/dxl/x/xh430-w210"
+  },
+  {
+    "from": "/docs/en/dxl/x/xh430-w350",
+    "to": "/docs/dxl/x/xh430-w350"
+  },
+  {
+    "from": "/docs/en/dxl/x/xh540-v150",
+    "to": "/docs/dxl/x/xh540-v150"
+  },
+  {
+    "from": "/docs/en/dxl/x/xh540-v270",
+    "to": "/docs/dxl/x/xh540-v270"
+  },
+  {
+    "from": "/docs/en/dxl/x/xh540-w150",
+    "to": "/docs/dxl/x/xh540-w150"
+  },
+  {
+    "from": "/docs/en/dxl/x/xh540-w270",
+    "to": "/docs/dxl/x/xh540-w270"
+  },
+  {
+    "from": "/docs/en/dxl/x/xl320",
+    "to": "/docs/dxl/x/xl320"
+  },
+  {
+    "from": "/docs/en/dxl/x/xl330-m077",
+    "to": "/docs/dxl/x/xl330-m077"
+  },
+  {
+    "from": "/docs/en/dxl/x/xl330-m288",
+    "to": "/docs/dxl/x/xl330-m288"
+  },
+  {
+    "from": "/docs/en/dxl/x/xl430-w250",
+    "to": "/docs/dxl/x/xl430-w250"
+  },
+  {
+    "from": "/docs/en/dxl/x/xm335-t323",
+    "to": "/docs/dxl/x/xm335-t323"
+  },
+  {
+    "from": "/docs/en/dxl/x/xm430-w210",
+    "to": "/docs/dxl/x/xm430-w210"
+  },
+  {
+    "from": "/docs/en/dxl/x/xm430-w350",
+    "to": "/docs/dxl/x/xm430-w350"
+  },
+  {
+    "from": "/docs/en/dxl/x/xm540-w150",
+    "to": "/docs/dxl/x/xm540-w150"
+  },
+  {
+    "from": "/docs/en/dxl/x/xm540-w270",
+    "to": "/docs/dxl/x/xm540-w270"
+  },
+  {
+    "from": "/docs/en/dxl/x/xw430-t200",
+    "to": "/docs/dxl/x/xw430-t200"
+  },
+  {
+    "from": "/docs/en/dxl/x/xw430-t333",
+    "to": "/docs/dxl/x/xw430-t333"
+  },
+  {
+    "from": "/docs/en/dxl/x/xw540-h260",
+    "to": "/docs/dxl/x/xw540-h260"
+  },
+  {
+    "from": "/docs/en/dxl/x/xw540-t140",
+    "to": "/docs/dxl/x/xw540-t140"
+  },
+  {
+    "from": "/docs/en/dxl/x/xw540-t260",
+    "to": "/docs/dxl/x/xw540-t260"
+  },
+  {
     "from": "/docs/en/edu",
     "to": "/docs/edu"
   },

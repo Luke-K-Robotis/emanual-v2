@@ -1,0 +1,36 @@
+DYNAMIXEL servos can protect themselves by detecting dangerous situations that may occur during operation. This register allows user to configure which of these error states causes a safety shutdown.
+Each Bit is inclusively processed with ‘OR’ logic, allowing multiple options to be selected.
+For instance, when Shutdown(63) is set to ‘0x05’ (binary : 00000101), the DYNAMIXEL will shutdown in response to both both an Input Voltage Error(binary : 00000001) and Overheating Error(binary : 00000100).
+If those errors are detected,  [Torque Enable(64)] is cleared to ‘0’ and the motor's output will be set to 0 [%].
+
+
+A REBOOT is the only method to reset [Torque Enable(64)] to ‘1’(Torque ON) after a shutdown has been triggered.
+
+
+
+|  Bit  |              Item               | Description                                                                                                           |
+|:-----:|:-------------------------------:|:----------------------------------------------------------------------------------------------------------------------|
+| Bit 7 |                -                | Unused, Always '0'                                                                                                    |
+| Bit 6 |                -                | Unused, Always '0'                                                                                                    |
+| Bit 5 |     Overload Error(default)     | Detects that persistent load that exceeds maximum output                                                              |
+| Bit 4 | Electrical Shock Error(default) | Detects electric shock on the circuit or insufficient power to operate the motor                                      |
+| Bit 3 |       Motor Encoder Error       | Detects malfunction of the motor encoder                                                                              |
+| Bit 2 |   Overheating Error(default)    | Detects that internal temperature exceeds the configured operating temperature                                        |
+| Bit 1 |                -                | Unused, Always '0'                                                              |                     |
+| Bit 0 |       Input Voltage Error       | Detects that input voltage exceeds the configured operating voltage                   |                    |
+
+
+
+
+
+
+:::note
+
+**NOTE** :
+
+2. If Shutdown occurs, **the indicator LED will flicker every second**. (**Firmware v41 or above**)
+3. If a Shutdown occurs, **reboot the device** to restore functionality.
+- H/W REBOOT : Turn off and turn on the power to the actuator.
+- S/W REBOOT : Transmit REBOOT Instruction (For more details, refer to the [Reboot](https://emanual.robotis.com/docs/en/dxl/protocol2/#reboot) section of the e-Manual.)
+
+:::

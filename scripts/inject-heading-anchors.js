@@ -135,8 +135,13 @@ function injectIntoMdx(mdxPath, headings) {
 
     let body = m[2];
 
-    // mdx의 visible text 정규화
-    const visibleNorm = normalize(body.replace(/\*\*/g, ''));
+    // mdx의 visible text 정규화 (이미 <a name>가 인라인되어 있으면 제거)
+    const visibleNorm = normalize(
+      body
+        .replace(/<a\s+name=["'][^"']+["']\s*>\s*<\/a>/gi, '')
+        .replace(/<a\s+id=["'][^"']+["']\s*\/?\s*>\s*(?:<\/a>)?/gi, '')
+        .replace(/\*\*/g, '')
+    );
     const queue = queues.get(visibleNorm);
     if (!queue || queue.length === 0) {
       out.push(line);

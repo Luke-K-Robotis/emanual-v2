@@ -1,0 +1,40 @@
+Protocol Type(13) is used to set the communications protocol used by the DYNAMIXEL actuator.
+
+
+:::warning
+
+**WARNING** : To modify the Protocol Type(13), use [DYNAMIXEL Wizard 2.0] as R+ Manager 2.0 is not compatible with Protocol 1.0 products.
+
+:::
+
+
+
+:::note
+
+**NOTE** : Protocol 2.0 is more stable and safe for use than Protocol 1.0. Accessing some of the Control Table area might be denied if Protocol 1.0 is selected. Please refer to the [Protocol 1.0] and [Protocol 2.0] of e-Manual for more details about the protocol.
+
+:::
+
+
+The following table lists available protocol types compatible with this model of DYNAMIXEL.
+
+
+
+
+|   Value    |      Description       |                             Compatible DYNAMIXEL                              |
+|:----------:|:----------------------:|:-----------------------------------------------------------------------------:|
+|     1      | DYNAMIXEL Protocol 1.0 | AX Series, DX Series, RX Series, EX Series, MX Series with Firmware below v39 |
+| 2(default) | DYNAMIXEL Protocol 2.0 |         MX-28/64/106 with Firmware v39 or above, X Series, PRO Series         |
+
+
+:::note
+
+**NOTE** : Please refer to the [Protocol Compatibility table] to see a listing of supported protocols by product.
+
+:::
+
+
+
+
+[protocol compatibility table]: https://emanual.robotis.com/docs/en/popup/faq_protocol_compatibility_table/
+[dynamixel wizard 2.0]: https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_wizard2/

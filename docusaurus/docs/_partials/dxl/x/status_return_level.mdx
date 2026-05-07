@@ -1,0 +1,14 @@
+The Status Return Level (68) is used to set the DYNAMIXEL's response policy when an instruction packet is received.
+
+| Value |        Responding Instructions         |                       Description                       |
+|:-----:|:--------------------------------------:|:-------------------------------------------------------:|
+|   0   |            PING Instruction            |   Returns a Status Packet for PING Instructions only   |
+|   1   | PING Instruction<br />READ Instruction | Returns a Status Packet for PING and READ Instructions |
+|   2   |            All Instructions            |     Returns a Status Packet for all Instructions      |
+
+
+:::note
+
+**NOTE** : If the [Instruction Packet ID](https://emanual.robotis.com/docs/en/dxl/protocol2/) is set to the [Broadcast ID(0xFE)](https://emanual.robotis.com/docs/en/dxl/protocol2/#packet-id), a Status Packet will not be returned for READ or WRITE Instructions regardless of Status Return Level (68). For more details, please refer to the `Status Packet` section of the [DYNAMIXEL Protocol 2.0] page.
+
+:::
