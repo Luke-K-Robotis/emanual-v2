@@ -496,6 +496,66 @@
     "to": "/docs/platform/manipulator_h/ros_reference"
   },
   {
+    "from": "/docs/en/platform/op/development",
+    "to": "/docs/platform/op/development"
+  },
+  {
+    "from": "/docs/en/platform/op/getting_started",
+    "to": "/docs/platform/op/getting_started"
+  },
+  {
+    "from": "/docs/en/platform/op/maintenance",
+    "to": "/docs/platform/op/maintenance"
+  },
+  {
+    "from": "/docs/en/platform/op/references",
+    "to": "/docs/platform/op/references"
+  },
+  {
+    "from": "/docs/en/platform/op/simulation",
+    "to": "/docs/platform/op/simulation"
+  },
+  {
+    "from": "/docs/en/platform/op2/getting_started",
+    "to": "/docs/platform/op2/getting_started"
+  },
+  {
+    "from": "/docs/en/platform/op3/advanced_tutorials",
+    "to": "/docs/platform/op3/advanced_tutorials"
+  },
+  {
+    "from": "/docs/en/platform/op3/getting_started",
+    "to": "/docs/platform/op3/getting_started"
+  },
+  {
+    "from": "/docs/en/platform/op3/hardware",
+    "to": "/docs/platform/op3/hardware"
+  },
+  {
+    "from": "/docs/en/platform/op3/introduction",
+    "to": "/docs/platform/op3/introduction"
+  },
+  {
+    "from": "/docs/en/platform/op3/quick_start",
+    "to": "/docs/platform/op3/quick_start"
+  },
+  {
+    "from": "/docs/en/platform/op3/recovery",
+    "to": "/docs/platform/op3/recovery"
+  },
+  {
+    "from": "/docs/en/platform/op3/robotis_ros_packages",
+    "to": "/docs/platform/op3/robotis_ros_packages"
+  },
+  {
+    "from": "/docs/en/platform/op3/simulation",
+    "to": "/docs/platform/op3/simulation"
+  },
+  {
+    "from": "/docs/en/platform/op3/tutorials",
+    "to": "/docs/platform/op3/tutorials"
+  },
+  {
     "from": "/docs/en/platform/openmanipulator_p/getting_started",
     "to": "/docs/platform/openmanipulator_p/getting_started"
   },
@@ -638,6 +698,34 @@
   {
     "from": "/docs/en/platform/openmanipulator_x/tool_modification",
     "to": "/docs/platform/openmanipulator_x/tool_modification"
+  },
+  {
+    "from": "/docs/en/platform/thormang3/gazebo_simulation",
+    "to": "/docs/platform/thormang3/gazebo_simulation"
+  },
+  {
+    "from": "/docs/en/platform/thormang3/getting_started",
+    "to": "/docs/platform/thormang3/getting_started"
+  },
+  {
+    "from": "/docs/en/platform/thormang3/introduction",
+    "to": "/docs/platform/thormang3/introduction"
+  },
+  {
+    "from": "/docs/en/platform/thormang3/quick_start",
+    "to": "/docs/platform/thormang3/quick_start"
+  },
+  {
+    "from": "/docs/en/platform/thormang3/references",
+    "to": "/docs/platform/thormang3/references"
+  },
+  {
+    "from": "/docs/en/platform/thormang3/thormang3_operation",
+    "to": "/docs/platform/thormang3/thormang3_operation"
+  },
+  {
+    "from": "/docs/en/platform/thormang3/thormang3_ros_packages",
+    "to": "/docs/platform/thormang3/thormang3_ros_packages"
   },
   {
     "from": "/docs/en/platform/turtlebot3/additional_sensors",
