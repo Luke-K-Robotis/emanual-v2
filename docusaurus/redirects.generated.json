@@ -1,0 +1,34 @@
+[
+  {
+    "from": "/docs/en/dxl",
+    "to": "/docs/dxl"
+  },
+  {
+    "from": "/docs/en/dxl/ax/ax-12a",
+    "to": "/docs/dxl/ax/ax-12a"
+  },
+  {
+    "from": "/docs/en/dxl/ax/ax-12w",
+    "to": "/docs/dxl/ax/ax-12w"
+  },
+  {
+    "from": "/docs/en/dxl/ax/ax-18a",
+    "to": "/docs/dxl/ax/ax-18a"
+  },
+  {
+    "from": "/docs/en/edu",
+    "to": "/docs/edu"
+  },
+  {
+    "from": "/docs/en/parts",
+    "to": "/docs/parts"
+  },
+  {
+    "from": "/docs/en/platform",
+    "to": "/docs/platform"
+  },
+  {
+    "from": "/docs/en/software",
+    "to": "/docs/software"
+  }
+]

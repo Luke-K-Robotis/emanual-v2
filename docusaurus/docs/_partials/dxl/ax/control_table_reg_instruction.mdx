@@ -1,0 +1,12 @@
+Indicates whether the Write Instruction is registered by [Reg Write Instruction](https://emanual.robotis.com/docs/en/dxl/protocol2/#reg-write-0x04)
+
+| Value | Description                                  |
+|:-----:|:---------------------------------------------|
+|   0   | No instruction registered by REG_WRITE.      |
+|   1   | Instruction registered by REG_WRITE exists.  |
+
+:::note
+
+If ACTION instruction is executed, the Registered Instruction (44) will be changed to 0.
+
+:::

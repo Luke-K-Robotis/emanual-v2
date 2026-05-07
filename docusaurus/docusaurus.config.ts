@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import generatedRedirects from './redirects.generated.json';
 
 const config: Config = {
   title: 'ROBOTIS e-Manual',
@@ -22,6 +23,7 @@ const config: Config = {
   markdown: {
     hooks: {
       onBrokenMarkdownLinks: 'warn',
+      onBrokenMarkdownImages: 'warn',
     },
   },
 
@@ -72,9 +74,8 @@ const config: Config = {
     [
       '@docusaurus/plugin-client-redirects',
       {
-        // Redirects from legacy Jekyll permalinks are auto-generated
-        // by scripts/build-redirects.js into ./redirects.generated.json
-        redirects: [],
+        // scripts/build-redirects.js 가 source/docs/**/*.md 의 permalink 추출 → JSON
+        redirects: generatedRedirects,
       },
     ],
   ],
