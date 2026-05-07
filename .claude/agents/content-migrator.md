@@ -42,6 +42,22 @@ model: sonnet
 - 절대 URL `https://emanual.robotis.com/docs/en/...` → 상대 경로 `/docs/...`
 - `permalink` 기반 내부 링크 `/docs/en/dxl/ax/ax-12a/` → file path 기반 `./ax-12a` 또는 `/docs/dxl/ax/ax-12a`
 
+### 헤딩 anchor 보존 (중요)
+원본의 `### <a name="model-number"></a>**[Model Number (0)](#model-number-0)**` 형식에서:
+- `<a name="X">` HTML anchor 정보를 **잃으면 페이지 내 표 링크가 깨진다**.
+- MDX 3에서는 `{#X}` heading-id 구문이 JSX expression 파서와 충돌 → **변환 후 `node scripts/inject-heading-anchors.js <series>`** 를 반드시 실행해서 헤딩 직전에 `<a id="X"></a>` 를 자동 부착할 것.
+- visible 헤딩 텍스트는 `**[Model Number (0)](#model-number-0)**` → `Model Number (0)` 로 단순화 (헤딩 자체의 self-link 제거).
+- 다중 anchor (`<a name="cw-angle-limit"></a><a name="ccw-angle-limit"></a>`) 도 스크립트가 자동으로 양쪽 부착.
+
+### partial 공유 (중요)
+원본 fragment (예: `control_table_id.md`) 는 `{% if page.product_group=='dxl_ax' or 'dxl_dx' or 'dxl_ex' or 'dxl_rx' or 'dxl_mx' %}` 같이 **여러 시리즈가 같은 분기**를 공유한다. 그 시리즈들 변환 시:
+- 새 partial 디렉터리를 만들지 말고 **기존 `docs/_partials/dxl/ax/<fragment>.mdx` 를 import 재사용**.
+- 본문 import: `import Foo from '@site/docs/_partials/dxl/ax/foo.mdx';`
+- 새 시리즈가 다른 분기에 속하는 fragment만 별도 partial 생성. 검증: 원본 fragment의 `{% if %}` / `{% elsif %}` 가지 중 어느 가지가 새 시리즈 product_group에 매치되는지 확인.
+- 단, **공유는 분기 결과가 동일할 때만**. fragment 내 본문 텍스트가 시리즈마다 명백히 다르면 별도 partial.
+
+protocol 1.0 호환 그룹 (dxl_ax, dxl_dx, dxl_ex, dxl_rx, dxl_mx) 은 대부분 ax partial 재사용 가능.
+
 ## 작업 원칙
 - **한 번에 하나의 제품 폴더**만 처리한다 (예: `docs/en/dxl/ax/`). 큰 배치는 사용자가 다시 호출하게 한다.
 - 변환 전 원본을 절대 수정하지 않는다. 출력은 항상 `docusaurus/docs/` 하위에만.
