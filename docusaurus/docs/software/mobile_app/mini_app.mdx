@@ -1,0 +1,469 @@
+---
+id: mini_app
+title: "ROBOTIS MINI App"
+sidebar_label: "ROBOTIS MINI App"
+sidebar_position: 1
+tags: [software, mobile_app, mini]
+---
+
+This app is used to control and operate [ROBOTIS MINI](https://emanual.robotis.com/docs/en/edu/mini/)
+
+## App Install
+### Introduction & Installation
+ROBOTIS-MINI uses a smart device to operate various motions.
+
+#### System Requirements
+- OS : Android2.3.3 (Gingerbread) or above
+- Hardware : 1.2GHz Dual Core or above, RAM 1GB or above
+
+Open the `Play Store` or `App Store` on the smart device. (Play Store is for Android Market App)  
+Search for `ROBOTIS MINI` or `ROBOTIS` and select `MINI`, then click to install. An authorization request message may appear.
+
+In order to use ROBOTIS MINI on ios (for iPhone/iPad), [BT-410](https://emanual.robotis.com/docs/en/parts/communication/bt-410/) is required for a bluetooth comunication between a smart device and the ROBOTIS MINI. 
+
+
+![](/img/software/mobile/mini_app_001.jpg)
+
+[Installing ROBOTIS MINI for ios](https://apps.apple.com/en/app/robotis-mini/id948481762)
+
+
+### Bluetooth Connection
+When the controller is turned on and the LED of the Bluetooth (BT-210) blinks, the robot and Bluetooth are successfully connected.
+
+![](/img/software/mobile/mini_app_002.jpg)
+
+### Connecting the robot with the app using Bluetooth
+
+#### Execute the ROBOTIS-MINI app.
+- Turn the robot on and run the ROBOTIS-MINI app on the smart device.
+- If the Bluetooth option on smart device is turned off, a message to request a permission will appear. Select `Yes` to enable the Bluetooth.
+
+![](/img/software/mobile/mini_app_003.png)
+
+![](/img/software/mobile/mini_app_004.png)
+
+**CAUTION** : If the smart device is configured as a `Client`, it will skip to the operation screen directly instead of the registering screen.  
+Please refer to the [`App Setting`](#app-setting) section for Server/Client settings.
+
+
+#### Check the Bluetooth (BT-210) connection
+- From the list of `Registered Robot` look for the Bluetooth ID number connected to your robot. This number can be found on the top face of the Bluetooth module as shown in the image below.
+- If the ID does not exists, select `Search New Robot` to register the new Bluetooth module.
+
+![](/img/software/mobile/mini_app_005.jpg)
+
+#### Enter Bluetooth PIN number
+- You need to enter the PIN information to pair your smart device with the Bluetooth module. The default PIN number is `0000`.
+- Enter `0000` and select `OK` to connect the robot. The image on the left will appear.
+
+![](/img/software/mobile/mini_app_008.jpg)
+
+### Assembly Check using the App
+Select `Setting` option, then use `Actuator Test` feature to check the assembly. Once your smart device and ROBOTIS MINI are connected, the image of ROBOTIS MINI on the right will appear.
+
+Tap on each ID while Bluetooth is connected. If there is no problems in the assembly, the DYNAMIXEL LED will blink in red, green, then blue.
+
+If you tap on an ID but the wrong DYNAMIXEL LED lights up in the actual robot, there is an assembly problem. In this case, change the ID, or reassemble the joint by switching with the correct DYNAMIXEL.
+
+![](/img/software/mobile/mini_app_010.jpg)
+
+
+## App Usage
+**NOTE** : The ROBOTIS-MINI app uses smart device’s functions such as the button, gesture (sensor), voice recognition, and messenger to play motions.
+
+
+- **Button** : Use the buttons on your screen to operate the ROBOTIS-MINI.
+- **Gesture** : Move the smart device to make particular gestures of the ROBOTIS-MINI.
+- **Voice Recognition** : Use the voice recognition feature of the ROBOTIS-MINI to respond to your voice.
+- **Messenger** : Use another smart device to control the ROBOTIS-MINI. It can be connected to another smart device and send commands by a text message.
+- **Remote Controller** : Displays a virtual remote controller on the screen for easier controlling for fighting games and soccer games.
+
+Stop Motion, Initial Position, and Stand Up are 3 basic buttons on the `Run` tab.
+
+![](/img/software/mobile/mini_app_013.jpg)
+![](/img/software/mobile/mini_app_014.jpg)
+
+Below are the functions of each button.
+- `Stop Motion` : This button calls on the Motion #0. If this button is pressed during a motion, ROBOTIS-MINI stops after playing current motion unit.
+- `Initial Pose` : This button calls on the Motion #1, which is the initial position command. If Motion #1 is modified, it will play the modified motion in Motion #1.
+- `Stand Up` : This button calls on the Motion #2, which is the stand up command.  If Motion #2 has been modified, it will run on the modified command.
+
+**NOTE** : When the robot is playing a motion, all other motions except the `Stop Motion` will be ignored.
+
+
+
+
+:::tip
+
+**TIP** : You can create (or edit) the motion button using the follow Motion Index Number. 
+- Motion Index Number number **0** only plays a current Motion Unit. 
+- Motion Index Number number **-1** stops a current Motion Unit in Motion and plays an Exit Motion Unit.
+- More information on Key-Frame, Motion Unit and Motion is available at [Motion Data](/docs/software/rplus2/motion/#motion-data)
+
+:::
+
+
+### Control with Buttons
+In order to Add/Edit/Delete/Arrange buttons, use the `Edit` tab.
+
+- Edit Button Row
+
+  - Add a button row : Press the `Add Button` button in the `Edit` tab to add a new line at the top row.
+
+    ![](/img/software/mobile/mini_app_015.jpg)
+    ![](/img/software/mobile/mini_app_016.jpg)
+    ![](/img/software/mobile/mini_app_017.jpg)
+
+  - Change button row order : Touch the right side of the row then drag up or down to move the row.
+
+    ![](/img/software/mobile/mini_app_018.jpg)
+    ![](/img/software/mobile/mini_app_019.jpg)
+    ![](/img/software/mobile/mini_app_020.jpg)
+
+  - Delete button row : Touch the right side of the row then slide to the left to delete the row.
+
+    ![](/img/software/mobile/mini_app_021.jpg)
+    ![](/img/software/mobile/mini_app_022.jpg)
+    ![](/img/software/mobile/mini_app_023.jpg)
+
+- Edit Button
+
+  - Edit Button : Touch `+` to add a new button. Touch other existing command buttons to edit.
+
+    ![](/img/software/mobile/mini_app_024.jpg)
+    ![](/img/software/mobile/mini_app_025.jpg)
+    ![](/img/software/mobile/mini_app_026.jpg)
+
+  - The Motion Page Number is the number of the designated motions downloaded on the robot.
+  - If a Motion Page Number is not designated, the button name will be shown in light gray.
+  - If both Button Name and Motion Page Number are blank, the button will not appear on the `Run` tab.
+
+- Use the motion file setting to input motion call numbers  
+  If you define the motion file in the [`Motion File Setting`](https://emanual.robotis.com/docs/en/edu/mini/#motion-file-setting) in the app setting, you can load motion lists with the `List` in the top right corner of the button editing screen.
+
+  Select desired motion from the list to automatically fill up the Button Name and Motion Page Number.
+
+  ![](/img/software/mobile/mini_app_027.jpg)
+  ![](/img/software/mobile/mini_app_028.jpg)
+  ![](/img/software/mobile/mini_app_029.jpg)
+
+### Control with Gestures
+The `Gesture` tab uses the acceleration sensor of the smart device to command the robot to do certain motions. For example, if the user draws an O or X when holding the smart device, the robot will either walk or sit down based on the assigned motion. This works when the smart device is held straight up 90 degrees to the ground.
+
+- Move the robot by holding your smart device and making a gesture.
+
+  ![](/img/software/mobile/mini_app_030.png)
+
+- While touching the center of the screen, tilt the smart device to operate the robot.
+  - Basic buttons beneath the Slope option can also be used to operate the robot.
+
+  Touch the `Slope` button at the bottom of the screen to check motions designated by tilting the smart device.
+  
+
+  ![](/img/software/mobile/mini_app_031.jpg)
+  ![](/img/software/mobile/mini_app_032.jpg)
+
+  Touch the `Edit` button to add, edit, or delete gestures. Training the gesture will increase the recognition accuracy. Also, the basic gestures for `Slope` can be edited.
+
+- Register Gestures
+  - Touch `Add Gesture` button to add gestures.
+  - Enter the gesture name, motion page number and description.
+  - Touch `Ready` button and move the smart device at a steady speed.
+
+  ![](/img/software/mobile/mini_app_033.jpg)
+  ![](/img/software/mobile/mini_app_034.jpg)
+  ![](/img/software/mobile/mini_app_035.jpg)
+
+  - When the gesture is done there will be a beep sound along with a short vibration and a message saying **Gesture xxx learned** will appear.
+
+  ![](/img/software/mobile/mini_app_036.jpg)
+  ![](/img/software/mobile/mini_app_037.jpg)
+
+  - Touch `OK` to add the gesture.
+
+    > If you do not hear the “Beep” sound, please check the media volume.
+
+    > When adding gestures, if you have already set the motion project file, the `List` button will appear for easy access to add motions.
+
+- Edit Gesture
+  - To edit a gesture touch the `Edit` button.
+  - Use the same method when adding gestures to edit and finalize by touching `OK`
+
+- Delete Gesture
+  - Touch the right side of the line then slide to the left to delete.
+
+- Edit Button
+  - Touch the command you want to edit.
+  - Maximum 3 buttons(1 row) can be added in the Button section of the bottom of the screen.
+
+- Edit Slope
+  - Touch `Slope` at the bottom to edit screen.
+  - 4 pre-defined directions can be used in the Slope section.
+  - Touch the direction button to edit the name and motion page number.
+
+  ![](/img/software/mobile/mini_app_038.jpg)
+  ![](/img/software/mobile/mini_app_039.jpg)
+  ![](/img/software/mobile/mini_app_040.jpg)
+
+  The pre-defined directions are defined by the smart device in the right hand as shown below.
+  
+
+  ![](/img/software/mobile/mini_app_041.png)
+
+
+- What is the Gesture Training?
+
+  Use the gesture training feature to increase the recognition accuracy of registered gestures.
+  - Touch `Train` for the gesture you would like to train.
+  - Touch `Ready` and make a bigger gesture or tilt the smart device and/or make different gestures.
+  - When the gesture is done there will be a beep sound along with a short vibration and a message saying **Gesture xxx learned** will appear.
+  - Repeat above steps to train the motion.
+
+### Operate with Voice Recognition
+
+**NOTE** : ROBOTIS-MINI uses Google's voice recognition.
+
+
+Touch the microphone icon in the center of screen then speak(input) the command. To use this function, you must have an internet connected smart device.
+
+![](/img/software/mobile/mini_app_042.jpg)
+![](/img/software/mobile/mini_app_043.jpg)
+![](/img/software/mobile/mini_app_044.jpg)
+
+Touch the ‘Edit’ button to add, edit, or delete any voice command.
+
+- Add Voice Command
+  - Touch the ‘Add Voice Command’ to add a command.
+  - After deciding the command and motion number, touch the ‘Okay’ button.
+
+  ![](/img/software/mobile/mini_app_045.jpg)
+  ![](/img/software/mobile/mini_app_046.jpg)
+  ![](/img/software/mobile/mini_app_047.jpg)
+
+- Edit Voice Command
+  - Select the voice command of the gesture to edit and touch “Edit
+
+- Delete Voice Command
+  - Touch the right side of the line then drag left to delete.
+
+- Voice Recognition Training Function?
+
+  Use the registered voice command to increase the chances of getting the right command by training it using the icon marked below.
+  - Select the voice command to ‘Train.’
+  - Say the word after touching the MIC icon on your screen.
+  - When the voice is recognized, the word most similar will appear.
+
+  ![](/img/software/mobile/mini_app_048.jpg)
+  ![](/img/software/mobile/mini_app_049.jpg)
+  ![](/img/software/mobile/mini_app_050.jpg)
+
+- Touch the ‘Okay’ button to register the most similar word to the relevant voice command.
+
+**CAUTION** : To delete a command added during the training, delete the voice command first and then re-register.
+
+
+`Voice Recognition Test` To check whether the registered voice command is recognized properly, use the MIC icon under the ‘Edit’ tab to test the word. This does not operate the robot.
+
+
+
+### Operate with Messenger
+
+Your robot can be controlled using the various Messengers in your smart device. [Does not work on all Messengers.] To receive commands via Messenger, you must have internet access to your smart device.
+
+![](/img/software/mobile/mini_app_051.jpg)
+
+Messenger, uses the notification bar of your smart device to check whether the command corresponds to the message then runs the command if it is the same.
+Messenger uses the registered voice commands.
+
+**CAUTION** : Your **Accessibility Setting** for the ROBOTIS-MINI  App must be enabled(Please refer to the ROBOTIS-MINI App Accessibility Setting). If your exact message is not displayed in the notification bar, you may not have access to your robot via Messenger.
+
+
+### Operate with Remocon
+
+- Use the buttons displayed  in the figure below to control ROBOTIS-MINI.
+- The buttons on the left are used for movement and will activate the same pre-set motions in both modes.
+- The numbered buttons on the right [1~6] activate different motions in Soccer Mode (offense/defense) and different motions in Fight Mode. Over both modes, a total of 18 motions can be assigned to the buttons. When a motion is not assigned to a button, the button will be blue.
+- Switch between Soccer Mode or Fight Mode by tapping the button in the red rectangle in the figure below.
+
+![](/img/software/mobile/mini_app_052_en.png)
+
+- Soccer Mode
+  - 2 available modes : Defense and Offense
+
+  ![](/img/software/mobile/mini_app_053_en.png)
+
+  - Default buttons motions for Offense are Left Block (1), Right Block (2), Block 1 (3), Block 2(4); for Defense, the default motion buttons are Left Kick, Right Kick, Left Side Kick, and Right Side Kick.
+
+- Fight Mode
+  - The default button settings for Fight Mode are Left Attack(1), Right Attack(2), Front Attack(3).
+
+  ![](/img/software/mobile/mini_app_054_en.png)
+
+- Exit
+  - Click on the “X” icon in the upper right hand corner to close the remocon screen.
+
+  ![](/img/software/mobile/mini_app_055_en.png)
+
+- Run & Edit
+  - To control your ROBOTIS-MINI, click on the Run tab then, click on the numbered buttons
+
+  ![](/img/software/mobile/mini_app_056_en.png)
+
+- To edit robot motions, click the Edit tab. Then click on a specific motion to edit it.
+
+  ![](/img/software/mobile/mini_app_058_en.png)
+  ![](/img/software/mobile/mini_app_059_en.png)
+
+
+## App Setting
+The ‘Setting’ is located on the top right corner of your device and below are the explanations for the menus.
+
+### Server/Client Setting
+
+This setting is for controlling one ROBOTIS-MINI with many smart devices. One smart device will be set as Server to connect directly with the ROBOTIS-MINI, and the other smart devices will be set as Client to send commands to the Server. The Server will receive the commands sent from the Clients, then send the commands to ROBOTIS-MINI to make it perform a motion.
+
+
+By using the server/client setting, the user can hold one smart device in each hand to control the ROBOTIS-MINI. The left hand device may perform gestures for left motions, and the right hand device may perform gestures for right motions.
+
+This function cannot be used under mobile network connection (3G/4G/LTE). The smart devices that are set under server and client setting must be connected in the same network.
+
+1) They can be connected to the same router, or 2) One device may have its Wi-Fi hotspot function turned on, with the other devices connected to this hotspot
+
+![](/img/software/mobile/mini_app_060.png)
+
+
+- Server/Client Setting
+
+  Only the smart device set as Server will be connected to the ROBOTIS-MINI via Bluetooth, so the smart devices set as Client will not show the registered robot list when the App is run.
+  - The IP Address of the smart device will be shown when Server is selected.
+  - Input this address into the Client smart devices and select the Test button.
+  - If set correctly, the Server smart device will show the message ‘Test’ when the Client performs the test.
+
+    ![](/img/software/mobile/mini_app_061.jpg)
+    ![](/img/software/mobile/mini_app_062.jpg)
+
+    How to set your portable  Wi-Fi hotspot : The setting method and images can be different from those illustrated below.
+
+  - Go into the following setting menu in your smart device; System – Wireless & networks – Tethering & portable hotspot – and check ‘Portable Wi-Fi hotspot’.
+
+    ![](/img/software/mobile/mini_app_064.jpg)
+    ![](/img/software/mobile/mini_app_065.jpg)
+
+  - You can change the name of the smart device to be displayed on the other devices under the ‘Set up Wi-Fi hotspot’ setting.
+
+    ![](/img/software/mobile/mini_app_066.jpg)
+    ![](/img/software/mobile/mini_app_067.jpg)
+
+    When using this function, all Server and Client devices will connect to the internet (data communication) using the Server  device (set as the hotspot), so please take caution of your data package usage.
+    
+
+
+### Motion Sound Setting
+
+Users can add a sound file to be played when a certain motion number is performed. With this function, users can play a music on the smart device while performing dance motions.
+
+
+Select ‘Add sound’ to input the specific motion number and register the sound file to be played. Registered sound files can be played, edited, or deleted from the sound list.
+
+![](/img/software/mobile/mini_app_068.jpg)
+![](/img/software/mobile/mini_app_069.jpg)
+![](/img/software/mobile/mini_app_070.jpg)
+![](/img/software/mobile/mini_app_071.jpg)
+
+### Motion File Setting
+
+‘Motion page number’ is the numbers that are given to the motions in the motion group.
+Users can save time on checking each motion page number by registering the motion files in the ‘Motion file setting’.
+
+
+Once a motion file is registered, the ‘list’ button will be shown on the ‘add command’ window. Select the ‘list’ button to show the list of motion pages in the motion file. Select one of the motion pages shown, then its motion name and motion page number will be automatically inputted on the screen.
+
+The default value is set to the basic motion file provided with the ROBOTIS-MINI.
+
+![](/img/software/mobile/mini_app_072.jpg)
+![](/img/software/mobile/mini_app_073.jpg)
+![](/img/software/mobile/mini_app_074.jpg)
+
+Once a motion file is registered, the ‘list’ button will be shown on the ‘add command’ window. Select the ‘list’ button to show the list of motion pages in the motion file. Select one of the motion pages shown, then its motion name and motion page number will be automatically inputted on the screen.
+
+![](/img/software/mobile/mini_app_075.jpg)
+![](/img/software/mobile/mini_app_076.jpg)
+![](/img/software/mobile/mini_app_077.jpg)
+
+### Accessibility Setting
+
+Accessibility Setting is required to use the ‘Messenger’ function of the ROBOTIS-MINI App. The App must be able to access the message received through the messenger to verify that it is a correct command registered in the command list.
+
+
+Once this function is activated, the ROBOTIS-MINI App can access the received messages that show up on the smart device’s notification bar.
+
+So, if this function is deactivated, the ROBOTIS-MINI App won’t be able to access and read the commands sent via messenger, so the robot will not be able to carry out the command.
+
+Unlike the Server/Client setting, this function uses the messenger as a media of sending the command, so the smart device (not connected to the ROBOTIS-MINI) sending the message to the main smart device (connected to the ROBOTIS-MINI) doesn’t have to be connected in the same network.
+
+The user must activate the ‘ROBOTIS-MINI’ on the accessibility setting list to activate this function.
+
+![](/img/software/mobile/mini_app_078.jpg)
+![](/img/software/mobile/mini_app_079.jpg)
+![](/img/software/mobile/mini_app_080.jpg)
+![](/img/software/mobile/mini_app_081.jpg)
+
+### Gesture Margin of Error Setting
+
+This setting is used to adjust the gesture recognition rate when using the Gesture function. Setting the margin of error tolerance range low will require more precise gesture movement. Setting the range high will improve gesture recognition but will be more sensitive to other similar movements.
+
+
+Please refer to ‘Operating ROBOTIS-MINI’ for more information on the Gesture function.
+
+![](/img/software/mobile/mini_app_082.jpg)
+![](/img/software/mobile/mini_app_083.jpg)
+
+
+### Actuator Test
+Touch ‘Setting” then “Actuator Test’ to check your assembly. Once your smart device and ROBOTIS-MINI are connected, the image of ROBOTIS-MINI on the far right will appear. Tap on each of the ID, and if the Bluetooth is connected and there is no problems in the actuators, the joint’s LED will blink in red, green, then blue.
+
+If you tap an ID but the wrong joint lights up on the actual robot, there is an assembly problem. In this case, change the ID, or reassemble the joint into the correct position.
+
+![](/img/software/mobile/mini_app_084.jpg)
+![](/img/software/mobile/mini_app_085.jpg)
+![](/img/software/mobile/mini_app_086.jpg)
+
+### Motion Offset
+
+Offset refers to the difference of standard value. Even when assembling the same type of robots, minor deviations exist between each of their respective motors, resulting in the final posture to be slightly different between them. Adjusting the motion offset value will compensate the deviated amount to perform motions more accurately.
+
+
+- ROBOTIS-MINI Initial Position
+  Going into the ‘Motion Offset’ menu will read the saved offset value in the ROBOTIS-MINI, and ROBOTIS-MINI will move into its initial pose (with the offset applied). The initial pose of ROBOTIS-MINI looks like the image below.
+
+  ![](/img/software/mobile/mini_app_087.png)
+  ![](/img/software/mobile/mini_app_088.png)
+  ![](/img/software/mobile/mini_app_089.png)
+
+If a joint’s position is not as shown on the image and is crooked, use the torque ON/OFF function of the joint to adjust the joint into its correct initial position.
+
+**CAUTION** : Please hold up the ROBOTIS-MINI to accurately check the position of the joints.Checking the position with the ROBOTIS-MINI on the ground may cause its legs or waist joints to alter.
+
+
+Touch an ID to turn the respective joint’s torque OFF, and you will be able to physically move the joint. The image shown on the screen shows how the correct standard position of the joint should be.
+
+Refer to the image to move the joint to its correct position, and select ‘Okay’ to turn the torque back ON. The app will read the adjusted value of the position to calculate and show the offset value on the screen.
+
+![](/img/software/mobile/mini_app_090.jpg)
+![](/img/software/mobile/mini_app_091.jpg)
+![](/img/software/mobile/mini_app_092.jpg)
+
+If it is difficult to position the joint into an accurate position, touch (hold) the ID number long to go into a precise setting mode from the smart device. This way, users will be able to precisely adjust the joint position using the slide bar displayed on the screen.
+
+![](/img/software/mobile/mini_app_093.jpg)
+![](/img/software/mobile/mini_app_094.jpg)
+
+  - Touching the ‘offset reset’ button on the top will return all offset value to ‘0’.
+  - Touching the ‘initial position’ will delete all offset value in adjustment, and return the initial position to the offset value that was saved in the ROBOTIS-MINI.
+
+  Applying the changed offset to the ROBOTIS-MINI requires downloading. Touch the download button on the top right to download the value to the ROBOTIS-MINI controller.
+
+### Initialize
+This functions returns the settings for the Button/Gesture/Voice to it’s default setting.
+
+

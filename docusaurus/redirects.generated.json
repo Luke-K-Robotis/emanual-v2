@@ -1052,6 +1052,78 @@
     "to": "/docs/software"
   },
   {
+    "from": "/docs/en/software/arduino_ide",
+    "to": "/docs/software/arduino_ide"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_easy_sdk/api_reference",
+    "to": "/docs/software/dynamixel/dynamixel_easy_sdk/api_reference"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_easy_sdk/api_reference_connector",
+    "to": "/docs/software/dynamixel/dynamixel_easy_sdk/api_reference_connector"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_easy_sdk/api_reference_data_types",
+    "to": "/docs/software/dynamixel/dynamixel_easy_sdk/api_reference_data_types"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_easy_sdk/api_reference_dynamixel_error",
+    "to": "/docs/software/dynamixel/dynamixel_easy_sdk/api_reference_dynamixel_error"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_easy_sdk/api_reference_group_executor",
+    "to": "/docs/software/dynamixel/dynamixel_easy_sdk/api_reference_group_executor"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_easy_sdk/api_reference_motor",
+    "to": "/docs/software/dynamixel/dynamixel_easy_sdk/api_reference_motor"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_easy_sdk/getting_started",
+    "to": "/docs/software/dynamixel/dynamixel_easy_sdk/getting_started"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial",
+    "to": "/docs/software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial_step5",
+    "to": "/docs/software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial_step5"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial_step6",
+    "to": "/docs/software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial_step6"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial_step7",
+    "to": "/docs/software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial_step7"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_easy_sdk/introduction",
+    "to": "/docs/software/dynamixel/dynamixel_easy_sdk/introduction"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial",
+    "to": "/docs/software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial_step1",
+    "to": "/docs/software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial_step1"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial_step2",
+    "to": "/docs/software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial_step2"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial_step3",
+    "to": "/docs/software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial_step3"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial_step4",
+    "to": "/docs/software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial_step4"
+  },
+  {
     "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/c/c_groupbulkread",
     "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/c/c_groupbulkread"
   },
@@ -1794,5 +1866,141 @@
   {
     "from": "/docs/en/software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/sync_read_write_tutorial_python",
     "to": "/docs/software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/python"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_wizard2",
+    "to": "/docs/software/dynamixel/dynamixel_wizard2"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_workbench",
+    "to": "/docs/software/dynamixel/dynamixel_workbench"
+  },
+  {
+    "from": "/docs/en/software/embedded_sdk",
+    "to": "/docs/software/embedded_sdk"
+  },
+  {
+    "from": "/docs/en/software/embedded_sdk/embedded_c_cm510",
+    "to": "/docs/software/embedded_sdk/embedded_c_cm510"
+  },
+  {
+    "from": "/docs/en/software/embedded_sdk/embedded_c_cm530",
+    "to": "/docs/software/embedded_sdk/embedded_c_cm530"
+  },
+  {
+    "from": "/docs/en/software/embedded_sdk/zigbee_sdk",
+    "to": "/docs/software/embedded_sdk/zigbee_sdk"
+  },
+  {
+    "from": "/docs/en/software/mobile_app/mini_app",
+    "to": "/docs/software/mobile_app/mini_app"
+  },
+  {
+    "from": "/docs/en/software/opencm_ide/api_reference",
+    "to": "/docs/software/opencm_ide/api_reference"
+  },
+  {
+    "from": "/docs/en/software/opencm_ide/getting_started",
+    "to": "/docs/software/opencm_ide/getting_started"
+  },
+  {
+    "from": "/docs/en/software/robotis_framework_packages/tutorials",
+    "to": "/docs/software/robotis_framework_packages/tutorials"
+  },
+  {
+    "from": "/docs/en/software/robotis_manipulator_libs",
+    "to": "/docs/software/robotis_manipulator_libs"
+  },
+  {
+    "from": "/docs/en/software/rplus_mobile/mdesign",
+    "to": "/docs/software/rplus_mobile/mdesign"
+  },
+  {
+    "from": "/docs/en/software/rplus_mobile/mmotion",
+    "to": "/docs/software/rplus_mobile/mmotion"
+  },
+  {
+    "from": "/docs/en/software/rplus_mobile/mtask20",
+    "to": "/docs/software/rplus_mobile/mtask20"
+  },
+  {
+    "from": "/docs/en/software/rplus1/dynamixel_wizard",
+    "to": "/docs/software/rplus1/dynamixel_wizard"
+  },
+  {
+    "from": "/docs/en/software/rplus1/manager",
+    "to": "/docs/software/rplus1/manager"
+  },
+  {
+    "from": "/docs/en/software/rplus1/motion",
+    "to": "/docs/software/rplus1/motion"
+  },
+  {
+    "from": "/docs/en/software/rplus1/task/getting_started",
+    "to": "/docs/software/rplus1/task/getting_started"
+  },
+  {
+    "from": "/docs/en/software/rplus1/task/programming_01",
+    "to": "/docs/software/rplus1/task/programming_01"
+  },
+  {
+    "from": "/docs/en/software/rplus1/task/programming_02",
+    "to": "/docs/software/rplus1/task/programming_02"
+  },
+  {
+    "from": "/docs/en/software/rplus1/task/task_misc",
+    "to": "/docs/software/rplus1/task/task_misc"
+  },
+  {
+    "from": "/docs/en/software/rplus1/terminal",
+    "to": "/docs/software/rplus1/terminal"
+  },
+  {
+    "from": "/docs/en/software/rplus2/design",
+    "to": "/docs/software/rplus2/design"
+  },
+  {
+    "from": "/docs/en/software/rplus2/manager",
+    "to": "/docs/software/rplus2/manager"
+  },
+  {
+    "from": "/docs/en/software/rplus2/motion",
+    "to": "/docs/software/rplus2/motion"
+  },
+  {
+    "from": "/docs/en/software/rplus2/rplus2_block",
+    "to": "/docs/software/rplus2/rplus2_block"
+  },
+  {
+    "from": "/docs/en/software/rplus2/scratch",
+    "to": "/docs/software/rplus2/scratch"
+  },
+  {
+    "from": "/docs/en/software/rplus2/task",
+    "to": "/docs/software/rplus2/task"
+  },
+  {
+    "from": "/docs/en/software/rplustask3/motion_programming",
+    "to": "/docs/software/rplustask3/motion_programming"
+  },
+  {
+    "from": "/docs/en/software/rplustask3/python_api",
+    "to": "/docs/software/rplustask3/python_api"
+  },
+  {
+    "from": "/docs/en/software/rplustask3/task_instructions",
+    "to": "/docs/software/rplustask3/task_instructions"
+  },
+  {
+    "from": "/docs/en/software/rplustask3/task_parameters",
+    "to": "/docs/software/rplustask3/task_parameters"
+  },
+  {
+    "from": "/docs/en/software/rplustask3/task_programming",
+    "to": "/docs/software/rplustask3/task_programming"
+  },
+  {
+    "from": "/docs/en/software/rplustask3/useful_tips",
+    "to": "/docs/software/rplustask3/useful_tips"
   }
 ]
