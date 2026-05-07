@@ -452,6 +452,202 @@
     "to": "/docs/parts"
   },
   {
+    "from": "/docs/en/parts/communication/bt-110",
+    "to": "/docs/parts/communication/bt-110"
+  },
+  {
+    "from": "/docs/en/parts/communication/bt-210",
+    "to": "/docs/parts/communication/bt-210"
+  },
+  {
+    "from": "/docs/en/parts/communication/bt-410",
+    "to": "/docs/parts/communication/bt-410"
+  },
+  {
+    "from": "/docs/en/parts/communication/bt-410-dongle",
+    "to": "/docs/parts/communication/bt-410-dongle"
+  },
+  {
+    "from": "/docs/en/parts/communication/bt-430-dongle",
+    "to": "/docs/parts/communication/bt-430-dongle"
+  },
+  {
+    "from": "/docs/en/parts/communication/rc-100",
+    "to": "/docs/parts/communication/rc-100"
+  },
+  {
+    "from": "/docs/en/parts/communication/rc-200",
+    "to": "/docs/parts/communication/rc-200"
+  },
+  {
+    "from": "/docs/en/parts/communication/rc-300",
+    "to": "/docs/parts/communication/rc-300"
+  },
+  {
+    "from": "/docs/en/parts/communication/zig-110",
+    "to": "/docs/parts/communication/zig-110"
+  },
+  {
+    "from": "/docs/en/parts/communication/zig2serial",
+    "to": "/docs/parts/communication/zig2serial"
+  },
+  {
+    "from": "/docs/en/parts/controller/cm-100",
+    "to": "/docs/parts/controller/cm-100"
+  },
+  {
+    "from": "/docs/en/parts/controller/cm-150",
+    "to": "/docs/parts/controller/cm-150"
+  },
+  {
+    "from": "/docs/en/parts/controller/cm-151",
+    "to": "/docs/parts/controller/cm-151"
+  },
+  {
+    "from": "/docs/en/parts/controller/cm-200",
+    "to": "/docs/parts/controller/cm-200"
+  },
+  {
+    "from": "/docs/en/parts/controller/cm-5",
+    "to": "/docs/parts/controller/cm-5"
+  },
+  {
+    "from": "/docs/en/parts/controller/cm-50",
+    "to": "/docs/parts/controller/cm-50"
+  },
+  {
+    "from": "/docs/en/parts/controller/cm-510",
+    "to": "/docs/parts/controller/cm-510"
+  },
+  {
+    "from": "/docs/en/parts/controller/cm-530",
+    "to": "/docs/parts/controller/cm-530"
+  },
+  {
+    "from": "/docs/en/parts/controller/cm-550",
+    "to": "/docs/parts/controller/cm-550"
+  },
+  {
+    "from": "/docs/en/parts/controller/cm-700",
+    "to": "/docs/parts/controller/cm-700"
+  },
+  {
+    "from": "/docs/en/parts/controller/cm-900",
+    "to": "/docs/parts/controller/cm-900"
+  },
+  {
+    "from": "/docs/en/parts/controller/controller_compatibility",
+    "to": "/docs/parts/controller/controller_compatibility"
+  },
+  {
+    "from": "/docs/en/parts/controller/opencm485exp",
+    "to": "/docs/parts/controller/opencm485exp"
+  },
+  {
+    "from": "/docs/en/parts/controller/opencm904",
+    "to": "/docs/parts/controller/opencm904"
+  },
+  {
+    "from": "/docs/en/parts/controller/opencr10",
+    "to": "/docs/parts/controller/opencr10"
+  },
+  {
+    "from": "/docs/en/parts/controller/openrb-150",
+    "to": "/docs/parts/controller/openrb-150"
+  },
+  {
+    "from": "/docs/en/parts/controller/rb-86",
+    "to": "/docs/parts/controller/rb-86"
+  },
+  {
+    "from": "/docs/en/parts/controller/rb-88",
+    "to": "/docs/parts/controller/rb-88"
+  },
+  {
+    "from": "/docs/en/parts/display/lm-10",
+    "to": "/docs/parts/display/lm-10"
+  },
+  {
+    "from": "/docs/en/parts/interface/dxl_bridge",
+    "to": "/docs/parts/interface/dxl_bridge"
+  },
+  {
+    "from": "/docs/en/parts/interface/dynamixel_shield",
+    "to": "/docs/parts/interface/dynamixel_shield"
+  },
+  {
+    "from": "/docs/en/parts/interface/ln-101",
+    "to": "/docs/parts/interface/ln-101"
+  },
+  {
+    "from": "/docs/en/parts/interface/mkr_shield",
+    "to": "/docs/parts/interface/mkr_shield"
+  },
+  {
+    "from": "/docs/en/parts/interface/u2d2",
+    "to": "/docs/parts/interface/u2d2"
+  },
+  {
+    "from": "/docs/en/parts/interface/u2d2_power_hub",
+    "to": "/docs/parts/interface/u2d2_power_hub"
+  },
+  {
+    "from": "/docs/en/parts/interface/usb2dynamixel",
+    "to": "/docs/parts/interface/usb2dynamixel"
+  },
+  {
+    "from": "/docs/en/parts/motor/h_speed_geared_motor",
+    "to": "/docs/parts/motor/h_speed_geared_motor"
+  },
+  {
+    "from": "/docs/en/parts/motor/l_speed_geared_motor",
+    "to": "/docs/parts/motor/l_speed_geared_motor"
+  },
+  {
+    "from": "/docs/en/parts/motor/servo_motor",
+    "to": "/docs/parts/motor/servo_motor"
+  },
+  {
+    "from": "/docs/en/parts/sensor/ax-s1",
+    "to": "/docs/parts/sensor/ax-s1"
+  },
+  {
+    "from": "/docs/en/parts/sensor/cs-10",
+    "to": "/docs/parts/sensor/cs-10"
+  },
+  {
+    "from": "/docs/en/parts/sensor/dms-80",
+    "to": "/docs/parts/sensor/dms-80"
+  },
+  {
+    "from": "/docs/en/parts/sensor/gs-12",
+    "to": "/docs/parts/sensor/gs-12"
+  },
+  {
+    "from": "/docs/en/parts/sensor/ir-array",
+    "to": "/docs/parts/sensor/ir-array"
+  },
+  {
+    "from": "/docs/en/parts/sensor/irss-10",
+    "to": "/docs/parts/sensor/irss-10"
+  },
+  {
+    "from": "/docs/en/parts/sensor/mgss-10",
+    "to": "/docs/parts/sensor/mgss-10"
+  },
+  {
+    "from": "/docs/en/parts/sensor/pir-10",
+    "to": "/docs/parts/sensor/pir-10"
+  },
+  {
+    "from": "/docs/en/parts/sensor/tps-10",
+    "to": "/docs/parts/sensor/tps-10"
+  },
+  {
+    "from": "/docs/en/parts/sensor/ts-10",
+    "to": "/docs/parts/sensor/ts-10"
+  },
+  {
     "from": "/docs/en/platform",
     "to": "/docs/platform"
   },

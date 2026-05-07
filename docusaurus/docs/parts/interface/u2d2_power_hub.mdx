@@ -1,0 +1,162 @@
+---
+id: u2d2_power_hub
+title: "U2D2 Power Hub Board"
+sidebar_label: "U2D2 Power Hub Board"
+sidebar_position: 11
+tags: [parts, interface]
+---
+
+# Introduction
+Combined with U2D2, it can supply various kinds of external power supply to supply stable power to DYNAMIXEL.
+
+![](/img/parts/interface/u2d2_power_hub/product_image.png)
+
+# Specifications
+|       Item       |   Details    |
+|:----------------:|:------------:|
+| Operating Voltage | 3.5V ~ 24.0V |
+| Maximum Current  |    10.0A     |
+
+
+
+
+
+:::danger
+
+![](/img/icon_warning.png)  
+**DANGER**  
+(Ignoring these warnings may cause serious injury or death)
+
+-  Never place items containing water, flammables/open flames, or solvents near the product. 
+- Never place fingers, arms, toes, and other body parts near product during operation.
+- Cease operation and remove power from the product if the product begins to emit strange odors, noises, or smoke.
+- Keep product out of reach of children.
+- Check input polarity before installing or energizing wiring or cables.
+
+:::
+
+
+
+
+
+
+
+:::warning
+
+![](/img/icon_warning.png)  
+**CAUTION**  
+(Ignoring these warnings may cause mild injury or damage to the product)
+ 
+- Do not insert blades or other sharp objects during product operation.
+
+:::
+
+
+
+
+:::warning
+
+![](/img/icon_warning.png)  
+**ATTENTION**  
+(Ignoring these warnings may cause minor injury or damage to the product)
+- Do not disassemble or modify the product.
+- Do not drop the product or apply strong impacts.
+- Do not connect or disconnect DYNAMIXEL cables while power is being supplied.
+
+:::
+
+
+
+# Layout
+![](/img/parts/interface/u2d2_power_hub/layout.png)
+
+## Description
+1. **DYNAMIXEL Connectors**: 3 and 4-pins JST connectors are installed for communication. See [Connector Information](#connector-information) for more details.
+
+2. **TTL/RS485 Test Points**: TTL data line, RS485 D +, D-line signals can be easily identified via the test points
+
+3. **Power Connectors**: U2D2 PHB provides three different types of power connectors to supply a diverse voltage and current to DYNAMIXEL. 
+    - SMPS DC Connector (2.5mm ID / 5.5mm OD, [Center Positive](https://en.wikipedia.org/wiki/Polarity_symbols))
+    - MOLEX Power connector (See [Connector Information](#connector-information) for more details)
+    - PCB Screw Terminal Block Connector
+      - Left: -
+      - Right: +
+
+
+
+:::warning
+
+**CAUTION**: 
+- Be sure to check the polarity of the terminal block connector when using an external power supply, to enhance the user safety.
+- Some pins stick out on the bottom of the board, which are prone to touch the floor. To prevent from touching a floor, assemble the board with the supplied supporters following [How to Assemble](#how-to-assemble) instruction.
+
+:::
+
+
+# How to Assemble
+1. Assemble four(4) plastic supporters at each corner of the `U2D2 Power Hub Board` as shown below.  
+
+    ![](/img/parts/interface/u2d2_power_hub/u2d2_phb_06.jpg)
+
+2. Use plastic rivets to mount `U2D2` on the `U2D2 Power Hub Board`.
+
+    ![](/img/parts/interface/u2d2_power_hub/u2d2_phb_07.jpg)
+
+3. Connect `U2D2` and `U2D2 Power Hub Board` with 3P or 4P cables (Both 3P and 4P cables can be connected at the same time).
+
+    ![](/img/parts/interface/u2d2_power_hub/u2d2_phb_03.jpg)
+
+4. Connect additional cables that will connect `U2D2` and `DYNAMIXEL` (Depending on DYNAMIXEL model, converting cables may be required).
+
+    ![](/img/parts/interface/u2d2_power_hub/u2d2_phb_04.jpg)
+
+5. Connect the other side of the cable to `DYNAMIXEL` (Depending on DYNAMIXEL model, converting cables may be required).
+
+    ![](/img/parts/interface/u2d2_power_hub/u2d2_phb_05.jpg)
+
+6. Connect power to `U2D2 Power Hub Board`.
+
+
+:::danger
+
+    **DANGER** : Do NOT use multiple power inputs at the same time. Select ONLY one of the power source to connect.
+
+:::
+
+
+
+:::warning
+
+    **WARNING** : Check the Recommended Voltage for DYNAMIXEL before supplying the power.
+
+:::
+
+
+    ![](/img/parts/interface/u2d2_power_hub/u2d2_phb_01.jpg)
+
+7. Turn the power switch on `U2D2 Power Hub Board` to supply power to DYNAMIXEL
+
+    ![](/img/parts/interface/u2d2_power_hub/u2d2_phb_08.jpg)
+
+# Connector Information
+|           Item           |                             TTL                              |                            RS-485                            |                               Power                                |
+|:------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------------:|
+|          Pinout          |                `1` GND<br />`2` VDD<br />`3` DATA                |         `1` GND<br />`2` VDD<br />`3` DATA+<br />`4` DATA-         |                        `1` GND<br /> `2` VDD                         |
+|         Diagram          |        ![](/img/dxl/jst_b3beha_diagram.png)        |        ![](/img/dxl/jst_b4beha_diagram.png)        |         ![](/img/dxl/molex_39281023_diagram.png)         |
+|         Housing          |   ![](/img/dxl/JST_EHR-3.png)<br />[JST EHR-03]    |   ![](/img/dxl/JST_EHR-4.png)<br />[JST EHR-04]    | ![](/img/dxl/molex_39012020.png)<br />[MOLEX 39-01-2020] |
+|        PCB Header        | ![](/img/dxl/JST_B3B_EH-A.png)<br />[JST B3B-EH-A] | ![](/img/dxl/JST_B4B-EH-A.png)<br />[JST B4B-EH-A] | ![](/img/dxl/molex_39281023.png)<br />[MOLEX 39-28-1023] |
+|      Crimp Terminal      |                     [JST SEH-001T-P0.6]                      |                     [JST SEH-001T-P0.6]                      |                         [MOLEX 39-00-0038]                         |
+| Wire Gauge for DYNAMIXEL |                            21 AWG                            |                            21 AWG                            |                               20 AWG                               |
+
+
+
+[JST EHR-03]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST B3B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST SEH-001T-P0.6]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[MOLEX 39-01-2020]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0039012020_CRIMP_HOUSINGS.xml
+[MOLEX 39-28-1023]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0039281023_PCB_HEADERS.xml
+[MOLEX 39-00-0038]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0039000038_CRIMP_TERMINALS.xml
+
+

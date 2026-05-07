@@ -1,0 +1,166 @@
+---
+id: dxl_bridge
+title: "DXL-Bridge"
+sidebar_label: "DXL-Bridge"
+sidebar_position: 20
+tags: [parts, interface]
+---
+
+# Introduction
+![](/img/parts/interface/dxl_bridge/dxl_bridge_product_front.png)
+
+The **DYNAMIXEL Communication Bridge** works as a communication converter between TTL (3 Pin JST Type connector) and RS485 (4 Pin JST Type connector) of DYNAMIXEL.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oRbzORRpgqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+:::note
+
+**NOTE**
+
+TTL and RS485 ports in the [U2D2 interface](/docs/parts/interface/u2d2) are separately connected to the master PC,
+however, the data line between TTL and RS485 ports are not connected to each other.
+
+Thus, Instructions Packets such as **Broadcast Ping, Sync Read and Bulk Read** over TTL to RS485 and vice versa are not feasible through the U2D2 interface only.
+
+- For more detailes about Instruction Packet, see [DYNAMIXEL Protocol 1.0](https://emanual.robotis.com/docs/en/dxl/protocol1/#instruction-packet) or [Protocol 2.0](https://emanual.robotis.com/docs/en/dxl/protocol2/#instruction-packet) depending on what DYNAMIXEL is in use. 
+
+![](/img/parts/interface/dxl_bridge/u2d2_separate_ttl_485.png)
+
+Unlike the U2D2, the DYNAMIXEL Communication Bridge features a signal conversion between TTL to RS485, which allows Broadcast Ping, Sync Read, and Bulk Read instructions from mixed types of communication. 
+
+![](/img/parts/interface/dxl_bridge/u2d2_bridge_ttl_485.png)
+
+:::
+
+
+# Specifications
+| Item              | Specifications |
+|:------------------|:---------------|
+| Operating Voltage | 3.5 V ~ 30.0 V |
+| Current Raiting   | 3.0 A          |
+| Baud Rate         | Max 4 Mbps     |
+
+
+
+
+
+:::danger
+
+![](/img/icon_warning.png)  
+**DANGER**  
+(Ignoring these warnings may cause serious injury or death)
+
+-  Never place items containing water, flammables/open flames, or solvents near the product. 
+- Never place fingers, arms, toes, and other body parts near product during operation.
+- Cease operation and remove power from the product if the product begins to emit strange odors, noises, or smoke.
+- Keep product out of reach of children.
+- Check input polarity before installing or energizing wiring or cables.
+
+:::
+
+
+
+
+
+
+
+:::warning
+
+![](/img/icon_warning.png)  
+**CAUTION**  
+(Ignoring these warnings may cause mild injury or damage to the product)
+ - Always comply with the product's offical operating environment specifications including input voltage, current, and operating temperature. 
+- Do not insert blades or other sharp objects during product operation.
+
+:::
+
+
+
+
+:::warning
+
+![](/img/icon_warning.png)  
+**ATTENTION**  
+(Ignoring these warnings may cause minor injury or damage to the product)
+- Do not disassemble or modify the product.
+- Do not drop the product or apply strong impacts.
+- Do not connect or disconnect DYNAMIXEL cables while power is being supplied.
+
+:::
+
+
+
+# Layout
+![](/img/parts/interface/dxl_bridge/dxl_bridge_layout_front.png)  
+
+> Layout - Front
+
+![](/img/parts/interface/dxl_bridge/dxl_bridge_layout_back.png)
+
+> Layout - Back
+
+
+:::note
+
+**NOTE**: `VDD` is the same terminology as the `Vin` printed back of the DYNAMIXEL Communication Bridge.
+
+:::
+
+
+## Description
+1. **TTL (JST 3 Pins) / RS485 Connecters (JST 4 Pins)** : 3 and 4 Pin JST connectors for TTL / RS458 communication.
+
+2. **Mounting holes** : Used to mount on other devices. Mounting holes can be removed if not used by snapping along the V-cut line.
+
+3. **RS485 Termination resistance: Reserved space to install RS485 termination resistor**. 1608 size(1.6 x 0.8 mm) chip resistor can be used.
+
+# Connection Examples
+1. If the operating voltages of all DYNAMIXELs are the same, see the following images.
+
+    ![](/img/parts/interface/dxl_bridge/dxl_bridge_connection_example_same_voltage_01.png)
+    > Powering the DYNAMIXEL from Master Device. 
+
+    ![](/img/parts/interface/dxl_bridge/dxl_bridge_connection_example_same_voltage_02.png)
+    > Powering the DYNAMIXEL from external power source. 
+  
+2. If the operating voltages of DYNAMIXELs are different, see the following images.
+
+    ![](/img/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_01.png)
+    > Powering the DYNAMIXEL Communication Bridge from the RS485 connector side. 
+
+    ![](/img/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_02.png)
+    > Powering the DYNAMIXEL Communication Bridge from the TTL connector side. 
+
+
+:::warning
+
+    **WARNING**: `VDD` pins (See [Layout](#layout)) of DYNAMIXEL Communication Bridge between a RS485 and TTL connector are connected each other. In case the TTL and RS485 connectors use different power, be sure to connect **only one `VDD`** to the DYNAMIXEL Communication Bridge for the product safety. 
+
+:::
+
+
+# Reference
+## Connector Information
+|           Item           |                             TTL                              |                            RS-485                            |
+|:------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
+|          Pinout          |                `1` GND<br />`2` VDD<br />`3` DATA                |         `1` GND<br />`2` VDD<br />`3` DATA+<br />`4` DATA-         |
+|         Diagram          |        ![](/img/dxl/jst_b3beha_diagram.png)        |        ![](/img/dxl/jst_b4beha_diagram.png)        |
+|         Housing          |   ![](/img/dxl/JST_EHR-3.png)<br />[JST EHR-03]    |   ![](/img/dxl/JST_EHR-4.png)<br />[JST EHR-04]    |
+|        PCB Header        | ![](/img/dxl/JST_B3B_EH-A.png)<br />[JST B3B-EH-A] | ![](/img/dxl/JST_B4B-EH-A.png)<br />[JST B4B-EH-A] |
+|      Crimp Terminal      |                     [JST SEH-001T-P0.6]                      |                     [JST SEH-001T-P0.6]                      |
+| Wire Gauge for DYNAMIXEL |                            21 AWG                            |                            21 AWG                            |
+
+
+
+[JST EHR-03]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST B3B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST SEH-001T-P0.6]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[MOLEX 39-01-2020]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0039012020_CRIMP_HOUSINGS.xml
+[MOLEX 39-28-1023]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0039281023_PCB_HEADERS.xml
+[MOLEX 39-00-0038]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0039000038_CRIMP_TERMINALS.xml
+
+

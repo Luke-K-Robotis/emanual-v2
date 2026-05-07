@@ -1,0 +1,526 @@
+---
+id: mkr_shield
+title: "MKR Shield"
+sidebar_label: "MKR Shield"
+sidebar_position: 31
+tags: [parts, interface]
+---
+
+![](/img/parts/interface/mkr_shield/mkr_shield_product.jpg)
+
+# Introduction
+**DYNAMIXEL Shield for Arduino MKR Series**(hereafter referred to as "DYNAMIXEL Shield MKR") is compatible with MKR series form factor Arduino boards such as MKR ZERO, MKR1000 WIFI, MKR WiFi 1010, and Portenta H7.
+
+Arduino libraries(DYNAMIXEL2Arduino, DYNAMIXEL Shield) for DYNAMIXEL Shield MKR is provided to accelerate the development process using DYNAMIXEL on Arduino.
+
+Please refer to [DYNAMIXEL Shield Libraries](#dynamixel-shield-libraries) section for available APIs.
+
+
+
+:::danger
+
+**WARNING**
+
+1. This product does not contain Arduino MKR Board. **Arduino Board should be purchased separately.**
+2. **One of three DYNAMIXEL headers is assembled** on the shield for DYNAMIXEL X series (More headers for AX/MX/X series are included).
+3. Please solder included headers and parts when necessary.
+4. Some Arduino MKR shields may not fully compatible with DYNAMIXEL Shield MKR due to the pin confliction. Please refer to each product datasheet before using with DYNAMIXEL Shield MKR.
+
+:::
+
+
+# Quick Start Guide
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1Y7FLG1n-9k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+:::warning
+
+**Please use the recommended voltage source for the DYNAMIXEL.**
+
+:::
+
+
+# Specifications
+|             Item             | Details                                                                                                                                                       |
+|:----------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| VIN(DXL) Voltage<sup>1</sup> | 3.5 ~ 24 [V]                                                                                                                                                  |
+|    Operating Temperature     | -10 ~ +80 [&deg;C]                                                                                                                                            |
+|    Connectors<sup>2</sup>    | JST([S3B-EH]), Molex([5268-03A])<br />Battery Connector<sup>3</sup>([SMW250-02])<br />Terminal Block([DG350-3.5-02P-14])                                          |
+|     Physical Connection      | TTL Multidrop Bus (5V Level)                                                                                                                                  |
+|            Cables            | ![](/img/parts/interface/mkr_shield/dc_jack_polarity.png)<br />DC Jack Harness (Type A, O.D: 5.5 [mm], I.D: 2.5 [mm])<br />Convertible cable for XL-320 |
+|          Dimensions          | 65 x 25 [mm]                                                                                                                                                  |
+|            Weight            | 11 [g]                                                                                                                                                        |
+
+
+:::note
+
+<sup>1</sup> [ROBOTIS SMPS 12V 5A PS-10] is recommended as a power supply for 12V DYNAMIXEL.  
+<sup>2</sup> Only one JST connector is assembled by default. Please solder included connectors when necessary.  
+<sup>3</sup> The battery connector is compatible with ROBOTIS batteries [LB-010](http://en.robotis.com/shop_en/item.php?it_id=903-0143-000) or [LB-020](http://en.robotis.com/shop_en/item.php?it_id=903-0277-000).
+
+:::
+
+
+
+
+
+
+:::danger
+
+![](/img/icon_warning.png)  
+**DANGER**  
+(Ignoring these warnings may cause serious injury or death)
+
+-  Never place items containing water, flammables/open flames, or solvents near the product. 
+- Never place fingers, arms, toes, and other body parts near product during operation.
+- Cease operation and remove power from the product if the product begins to emit strange odors, noises, or smoke.
+- Keep product out of reach of children.
+- Check input polarity before installing or energizing wiring or cables.
+
+:::
+
+
+
+
+
+
+
+:::warning
+
+![](/img/icon_warning.png)  
+**CAUTION**  
+(Ignoring these warnings may cause mild injury or damage to the product)
+ - Always comply with the product's offical operating environment specifications including input voltage, current, and operating temperature. 
+- Do not insert blades or other sharp objects during product operation.
+
+:::
+
+
+
+
+:::warning
+
+![](/img/icon_warning.png)  
+**ATTENTION**  
+(Ignoring these warnings may cause minor injury or damage to the product)
+- Do not disassemble or modify the product.
+- Do not drop the product or apply strong impacts.
+- Do not connect or disconnect DYNAMIXEL cables while power is being supplied.
+
+:::
+
+
+
+## Supported DYNAMIXEL
+DYNAMIXEL Shield MKR only supports `TTL` based DYNAMIXEL lineups.
+
+| DYNAMIXEL Series |                                                                 |                                                        |                                     |
+|:----------------:|:----------------------------------------------------------------|:-------------------------------------------------------|:------------------------------------|
+|      **AX**      | [AX-12W]<br />[AX-12+/12A]<br />[AX-18F/18A]                      |                                                        |                                     |
+|      **MX**      | [MX-12W]<br />[MX-28T/AT]<br /> [MX-28T/AT(2.0)]                  | [MX-64T/AT]<br /> [MX-64T/AT(2.0)]                      | [MX-106T/AT]<br /> [MX-106T/AT(2.0)] |
+|      **XL**      | [XL-320]<br />[XL330-M077-T]<br /> [XL330-M288-T]                 | [XL430-W250-T]<br />[2XL430-W250-T]                     |                                     |
+|      **XC**      | [XC330-T288]<br />[XC330-T181]<br />[XC330-M288]<br />[XC330-M181] | [XC430-W150-T]<br /> [XC430-W240-T]<br />[2XC430-W250-T]<br />[XC430-T150BB-T]<br /> [XC430-T240BB-T] |                                     |
+|      **XM**      |                                                                 | [XM430-W210-T]<br /> [XM430-W350-T]                     | [XM540-W150-T]<br /> [XM540-W270-T]  |
+|      **XH**      |                                                                 | [XH430-W210-T]<br /> [XH430-W350-T]                     | [XH540-W150-T]<br /> [XH540-W270-T]  |
+
+
+
+## Part Lists
+The following parts are included in the package.
+
+- DYNAMIXEL Shield MKR (1)
+- JST Header([S3B-EH]) (2)
+- Molex Header([5268-03A]) (2)
+- Terminal Block([DG350-3.5-02P-14]) (1)
+- DC Jack Harness (1)
+- Battery Connector([SMW250-02]) (1)
+- XL-320 Convertible cable (1)
+
+# Layout
+DYNAMIXEL Shield MKR Schematics can be downloaded in the link below.
+
+- [DYNAMIXEL Shield MKR Schematic](https://www.robotis.com/service/download.php?no=1988)
+
+![](/img/parts/interface/mkr_shield/pinmap.png)
+
+> The DYNAMIXEL Shield MKR header pinout is based on the Aruduino MKR boards.
+
+|        Item        |                                       Description                                       |
+|:------------------:|:---------------------------------------------------------------------------------------:|
+| DYNAMIXEL TTL Port |                                 TTL DYNAMIXEL supported                                 |
+|      VIN(DXL)      | External power input for DYNAMIXEL only. Cannot provide power to the ARduino MKR boards |
+|  +5V<sup>1</sup>   |                 5V from Arduino MKR boards to supply power to DYNAMIXEL                 |
+|     Jumper Cap     |                   Power Source Selection between `VIN(DXL)` and `+5V`                   |
+
+
+:::warning
+
+<sup>1</sup> Please be aware that Arduino MKR boards may limit the 5V power source for USB hardware protection.
+
+:::
+
+
+![](/img/parts/interface/mkr_shield/mkr_pinmap.png)
+
+> Arduino MKR board pinout example. Please refer to each product in [Arduino Products](https://www.arduino.cc/en/Main/Products) for more details.
+
+| Pin No. | Pin Name | Description                                                                            |
+|:-------:|:--------:|:---------------------------------------------------------------------------------------|
+|   13    |    RX    | Hardware serial port to receive data from DYNAMIXEL                                    |
+|   14    |    TX    | Hardware serial port to transmit data to DYNAMIXEL                                     |
+| 21(A6)  |  TX_EN   | Flow control of DYNAMIXEL data BUS<br />- **HIGH** : Transmit<br />- **LOW** : Receive |
+
+# How to Connect
+DYNAMIXEL Shield MKR can be mounted on or below the Arduino MKR boards.  
+Please check the compatibility when using multiple shields with a single Arduino MKR board.  
+**Arduino MKR boards cannot be powered using the VIN(DXL) power source.**
+
+## 12V DYNAMIXEL X Series
+
+This connection is recommended for most X series DYNAMIXEL with 12V operating voltage (except XL-320, XL330).  
+The USB connection from PC supplies power and serial communication to the MKR board to upload the Arduino sketch, while 12V SMPS supplies power to connceted DYNAMIXEL.  
+ ![](/img/parts/interface/mkr_shield/DXL_MKRShield_info01.jpg)
+
+## AX / MX Series DYNAMIXEL
+
+AX and MX series use different type of Molex connector.  
+In order to use the original AX or MX series cable, solder the included molex connector to empty DYNAMIXEL port.  
+Or else, use the [Robot Cable-X3P convertible].  
+ ![](/img/parts/interface/mkr_shield/DXL_MKRShield_info02.jpg)
+
+## XL330 using USB power
+
+XL330 can run off of the 5V USB power due to its low operating voltage.  
+Set the power jumper to +5V side to use 5V power from the Arduino MKR board.
+
+
+:::warning
+
+Please be aware that Arduino MKR boards may limit the 5V power source for USB hardware protection.  
+
+:::
+
+ ![](/img/parts/interface/mkr_shield/DXL_MKRShield_info03.jpg)
+
+After uploading the program, 1 cell Lithium battery(3.7V) can be used to power the Arduino MKR board and XL330.  
+ ![](/img/parts/interface/mkr_shield/DXL_MKRShield_info04.jpg)
+
+# Power Select Jumper
+|                                                              Use VIN(DXL) from external power source(SMPS)                                                               |                                                                                  Use +5V from Arduino MKR                                                                                  |
+|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|                                                     ![](/img/parts/interface/mkr_shield/select_vindxl.png)                                                     |                                                                ![](/img/parts/interface/mkr_shield/select_5v.png)                                                                |
+| When using `VIN(DXL)` from external power source, please be aware of the polarity of terminal block. **Additional power source for Arduino MKR board will be required.** | When using `+5V` from Arduino MKR, be aware that some Arduino MKR board has a built in fuse that prevents excessive use of 5V power. Please refer to each Arduino MKR board specification. |
+
+
+:::note
+
+When supplying power to DYNAMIXEL Shield MKR, **take extra care for the polarity of the cable**.
+
+:::
+
+
+# DYNAMIXEL Shield Libraries
+1. DYNAMIXEL2Arduino Library : [GitHub Repository][dynamixel2arduino github repository]
+2. DYNAMIXEL Shield Library : [GitHub Repository][dynamixel shield github repository]
+
+## Features
+- Compatible to Arduino MKR and Portenta H7 boards
+- Support both DYNAMIXEL Protocol 1.0 and 2.0
+- By default, 16 DYNAMIXEL can be detected with DYNAMIXEL Arduino libraries([config.h](https://github.com/ROBOTIS-GIT/Dynamixel2Arduino/blob/master/src/utility/config.h#L62))
+- Support SynWrite function
+- DYNAMIXEL Shield library(v0.1.0 or above) requires DYNAMIXEL2Arduino library
+
+
+:::note
+
+## Install Library
+**NOTE**  
+Make sure to install the `Arduino SAMD Boards manager` from Arduino IDE boards manager in order to program Arduino MKR boards.
+
+:::
+
+
+There are three ways to add libraries to the Arduino IDE.
+
+1. **Using the Library Manager**
+2. Importing a .zip Library
+3. Manual installation
+
+Each way is described in detail in the [Arduino Official Guide], so please refer to it if necessary.  
+Below is an example of **using the Library Manager** from Arduino IDE.
+
+![](/img/parts/interface/dynamixel_shield/library_manager_01.png)
+
+Search for `dynamixel shield` from the Library Manager and install the latest version.
+
+![](/img/parts/interface/dynamixel_shield/library_manager_03.png)
+
+Click `Install all` to install the dependent library `Dynamixel2Arduino`.
+
+![](/img/parts/interface/dynamixel_shield/library_manager_04.png)
+
+If you have successfully installed both libraries, you'll be able to find several examples of DynamixelShield in the examples.
+
+![](/img/parts/interface/dynamixel_shield/examples.png)
+
+
+:::warning
+
+## Library API
+### DYNAMIXELShield(v0.1.0 or above)
+**WARNING** : In order to use DYNAMIXEL Shield library(v0.1.0 or above), [DYNAMIXEL2Arduino library](#install-library) must be installed.
+
+:::
+
+
+#### Dynamixel2Arduino Class
+- [begin()]
+- [getPortBaud()]
+- [ping()]
+- [scan()]
+- [getModelNumber()]
+- [setID()]
+- [setProtocol()]
+- [setBaudrate()]
+- [torqueOn()]
+- [torqueOff()]
+- [ledOn()]
+- [ledOff()]
+- [setOperatingMode()]
+- [setGoalPosition()]
+- [getPresentPosition()]
+- [setGoalVelocity()]
+- [getPresentVelocity()]
+- [setGoalPWM()]
+- [getPresentPWM()]
+- [setGoalCurrent()]
+- [getPresentCurrent()]
+- [readControlTableItem()]
+- [writeControlTableItem()]
+
+#### Master Class
+Dynamixel2Arduino class inherits below public functions from the Master class.
+
+- [read()]
+- [write()]
+- [syncRead()]
+- [syncWrite()]
+- [bulkRead()]
+- [bulkWrite()]
+- [getLastLibErrCode()]
+
+#### RobotisRemoteController Class
+The Remote Controller class can be used with the Arduino MKR boards by enabling SoftwareSerial feature.
+
+- [begin()][rc100_begin]
+- [availableData()]
+- [readData()]
+- [availableEvent()]
+- [readEvent()]
+- [flushRx()]
+- [available()]
+- [read()]
+- [peek()]
+- [flush()]
+- [write()]
+
+# Examples
+## CAN2DYNAMIXEL
+CAN2DYNAMIXEL converts CAN based DYNAMIXEL Protocol into DYNAMIXEL Protocol 2.0.
+
+CAN shield board with MCP2515 is required and `107-Arduino-MCP2515` library can be installed via Library Manager of Arduino IDE.
+
+### Download Examples
+The example is included in the `DYNAMIXEL Shield library` and can be found at **File > Examples > DynamixelShield > advanced > can2dynamixel** from Arduino IDE.
+
+### Tested Environment
+- DYNAMIXEL
+  - TTL supported X series (except XL-320)
+  - ID = 1, Baudrate = 1000000bps, Protocol 2.0
+- Controller
+  - Arduino MKR WAN 1300
+  - DYNAMIXEL Shield for Arduino MKR
+  - MKR CAN Shield
+- CAN Interface
+  - IXXAT USB-to-CAN V2
+- CAN Library
+  - 107-Arduino-MCP2515
+- Software
+  - IXXAT canAnalyser3 Mini
+  - Bitrate = 1000CiA (1000 kbit/s)
+  - Arduino IDE
+  - DYNAMIXEL Shield library
+
+
+
+:::warning
+
+**WARNING**  
+- This example uses 1,000,000 bps. Please configure the Baudrate of DYNAMIXEL accordingly.
+- Do not use a Baudrate higher than 1,000,000 bps as it may cause unstable data transmission.
+
+:::
+
+
+### Connection Diagram
+![](/img/parts/interface/mkr_shield/examples_can2dynamixel_diagram.jpg)
+
+### Additional Information
+The `CAN Standard Protocol 2.0` used in this example is shown as below.
+
+| 1 Bit | 11 Bit | 1 Bit | 1 Bit | 1 Bit |  4 Bit  |  8 Byte  | 2 Byte | 2 Bit | 7 Bit | 3 Bit |
+|:-----:|:------:|:-----:|:-----:|:-----:|:-------:|:--------:|:------:|:-----:|:-----:|:-----:|
+|  SOF  | **ID** |  RTR  |  IDE  |  r0   | **DLC** | **Data** |  CRC   |  ACK  |  EOF  |  IFS  |
+
+- **ID** : DYNAMIXEL ID
+- **DLC** : Size of Data
+- **Data** : [Instruction](https://emanual.robotis.com/docs/en/dxl/protocol2/#instruction)(1 Byte) + [Parameters](https://emanual.robotis.com/docs/en/dxl/protocol2/#parameters)(0 ~ 7 Byte)
+
+
+:::note
+
+**NOTE** : CAN2DYNAMIXEL does not support `Sync` or `Bulk` instructions due to the limited length of Data field.
+
+:::
+
+
+The Transmit section of IXXAT canAnalyser3 Mini software requires `ID (hex)` and `Data (hex)` while other fields are automatically generated as shown below.
+
+![](/img/parts/interface/mkr_shield/can2dynamixel_ixxat_cananalyser3_mini_example.png)
+
+## RCPWM2DYNAMIXEL
+RCPWM2DYNAMIXEL is the example to control DYNAMIXEL using RC controller.  
+The RC signal sent from the RC controller is translated into PWM signal by the RC receiver, then converted into DYNAMIXEL Protocol 2.0 by the Arduino MKR board.
+
+The example provides a couple safety features such as `Soft Start` that prevents sudden movement of DYNAMIXEL when the RC receiver is powered, and `Fail Safe` that returns DYNAMIXEL to certain position when the power of the RC receiver is cut off.
+
+### Download Examples
+The example is included in the `DYNAMIXEL Shield library` and can be found from **File > Examples > DynamixelShield > advanced > rc_pwm2dynamixel**
+
+### Tested Environment
+- DYNAMIXEL
+  - TTL supported X series (except XL-320)
+  - ID = 1 ~ 7, Baudrate = 1000000bps, Protocol 2.0
+- Controller
+  - Arduino MKR Zero
+  - DYNAMIXEL Shield for Arduino MKR
+  - Futaba T10J controller
+- RC Interface
+  - Futaba R3008SB receiver
+- Software
+  - Arduino IDE
+  - DYNAMIXEL Shield library
+
+
+:::note
+
+**NOTE**: The maximum number of DYNAMIXEL depends on the number of channel supported by the RC receiver and the Arduino controller.
+
+:::
+
+
+
+:::warning
+
+**WARNING**: The default baudrate of DYNAMIXEL X series is set to 57600 bps, and the example uses 1000000 bps.  
+Please match the baudrate of DYNAMIXEL and the examplel code.
+
+:::
+
+### Connection Diagram
+![](/img/parts/interface/mkr_shield/examples_rcpwm2dynamixel_diagram.png)
+
+### Wiring
+The RC receiver and the DYNAMIXEL Shield MKR can be connected as below.
+
+![connection_diagram](/img/parts/interface/mkr_shield/connection_diagram.jpg)
+
+# Download
+- [DYNAMIXEL Shield MKR Schematic(PDF)](https://www.robotis.com/service/download.php?no=1988)  
+  ![](/img/parts/interface/mkr_shield/mkr_schematic.png)
+
+
+[ax-12w]: https://emanual.robotis.com/docs/en/dxl/ax/ax-12w/
+[ax-12+/12a]: https://emanual.robotis.com/docs/en/dxl/ax/ax-12a/
+[ax-18f/18a]: https://emanual.robotis.com/docs/en/dxl/ax/ax-18a/
+[mx-12w]: https://emanual.robotis.com/docs/en/dxl/mx/mx-12w/
+[mx-28t/at]: https://emanual.robotis.com/docs/en/dxl/mx/mx-28/
+[mx-28t/at(2.0)]: https://emanual.robotis.com/docs/en/dxl/mx/mx-28-2/
+[mx-64t/at]: https://emanual.robotis.com/docs/en/dxl/mx/mx-64/
+[mx-64t/at(2.0)]: https://emanual.robotis.com/docs/en/dxl/mx/mx-64-2/
+[mx-106t/at]: https://emanual.robotis.com/docs/en/dxl/mx/mx-106/
+[mx-106t/at(2.0)]: https://emanual.robotis.com/docs/en/dxl/mx/mx-106-2/
+[xl-320]: https://emanual.robotis.com/docs/en/dxl/x/xl320/
+[xl330-m077-t]: https://emanual.robotis.com/docs/en/dxl/x/xl330-m077/
+[xl330-m288-t]: https://emanual.robotis.com/docs/en/dxl/x/xl330-m288/
+[xl430-w250-t]: https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/
+[2xl430-w250-t]: https://emanual.robotis.com/docs/en/dxl/x/2xl430-w250/
+[xc430-w150-t]: https://emanual.robotis.com/docs/en/dxl/x/xc430-w150/
+[xc430-w240-t]: https://emanual.robotis.com/docs/en/dxl/x/xc430-w240/
+[xc430-t150bb-t]: https://emanual.robotis.com/docs/en/dxl/x/xc430-t150bb/
+[xc430-t240bb-t]: https://emanual.robotis.com/docs/en/dxl/x/xc430-t240bb/
+[2xc430-w250-t]: https://emanual.robotis.com/docs/en/dxl/x/2xc430-w250/
+[XC330-T288]: https://emanual.robotis.com/docs/en/dxl/x/xc330-t288/
+[XC330-T181]: https://emanual.robotis.com/docs/en/dxl/x/xc330-t181/
+[XC330-M288]: https://emanual.robotis.com/docs/en/dxl/x/xc330-m288/
+[XC330-M181]: https://emanual.robotis.com/docs/en/dxl/x/xc330-m181/
+[xm430-w210-t]: https://emanual.robotis.com/docs/en/dxl/x/xm430-w210/
+[xm430-w350-t]: https://emanual.robotis.com/docs/en/dxl/x/xm430-w350/
+[xh430-w210-t]: https://emanual.robotis.com/docs/en/dxl/x/xh430-w210/
+[xm540-w150-t]: https://emanual.robotis.com/docs/en/dxl/x/xm540-w150/
+[xm540-w270-t]: https://emanual.robotis.com/docs/en/dxl/x/xm540-w270/
+[xh430-w350-t]: https://emanual.robotis.com/docs/en/dxl/x/xh430-w350/
+[xh540-w150-t]: https://emanual.robotis.com/docs/en/dxl/x/xh540-w150/
+[xh540-w270-t]: https://emanual.robotis.com/docs/en/dxl/x/xh540-w270/
+[s3b-eh]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[5268-03A]: https://www.molex.com/molex/products/part-detail/pcb_headers/0022057035
+[smw250-02]: http://product.ic114.com/PDF/S/SMW250-NN.pdf
+[dg350-3.5-02p-14]: http://www.degson.com/en/downpdf/id/542.html
+[robotis smps 12v 5a ps-10]: http://en.robotis.com/shop_en/list.php?ca_id=3020a0
+[robot cable-x3p convertible]: http://en.robotis.com/shop_en/item.php?it_id=903-0251-000
+[ln-101]: /docs/parts/interface/ln-101
+[rc-100]: /docs/parts/communication/rc-100
+[arduino official guide]: https://www.arduino.cc/en/Guide/Libraries
+[dynamixel2arduino github repository]: https://github.com/ROBOTIS-GIT/Dynamixel2Arduino
+[dynamixel shield github repository]: https://github.com/ROBOTIS-GIT/DynamixelShield
+[begin()]: https://emanual.robotis.com/docs/en/popup/arduino_api/begin/
+[getportbaud()]: https://emanual.robotis.com/docs/en/popup/arduino_api/getPortBaud/
+[ping()]: https://emanual.robotis.com/docs/en/popup/arduino_api/ping/
+[scan()]: https://emanual.robotis.com/docs/en/popup/arduino_api/scan/
+[getmodelnumber()]: https://emanual.robotis.com/docs/en/popup/arduino_api/getModelNumber/
+[setid()]: https://emanual.robotis.com/docs/en/popup/arduino_api/setID/
+[setprotocol()]: https://emanual.robotis.com/docs/en/popup/arduino_api/setProtocol/
+[setbaudrate()]: https://emanual.robotis.com/docs/en/popup/arduino_api/setBaudrate/
+[torqueon()]: https://emanual.robotis.com/docs/en/popup/arduino_api/torqueOn/
+[torqueoff()]: https://emanual.robotis.com/docs/en/popup/arduino_api/torqueOff/
+[ledon()]: https://emanual.robotis.com/docs/en/popup/arduino_api/ledOn/
+[ledoff()]: https://emanual.robotis.com/docs/en/popup/arduino_api/ledOff/
+[setoperatingmode()]: https://emanual.robotis.com/docs/en/popup/arduino_api/setOperatingMode/
+[setgoalposition()]: https://emanual.robotis.com/docs/en/popup/arduino_api/setGoalPosition/
+[getpresentposition()]: https://emanual.robotis.com/docs/en/popup/arduino_api/getPresentPosition/
+[setgoalvelocity()]: https://emanual.robotis.com/docs/en/popup/arduino_api/setGoalVelocity/
+[getpresentvelocity()]: https://emanual.robotis.com/docs/en/popup/arduino_api/getPresentVelocity/
+[setgoalpwm()]: https://emanual.robotis.com/docs/en/popup/arduino_api/setGoalPWM/
+[getpresentpwm()]: https://emanual.robotis.com/docs/en/popup/arduino_api/getPresentPWM/
+[setgoalcurrent()]: https://emanual.robotis.com/docs/en/popup/arduino_api/setGoalCurrent/
+[getpresentcurrent()]: https://emanual.robotis.com/docs/en/popup/arduino_api/getPresentCurrent/
+[readcontroltableitem()]: https://emanual.robotis.com/docs/en/popup/arduino_api/readControlTableItem/
+[writecontroltableitem()]: https://emanual.robotis.com/docs/en/popup/arduino_api/writeControlTableItem/
+[read()]: https://emanual.robotis.com/docs/en/popup/arduino_api/read/
+[write()]: https://emanual.robotis.com/docs/en/popup/arduino_api/write/
+[syncread()]: https://emanual.robotis.com/docs/en/popup/arduino_api/syncRead/
+[syncwrite()]: https://emanual.robotis.com/docs/en/popup/arduino_api/syncWrite/
+[bulkread()]: https://emanual.robotis.com/docs/en/popup/arduino_api/bulkRead/
+[bulkwrite()]: https://emanual.robotis.com/docs/en/popup/arduino_api/bulkWrite/
+[getlastliberrcode()]: https://emanual.robotis.com/docs/en/popup/arduino_api/getLastLibErrCode/
+[rc100_begin]: https://emanual.robotis.com/docs/en/popup/arduino_api/rc100_begin/
+[availabledata()]: https://emanual.robotis.com/docs/en/popup/arduino_api/availableData/
+[readdata()]: https://emanual.robotis.com/docs/en/popup/arduino_api/readData/
+[availableevent()]: https://emanual.robotis.com/docs/en/popup/arduino_api/availableEvent/
+[readevent()]: https://emanual.robotis.com/docs/en/popup/arduino_api/readEvent/
+[flushrx()]: https://emanual.robotis.com/docs/en/popup/arduino_api/flushRx/
+[available()]: https://emanual.robotis.com/docs/en/popup/arduino_api/available/
+[read()]: https://emanual.robotis.com/docs/en/popup/arduino_api/read/
+[peek()]: https://emanual.robotis.com/docs/en/popup/arduino_api/peek/
+[flush()]: https://emanual.robotis.com/docs/en/popup/arduino_api/flush/
+[write()]: https://emanual.robotis.com/docs/en/popup/arduino_api/write/
