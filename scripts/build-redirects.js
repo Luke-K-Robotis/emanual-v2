@@ -230,6 +230,74 @@ function main() {
     }
   }
 
+  // popup 페이지 redirect: 원본 popup 파일들은 frontmatter에 permalink가 없어
+  // Jekyll의 default permalink (`/:categories/:title/`) 로 자동 생성되었었음.
+  // 실제 URL 형태: /docs/en/popup/<orig-stem>/ → /docs/popup/<sanitized-stem>
+  // sanitization 규칙은 convert-popup.js와 동일하게 유지.
+  const popupSourceRoot = path.join(SOURCE_DOCS, 'en', 'popup');
+  let popupRedirects = 0;
+  if (fs.existsSync(popupSourceRoot)) {
+    function sanitizePopupId(stem) {
+      let s = stem.replace(/\(([^)]*)\)/g, '_$1_').replace(/\./g, '_').replace(/_+/g, '_').replace(/^_|_$/g, '');
+      return s;
+    }
+    function* walkPopup(dir) {
+      for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+        const full = path.join(dir, e.name);
+        if (e.isDirectory()) yield* walkPopup(full);
+        else if (e.isFile() && e.name.endsWith('.md')) yield full;
+      }
+    }
+    for (const f of walkPopup(popupSourceRoot)) {
+      const rel = path.relative(popupSourceRoot, f).split(path.sep).join('/');
+      const stem = rel.replace(/\.md$/, '');
+      // 'general/cm_100_download_task' or '(foo)x.msg'
+      const segs = stem.split('/');
+      const last = sanitizePopupId(segs.pop());
+      const sanitizedRel = segs.length ? `${segs.join('/')}/${last}` : last;
+      const to = `/docs/popup/${sanitizedRel}`;
+      if (!existingPaths.has(to)) { toMissing++; continue; }
+      const from = `/docs/en/popup/${stem}`;
+      const key = `${from}\t${to}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      if (from === to) continue;
+      redirects.push({ from, to });
+      popupRedirects++;
+    }
+  }
+  // ko-only popup 도 동일 처리 (원본은 source/docs/kr/popup/...)
+  const popupKrSourceRoot = path.join(SOURCE_DOCS, 'kr', 'popup');
+  if (fs.existsSync(popupKrSourceRoot)) {
+    function sanitizePopupId(stem) {
+      let s = stem.replace(/\(([^)]*)\)/g, '_$1_').replace(/\./g, '_').replace(/_+/g, '_').replace(/^_|_$/g, '');
+      return s;
+    }
+    function* walkPopup(dir) {
+      for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+        const full = path.join(dir, e.name);
+        if (e.isDirectory()) yield* walkPopup(full);
+        else if (e.isFile() && e.name.endsWith('.md')) yield full;
+      }
+    }
+    for (const f of walkPopup(popupKrSourceRoot)) {
+      const rel = path.relative(popupKrSourceRoot, f).split(path.sep).join('/');
+      const stem = rel.replace(/\.md$/, '');
+      const segs = stem.split('/');
+      const last = sanitizePopupId(segs.pop());
+      const sanitizedRel = segs.length ? `${segs.join('/')}/${last}` : last;
+      const to = `/docs/popup/${sanitizedRel}`;
+      if (!existingPaths.has(to)) continue;
+      const from = `/docs/kr/popup/${stem}`;
+      const key = `${from}\t${to}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      if (from === to) continue;
+      redirects.push({ from, to });
+      popupRedirects++;
+    }
+  }
+
   // 정렬해서 결과가 결정적이도록
   redirects.sort((a, b) => a.from.localeCompare(b.from));
 
@@ -238,6 +306,7 @@ function main() {
 
   console.log(`scanned: ${scanned} files`);
   console.log(`with permalink: ${withPermalink}`);
+  console.log(`popup synthetic redirects: ${popupRedirects}`);
   console.log(`redirects emitted: ${redirects.length}`);
   console.log(`pending (target page not yet migrated): ${toMissing}`);
   console.log(`output: ${path.relative(REPO_ROOT, OUTPUT)}`);

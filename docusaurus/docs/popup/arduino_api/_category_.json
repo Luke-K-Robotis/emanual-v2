@@ -1,0 +1,9 @@
+{
+  "label": "arduino_api",
+  "collapsed": true,
+  "collapsible": true,
+  "link": {
+    "type": "generated-index"
+  },
+  "className": "sidebar-hidden"
+}

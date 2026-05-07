@@ -1380,6 +1380,978 @@
     "to": "/docs/platform/turtlebot3/videos"
   },
   {
+    "from": "/docs/en/popup/(op3_tuning_module_msgs)GetPresentJointOffsetData.srv",
+    "to": "/docs/popup/op3_tuning_module_msgs_GetPresentJointOffsetData_srv"
+  },
+  {
+    "from": "/docs/en/popup/(op3_tuning_module_msgs)JointOffsetData.msg",
+    "to": "/docs/popup/op3_tuning_module_msgs_JointOffsetData_msg"
+  },
+  {
+    "from": "/docs/en/popup/(op3_tuning_module_msgs)JointOffsetPositionData.msg",
+    "to": "/docs/popup/op3_tuning_module_msgs_JointOffsetPositionData_msg"
+  },
+  {
+    "from": "/docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOff.msg",
+    "to": "/docs/popup/op3_tuning_module_msgs_JointTorqueOnOff_msg"
+  },
+  {
+    "from": "/docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOffArray.msg",
+    "to": "/docs/popup/op3_tuning_module_msgs_JointTorqueOnOffArray_msg"
+  },
+  {
+    "from": "/docs/en/popup/(thormang3_action_module_msgs)IsRunning.srv",
+    "to": "/docs/popup/thormang3_action_module_msgs_IsRunning_srv"
+  },
+  {
+    "from": "/docs/en/popup/(thormang3_walking_module_msgs)IsRunning.srv",
+    "to": "/docs/popup/thormang3_walking_module_msgs_IsRunning_srv"
+  },
+  {
+    "from": "/docs/en/popup/AddStepDataArray.srv",
+    "to": "/docs/popup/AddStepDataArray_srv"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/available",
+    "to": "/docs/popup/arduino_api/available"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/availableData",
+    "to": "/docs/popup/arduino_api/availableData"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/availableEvent",
+    "to": "/docs/popup/arduino_api/availableEvent"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/begin",
+    "to": "/docs/popup/arduino_api/begin"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/bulkRead",
+    "to": "/docs/popup/arduino_api/bulkRead"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/bulkWrite",
+    "to": "/docs/popup/arduino_api/bulkWrite"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/flush",
+    "to": "/docs/popup/arduino_api/flush"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/flushRx",
+    "to": "/docs/popup/arduino_api/flushRx"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/getLastLibErrCode",
+    "to": "/docs/popup/arduino_api/getLastLibErrCode"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/getModelNumber",
+    "to": "/docs/popup/arduino_api/getModelNumber"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/getPortBaud",
+    "to": "/docs/popup/arduino_api/getPortBaud"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/getPresentCurrent",
+    "to": "/docs/popup/arduino_api/getPresentCurrent"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/getPresentPosition",
+    "to": "/docs/popup/arduino_api/getPresentPosition"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/getPresentPWM",
+    "to": "/docs/popup/arduino_api/getPresentPWM"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/getPresentVelocity",
+    "to": "/docs/popup/arduino_api/getPresentVelocity"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/getTorqueEnableStat",
+    "to": "/docs/popup/arduino_api/getTorqueEnableStat"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/ledOff",
+    "to": "/docs/popup/arduino_api/ledOff"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/ledOn",
+    "to": "/docs/popup/arduino_api/ledOn"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/peek",
+    "to": "/docs/popup/arduino_api/peek"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/ping",
+    "to": "/docs/popup/arduino_api/ping"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/rc100_begin",
+    "to": "/docs/popup/arduino_api/rc100_begin"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/rc100_read",
+    "to": "/docs/popup/arduino_api/rc100_read"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/rc100_write",
+    "to": "/docs/popup/arduino_api/rc100_write"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/read",
+    "to": "/docs/popup/arduino_api/read"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/readControlTableItem",
+    "to": "/docs/popup/arduino_api/readControlTableItem"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/readData",
+    "to": "/docs/popup/arduino_api/readData"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/readEvent",
+    "to": "/docs/popup/arduino_api/readEvent"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/scan",
+    "to": "/docs/popup/arduino_api/scan"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/setBaudrate",
+    "to": "/docs/popup/arduino_api/setBaudrate"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/setGoalCurrent",
+    "to": "/docs/popup/arduino_api/setGoalCurrent"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/setGoalPosition",
+    "to": "/docs/popup/arduino_api/setGoalPosition"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/setGoalPWM",
+    "to": "/docs/popup/arduino_api/setGoalPWM"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/setGoalVelocity",
+    "to": "/docs/popup/arduino_api/setGoalVelocity"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/setID",
+    "to": "/docs/popup/arduino_api/setID"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/setOperatingMode",
+    "to": "/docs/popup/arduino_api/setOperatingMode"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/setProtocol",
+    "to": "/docs/popup/arduino_api/setProtocol"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/syncRead",
+    "to": "/docs/popup/arduino_api/syncRead"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/syncWrite",
+    "to": "/docs/popup/arduino_api/syncWrite"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/torqueOff",
+    "to": "/docs/popup/arduino_api/torqueOff"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/torqueOn",
+    "to": "/docs/popup/arduino_api/torqueOn"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/write",
+    "to": "/docs/popup/arduino_api/write"
+  },
+  {
+    "from": "/docs/en/popup/arduino_api/writeControlTableItem",
+    "to": "/docs/popup/arduino_api/writeControlTableItem"
+  },
+  {
+    "from": "/docs/en/popup/BalanceParam.msg",
+    "to": "/docs/popup/BalanceParam_msg"
+  },
+  {
+    "from": "/docs/en/popup/ball_detector_CircleSetStamped_msg",
+    "to": "/docs/popup/ball_detector_CircleSetStamped_msg"
+  },
+  {
+    "from": "/docs/en/popup/BothWrench.msg",
+    "to": "/docs/popup/BothWrench_msg"
+  },
+  {
+    "from": "/docs/en/popup/cable_compatibility",
+    "to": "/docs/popup/cable_compatibility"
+  },
+  {
+    "from": "/docs/en/popup/DampingBalanceParam.msg",
+    "to": "/docs/popup/DampingBalanceParam_msg"
+  },
+  {
+    "from": "/docs/en/popup/dream1-2_example_cn",
+    "to": "/docs/popup/dream1-2_example_cn"
+  },
+  {
+    "from": "/docs/en/popup/dream1-3_example_cn",
+    "to": "/docs/popup/dream1-3_example_cn"
+  },
+  {
+    "from": "/docs/en/popup/dream1-4_example_cn",
+    "to": "/docs/popup/dream1-4_example_cn"
+  },
+  {
+    "from": "/docs/en/popup/dynamixel_workbench_msgs_DynamixelCommand",
+    "to": "/docs/popup/dynamixel_workbench_msgs_DynamixelCommand"
+  },
+  {
+    "from": "/docs/en/popup/dynamixel_workbench_msgs_DynamixelInfo",
+    "to": "/docs/popup/dynamixel_workbench_msgs_DynamixelInfo"
+  },
+  {
+    "from": "/docs/en/popup/dynamixel_workbench_msgs_DynamixelLoadInfo",
+    "to": "/docs/popup/dynamixel_workbench_msgs_DynamixelLoadInfo"
+  },
+  {
+    "from": "/docs/en/popup/dynamixel_workbench_msgs_DynamixelState",
+    "to": "/docs/popup/dynamixel_workbench_msgs_DynamixelState"
+  },
+  {
+    "from": "/docs/en/popup/dynamixel_workbench_msgs_DynamixelStateList",
+    "to": "/docs/popup/dynamixel_workbench_msgs_DynamixelStateList"
+  },
+  {
+    "from": "/docs/en/popup/dynamixel_workbench_msgs_GetDynamixelInfo",
+    "to": "/docs/popup/dynamixel_workbench_msgs_GetDynamixelInfo"
+  },
+  {
+    "from": "/docs/en/popup/engineer/connect_controller_mobile",
+    "to": "/docs/popup/engineer/connect_controller_mobile"
+  },
+  {
+    "from": "/docs/en/popup/engineer/connect_controller_pc",
+    "to": "/docs/popup/engineer/connect_controller_pc"
+  },
+  {
+    "from": "/docs/en/popup/engineer/engineer_app_installation",
+    "to": "/docs/popup/engineer/engineer_app_installation"
+  },
+  {
+    "from": "/docs/en/popup/engineer/motion_download_mobile",
+    "to": "/docs/popup/engineer/motion_download_mobile"
+  },
+  {
+    "from": "/docs/en/popup/engineer/motion_download_pc",
+    "to": "/docs/popup/engineer/motion_download_pc"
+  },
+  {
+    "from": "/docs/en/popup/engineer/python_download_pc",
+    "to": "/docs/popup/engineer/python_download_pc"
+  },
+  {
+    "from": "/docs/en/popup/engineer/task_download_mobile",
+    "to": "/docs/popup/engineer/task_download_mobile"
+  },
+  {
+    "from": "/docs/en/popup/engineer/task_download_pc",
+    "to": "/docs/popup/engineer/task_download_pc"
+  },
+  {
+    "from": "/docs/en/popup/faq_protocol_compatibility_table",
+    "to": "/docs/popup/faq_protocol_compatibility_table"
+  },
+  {
+    "from": "/docs/en/popup/FootStepCommand.msg",
+    "to": "/docs/popup/FootStepCommand_msg"
+  },
+  {
+    "from": "/docs/en/popup/general/change_system_preference_osx",
+    "to": "/docs/popup/general/change_system_preference_osx"
+  },
+  {
+    "from": "/docs/en/popup/general/cm_100_download_task",
+    "to": "/docs/popup/general/cm_100_download_task"
+  },
+  {
+    "from": "/docs/en/popup/general/cm_150_download_task",
+    "to": "/docs/popup/general/cm_150_download_task"
+  },
+  {
+    "from": "/docs/en/popup/general/cm_530_download_task",
+    "to": "/docs/popup/general/cm_530_download_task"
+  },
+  {
+    "from": "/docs/en/popup/geometry_msgs_Point_msg",
+    "to": "/docs/popup/geometry_msgs_Point_msg"
+  },
+  {
+    "from": "/docs/en/popup/geometry_msgs_Pose_msg",
+    "to": "/docs/popup/geometry_msgs_Pose_msg"
+  },
+  {
+    "from": "/docs/en/popup/geometry_msgs_Pose2D_msg",
+    "to": "/docs/popup/geometry_msgs_Pose2D_msg"
+  },
+  {
+    "from": "/docs/en/popup/geometry_msgs_PoseStamped_msg",
+    "to": "/docs/popup/geometry_msgs_PoseStamped_msg"
+  },
+  {
+    "from": "/docs/en/popup/geometry_msgs_WrenchStamped_msg",
+    "to": "/docs/popup/geometry_msgs_WrenchStamped_msg"
+  },
+  {
+    "from": "/docs/en/popup/GetJointModule.srv",
+    "to": "/docs/popup/GetJointModule_srv"
+  },
+  {
+    "from": "/docs/en/popup/GetJointPose.srv",
+    "to": "/docs/popup/GetJointPose_srv"
+  },
+  {
+    "from": "/docs/en/popup/GetKinematicsPose.srv",
+    "to": "/docs/popup/GetKinematicsPose_srv"
+  },
+  {
+    "from": "/docs/en/popup/GetPresentJointOffsetData.srv",
+    "to": "/docs/popup/GetPresentJointOffsetData_srv"
+  },
+  {
+    "from": "/docs/en/popup/GetPresentJointOffsetData2.srv",
+    "to": "/docs/popup/GetPresentJointOffsetData2_srv"
+  },
+  {
+    "from": "/docs/en/popup/GetReferenceStepData.srv",
+    "to": "/docs/popup/GetReferenceStepData_srv"
+  },
+  {
+    "from": "/docs/en/popup/HeadJointPose.msg",
+    "to": "/docs/popup/HeadJointPose_msg"
+  },
+  {
+    "from": "/docs/en/popup/how_to_set_smoothing_filter",
+    "to": "/docs/popup/how_to_set_smoothing_filter"
+  },
+  {
+    "from": "/docs/en/popup/humanoid_nav_msgs_planfootsteps_srv",
+    "to": "/docs/popup/humanoid_nav_msgs_planfootsteps_srv"
+  },
+  {
+    "from": "/docs/en/popup/JointCtrlModule.msg",
+    "to": "/docs/popup/JointCtrlModule_msg"
+  },
+  {
+    "from": "/docs/en/popup/JointFeedBackGain.msg",
+    "to": "/docs/popup/JointFeedBackGain_msg"
+  },
+  {
+    "from": "/docs/en/popup/JointOffsetData.msg",
+    "to": "/docs/popup/JointOffsetData_msg"
+  },
+  {
+    "from": "/docs/en/popup/JointOffsetData2.msg",
+    "to": "/docs/popup/JointOffsetData2_msg"
+  },
+  {
+    "from": "/docs/en/popup/JointOffsetPositionData.msg",
+    "to": "/docs/popup/JointOffsetPositionData_msg"
+  },
+  {
+    "from": "/docs/en/popup/JointOffsetPositionData2.msg",
+    "to": "/docs/popup/JointOffsetPositionData2_msg"
+  },
+  {
+    "from": "/docs/en/popup/JointOverload.msg",
+    "to": "/docs/popup/JointOverload_msg"
+  },
+  {
+    "from": "/docs/en/popup/JointOverloadStatus.msg",
+    "to": "/docs/popup/JointOverloadStatus_msg"
+  },
+  {
+    "from": "/docs/en/popup/JointPose.msg",
+    "to": "/docs/popup/JointPose_msg"
+  },
+  {
+    "from": "/docs/en/popup/JointsOffsetPositionData.msg",
+    "to": "/docs/popup/JointsOffsetPositionData_msg"
+  },
+  {
+    "from": "/docs/en/popup/JointTorqueOnOff.msg",
+    "to": "/docs/popup/JointTorqueOnOff_msg"
+  },
+  {
+    "from": "/docs/en/popup/JointTorqueOnOff2.msg",
+    "to": "/docs/popup/JointTorqueOnOff2_msg"
+  },
+  {
+    "from": "/docs/en/popup/JointTorqueOnOffArray.msg",
+    "to": "/docs/popup/JointTorqueOnOffArray_msg"
+  },
+  {
+    "from": "/docs/en/popup/JointTorqueOnOffArray2.msg",
+    "to": "/docs/popup/JointTorqueOnOffArray2_msg"
+  },
+  {
+    "from": "/docs/en/popup/KinematicsPose.msg",
+    "to": "/docs/popup/KinematicsPose_msg"
+  },
+  {
+    "from": "/docs/en/popup/laser_assembler_AssembleScan2_srv",
+    "to": "/docs/popup/laser_assembler_AssembleScan2_srv"
+  },
+  {
+    "from": "/docs/en/popup/LoadOffset.srv",
+    "to": "/docs/popup/LoadOffset_srv"
+  },
+  {
+    "from": "/docs/en/popup/mini_example_cn",
+    "to": "/docs/popup/mini_example_cn"
+  },
+  {
+    "from": "/docs/en/popup/motion_module_tutorial_CMakeLists.txt",
+    "to": "/docs/popup/motion_module_tutorial_CMakeLists_txt"
+  },
+  {
+    "from": "/docs/en/popup/motion_module_tutorial_package.xml",
+    "to": "/docs/popup/motion_module_tutorial_package_xml"
+  },
+  {
+    "from": "/docs/en/popup/motion_module_tutorial.cpp",
+    "to": "/docs/popup/motion_module_tutorial_cpp"
+  },
+  {
+    "from": "/docs/en/popup/motion_module_tutorial.h",
+    "to": "/docs/popup/motion_module_tutorial_h"
+  },
+  {
+    "from": "/docs/en/popup/moveit_msgs_DisplayTrajectory_msg",
+    "to": "/docs/popup/moveit_msgs_DisplayTrajectory_msg"
+  },
+  {
+    "from": "/docs/en/popup/moveit_msgs_ExecuteTrajectory_action",
+    "to": "/docs/popup/moveit_msgs_ExecuteTrajectory_action"
+  },
+  {
+    "from": "/docs/en/popup/moveit_msgs_MoveGroup_action",
+    "to": "/docs/popup/moveit_msgs_MoveGroup_action"
+  },
+  {
+    "from": "/docs/en/popup/op3_base_module_ini_pose.yaml",
+    "to": "/docs/popup/op3_base_module_ini_pose_yaml"
+  },
+  {
+    "from": "/docs/en/popup/op3_FootStepArray.msg",
+    "to": "/docs/popup/op3_FootStepArray_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_FootStepCommand.msg",
+    "to": "/docs/popup/op3_FootStepCommand_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_GetJointPose.srv",
+    "to": "/docs/popup/op3_GetJointPose_srv"
+  },
+  {
+    "from": "/docs/en/popup/op3_GetKinematicsPose.srv",
+    "to": "/docs/popup/op3_GetKinematicsPose_srv"
+  },
+  {
+    "from": "/docs/en/popup/op3_GetPresentJointOffsetData.srv",
+    "to": "/docs/popup/op3_GetPresentJointOffsetData_srv"
+  },
+  {
+    "from": "/docs/en/popup/op3_GetPreviewMatrix.srv",
+    "to": "/docs/popup/op3_GetPreviewMatrix_srv"
+  },
+  {
+    "from": "/docs/en/popup/op3_GetWalkingParam.srv",
+    "to": "/docs/popup/op3_GetWalkingParam_srv"
+  },
+  {
+    "from": "/docs/en/popup/op3_IsRunning.srv",
+    "to": "/docs/popup/op3_IsRunning_srv"
+  },
+  {
+    "from": "/docs/en/popup/op3_JointOffsetData.msg",
+    "to": "/docs/popup/op3_JointOffsetData_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_JointOffsetPositionData.msg",
+    "to": "/docs/popup/op3_JointOffsetPositionData_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_JointPose.msg",
+    "to": "/docs/popup/op3_JointPose_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_JointTorqueOnOff.msg",
+    "to": "/docs/popup/op3_JointTorqueOnOff_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_JointTorqueOnOffArray.msg",
+    "to": "/docs/popup/op3_JointTorqueOnOffArray_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_KinematicsPose.msg",
+    "to": "/docs/popup/op3_KinematicsPose_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_online_WalkingParam.msg",
+    "to": "/docs/popup/op3_online_WalkingParam_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_PreviewRequest.msg",
+    "to": "/docs/popup/op3_PreviewRequest_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_PreviewResponse.msg",
+    "to": "/docs/popup/op3_PreviewResponse_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/(op3_tuning_module_msgs)GetPresentJointOffsetData.srv",
+    "to": "/docs/popup/op3_ros2/op3_tuning_module_msgs_GetPresentJointOffsetData_srv"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/(op3_tuning_module_msgs)JointOffsetData.msg",
+    "to": "/docs/popup/op3_ros2/op3_tuning_module_msgs_JointOffsetData_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/(op3_tuning_module_msgs)JointOffsetPositionData.msg",
+    "to": "/docs/popup/op3_ros2/op3_tuning_module_msgs_JointOffsetPositionData_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/(op3_tuning_module_msgs)JointTorqueOnOff.msg",
+    "to": "/docs/popup/op3_ros2/op3_tuning_module_msgs_JointTorqueOnOff_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/(op3_tuning_module_msgs)JointTorqueOnOffArray.msg",
+    "to": "/docs/popup/op3_ros2/op3_tuning_module_msgs_JointTorqueOnOffArray_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/ball_detector_CircleSetStamped_msg",
+    "to": "/docs/popup/op3_ros2/ball_detector_CircleSetStamped_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/geometry_msgs_Point_msg",
+    "to": "/docs/popup/op3_ros2/geometry_msgs_Point_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/geometry_msgs_Pose_msg",
+    "to": "/docs/popup/op3_ros2/geometry_msgs_Pose_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/geometry_msgs_PoseStamped_msg",
+    "to": "/docs/popup/op3_ros2/geometry_msgs_PoseStamped_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/LoadOffset.srv",
+    "to": "/docs/popup/op3_ros2/LoadOffset_srv"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/op3_GetJointPose.srv",
+    "to": "/docs/popup/op3_ros2/op3_GetJointPose_srv"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/op3_GetKinematicsPose.srv",
+    "to": "/docs/popup/op3_ros2/op3_GetKinematicsPose_srv"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/op3_GetPresentJointOffsetData.srv",
+    "to": "/docs/popup/op3_ros2/op3_GetPresentJointOffsetData_srv"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/op3_GetPreviewMatrix.srv",
+    "to": "/docs/popup/op3_ros2/op3_GetPreviewMatrix_srv"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/op3_GetWalkingParam.srv",
+    "to": "/docs/popup/op3_ros2/op3_GetWalkingParam_srv"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/op3_IsRunning.srv",
+    "to": "/docs/popup/op3_ros2/op3_IsRunning_srv"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/op3_JointOffsetData.msg",
+    "to": "/docs/popup/op3_ros2/op3_JointOffsetData_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/op3_JointOffsetPositionData.msg",
+    "to": "/docs/popup/op3_ros2/op3_JointOffsetPositionData_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/op3_JointTorqueOnOff.msg",
+    "to": "/docs/popup/op3_ros2/op3_JointTorqueOnOff_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/op3_JointTorqueOnOffArray.msg",
+    "to": "/docs/popup/op3_ros2/op3_JointTorqueOnOffArray_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/op3_SetWalkingParam.srv",
+    "to": "/docs/popup/op3_ros2/op3_SetWalkingParam_srv"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/op3_StartAction.msg",
+    "to": "/docs/popup/op3_ros2/op3_StartAction_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/op3_WalkingParam.msg",
+    "to": "/docs/popup/op3_ros2/op3_WalkingParam_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/sensor_msgs_CameraInfo_msg",
+    "to": "/docs/popup/op3_ros2/sensor_msgs_CameraInfo_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/sensor_msgs_Image",
+    "to": "/docs/popup/op3_ros2/sensor_msgs_Image"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/sensor_msgs_Imu_msg",
+    "to": "/docs/popup/op3_ros2/sensor_msgs_Imu_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/sensor_msgs_JointState_msg",
+    "to": "/docs/popup/op3_ros2/sensor_msgs_JointState_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/SetModule.srv",
+    "to": "/docs/popup/op3_ros2/SetModule_srv"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/StatusMsg.msg",
+    "to": "/docs/popup/op3_ros2/StatusMsg_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/std_msgs_bool_msg",
+    "to": "/docs/popup/op3_ros2/std_msgs_bool_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/std_msgs_Empty_msg",
+    "to": "/docs/popup/op3_ros2/std_msgs_Empty_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/std_msgs_Float64_msg",
+    "to": "/docs/popup/op3_ros2/std_msgs_Float64_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/std_msgs_Header",
+    "to": "/docs/popup/op3_ros2/std_msgs_Header"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/std_msgs_int32_message",
+    "to": "/docs/popup/op3_ros2/std_msgs_int32_message"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/std_msgs_Int32MultiArray_msg",
+    "to": "/docs/popup/op3_ros2/std_msgs_Int32MultiArray_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_ros2/std_msgs_string",
+    "to": "/docs/popup/op3_ros2/std_msgs_string"
+  },
+  {
+    "from": "/docs/en/popup/op3_SetWalkingParam.srv",
+    "to": "/docs/popup/op3_SetWalkingParam_srv"
+  },
+  {
+    "from": "/docs/en/popup/op3_StartAction.msg",
+    "to": "/docs/popup/op3_StartAction_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_Step2D.msg",
+    "to": "/docs/popup/op3_Step2D_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_Step2DArray.msg",
+    "to": "/docs/popup/op3_Step2DArray_msg"
+  },
+  {
+    "from": "/docs/en/popup/op3_walking_module_param.yaml",
+    "to": "/docs/popup/op3_walking_module_param_yaml"
+  },
+  {
+    "from": "/docs/en/popup/op3_WalkingParam.msg",
+    "to": "/docs/popup/op3_WalkingParam_msg"
+  },
+  {
+    "from": "/docs/en/popup/open_manipulator_coordinates",
+    "to": "/docs/popup/open_manipulator_coordinates"
+  },
+  {
+    "from": "/docs/en/popup/open_manipulator_msgs_GetJointPosition",
+    "to": "/docs/popup/open_manipulator_msgs_GetJointPosition"
+  },
+  {
+    "from": "/docs/en/popup/open_manipulator_msgs_GetKinematicsPose",
+    "to": "/docs/popup/open_manipulator_msgs_GetKinematicsPose"
+  },
+  {
+    "from": "/docs/en/popup/open_manipulator_msgs_JointPosition",
+    "to": "/docs/popup/open_manipulator_msgs_JointPosition"
+  },
+  {
+    "from": "/docs/en/popup/open_manipulator_msgs_KinematicsPose",
+    "to": "/docs/popup/open_manipulator_msgs_KinematicsPose"
+  },
+  {
+    "from": "/docs/en/popup/open_manipulator_msgs_OpenManipulatorState",
+    "to": "/docs/popup/open_manipulator_msgs_OpenManipulatorState"
+  },
+  {
+    "from": "/docs/en/popup/open_manipulator_msgs_SetActuatorState",
+    "to": "/docs/popup/open_manipulator_msgs_SetActuatorState"
+  },
+  {
+    "from": "/docs/en/popup/open_manipulator_msgs_SetDrawingTrajectory",
+    "to": "/docs/popup/open_manipulator_msgs_SetDrawingTrajectory"
+  },
+  {
+    "from": "/docs/en/popup/open_manipulator_msgs_SetJointPosition",
+    "to": "/docs/popup/open_manipulator_msgs_SetJointPosition"
+  },
+  {
+    "from": "/docs/en/popup/open_manipulator_msgs_SetKinematicsPose",
+    "to": "/docs/popup/open_manipulator_msgs_SetKinematicsPose"
+  },
+  {
+    "from": "/docs/en/popup/opencm904_ex_button",
+    "to": "/docs/popup/opencm904_ex_button"
+  },
+  {
+    "from": "/docs/en/popup/opencm904_ex_buzzer",
+    "to": "/docs/popup/opencm904_ex_buzzer"
+  },
+  {
+    "from": "/docs/en/popup/opencm904_ex_dynamixelworkbench",
+    "to": "/docs/popup/opencm904_ex_dynamixelworkbench"
+  },
+  {
+    "from": "/docs/en/popup/opencm904_ex_eeprom",
+    "to": "/docs/popup/opencm904_ex_eeprom"
+  },
+  {
+    "from": "/docs/en/popup/opencm904_ex_led",
+    "to": "/docs/popup/opencm904_ex_led"
+  },
+  {
+    "from": "/docs/en/popup/opencm904_ex_mpu6050dmp",
+    "to": "/docs/popup/opencm904_ex_mpu6050dmp"
+  },
+  {
+    "from": "/docs/en/popup/opencm904_ex_ms5540s",
+    "to": "/docs/popup/opencm904_ex_ms5540s"
+  },
+  {
+    "from": "/docs/en/popup/opencm904_ex_oled",
+    "to": "/docs/popup/opencm904_ex_oled"
+  },
+  {
+    "from": "/docs/en/popup/opencm904_ex_pwm",
+    "to": "/docs/popup/opencm904_ex_pwm"
+  },
+  {
+    "from": "/docs/en/popup/opencm904_ex_sdcard",
+    "to": "/docs/popup/opencm904_ex_sdcard"
+  },
+  {
+    "from": "/docs/en/popup/opencm904_ex_servo",
+    "to": "/docs/popup/opencm904_ex_servo"
+  },
+  {
+    "from": "/docs/en/popup/PoseXYZRPY.msg",
+    "to": "/docs/popup/PoseXYZRPY_msg"
+  },
+  {
+    "from": "/docs/en/popup/PoseZRPY.msg",
+    "to": "/docs/popup/PoseZRPY_msg"
+  },
+  {
+    "from": "/docs/en/popup/position_controller.yaml",
+    "to": "/docs/popup/position_controller_yaml"
+  },
+  {
+    "from": "/docs/en/popup/RemoveExistingStepData.srv",
+    "to": "/docs/popup/RemoveExistingStepData_srv"
+  },
+  {
+    "from": "/docs/en/popup/robotis_op3_gazebo_worlds_empty.world",
+    "to": "/docs/popup/robotis_op3_gazebo_worlds_empty_world"
+  },
+  {
+    "from": "/docs/en/popup/RobotPose.msg",
+    "to": "/docs/popup/RobotPose_msg"
+  },
+  {
+    "from": "/docs/en/popup/sensor_module_tutorial_CMakeLists.txt",
+    "to": "/docs/popup/sensor_module_tutorial_CMakeLists_txt"
+  },
+  {
+    "from": "/docs/en/popup/sensor_module_tutorial_package.xml",
+    "to": "/docs/popup/sensor_module_tutorial_package_xml"
+  },
+  {
+    "from": "/docs/en/popup/sensor_module_tutorial.cpp",
+    "to": "/docs/popup/sensor_module_tutorial_cpp"
+  },
+  {
+    "from": "/docs/en/popup/sensor_module_tutorial.h",
+    "to": "/docs/popup/sensor_module_tutorial_h"
+  },
+  {
+    "from": "/docs/en/popup/sensor_msgs_CameraInfo_msg",
+    "to": "/docs/popup/sensor_msgs_CameraInfo_msg"
+  },
+  {
+    "from": "/docs/en/popup/sensor_msgs_Image",
+    "to": "/docs/popup/sensor_msgs_Image"
+  },
+  {
+    "from": "/docs/en/popup/sensor_msgs_IMU_msg",
+    "to": "/docs/popup/sensor_msgs_IMU_msg"
+  },
+  {
+    "from": "/docs/en/popup/sensor_msgs_JointState_msg",
+    "to": "/docs/popup/sensor_msgs_JointState_msg"
+  },
+  {
+    "from": "/docs/en/popup/sensor_msgs_PointCloud2_msg",
+    "to": "/docs/popup/sensor_msgs_PointCloud2_msg"
+  },
+  {
+    "from": "/docs/en/popup/SetBalanceParam.srv",
+    "to": "/docs/popup/SetBalanceParam_srv"
+  },
+  {
+    "from": "/docs/en/popup/SetDampingBalanceParam.srv",
+    "to": "/docs/popup/SetDampingBalanceParam_srv"
+  },
+  {
+    "from": "/docs/en/popup/SetJointFeedBackGain.srv",
+    "to": "/docs/popup/SetJointFeedBackGain_srv"
+  },
+  {
+    "from": "/docs/en/popup/SetModule.srv",
+    "to": "/docs/popup/SetModule_srv"
+  },
+  {
+    "from": "/docs/en/popup/StartAction.msg",
+    "to": "/docs/popup/StartAction_msg"
+  },
+  {
+    "from": "/docs/en/popup/StartWalking.srv",
+    "to": "/docs/popup/StartWalking_srv"
+  },
+  {
+    "from": "/docs/en/popup/StatusMsg.msg",
+    "to": "/docs/popup/StatusMsg_msg"
+  },
+  {
+    "from": "/docs/en/popup/std_msgs_bool_msg",
+    "to": "/docs/popup/std_msgs_bool_msg"
+  },
+  {
+    "from": "/docs/en/popup/std_msgs_Empty_msg",
+    "to": "/docs/popup/std_msgs_Empty_msg"
+  },
+  {
+    "from": "/docs/en/popup/std_msgs_Float64_msg",
+    "to": "/docs/popup/std_msgs_Float64_msg"
+  },
+  {
+    "from": "/docs/en/popup/std_msgs_Header",
+    "to": "/docs/popup/std_msgs_Header"
+  },
+  {
+    "from": "/docs/en/popup/std_msgs_int32_message",
+    "to": "/docs/popup/std_msgs_int32_message"
+  },
+  {
+    "from": "/docs/en/popup/std_msgs_Int32MultiArray_msg",
+    "to": "/docs/popup/std_msgs_Int32MultiArray_msg"
+  },
+  {
+    "from": "/docs/en/popup/std_msgs_string",
+    "to": "/docs/popup/std_msgs_string"
+  },
+  {
+    "from": "/docs/en/popup/stem_example_cn",
+    "to": "/docs/popup/stem_example_cn"
+  },
+  {
+    "from": "/docs/en/popup/Step2D.msg",
+    "to": "/docs/popup/Step2D_msg"
+  },
+  {
+    "from": "/docs/en/popup/Step2DArray.msg",
+    "to": "/docs/popup/Step2DArray_msg"
+  },
+  {
+    "from": "/docs/en/popup/StepData.msg",
+    "to": "/docs/popup/StepData_msg"
+  },
+  {
+    "from": "/docs/en/popup/StepPositionData.msg",
+    "to": "/docs/popup/StepPositionData_msg"
+  },
+  {
+    "from": "/docs/en/popup/StepTimeData.msg",
+    "to": "/docs/popup/StepTimeData_msg"
+  },
+  {
+    "from": "/docs/en/popup/SyncWriteItem.msg",
+    "to": "/docs/popup/SyncWriteItem_msg"
+  },
+  {
+    "from": "/docs/en/popup/thormang_manager.cpp",
+    "to": "/docs/popup/thormang_manager_cpp"
+  },
+  {
+    "from": "/docs/en/popup/thormang3_manager.launch",
+    "to": "/docs/popup/thormang3_manager_launch"
+  },
+  {
+    "from": "/docs/en/popup/thormang3_sensors.launch",
+    "to": "/docs/popup/thormang3_sensors_launch"
+  },
+  {
+    "from": "/docs/en/popup/turtlebot3_ros2_sbc_setting",
+    "to": "/docs/popup/turtlebot3_ros2_sbc_setting"
+  },
+  {
+    "from": "/docs/en/popup/turtlebot3/joule_setup",
+    "to": "/docs/popup/turtlebot3/joule_setup"
+  },
+  {
+    "from": "/docs/en/popup/usb_driver_install",
+    "to": "/docs/popup/usb_driver_install"
+  },
+  {
+    "from": "/docs/en/popup/visualization_msgs_MarkerArray_msg",
+    "to": "/docs/popup/visualization_msgs_MarkerArray_msg"
+  },
+  {
+    "from": "/docs/en/popup/WalkingJointStatesStamped.msg",
+    "to": "/docs/popup/WalkingJointStatesStamped_msg"
+  },
+  {
+    "from": "/docs/en/popup/WriteControlTable.msg",
+    "to": "/docs/popup/WriteControlTable_msg"
+  },
+  {
     "from": "/docs/en/software",
     "to": "/docs/software"
   },
@@ -2334,5 +3306,53 @@
   {
     "from": "/docs/en/software/rplustask3/useful_tips",
     "to": "/docs/software/rplustask3/useful_tips"
+  },
+  {
+    "from": "/docs/kr/popup/apk_install",
+    "to": "/docs/popup/apk_install"
+  },
+  {
+    "from": "/docs/kr/popup/cable_compatibility",
+    "to": "/docs/popup/cable_compatibility"
+  },
+  {
+    "from": "/docs/kr/popup/engineer/connect_controller_mobile",
+    "to": "/docs/popup/engineer/connect_controller_mobile"
+  },
+  {
+    "from": "/docs/kr/popup/engineer/connect_controller_pc",
+    "to": "/docs/popup/engineer/connect_controller_pc"
+  },
+  {
+    "from": "/docs/kr/popup/engineer/engineer_app_installation",
+    "to": "/docs/popup/engineer/engineer_app_installation"
+  },
+  {
+    "from": "/docs/kr/popup/engineer/motion_download_mobile",
+    "to": "/docs/popup/engineer/motion_download_mobile"
+  },
+  {
+    "from": "/docs/kr/popup/engineer/motion_download_pc",
+    "to": "/docs/popup/engineer/motion_download_pc"
+  },
+  {
+    "from": "/docs/kr/popup/engineer/python_download_pc",
+    "to": "/docs/popup/engineer/python_download_pc"
+  },
+  {
+    "from": "/docs/kr/popup/engineer/task_download_mobile",
+    "to": "/docs/popup/engineer/task_download_mobile"
+  },
+  {
+    "from": "/docs/kr/popup/engineer/task_download_pc",
+    "to": "/docs/popup/engineer/task_download_pc"
+  },
+  {
+    "from": "/docs/kr/popup/faq_protocol_compatibility_table",
+    "to": "/docs/popup/faq_protocol_compatibility_table"
+  },
+  {
+    "from": "/docs/kr/popup/usb_driver_install",
+    "to": "/docs/popup/usb_driver_install"
   }
 ]
