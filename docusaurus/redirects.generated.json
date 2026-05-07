@@ -28,6 +28,54 @@
     "to": "/docs/dxl/dx/dx-117"
   },
   {
+    "from": "/docs/en/dxl/ex/ex-106+",
+    "to": "/docs/dxl/ex/ex-106+"
+  },
+  {
+    "from": "/docs/en/dxl/mx/mx-106",
+    "to": "/docs/dxl/mx/mx-106"
+  },
+  {
+    "from": "/docs/en/dxl/mx/mx-106-2",
+    "to": "/docs/dxl/mx/mx-106-2"
+  },
+  {
+    "from": "/docs/en/dxl/mx/mx-12w",
+    "to": "/docs/dxl/mx/mx-12w"
+  },
+  {
+    "from": "/docs/en/dxl/mx/mx-28",
+    "to": "/docs/dxl/mx/mx-28"
+  },
+  {
+    "from": "/docs/en/dxl/mx/mx-28-2",
+    "to": "/docs/dxl/mx/mx-28-2"
+  },
+  {
+    "from": "/docs/en/dxl/mx/mx-64",
+    "to": "/docs/dxl/mx/mx-64"
+  },
+  {
+    "from": "/docs/en/dxl/mx/mx-64-2",
+    "to": "/docs/dxl/mx/mx-64-2"
+  },
+  {
+    "from": "/docs/en/dxl/rx/rx-10",
+    "to": "/docs/dxl/rx/rx-10"
+  },
+  {
+    "from": "/docs/en/dxl/rx/rx-24f",
+    "to": "/docs/dxl/rx/rx-24f"
+  },
+  {
+    "from": "/docs/en/dxl/rx/rx-28",
+    "to": "/docs/dxl/rx/rx-28"
+  },
+  {
+    "from": "/docs/en/dxl/rx/rx-64",
+    "to": "/docs/dxl/rx/rx-64"
+  },
+  {
     "from": "/docs/en/edu",
     "to": "/docs/edu"
   },
