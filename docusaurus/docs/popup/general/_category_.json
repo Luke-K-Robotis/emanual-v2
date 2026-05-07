@@ -1,9 +1,8 @@
 {
   "label": "general",
   "collapsed": true,
-  "collapsible": true,
+  "collapsible": false,
   "link": {
     "type": "generated-index"
-  },
-  "className": "sidebar-hidden"
+  }
 }

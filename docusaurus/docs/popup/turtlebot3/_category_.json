@@ -1,9 +1,8 @@
 {
   "label": "turtlebot3",
   "collapsed": true,
-  "collapsible": true,
+  "collapsible": false,
   "link": {
     "type": "generated-index"
-  },
-  "className": "sidebar-hidden"
+  }
 }
