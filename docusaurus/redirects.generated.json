@@ -60,6 +60,90 @@
     "to": "/docs/dxl/mx/mx-64-2"
   },
   {
+    "from": "/docs/en/dxl/pro",
+    "to": "/docs/dxl/pro"
+  },
+  {
+    "from": "/docs/en/dxl/pro_h",
+    "to": "/docs/dxl/pro_h"
+  },
+  {
+    "from": "/docs/en/dxl/pro_l",
+    "to": "/docs/dxl/pro_l"
+  },
+  {
+    "from": "/docs/en/dxl/pro_m",
+    "to": "/docs/dxl/pro_m"
+  },
+  {
+    "from": "/docs/en/dxl/pro/h42-20-s300-r",
+    "to": "/docs/dxl/pro/h42-20-s300-r"
+  },
+  {
+    "from": "/docs/en/dxl/pro/h42-20-s300-ra",
+    "to": "/docs/dxl/pro/h42-20-s300-ra"
+  },
+  {
+    "from": "/docs/en/dxl/pro/h54-100-s500-r",
+    "to": "/docs/dxl/pro/h54-100-s500-r"
+  },
+  {
+    "from": "/docs/en/dxl/pro/h54-100-s500-ra",
+    "to": "/docs/dxl/pro/h54-100-s500-ra"
+  },
+  {
+    "from": "/docs/en/dxl/pro/h54-200-s500-r",
+    "to": "/docs/dxl/pro/h54-200-s500-r"
+  },
+  {
+    "from": "/docs/en/dxl/pro/h54-200-s500-ra",
+    "to": "/docs/dxl/pro/h54-200-s500-ra"
+  },
+  {
+    "from": "/docs/en/dxl/pro/l42-10-s300-r",
+    "to": "/docs/dxl/pro/l42-10-s300-r"
+  },
+  {
+    "from": "/docs/en/dxl/pro/l54-30-s400-r",
+    "to": "/docs/dxl/pro/l54-30-s400-r"
+  },
+  {
+    "from": "/docs/en/dxl/pro/l54-30-s500-r",
+    "to": "/docs/dxl/pro/l54-30-s500-r"
+  },
+  {
+    "from": "/docs/en/dxl/pro/l54-50-s290-r",
+    "to": "/docs/dxl/pro/l54-50-s290-r"
+  },
+  {
+    "from": "/docs/en/dxl/pro/l54-50-s500-r",
+    "to": "/docs/dxl/pro/l54-50-s500-r"
+  },
+  {
+    "from": "/docs/en/dxl/pro/m42-10-s260-r",
+    "to": "/docs/dxl/pro/m42-10-s260-r"
+  },
+  {
+    "from": "/docs/en/dxl/pro/m42-10-s260-ra",
+    "to": "/docs/dxl/pro/m42-10-s260-ra"
+  },
+  {
+    "from": "/docs/en/dxl/pro/m54-40-s250-r",
+    "to": "/docs/dxl/pro/m54-40-s250-r"
+  },
+  {
+    "from": "/docs/en/dxl/pro/m54-40-s250-ra",
+    "to": "/docs/dxl/pro/m54-40-s250-ra"
+  },
+  {
+    "from": "/docs/en/dxl/pro/m54-60-s250-r",
+    "to": "/docs/dxl/pro/m54-60-s250-r"
+  },
+  {
+    "from": "/docs/en/dxl/pro/m54-60-s250-ra",
+    "to": "/docs/dxl/pro/m54-60-s250-ra"
+  },
+  {
     "from": "/docs/en/dxl/rx/rx-10",
     "to": "/docs/dxl/rx/rx-10"
   },
