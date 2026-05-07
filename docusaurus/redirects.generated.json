@@ -448,6 +448,142 @@
     "to": "/docs/edu"
   },
   {
+    "from": "/docs/en/edu/bioloid/beginner",
+    "to": "/docs/edu/bioloid/beginner"
+  },
+  {
+    "from": "/docs/en/edu/bioloid/comprehensive",
+    "to": "/docs/edu/bioloid/comprehensive"
+  },
+  {
+    "from": "/docs/en/edu/bioloid/gp",
+    "to": "/docs/edu/bioloid/gp"
+  },
+  {
+    "from": "/docs/en/edu/bioloid/premium",
+    "to": "/docs/edu/bioloid/premium"
+  },
+  {
+    "from": "/docs/en/edu/bioloid/stem",
+    "to": "/docs/edu/bioloid/stem"
+  },
+  {
+    "from": "/docs/en/edu/dream/dream-a",
+    "to": "/docs/edu/dream/dream-a"
+  },
+  {
+    "from": "/docs/en/edu/dream/dream-b",
+    "to": "/docs/edu/dream/dream-b"
+  },
+  {
+    "from": "/docs/en/edu/dream/dream1-2",
+    "to": "/docs/edu/dream/dream1-2"
+  },
+  {
+    "from": "/docs/en/edu/dream/dream1-3",
+    "to": "/docs/edu/dream/dream1-3"
+  },
+  {
+    "from": "/docs/en/edu/dream/dream1-4",
+    "to": "/docs/edu/dream/dream1-4"
+  },
+  {
+    "from": "/docs/en/edu/dream/dream2-1",
+    "to": "/docs/edu/dream/dream2-1"
+  },
+  {
+    "from": "/docs/en/edu/dream/dream2-2",
+    "to": "/docs/edu/dream/dream2-2"
+  },
+  {
+    "from": "/docs/en/edu/dream/dream2-3",
+    "to": "/docs/edu/dream/dream2-3"
+  },
+  {
+    "from": "/docs/en/edu/dream/dream2-4",
+    "to": "/docs/edu/dream/dream2-4"
+  },
+  {
+    "from": "/docs/en/edu/dream/dream2-5",
+    "to": "/docs/edu/dream/dream2-5"
+  },
+  {
+    "from": "/docs/en/edu/dream/dream2-schoolset",
+    "to": "/docs/edu/dream/dream2-schoolset"
+  },
+  {
+    "from": "/docs/en/edu/engineer/kit1",
+    "to": "/docs/edu/engineer/kit1"
+  },
+  {
+    "from": "/docs/en/edu/engineer/kit2_advanced_course",
+    "to": "/docs/edu/engineer/kit2_advanced_course"
+  },
+  {
+    "from": "/docs/en/edu/engineer/kit2_introduction",
+    "to": "/docs/edu/engineer/kit2_introduction"
+  },
+  {
+    "from": "/docs/en/edu/engineer/kit2_quickstart",
+    "to": "/docs/edu/engineer/kit2_quickstart"
+  },
+  {
+    "from": "/docs/en/edu/engineer/kit2_reference",
+    "to": "/docs/edu/engineer/kit2_reference"
+  },
+  {
+    "from": "/docs/en/edu/ollo/bugkit",
+    "to": "/docs/edu/ollo/bugkit"
+  },
+  {
+    "from": "/docs/en/edu/ollo/explorer",
+    "to": "/docs/edu/ollo/explorer"
+  },
+  {
+    "from": "/docs/en/edu/ollo/inventor",
+    "to": "/docs/edu/ollo/inventor"
+  },
+  {
+    "from": "/docs/en/edu/play/play-300",
+    "to": "/docs/edu/play/play-300"
+  },
+  {
+    "from": "/docs/en/edu/play/play-600",
+    "to": "/docs/edu/play/play-600"
+  },
+  {
+    "from": "/docs/en/edu/play/play-700",
+    "to": "/docs/edu/play/play-700"
+  },
+  {
+    "from": "/docs/en/faq/cm_510_530_fuse",
+    "to": "/docs/faq/cm_510_530_fuse"
+  },
+  {
+    "from": "/docs/en/faq/download_task_code",
+    "to": "/docs/faq/download_task_code"
+  },
+  {
+    "from": "/docs/en/faq/faq_dynamixel",
+    "to": "/docs/faq/faq_dynamixel"
+  },
+  {
+    "from": "/docs/en/faq/faq_parts",
+    "to": "/docs/faq/faq_parts"
+  },
+  {
+    "from": "/docs/en/faq/faq_platform",
+    "to": "/docs/faq/faq_platform"
+  },
+  {
+    "from": "/docs/en/faq/faq_software",
+    "to": "/docs/faq/faq_software"
+  },
+  {
+    "from": "/docs/en/faq/faq_steam",
+    "to": "/docs/faq/faq_steam"
+  },
+  {
     "from": "/docs/en/parts",
     "to": "/docs/parts"
   },
