@@ -1,0 +1,234 @@
+---
+id: matlab
+title: "Library Setup (MATLAB)"
+sidebar_label: "MATLAB"
+sidebar_position: 6
+tags: [dynamixel_sdk, library_setup, matlab]
+---
+
+:::info
+
+한국어 번역 준비 중입니다. 아래는 영문 원본입니다.
+
+:::
+
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs groupId="library-setup-os" queryString>
+<TabItem value="linux" label="Linux" default>
+
+
+
+
+# Compiler and Builder
+![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/matlab.png)
+
+* [Download MATLAB for Linux](http://www.mathworks.com/index.html?s_tid=gn_loc_drop)
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/linux/library_file/a1.png)
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/linux/library_file/a2.png)
+
+# Function Reference
+* The function reference file is located in `[DynamixelSDK folder]/matlab/m_basic_function/`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/linux/library_file/2.png)
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/linux/library_file/3.png)
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/linux/library_file/1.png)
+
+# Building and Running the Sample Code
+DYNAMIXEL SDK example code for Python uses the library files(.so for Linux) built in C language.
+
+Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/c/build/[linuxXX]/libdxl_xYY_c.so` which should be built by its own source code.
+
+# Import libraries
+
+* Click `Set Path`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/linux/sample_code/1.png)
+
+* Click `Add with Subfolders...`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/linux/sample_code/2.png)
+
+* Select `[DynamixelSDK folder]/c/include`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/linux/sample_code/3.png)
+
+* Click `Add Folder...`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/linux/sample_code/4.png)
+
+* Select `[DynamixelSDK folder]/c/build/linux64`  
+  (for x86 platform, select `[DynamixelSDK folder]/c/build/linux32`)
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/linux/sample_code/5.png)
+
+
+# Import function reference
+
+* Click `Add with Subfolders...`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/linux/sample_code/6.png)
+
+* Select `[DynamixelSDK folder]/matlab`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/linux/sample_code/7.png)
+
+* Click `Save` and then `Close`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/linux/sample_code/8.png)
+
+
+# Run example
+
+* Make the port be able to be used
+
+```bash
+$ sudo chmod a+rw /dev/ttyUSB0
+```
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/linux/sample_code/16.png)
+
+* Click `Browse for folder`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/linux/sample_code/9.png)
+
+* Select `[DynamixelSDK folder]/matlab`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/linux/sample_code/10.png)
+
+* Double click `read_write.m`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/linux/sample_code/11.png)
+
+* Adjust the values surrounded with red circle to proper value as shown in the comment. Then click `Run` in the Eclipse toolbox above. 
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/linux/sample_code/12.png)
+
+* Console window will show the results 
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/linux/sample_code/13.png)
+
+</TabItem>
+<TabItem value="windows" label="Windows">
+
+
+
+
+# Compiler and Builder
+![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/matlab.png)
+
+* [Download MATLAB for Windows](http://www.mathworks.com/index.html?s_tid=gn_loc_drop)
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/windows/library_file/a1.png)
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/windows/library_file/a2.png)
+
+# Function Reference
+:::warning
+
+**WARNING**:
+When some error that are related with `.dll file version is higher than the MATLAB's version` is appeared, the `.dll` file should be rebuilt in lower version Visual Studio.
+
+:::
+
+
+
+* The function reference file is located in `[DynamixelSDK folder]/matlab/m_basic_function/`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/windows/library_file/2.png)
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/windows/library_file/3.png)
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/windows/library_file/1.png)
+
+
+# Building and Running the Sample Code
+DYNAMIXEL SDK example code for MATLAB uses the library files(.dll for Windows) built in C language.
+
+Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/c/build/[winXX]/output/dxl_xYY_c.dll` which were built by its own source code.
+
+# Import libraries
+
+* Click `Set Path`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/windows/sample_code/1.png)
+
+* Click `Add with Subfolders...`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/windows/sample_code/2.png)
+
+* Select `[DynamixelSDK folder]/c/include`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/windows/sample_code/3.png)
+
+* Click `Add Folder...`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/windows/sample_code/4.png)
+
+* Select `[DynamixelSDK folder]/c/build/win32/output`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/windows/sample_code/5.png)
+
+
+# Import function reference
+
+* Click `Add with Subfolders...`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/windows/sample_code/6.png)
+
+* Select `[DynamixelSDK folder]/matlab`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/windows/sample_code/7.png)
+
+* Click `Save` and then `Close`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/windows/sample_code/8.png)
+
+
+# Run example
+
+* Click `Browse for folder`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/windows/sample_code/9.png)
+
+* Select `[DynamixelSDK folder]/matlab`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/windows/sample_code/10.png)
+
+* Double click `read_write.m`
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/windows/sample_code/11.png)
+
+* Adjust the values surrounded with red circle to proper value as shown in the comment. Then click `Run` in the Eclipse toolbox above.
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/windows/sample_code/13.png)
+
+* Console window will show the results
+
+  ![](/img/software/dynamixel/dynamixel_sdk/library_setup/matlab/windows/sample_code/14.png)
+
+</TabItem>
+<TabItem value="mac" label="Mac">
+
+
+
+
+
+:::info
+
+**Maintenance is in progress. We apologize for your inconvenience. The manual is available in the near future.**
+
+:::
+
+
+
+
+</TabItem>
+</Tabs>
+

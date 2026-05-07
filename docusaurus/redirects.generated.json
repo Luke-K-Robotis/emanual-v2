@@ -1052,6 +1052,254 @@
     "to": "/docs/software"
   },
   {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/c/c_groupbulkread",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/c/c_groupbulkread"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/c/c_groupbulkwrite",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/c/c_groupbulkwrite"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/c/c_groupsyncread",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/c/c_groupsyncread"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/c/c_groupsyncwrite",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/c/c_groupsyncwrite"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/c/c_packethandler",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/c/c_packethandler"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandler",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandler"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_groupbulkread",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_groupbulkread"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_groupbulkwrite",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_groupbulkwrite"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_groupsyncread",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_groupsyncread"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_groupsyncwrite",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_groupsyncwrite"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_packethandler",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_packethandler"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_porthandler",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_porthandler"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/csharp/csharp_groupbulkread",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/csharp/csharp_groupbulkread"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/csharp/csharp_groupbulkwrite",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/csharp/csharp_groupbulkwrite"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/csharp/csharp_groupsyncread",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/csharp/csharp_groupsyncread"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/csharp/csharp_groupsyncwrite",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/csharp/csharp_groupsyncwrite"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/csharp/csharp_packethandler",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/csharp/csharp_packethandler"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/csharp/csharp_porthandler",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/csharp/csharp_porthandler"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/java/java_groupbulkread",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/java/java_groupbulkread"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/java/java_groupbulkwrite",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/java/java_groupbulkwrite"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/java/java_groupsyncread",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/java/java_groupsyncread"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/java/java_groupsyncwrite",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/java/java_groupsyncwrite"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/java/java_packethandler",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/java/java_packethandler"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/java/java_porthandler",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/java/java_porthandler"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/labview/labview_groupbulkread",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/labview/labview_groupbulkread"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/labview/labview_groupbulkwrite",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/labview/labview_groupbulkwrite"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/labview/labview_groupsyncread",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/labview/labview_groupsyncread"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/labview/labview_groupsyncwrite",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/labview/labview_groupsyncwrite"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/labview/labview_packethandler",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/labview/labview_packethandler"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/labview/labview_porthandler",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/labview/labview_porthandler"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/matlab/matlab_groupbulkread",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/matlab/matlab_groupbulkread"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/matlab/matlab_groupbulkwrite",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/matlab/matlab_groupbulkwrite"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/matlab/matlab_groupsyncread",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/matlab/matlab_groupsyncread"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/matlab/matlab_groupsyncwrite",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/matlab/matlab_groupsyncwrite"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/matlab/matlab_packethandler",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/matlab/matlab_packethandler"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/matlab/matlab_porthandler",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/matlab/matlab_porthandler"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/python/python_groupbulkread",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/python/python_groupbulkread"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/python/python_groupbulkwrite",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/python/python_groupbulkwrite"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/python/python_groupsyncread",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/python/python_groupsyncread"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/python/python_groupsyncwrite",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/python/python_groupsyncwrite"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/python/python_packethandler",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/python/python_packethandler"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/api_reference/python/python_porthandler",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/api_reference/python/python_porthandler"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/basic_read_write_tutorial",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/basic_read_write_tutorial"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/basic_read_write_tutorial/basic_read_write_tutorial_cpp",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/basic_read_write_tutorial/cpp"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/basic_read_write_tutorial/basic_read_write_tutorial_python",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/basic_read_write_tutorial/python"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial/bulk_read_write_tutorial_cpp",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial/cpp"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial/bulk_read_write_tutorial_python",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial/python"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/device_setup",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/device_setup"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/download",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/download"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/faq",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/faq"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/library_setup",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/library_setup"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/library_setup/c",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/library_setup/c"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/library_setup/cpp",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/library_setup/cpp"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/library_setup/csharp",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/library_setup/csharp"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/library_setup/java",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/library_setup/java"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/library_setup/labview",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/library_setup/labview"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/library_setup/matlab",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/library_setup/matlab"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/library_setup/python",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/library_setup/python"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/overview",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/overview"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/quick_start_guide",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/quick_start_guide"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/quick_start_video",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/quick_start_video"
+  },
+  {
     "from": "/docs/en/software/dynamixel/dynamixel_sdk/sample_code/c_broadcast_ping_protocol_2_0",
     "to": "/docs/software/dynamixel/dynamixel_sdk/sample_code/c/broadcast_ping_protocol_2_0"
   },
@@ -1534,5 +1782,17 @@
   {
     "from": "/docs/en/software/dynamixel/dynamixel_sdk/sample_code/python_sync_write_protocol_1_0",
     "to": "/docs/software/dynamixel/dynamixel_sdk/sample_code/python/sync_write_protocol_1_0"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/sync_read_write_tutorial",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/sync_read_write_tutorial"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/sync_read_write_tutorial_cpp",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/cpp"
+  },
+  {
+    "from": "/docs/en/software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/sync_read_write_tutorial_python",
+    "to": "/docs/software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/python"
   }
 ]

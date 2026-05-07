@@ -86,6 +86,20 @@ const PERMALINK_OVERRIDES = {
   // DYNAMIXEL SDK Sample Code: 원본 source는 /sample_code/<lang>_<example>/ 단일 슬러그였지만
   // 출력은 /sample_code/<lang>/<example> 폴더 구조로 분리됨.
   // 패턴 매핑은 toDocusaurusUrl() 의 후처리에서 처리.
+  // DYNAMIXEL SDK tutorial leaf: 원본은 `<kind>_tutorial/<kind>_tutorial_<lang>` 였지만
+  // 출력은 `<kind>_tutorial/<lang>` 으로 단순화.
+  '/docs/en/software/dynamixel/dynamixel_sdk/basic_read_write_tutorial/basic_read_write_tutorial_cpp':
+    '/docs/software/dynamixel/dynamixel_sdk/basic_read_write_tutorial/cpp',
+  '/docs/en/software/dynamixel/dynamixel_sdk/basic_read_write_tutorial/basic_read_write_tutorial_python':
+    '/docs/software/dynamixel/dynamixel_sdk/basic_read_write_tutorial/python',
+  '/docs/en/software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial/bulk_read_write_tutorial_cpp':
+    '/docs/software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial/cpp',
+  '/docs/en/software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial/bulk_read_write_tutorial_python':
+    '/docs/software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial/python',
+  '/docs/en/software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/sync_read_write_tutorial_cpp':
+    '/docs/software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/cpp',
+  '/docs/en/software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/sync_read_write_tutorial_python':
+    '/docs/software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/python',
 };
 
 /** 원본 permalink → Docusaurus URL */
