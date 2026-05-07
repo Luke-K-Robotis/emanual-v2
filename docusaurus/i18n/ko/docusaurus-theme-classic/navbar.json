@@ -4,27 +4,27 @@
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "ROBOTIS Logo",
+    "message": "ROBOTIS 로고",
     "description": "The alt text of navbar logo"
   },
   "item.label.DYNAMIXEL": {
-    "message": "DYNAMIXEL",
+    "message": "다이나믹셀",
     "description": "Navbar item with label DYNAMIXEL"
   },
   "item.label.Platform": {
-    "message": "Platform",
+    "message": "다이나믹셀 시스템",
     "description": "Navbar item with label Platform"
   },
   "item.label.Software": {
-    "message": "Software",
+    "message": "소프트웨어",
     "description": "Navbar item with label Software"
   },
   "item.label.Parts": {
-    "message": "Parts",
+    "message": "부품",
     "description": "Navbar item with label Parts"
   },
   "item.label.Edu": {
-    "message": "Edu",
+    "message": "교육용 키트",
     "description": "Navbar item with label Edu"
   },
   "item.label.FAQ": {

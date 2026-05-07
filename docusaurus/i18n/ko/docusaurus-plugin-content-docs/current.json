@@ -4,7 +4,23 @@
     "description": "The label for version current"
   },
   "sidebar.dxlSidebar.category.AX Series": {
-    "message": "AX Series",
+    "message": "AX 시리즈",
     "description": "The label for category 'AX Series' in sidebar 'dxlSidebar'"
+  },
+  "sidebar.dxlSidebar.category.MX Series": {
+    "message": "MX 시리즈",
+    "description": "The label for category 'MX Series' in sidebar 'dxlSidebar'"
+  },
+  "sidebar.dxlSidebar.category.RX Series": {
+    "message": "RX 시리즈",
+    "description": "The label for category 'RX Series' in sidebar 'dxlSidebar'"
+  },
+  "sidebar.dxlSidebar.category.EX Series": {
+    "message": "EX 시리즈",
+    "description": "The label for category 'EX Series' in sidebar 'dxlSidebar'"
+  },
+  "sidebar.dxlSidebar.category.DX Series": {
+    "message": "DX 시리즈",
+    "description": "The label for category 'DX Series' in sidebar 'dxlSidebar'"
   }
 }

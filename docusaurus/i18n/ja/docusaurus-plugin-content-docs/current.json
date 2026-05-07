@@ -6,5 +6,21 @@
   "sidebar.dxlSidebar.category.AX Series": {
     "message": "AX Series",
     "description": "The label for category 'AX Series' in sidebar 'dxlSidebar'"
+  },
+  "sidebar.dxlSidebar.category.MX Series": {
+    "message": "MX Series",
+    "description": "The label for category 'MX Series' in sidebar 'dxlSidebar'"
+  },
+  "sidebar.dxlSidebar.category.RX Series": {
+    "message": "RX Series",
+    "description": "The label for category 'RX Series' in sidebar 'dxlSidebar'"
+  },
+  "sidebar.dxlSidebar.category.EX Series": {
+    "message": "EX Series",
+    "description": "The label for category 'EX Series' in sidebar 'dxlSidebar'"
+  },
+  "sidebar.dxlSidebar.category.DX Series": {
+    "message": "DX Series",
+    "description": "The label for category 'DX Series' in sidebar 'dxlSidebar'"
   }
 }
