@@ -11,7 +11,7 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://emanual.robotis.com',
+  url: 'https://docs.robotis.com',
   baseUrl: '/',
 
   organizationName: 'Luke-K-Robotis',
