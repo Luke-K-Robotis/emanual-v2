@@ -456,6 +456,170 @@
     "to": "/docs/platform"
   },
   {
+    "from": "/docs/en/platform/turtlebot3/additional_sensors",
+    "to": "/docs/platform/turtlebot3/additional_sensors"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/appendix_dynamixel",
+    "to": "/docs/platform/turtlebot3/appendix_dynamixel"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/appendix_lds_01",
+    "to": "/docs/platform/turtlebot3/appendix_lds_01"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/appendix_lds_02",
+    "to": "/docs/platform/turtlebot3/appendix_lds_02"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/appendix_lds_03",
+    "to": "/docs/platform/turtlebot3/appendix_lds_03"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/appendix_opencr1_0",
+    "to": "/docs/platform/turtlebot3/appendix_opencr1_0"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/appendix_raspi_cam",
+    "to": "/docs/platform/turtlebot3/appendix_raspi_cam"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/appendix_realsense",
+    "to": "/docs/platform/turtlebot3/appendix_realsense"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/appendixes",
+    "to": "/docs/platform/turtlebot3/appendixes"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/applications",
+    "to": "/docs/platform/turtlebot3/applications"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/autonomous_driving",
+    "to": "/docs/platform/turtlebot3/autonomous_driving"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/autonomous_driving_autorace",
+    "to": "/docs/platform/turtlebot3/autonomous_driving_autorace"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/basic_examples",
+    "to": "/docs/platform/turtlebot3/basic_examples"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/basic_operation",
+    "to": "/docs/platform/turtlebot3/basic_operation"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/bringup",
+    "to": "/docs/platform/turtlebot3/bringup"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/challenges",
+    "to": "/docs/platform/turtlebot3/challenges"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/compatible_devices",
+    "to": "/docs/platform/turtlebot3/compatible_devices"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/contact_us",
+    "to": "/docs/platform/turtlebot3/contact_us"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/fakenode_simulation",
+    "to": "/docs/platform/turtlebot3/fakenode_simulation"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/faq",
+    "to": "/docs/platform/turtlebot3/faq"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/features",
+    "to": "/docs/platform/turtlebot3/features"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/hardware_setup",
+    "to": "/docs/platform/turtlebot3/hardware_setup"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/home_service_challenge",
+    "to": "/docs/platform/turtlebot3/home_service_challenge"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/learn",
+    "to": "/docs/platform/turtlebot3/learn"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/locomotion",
+    "to": "/docs/platform/turtlebot3/locomotion"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/machine_learning",
+    "to": "/docs/platform/turtlebot3/machine_learning"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/manipulation",
+    "to": "/docs/platform/turtlebot3/manipulation"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/nav_simulation",
+    "to": "/docs/platform/turtlebot3/nav_simulation"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/navigation",
+    "to": "/docs/platform/turtlebot3/navigation"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/opencr_setup",
+    "to": "/docs/platform/turtlebot3/opencr_setup"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/opensource",
+    "to": "/docs/platform/turtlebot3/opensource"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/other_ros_versions",
+    "to": "/docs/platform/turtlebot3/other_ros_versions"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/overview",
+    "to": "/docs/platform/turtlebot3/overview"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/projects",
+    "to": "/docs/platform/turtlebot3/projects"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/sbc_setup",
+    "to": "/docs/platform/turtlebot3/sbc_setup"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/simulation",
+    "to": "/docs/platform/turtlebot3/simulation"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/slam",
+    "to": "/docs/platform/turtlebot3/slam"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/slam_simulation",
+    "to": "/docs/platform/turtlebot3/slam_simulation"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/standalone_gazebo_simulation",
+    "to": "/docs/platform/turtlebot3/standalone_gazebo_simulation"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/teleoperation",
+    "to": "/docs/platform/turtlebot3/teleoperation"
+  },
+  {
+    "from": "/docs/en/platform/turtlebot3/videos",
+    "to": "/docs/platform/turtlebot3/videos"
+  },
+  {
     "from": "/docs/en/software",
     "to": "/docs/software"
   }

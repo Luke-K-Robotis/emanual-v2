@@ -177,11 +177,11 @@ function injectIntoMdx(mdxPath, headings) {
   return { changed: true, injected, alreadyHadId, unmatched };
 }
 
-function processFile(stem) {
+function processFile(stem, sourceEnPath, sourceKrPath) {
   const r = { stem, en: null, ko: null };
 
   // en
-  const sourceEn = path.join(SOURCE_EN, `${stem}.md`);
+  const sourceEn = sourceEnPath || path.join(SOURCE_EN, `${stem}.md`);
   const mdxEn = path.join(OUT_EN, `${stem}.mdx`);
   if (fs.existsSync(sourceEn) && fs.existsSync(mdxEn)) {
     const h = extractHeadingAnchors(sourceEn);
@@ -189,7 +189,7 @@ function processFile(stem) {
   }
 
   // ko
-  const sourceKr = path.join(SOURCE_KR, `${stem}.md`);
+  const sourceKr = sourceKrPath || path.join(SOURCE_KR, `${stem}.md`);
   const mdxKo = path.join(OUT_KO, `${stem}.mdx`);
   if (fs.existsSync(sourceKr) && fs.existsSync(mdxKo)) {
     const h = extractHeadingAnchors(sourceKr);
@@ -199,19 +199,49 @@ function processFile(stem) {
   return r;
 }
 
+/** 재귀적으로 .md 파일을 찾아 stem 매핑 생성 (서브디렉터리 포함) */
+function collectStemsRecursive(rootDir) {
+  const map = new Map(); // stem (basename without .md) → fullPath
+  if (!fs.existsSync(rootDir)) return map;
+  function walk(dir) {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) walk(full);
+      else if (entry.isFile() && entry.name.endsWith('.md')) {
+        const stem = entry.name.replace(/\.md$/, '');
+        // first wins
+        if (!map.has(stem)) map.set(stem, full);
+      }
+    }
+  }
+  walk(rootDir);
+  return map;
+}
+
 function main() {
   if (!fs.existsSync(SOURCE_EN)) {
     console.error(`source not found: ${SOURCE_EN}`);
     process.exit(1);
   }
-  const stems = fs
+  // 출력 mdx 파일들을 기준으로 stems 결정 (변환 스크립트가 출력한 파일들이 진실)
+  const mdxStems = fs.existsSync(OUT_EN)
+    ? fs.readdirSync(OUT_EN).filter((f) => f.endsWith('.mdx')).map((f) => f.replace(/\.mdx$/, ''))
+    : [];
+
+  // 원본은 서브디렉터리 가능 → 재귀 인덱스
+  const enIndex = collectStemsRecursive(SOURCE_EN);
+  const krIndex = collectStemsRecursive(SOURCE_KR);
+
+  // 루트 .md 파일만 있을 때를 대비해 평면 stems도 포함
+  const flatStems = fs
     .readdirSync(SOURCE_EN)
     .filter((f) => f.endsWith('.md'))
     .map((f) => f.replace(/\.md$/, ''));
+  const stems = mdxStems.length > 0 ? mdxStems : flatStems;
 
   let total = { injected: 0, alreadyHadId: 0, unmatched: 0, files: 0 };
   for (const stem of stems) {
-    const r = processFile(stem);
+    const r = processFile(stem, enIndex.get(stem), krIndex.get(stem));
     if (!r.en && !r.ko) continue;
     total.files++;
 
