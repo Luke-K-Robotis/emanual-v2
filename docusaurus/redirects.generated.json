@@ -60,6 +60,34 @@
     "to": "/docs/dxl/mx/mx-64-2"
   },
   {
+    "from": "/docs/en/dxl/p",
+    "to": "/docs/dxl/p"
+  },
+  {
+    "from": "/docs/en/dxl/p/ph42-020-s300-r",
+    "to": "/docs/dxl/p/ph42-020-s300-r"
+  },
+  {
+    "from": "/docs/en/dxl/p/ph54-100-s500-r",
+    "to": "/docs/dxl/p/ph54-100-s500-r"
+  },
+  {
+    "from": "/docs/en/dxl/p/ph54-200-s500-r",
+    "to": "/docs/dxl/p/ph54-200-s500-r"
+  },
+  {
+    "from": "/docs/en/dxl/p/pm42-010-s260-r",
+    "to": "/docs/dxl/p/pm42-010-s260-r"
+  },
+  {
+    "from": "/docs/en/dxl/p/pm54-040-s250-r",
+    "to": "/docs/dxl/p/pm54-040-s250-r"
+  },
+  {
+    "from": "/docs/en/dxl/p/pm54-060-s250-r",
+    "to": "/docs/dxl/p/pm54-060-s250-r"
+  },
+  {
     "from": "/docs/en/dxl/pro",
     "to": "/docs/dxl/pro"
   },
@@ -306,6 +334,58 @@
   {
     "from": "/docs/en/dxl/x/xw540-t260",
     "to": "/docs/dxl/x/xw540-t260"
+  },
+  {
+    "from": "/docs/en/dxl/y",
+    "to": "/docs/dxl/y"
+  },
+  {
+    "from": "/docs/en/dxl/y/ym070-210-a051-rh",
+    "to": "/docs/dxl/y/ym070-210-a051-rh"
+  },
+  {
+    "from": "/docs/en/dxl/y/ym070-210-a099-rh",
+    "to": "/docs/dxl/y/ym070-210-a099-rh"
+  },
+  {
+    "from": "/docs/en/dxl/y/ym070-210-b001-rh",
+    "to": "/docs/dxl/y/ym070-210-b001-rh"
+  },
+  {
+    "from": "/docs/en/dxl/y/ym070-210-m001-rh",
+    "to": "/docs/dxl/y/ym070-210-m001-rh"
+  },
+  {
+    "from": "/docs/en/dxl/y/ym070-210-r051-rh",
+    "to": "/docs/dxl/y/ym070-210-r051-rh"
+  },
+  {
+    "from": "/docs/en/dxl/y/ym070-210-r099-rh",
+    "to": "/docs/dxl/y/ym070-210-r099-rh"
+  },
+  {
+    "from": "/docs/en/dxl/y/ym080-230-a051-rh",
+    "to": "/docs/dxl/y/ym080-230-a051-rh"
+  },
+  {
+    "from": "/docs/en/dxl/y/ym080-230-a099-rh",
+    "to": "/docs/dxl/y/ym080-230-a099-rh"
+  },
+  {
+    "from": "/docs/en/dxl/y/ym080-230-b001-rh",
+    "to": "/docs/dxl/y/ym080-230-b001-rh"
+  },
+  {
+    "from": "/docs/en/dxl/y/ym080-230-m001-rh",
+    "to": "/docs/dxl/y/ym080-230-m001-rh"
+  },
+  {
+    "from": "/docs/en/dxl/y/ym080-230-r051-rh",
+    "to": "/docs/dxl/y/ym080-230-r051-rh"
+  },
+  {
+    "from": "/docs/en/dxl/y/ym080-230-r099-rh",
+    "to": "/docs/dxl/y/ym080-230-r099-rh"
   },
   {
     "from": "/docs/en/edu",
