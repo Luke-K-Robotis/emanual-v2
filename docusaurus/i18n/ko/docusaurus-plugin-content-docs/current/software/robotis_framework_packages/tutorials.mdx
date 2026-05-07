@@ -1056,14 +1056,14 @@ Each line consists of seven field data as shown below and they describe properti
 control_cycle = 8   # milliseconds
 
 [ port info ]
-# PORT NAME  | BAUDRATE | DEFAULT JOINT
+# PORT NAME | BAUDRATE | DEFAULT JOINT
 /dev/ttyUSB0 | 2000000  | r_arm_sh_p1
 /dev/ttyUSB1 | 2000000  | l_arm_sh_p1
 /dev/ttyUSB2 | 2000000  | r_leg_hip_y
 /dev/ttyUSB3 | 2000000  | l_leg_hip_y
 
 [ device info ]
-# TYPE    | PORT NAME    | ID  | MODEL          | PROTOCOL | DEV NAME     | BULK READ ITEMS
+# TYPE | PORT NAME | ID | MODEL | PROTOCOL | DEV NAME | BULK READ ITEMS
 dynamixel | /dev/ttyUSB0 | 1   | H54-100-S500-R | 2.0      | r_arm_sh_p1  | present_position, present_voltage
 dynamixel | /dev/ttyUSB1 | 2   | H54-100-S500-R | 2.0      | l_arm_sh_p1  | present_position, present_voltage
 dynamixel | /dev/ttyUSB0 | 3   | H54-100-S500-R | 2.0      | r_arm_sh_r   | present_position, present_voltage
@@ -1207,7 +1207,7 @@ init_pose_for_offset_tuner:
 ### Launch
 Create the `.launch` file to pass the configuration file paths as parameters when running the Robot Manager.
 
-#### `.launch` file  
+#### `.launch` file
 
 ```xml
 <?xml version="1.0" ?>

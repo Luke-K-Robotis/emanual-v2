@@ -194,7 +194,7 @@ Status Packet은 장치(Device)가 Main Controller로 보내는 응답 패킷. E
 |:--------:|:--------:|:--------:|:--------:|:---------:|:--------:|:--------:|:-----------:|:-----------------:|:-------:|:-----:|:-------:|:-----:|:-----:|
 |   0xFF   |   0xFF   |   0xFD   |   0x00   |    ID     |  Len_L   |  Len_H   | Instruction | **Error** | Param 1 |  ...  | Param N | CRC_L | CRC_H |
 
-## Instruction 
+## Instruction
 Status Packet의 Instruction은 0x55 (Status Instruction: 0x55) 로 고정
 
 ## Error
@@ -217,7 +217,7 @@ Instruction Packet 의 처리 결과를 나타냄
 |     0x06     | Data Limit Error  | 해당 Address 에 쓰려는 Data 가 Limit 값을 벗어난 경우                                                                                                                                                |
 |     0x07     | Access Error      | Read Only 혹은 정의되지 않은 Address 에 값을 쓰려고 한 경우<br />Write Only 혹은 정의되지 않은 Address 에 값을 읽으려고 한 경우<br />Torque Enable(ROM Lock) 상태에서 ROM 영역에 값을 쓰려고 한 경우 |
 
-## Parameters 
+## Parameters
 1. Instruction의 보조 데이터 필드로써, Instruction 마다 용도가 다름.
 2. 음수 데이터의 표현 방법 : 제품별로 차이가 있으므로, 해당 제품의 e-Manual을 참고 할 것.
 
@@ -787,7 +787,7 @@ Instruction Packet 의 처리 결과를 나타냄
 
 ### 예제
 
-#### 예제 설명 
+#### 예제 설명
 
 - ID3(XC330-T288) : Present Position(132, 0x0084, 4[byte])이 166(0x000000A6)인 경우
 - ID7(XC330-T288) : Present Position(132, 0x0084, 4[byte])이 2,079(0x0000081F)인 경우

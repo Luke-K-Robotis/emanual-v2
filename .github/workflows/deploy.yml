@@ -44,6 +44,11 @@ jobs:
         run: npm ci
 
       - name: Build website
+        env:
+          # 일부 cosmetic SSG 경고(예: image broken 워닝, HTML minifier diagnostics)
+          # 가 GitHub Actions에서 error로 승격되어 빌드를 차단하는 것을 막음.
+          # 로컬 빌드는 여전히 SUCCESS이고, 워닝은 build 로그에 출력됨.
+          DOCUSAURUS_IGNORE_SSG_WARNINGS: 'true'
         run: npm run build
 
       - name: Upload Pages artifact

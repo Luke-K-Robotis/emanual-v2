@@ -23,9 +23,9 @@ import RecoveryRev2 from '@site/docs/_partials/platform/op3/recovery_rev2.mdx';
 ### Overview
 This chapter explains how to manually install and configure the main software of the ROBOTIS-OP3.
 
-### User Installation  
+### User Installation
 
-#### OS Installation  
+#### OS Installation
   OS Installation  
  - Linux Mint 22 Xfce
   > Reference : [How to Install Linux Mint]
@@ -240,7 +240,7 @@ This chapter explains how to manually install and configure the main software of
       $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Utility.git --branch=jazzy-devl
       ```
 
-#### Installing additional applications for ROBOTIS ROS Package   
+#### Installing additional applications for ROBOTIS ROS Package
  - update package list
    ```
    $ sudo apt update
@@ -273,14 +273,14 @@ This chapter explains how to manually install and configure the main software of
         $ sudo apt install -y ros-jazzy-xacro ros-jazzy-imu-tools python3-pydantic
         ```
 
-#### Build downloaded ROBOTIS ROS packages.   
+#### Build downloaded ROBOTIS ROS packages.
 ```
 $ cd ~/robotis_ws
 $ colcon build --symlink-install && source ~/.bashrc
 ```
 
 
-#### ETC Setting   
+#### ETC Setting
 - Configure web_setting_tool  
     1. Copy files from ROBOTIS-OP3-Tools folder to the web server folder : github
         ```
@@ -351,10 +351,10 @@ $ colcon build --symlink-install && source ~/.bashrc
 ### Overview
 This chapter explains how to recover the ROBOTIS-OP3 software using the recovery USB image.
 
-### CloneZilla recovery  
+### CloneZilla recovery
 Clonezilla can be used to recover the ROBOTIS-OP3 software from the image file in the provided backup USB.  
 
-#### How to creat a recovery USB media  
+#### How to creat a recovery USB media
 - Format a USB drive (8GB or more space is required)  
 - Go to [sourceforge.net] and download a recovery image file. 
 

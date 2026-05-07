@@ -2,7 +2,7 @@ With SLAM in the Gazebo simulator, you can select or create various environments
 
 The following instructions require prerequisites from the previous section, so please review the [Simulation][simulation] section first.
 
-### Launch Simulation World  
+### Launch Simulation World
 Three Gazebo environments are prepared, but for creating a map with SLAM, it is recommended to use either **TurtleBot3 World** or **TurtleBot3 House**.  
 Use one of the following commands to load the Gazebo environment.  
 
@@ -25,7 +25,7 @@ $ ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
 ```
 </details>
 
-### Run SLAM Node  
+### Run SLAM Node
 Open a new terminal on the Remote PC with `Ctrl` + `Alt` + `T` and run the SLAM node. Cartographer SLAM method is used by default.
 Specify your TurtleBot3 model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.
 
@@ -34,7 +34,7 @@ $ export TURTLEBOT3_MODEL=burger
 $ ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
 ```
 
-### Run Teleoperation Node  
+### Run Teleoperation Node
 Open a new terminal on the Remote PC with `Ctrl` + `Alt` + `T` and run the teleoperation node from the Remote PC.
 Specify your TurtleBot3 model (`burger`, `waffle`, `waffle_pi`) using the `TURTLEBOT3_MODEL` parameter.
 

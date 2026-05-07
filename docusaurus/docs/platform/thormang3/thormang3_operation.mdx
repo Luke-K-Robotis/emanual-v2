@@ -210,7 +210,7 @@ How to monitor and control THORMANG3 from the remote.
 
 Operating PC is used to control the robot from the outside.
 
-#### Recommended PC Info  
+#### Recommended PC Info
 1. OS  
   - Ubuntu 16.04 LTS  
 
@@ -224,7 +224,7 @@ Operating PC is used to control the robot from the outside.
   - [ROBOTIS-THORMANG-OPC]
   - [ROBOTIS-THORMANG-Common]
 
-#### OPC Network setting  
+#### OPC Network setting
 > Reference : [Example Setting for OPC]  
 
 - IP Address : Static IP address is recommended  
@@ -264,7 +264,7 @@ Operating PC is used to control the robot from the outside.
     ```
 
 ### Visualized Monitoring
-#### Related ROS Packages  
+#### Related ROS Packages
 1. RViz  
   RViz is a 3D visualization tool for robots. Rviz visualizes robot's posture, camera image, pointcloud and sensor data.  
   > Reference : [http://wiki.ros.org/rviz]
@@ -280,7 +280,7 @@ Operating PC is used to control the robot from the outside.
 4. Other sensor related Packages  
   uvc_camera, urg_node, etc.  
 
-#### Run monitoring THORMANG3  
+#### Run monitoring THORMANG3
 1. Launch ROS program for THORMANG3  
   > Reference : [How to run THORMANG3's program]
 
@@ -359,7 +359,7 @@ Instructions about how to calibrate FT Sensors on THORMANG3's feet. Balance Algo
 #### Run
 > Reference : [How to execute OPC's GUI program]
 
-#### Usage  
+#### Usage
 1. Move to Robot Init Pose
   - Click `Robot Init Pose` button on the top.  
 
@@ -397,7 +397,7 @@ Instructions about controlling head of THORMANG3.
 Lidar data(2D) can be assembled to PointCloud(3D) by moving the head with Head Control Mode.   
 User can manipulate head joints to move the sensor attached head.  
 
-#### How to operate Head Control module  
+#### How to operate Head Control module
 - Assemble LaserScan  
 
   1. Change the Mode  
@@ -453,7 +453,7 @@ Manipulation Control Mode can control and receive feedback of the upper body.
   - Select desired joint from `Joint Name`.    
   - Click `Get Current Joint Angle` button.   
 
-##### Task Space Control    
+##### Task Space Control
 
 1. Change the Mode  
   - Click `Manipulation` tab of the demo program.  
@@ -470,7 +470,7 @@ Manipulation Control Mode can control and receive feedback of the upper body.
   - Select a specific group in the `Forward Kinematics` tab.    
   - Click `Get Current Position` button.   
 
-##### Gripper Control    
+##### Gripper Control
 
 1. Change the Mode  
   - Click `Manipulation` tab of the demo program.  
@@ -625,7 +625,7 @@ Instruction about how to run the Thormang3 gain and offset tuner program.
 This program works with `thormang3_p_manager`. User don't have to run the server for this program.
 
 ```
-# roslaunch thormang3_p_manager thormang_p_manager.launch  
+# roslaunch thormang3_p_manager thormang_p_manager.launch
 ```
 
 ### Execute in OPC

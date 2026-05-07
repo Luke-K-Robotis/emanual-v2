@@ -8,7 +8,7 @@ The Navigation2 stack has many parameters to change performances for different r
 
 ![](/img/platform/turtlebot3/navigation/tuning_inflation_radius.png)
 
-#### inflation_layer.cost_scaling_factor 
+#### inflation_layer.cost_scaling_factor
 - Defined in `turtlebot3_navigation2/param/${TB3_MODEL}.yaml`
 - This is an inverse proportional factor that is multiplied by the value of the costmap. If this parameter is increased, the value of the costmap is decreased. 
 
@@ -16,13 +16,13 @@ The Navigation2 stack has many parameters to change performances for different r
 
   The optimal path for the robot to pass through obstacles is to take a median path between them. Setting a smaller value for this parameter will create a farther path from the obstacles.
 
-### dwb_controller 
+### dwb_controller
   
-#### max_vel_x 
+#### max_vel_x
 - Defined in `turtlebot3_navigation2/param/${TB3_MODEL}.yaml`
 - This factor sets the maximum value for translational velocity. 
 
-#### min_vel_x 
+#### min_vel_x
 - Defined in `turtlebot3_navigation2/param/${TB3_MODEL}.yaml`
 - This factor sets the minimum value for translational velocity. If set this negative, the robot can move backwards.
 
@@ -34,7 +34,7 @@ The Navigation2 stack has many parameters to change performances for different r
 - Defined in `turtlebot3_navigation2/param/${TB3_MODEL}.yaml`
 - The minimum y velocity for the robot in m/s.  
   
-#### max_vel_theta  
+#### max_vel_theta
 - Defined in `turtlebot3_navigation2/param/${TB3_MODEL}.yaml`
 - Value setting the maximum rotational velocity. The robot can not spin faster than this.
 

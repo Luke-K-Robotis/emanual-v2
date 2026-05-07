@@ -5,25 +5,25 @@ sidebar_label: "How to set smoothing filter into joint trajectory"
 displayed_sidebar: null
 ---
 
-## Download the **ROS-INDUSTRIAL CORE** package  
+## Download the **ROS-INDUSTRIAL CORE** package
 
 ```bash
 $ git clone https://github.com/ros-industrial/industrial_core.git
 ```
 
-## Check ‘industrial_trajectory_filters’ in downloaded ros-industrial package  
+## Check ‘industrial_trajectory_filters’ in downloaded ros-industrial package
 
 ```bash
 $ cd ~/catkin_ws/src/industrial_core/industrial_trajectory_filters/
 ```
 
-## Copy ***planning_request_adapters_plugin_description.xml***, ***src*** and ***include*** folders in the ***industrial_trajectory_filters*** folder and paste it into the moveit package you created earlier  
+## Copy ***planning_request_adapters_plugin_description.xml***, ***src*** and ***include*** folders in the ***industrial_trajectory_filters*** folder and paste it into the moveit package you created earlier
 
 ```bash
 $ cp -r planning_request_adapters_plugin_description.xml src include ~/catkin_ws/src/$(YOUR_MOVEIT_CONFIGURATION_PACKAGE)/
 ```
 
-## Create ‘smoothing_filter_params.yaml’ in the config folder and specify the coefficient  
+## Create ‘smoothing_filter_params.yaml’ in the config folder and specify the coefficient
 
 ```bash
 $ cd ~/catkin_ws/src/$(YOUR_MOVEIT_CONFIGURATION_PACKAGE)/config
@@ -43,7 +43,7 @@ smoothing_5_coef:
 ```
 
 
-## Open ***ompl_planning_pipeline.launch.xml*** in the launch folder and add the following filter  to planning_adapters    
+## Open ***ompl_planning_pipeline.launch.xml*** in the launch folder and add the following filter to planning_adapters
 
 ```bash
 $ cd ~/catkin_ws/src/$(YOUR_MOVEIT_CONFIGURATION_PACKAGE)/launch
@@ -58,7 +58,7 @@ industrial_trajectory_filters/AddSmoothingFilter
 ```
         
 
-## Add the following parameters to the same file.   
+## Add the following parameters to the same file.
 
 ```xml
 <param name="sample_duration" value="0.030" />  

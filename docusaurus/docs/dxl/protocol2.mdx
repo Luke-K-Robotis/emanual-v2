@@ -195,7 +195,7 @@ The Status Packet is the response transmitted from the device to the main contro
 |:--------:|:--------:|:--------:|:--------:|:---------:|:--------:|:--------:|:-----------:|:-----------------:|:-------:|:-----:|:-------:|:-----:|:-----:|
 |   0xFF   |   0xFF   |   0xFD   |   0x00   |    ID     |  Len_L   |  Len_H   | Instruction | **Error** | Param 1 |  ...  | Param N | CRC_L | CRC_H |
 
-## Instruction 
+## Instruction
 The instruction for Status Packets is 0x55 (Status), this should be included as the instruction for all returned status packets.
 
 ## Error
@@ -218,7 +218,7 @@ The field that indicates the result of the received Instruction Packet.
 |     0x06     | Data Limit Error  |                                                                                           Data to be written to the specified Address is outside of the configured Limit value                                                                                            |
 |     0x07     |   Access Error    | Attempted to write a value to an Address that is Read Only or has not been defined<br />Attempted to read a value from an Address that is Write Only or has not been defined<br />Attempted to write a value to an EEPROM register while Torque was Enabled. |
 
-## Parameters 
+## Parameters
 This section contains the data used as an argument to the instruction included in the packet, and may differ in length and content depending on the type of packet sent.
 
 
@@ -830,9 +830,9 @@ Note that given examples use the following abbreviations for each packet section
 :::
 
 
-### Example 
+### Example
 
-#### Example  Description 
+#### Example Description
 
 - ID3(XC330-T288) : Present Position(132, 0x0084, 4[byte]) = 166(0x000000A6)
 - ID7(XC330-T288) : Present Position(132, 0x0084, 4[byte]) = 2,079(0x0000081F)

@@ -4,12 +4,12 @@
 #### Motion Module
 
 ##### op3_action_module
-###### Overview  
+###### Overview
 `op3_action_module` manages OP3 actions.  
 This module is compiled as a libary so that it can be loaded from the `op3_manager`.
 Action contains all joint angles per each time frame.
 
-###### Getting started  
+###### Getting started
 - Download & Build  
   > Reference : [Installing ROBOTIS ROS Package]
 
@@ -17,7 +17,7 @@ Action contains all joint angles per each time frame.
   Motion Module is used in the form of lib in the manager.  
   > Reference : [Creating new robot manager]
 
-###### ROS API  
+###### ROS API
 - Subscribed Topics  
   `/robotis/action/page_num`([std_msgs/Int32])  
   &emsp;&emsp; The page number of action to run in the Module.  
@@ -38,11 +38,11 @@ Action contains all joint angles per each time frame.
   &emsp;&emsp; File path that indicates the location of action libraries for OP3.  
 
 ##### op3_base_module
-###### Overview  
+###### Overview
 `op3_base_module` is a module for initial posture.  
 This module is compiled to a library to be used in [op3_manager].  
 
-###### Getting started  
+###### Getting started
 - Download & Build  
   > Reference : [Installing ROBOTIS ROS Package]
 
@@ -50,7 +50,7 @@ This module is compiled to a library to be used in [op3_manager].
   The Motion Module is used in the manager in the form of library.  
   > Reference : [Creating new robot manager]
 
-###### ROS API  
+###### ROS API
 - Subscribed Topics  
   `/robotis/base/ini_pose`([std_msgs/String])  
   &emsp;&emsp; This message will have OP3 to take the initial posture(This command is effective even when the base &emsp;&emsp; module is inactive).  
@@ -62,7 +62,7 @@ This module is compiled to a library to be used in [op3_manager].
   `/robotis/status`([robotis_controller_msgs/StatusMsg])  
   &emsp;&emsp; This message notifies the status of `op3_base_module`.  
 
-###### Data  
+###### Data
 - Init posture  
 
  - data file path : [/op3_base_module/data/ini_pose.yaml]  
@@ -79,7 +79,7 @@ This module is compiled to a library to be used in [op3_manager].
 This chapter explains the module to control OP3's head.  
 This module is compiled to a library to be used in [op3_manager].  
 
-###### Getting started  
+###### Getting started
 - Download & Build
   > Reference : [Installing ROBOTIS ROS Package]    
 
@@ -216,7 +216,7 @@ This chapter explains the module to control OP3's walking.
 This module is compiled to a library to be used in [op3_manager].  
 Online walking algorithm is described in this book ([Introduction to Humanoid Robotics]).
 
-###### Getting started  
+###### Getting started
 - Download & Build
   > Reference : [Installing ROBOTIS ROS Package]
 
@@ -287,10 +287,10 @@ The Motion Module is used in the manager in the form of library.
 &emsp;&emsp; This service is used to calculate matrix for online walking.  
 
 ##### op3_direct_control_module
-###### Overview  
+###### Overview
 This chapter explains the module to control the joints of ROBOTIS-OP3 directly.  
 
-###### Getting started  
+###### Getting started
 - Download & Build  
   > Reference : [Installing ROBOTIS ROS Package]
 
@@ -298,7 +298,7 @@ This chapter explains the module to control the joints of ROBOTIS-OP3 directly.
   Motion Module is used in the form of lib in the manager.  
   > Reference : [Creating new robot manager]
 
-###### ROS API  
+###### ROS API
 - Subscribed Topics  
   `/robotis/direct_control/set_joint_states`([sensor_msgs/JointState])  
   &emsp;&emsp; Message that include the joint value user want to move.  
@@ -307,7 +307,7 @@ This chapter explains the module to control the joints of ROBOTIS-OP3 directly.
   `/robotis/status`([robotis_controller_msgs/StatusMsg])  
   &emsp;&emsp; Message that describes status of action_module.  
 
-###### Parameters  
+###### Parameters
   `/robotis/direct_control/default_moving_time`(double, default : 0.5)  
   &emsp;&emsp; minimum time to move to target position  
   `/robotis/direct_control/default_moving_angle`(double, default : 30)  
@@ -316,10 +316,10 @@ This chapter explains the module to control the joints of ROBOTIS-OP3 directly.
   &emsp;&emsp; enable of pseudo self-collision checking  
   
 ##### op3_tuning_module
-###### Overview  
+###### Overview
 This chapter explains the module used for offset and gain adjustment.  
 
-###### Getting started  
+###### Getting started
 - Download & Build  
   > Reference : [Installing ROBOTIS ROS Package]
 
@@ -327,7 +327,7 @@ This chapter explains the module used for offset and gain adjustment.
   Motion Module is used in the form of lib in the manager.  
   > Reference : [Creating new robot manager]
 
-###### ROS API  
+###### ROS API
 - Subscribed Topics  
   `/robotis/tuning_module/tuning_pose`([std_msgs/String])  
   &emsp;&emsp; Message that is used to change the posture for tuning a gain  
@@ -361,7 +361,7 @@ This chapter explains the module used for offset and gain adjustment.
   &emsp;&emsp; Service used to apply the new offset in robotis_controller  
   
 
-###### Parameters  
+###### Parameters
   `offset_file_path`(string, default : `~/data/tune_pose.yaml`)  
   &emsp;&emsp; This path indicates the location of the file that contains offset data of each joint.  
   `init_file_path`(string, default : `~/data/offset.yaml`)  
@@ -396,16 +396,16 @@ The Sensor Module is used in the manager in the form of library.
 &emsp;&emsp; This message notifies the status of the button connected to OpenCR GPIO.  
 
 ### OP3 Manager
-#### Overview  
+#### Overview
 `op3_manager` package applies ROBOTIS Framework to ROBOTIS OP3.  
 Refer to the below link to create a new robot manager.  
 > Reference : [Creating new robot manager]
 
-#### Getting started  
-##### Download & Build  
+#### Getting started
+##### Download & Build
  > Reference : [Installing ROBOTIS ROS Package]
 
-##### Run  
+##### Run
 Execute the program with a `.launch` file in order to load ROS parameters.  
 The command should be executed under the root account to configure the attribute of Thread.  
 `op3_manager` has a direct control over ROBOTIS-OP3, therefore other control programs such as `op3_walking_tuner` and `op3_action_editor` should not be running.  
@@ -413,12 +413,12 @@ Before executing the `op3_manager` launch file, other programs should be termina
 ```
 $ sudo bash  
 [sudo] password for robotis:   
-# roslaunch op3_manager op3_manager.launch  
+# roslaunch op3_manager op3_manager.launch
 ```
 
-#### ROS API  
+#### ROS API
 
-##### Parameters  
+##### Parameters
 launch parameters  
 
 `gazebo` (bool, default: false)  
@@ -443,7 +443,7 @@ launch parameters
 `baud_rate` (int, default: "2000000")  
 &emsp;&emsp; This baud rate is used to open the communication port of OpenCR that manages DYNAMIXEL power supply.
 
-#### Modules  
+#### Modules
 This chapter explains various modules in `op3_manager`.  
 Actual control is processed within each modules.  
 
@@ -456,10 +456,10 @@ Actual control is processed within each modules.
  6. [op3_direct_control_module] :  This module controls ROBOTIS-OP3 directly.  
  7. [op3_tuning_module] : This module is used to tune the gain and offset.  
 
-##### Sensor Module  
+##### Sensor Module
  1. [open_cr_module] : This module is required to use OpenCR as a sensor.  
 
-#### Source  
+#### Source
 Structure of `op3_manager`  
  - Initialize with Robot file(`.robot`)and Joint initialize file (`.yaml`).  
  - Apply offset file(`.yaml`).  
@@ -502,14 +502,14 @@ controller->startTimer();
 ### Others
 
 #### op3_balance_control
-##### Overview  
+##### Overview
 `op3_balance_control` is a library for balance control.  
 This library is used to improve walking performance.  
 Currently, this library is not implemented because of sensors (ft & IMU).  
 We will update how to used is library.  
 
 #### op3_localization
-##### Overview  
+##### Overview
 `op3_localization` is ros node for localization.  
 This node publish TF data from /world to /body_link.  
 
@@ -523,12 +523,12 @@ This node publish TF data from /world to /body_link.
 &emsp;&emsp; This message will reset the body_link pose to default value.  
 
 #### op3_optimization
-##### Overview  
+##### Overview
 `op3_optimization` is ros node for online walking pattern generation.  
 
 ##### ROS API
 
-###### Service Server  
+###### Service Server
 `/robotis/get_preview_matrix`([op3_online_walking_module_msgs/GetPreviewMatrix])  
 &emsp;&emsp; This service will return preview control matrix for online walking pattern generation.  
 
@@ -552,7 +552,7 @@ Messages and Services used in the [op3_walking_module]
 ##### ROS Message Type
 * [WalkingParam.msg]  
 
-##### ROS Service Type  
+##### ROS Service Type
 * [GetWalkingParam.srv]
 * [SetWalkingParam.srv]
 
@@ -571,7 +571,7 @@ Messages and Services used in the [op3_online_walking_module]
 * [Step2DArray.msg]
 * [WalkingParam.msg]
 
-##### ROS Service Type  
+##### ROS Service Type
 * [GetJointPose.srv]
 * [GetKinematicsPose.srv]
 * [GetPreviewMatrix.srv]
@@ -586,7 +586,7 @@ Messages and Services used in the [op3_tuning_module]
 * [JointTorqueOnOff.msg]
 * [JointTorqueOnOffArray.msg]
 
-##### ROS Service Type  
+##### ROS Service Type
 * [GetPresentJointOffsetData.srv]
 
 ### Tool msgs
@@ -601,7 +601,7 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 * [JointTorqueOnOff.msg]
 * [JointTorqueOnOffArray.msg]
 
-##### ROS Service Type  
+##### ROS Service Type
  * [GetPresentJointOffsetData.srv]
 
 ## ROBOTIS OP3 Demo
@@ -633,7 +633,7 @@ Execute the program with a `.launch` file in order to load ROS parameters.
 
 #### ROS API
 
-##### Subscribed Topics  
+##### Subscribed Topics
 `~/enable`([std_msgs/Bool])  
 &emsp;&emsp; OP3 will start searching for a ball with a `True` message, and stop with a `False` message.  
 
@@ -643,7 +643,7 @@ Execute the program with a `.launch` file in order to load ROS parameters.
 `~/cameraInfo_in`([sensor_msgs/CameraInfo])  
 &emsp;&emsp; The message in this topic contains camera information of the corresponding input image.  
 
-##### Published Topics  
+##### Published Topics
 `~/image_out`([sensor_msgs/Image])  
 &emsp;&emsp; The message in this topic contains an output image after the ball searching process.  
 
@@ -699,10 +699,10 @@ Execute the program with a `.launch` file in order to load ROS parameters.
 `/filter_debug`(bool, default : )  
 &emsp;&emsp; Enable output image for debugging  
 
-#### How to change the parameters  
+#### How to change the parameters
 > Reference : [How to use ball detector]
 
-##### using the `.yaml`  
+##### using the `.yaml`
 - [ball_detector_params.yaml]  
  ```
  gaussian_blur_size: 7
@@ -730,7 +730,7 @@ Execute the program with a `.launch` file in order to load ROS parameters.
  filter_debug: false
  ```
 
-##### using the `dynamic_reconfigure`  
+##### using the `dynamic_reconfigure`
 ![](/img/platform/op3/ball_detector_node_02.png)
 
 ### op3_demo
@@ -829,7 +829,7 @@ ROBOTIS OP3 Gazebo Simulation
 
 ## ROBOTIS OP3 Tools
 ### op3_action_editor
-#### Overview   
+#### Overview
 ROBOTIS-OP3 Action Editor Node   
 This chapter explains how to create and edit action file used in the [op3_action_module] of ROBOTIS-OP3.   
 
@@ -943,7 +943,7 @@ After typing "help", the commend list will appear as shown below.
 9. Type "play" and check the ROBOTIS-OP3's action  
 
 ### op3_gui_demo
-#### Overview   
+#### Overview
 `op3_gui_demo` is a GUI software to control ROBOTIS-OP3.  
 Within this program, user can perform module settings, walking tuner, head joint control and play actions.  
 
@@ -1053,7 +1053,7 @@ $ roslaunch op3_tuner_client op3_tuner_client.launch
 &emsp;&emsp; Service used to get the joint states including offset
 
 ### op3_offset_tuner_server
-#### Overview   
+#### Overview
 ROBOTIS-OP3 Offset Tuner Node   
 Data related to the Offset can be Tuned, Loaded and Saved.   
 It is used with the [op3_offset_tuner_client].  
@@ -1140,7 +1140,7 @@ $ rosrun op3_offset_tuner_client op3_offset_tuner_client
 &emsp;&emsp; The service obtains saved joint offset
 
 ### op3_walking_tuner
-#### Overview   
+#### Overview
 This Node tunes walking parameters of ROBOTIS-OP3.  
 Walking tuner function is included in the [op3_gui_demo].  
 `op3_walking_tuner` runs on a terminal window while [op3_gui_demo] creates its own GUI window.    

@@ -13,11 +13,11 @@ This package describes basic function to control ROBOTIS MANIPULATOR-H. This mod
 ### manipulator_h_base_module_msgs
 This package includes ROS messages and services for manipulator_h_base_module_msgs.
 
-### manipulator_h_bringup   
+### manipulator_h_bringup
 This package includes launch file to describe robotis in Rviz.     
 `launch` : launch file to bring up the robot in Rviz
 
-### robotis_manipulator_description   
+### robotis_manipulator_description
 This package includes URDF model of ROBOTIS MANIPULATOR-H.
 Additionally, we provide full kinematics and dynamics information of each link.     
 `doc` : document for robotis manipulator joint & link information   
@@ -54,7 +54,7 @@ This package describes robot manager to execute manipulator_h_base_module.
   * `name` : target kinematics group ([std_msgs/String])    
   * `pose` : target Pose ([geometry_msgs/Pose])   
 
-### ROS Service Type   
+### ROS Service Type
 * GetJointPose.srv   
   * Request : `joint_name` : joint name ([std_msgs/String])   
   * Response : `joint_value` : joint value ([std_msgs/Float64])   

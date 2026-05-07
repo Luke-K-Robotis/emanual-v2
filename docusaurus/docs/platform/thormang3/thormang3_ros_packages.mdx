@@ -258,7 +258,7 @@ The motion file is edited with thormang3_action_editor
 
 #### ROS API
 
-##### Subscribed Topics  
+##### Subscribed Topics
   - `/robotis/action/page_num` ([std_msgs/Int32])  
     The page number will be played.  
     If user send a page number between 1 ~ 255, the page will be played.  
@@ -268,7 +268,7 @@ The motion file is edited with thormang3_action_editor
   - `/robotis/action/start_action` ([thormang3_action_module_msgs/StartAction])  
     The page number and joint names will be played.
 
-##### Published Topics  
+##### Published Topics
   - `/robotis/status` ([robotis_controller_msgs/StatusMsg])  
     The message indicates status of the action_module.
 
@@ -474,7 +474,7 @@ This module is for tuning gain and offset of THORMANG3. Users can tune gain and 
 
 #### ROS API
 
-##### Subscribed Topics  
+##### Subscribed Topics
 
   - `/robotis/tuning_module/tuning_pose` ([std_msgs/String])     
     The topic transfers pose for tuning gain or offset  
@@ -491,7 +491,7 @@ This module is for tuning gain and offset of THORMANG3. Users can tune gain and 
   - `/robotis/tuning_module/command` ([std_msgs/String])    
     The topic transfers other commands(save, initial posture, etc). 
 
-##### Published Topics  
+##### Published Topics
 
   - `/robotis/enable_ctrl_module` ([std_msgs/String])  
     A tuning_module activation topic to take the initial posture.  
@@ -508,19 +508,19 @@ This module is for tuning gain and offset of THORMANG3. Users can tune gain and 
   - `/robotis/tuning_module/present_joints_data` ([thormang3_tuning_module_msgs/JointsOffsetPositionData][thormang3_tuning_module_msgs/JointsOffsetPositionData.msg])  
     This message is used by tuning_module to send information about each joint to the client.   
 
-##### Services  
+##### Services
   - `/robotis/set_present_ctrl_modules` ([robotis_controller_msgs/SetModule])  
     The service to set module to `tuning_module`.  
 
   - `/robotis/load_offset` ([robotis_controller_msgs/LoadOffset])  
     The service send the path to load offset.
 
-##### Services Called  
+##### Services Called
 
   - `/robotis/tuning_module/get_present_joint_offset_data` ([thormang3_tuning_module_msgs/GetPresentJointOffsetData][thormang3_tuning_module_msgs/GetPresentJointOffsetData.srv])  
     The service send saved joint offset and gain.
 
-##### Parameters  
+##### Parameters
   - **offset_file_path (string, default: "")** : This path indicates the location of the file that contains offset data of each joint and initial posture data for offset adjustment.
   - **init_file_path (string, default: "")** : This path indicates the location of the file that contains initialization information of each joint. It has gain for dynamixels.
 
@@ -803,7 +803,7 @@ double getFilteredOutput(double present_raw_value)
 - description : the function for filtering and getting its result
 - return value : filtered value
 
-#####  Damping Controller Class
+##### Damping Controller Class
 
 ```
 double getFeedBack(double present_sensor_output)
@@ -838,7 +838,7 @@ double control_cycle_sec_
 ```
   - description : control cycle in sec of motion module
 
-#####  BalancePDController Class
+##### BalancePDController Class
 
 ```
 double getFeedBack(double present_sensor_output)
@@ -863,7 +863,7 @@ double d_gain_
 ```
   - description : D gain for PD controller
 
-#####  BalanceControlUsingDampingConroller Class
+##### BalanceControlUsingDampingConroller Class
 
 ```
 void initialize(const int control_cycle_msec)
@@ -1131,7 +1131,7 @@ DampingController left_foot_torque_pitch_ctrl_
 ```
   - description : damping controller for foot using torque y on left foot
 
-#####  BalanceControlUsingPDController Class
+##### BalanceControlUsingPDController Class
 
 ```
 void initialize(const int control_cycle_msec)
@@ -1487,13 +1487,13 @@ Present output of the IMU Sensor
 This package is for the IMU Sensor(MicroStrain 3DM-GX5-25).  
 The latest THORMANG3 is equipped with 3DM-GX5-25. Users have to check what version is eqipped and modify `manager.launch` file to operate THORMANG3.  
 
-#### Download & Build  
+#### Download & Build
 
 `Reference` : [MPC Installation]  
 
-#### ROS API  
+#### ROS API
 
-##### Published Topics  
+##### Published Topics
 
 `/robotis/sensor/imu/imu` ([sensor_msgs/Imu])
 Present output of the IMU Sensor  
@@ -1699,7 +1699,7 @@ Feet ft calibration, Pointcloud conversion are available with this package.
 :::
 
 
-#### Run  
+#### Run
 Execute the launch file  
 
 ```
@@ -1711,9 +1711,9 @@ $ roslaunch thormang3_demo thormang3_demo.launch
   > module_list : Module name displayed on each joint in the demo program.
   > module_button : Modules to configure with the manager (index : module name)
 
-#### ROS API  
+#### ROS API
 
-##### Subscribed Topics  
+##### Subscribed Topics
 `/robotis/feet_ft/both_ft_value` ([thormang3_feet_ft_module_msgs/BothWrench])  
   FT value for calibration
 
@@ -1769,7 +1769,7 @@ $ roslaunch thormang3_demo thormang3_demo.launch
 `/robotis/thormang3_foot_step_generator/balance_command` ([std_msgs/Bool])  
   Balance On/Off of THORMANG3
 
-#### Services Called  
+#### Services Called
 
 `/robotis/get_present_joint_ctrl_modules` ([robotis_controller_msgs/GetJointModule])  
   Obtains module that is currently in use for each joint.
@@ -1783,7 +1783,7 @@ $ roslaunch thormang3_demo thormang3_demo.launch
 `/robotis/manipulation/get_kinematics_pose` ([thormang3_manipulation_module_msgs/GetKinematicsPose])  
   Obtains end effector pose of selected manipulation group.
 
-#### Parameters  
+#### Parameters
 
 `~demo_config`(string, default: /config/demo_config.yaml)  
   Configuration file path of the demo program.
@@ -1804,7 +1804,7 @@ The thormang3_action_script_player is used with [thormang3_action_module] and [r
 :::
 
 
-#### Run  
+#### Run
 thormang3_action_script_player runs with thormang3_demo.  
 > Reference : [Remote Control(GUI Demo)]  
 
@@ -1833,13 +1833,13 @@ There are below four cmd_name in the action script.
 * **wait** : "wait" cmd_name means to wait until finish of action playing. There is no cmd_arg for "wait" cmd_name.  
 * **sleep** : "sleep" cmd_name means to wait for a certain amount of time. User can specify the wait time as cmd_arg.  
 
-#### ROS API  
+#### ROS API
 
-##### Subscribed Topics  
+##### Subscribed Topics
 `/robotis/demo/action_index` ([std_msgs/Int32])  
   The action script number to play.  
 
-##### Parameters  
+##### Parameters
 `/action_script_file_path`(string, default : "thormang3_action_script_player/script/action_script.yaml")  
   The location of action script file.  
 
@@ -1857,12 +1857,12 @@ Based on the simple Parameter from Topic, the package creates StepData and trans
 :::
 
 
-#### Run  
+#### Run
 > Reference : [How to operate walking module]
 
-#### ROS API  
+#### ROS API
 
-##### Subscribed Topics  
+##### Subscribed Topics
 `/robotis/status` ([robotis_controller_msgs/Status])  
   Status message of THORMANG3
 
@@ -1872,7 +1872,7 @@ Based on the simple Parameter from Topic, the package creates StepData and trans
 `/robotis/thormang3_foot_step_generator/footsteps_2d` ([thormang3_foot_step_generator/Step2DArray])  
   Planar walking step data contains x, y, theta and moving_foot_flag   
 
-##### Services Called  
+##### Services Called
 `/robotis/walking/get_reference_step_data` ([thormang3_walking_module_msgs/GetReferenceStepData])  
   The service obtains current location of THORMANG3 in the Global space from the Walking Module.  
 
@@ -1885,7 +1885,7 @@ Based on the simple Parameter from Topic, the package creates StepData and trans
 `/robotis/walking/is_running` ([thormang3_walking_module_msgs/IsRunning])  
   The service checks whether the robot is walking or not.  
 
-#### ROS Message Type  
+#### ROS Message Type
 * [FootStepCommand.msg]
 * [Step2D.msg]
 * [Step2DArray.msg]
@@ -1904,7 +1904,7 @@ It is used with the [thormang3_offset_tuner_server].
 :::
 
 
-#### Run  
+#### Run
 ```
 $ rosrun thormang3_offset_tuner_client thormang3_offset_tuner_client
 ```
@@ -1925,7 +1925,7 @@ $ rosrun thormang3_offset_tuner_client thormang3_offset_tuner_client
 `/robotis/offset_tuner/get_present_joint_offset_data` ([thormang3_offset_tuner_msgs/GetPresentJointOffsetData][thormang3_offset_tuner_msgs/GetPresentJointOffsetData.srv])  
   The service obtains saved joint offset
 
-##### Parameters  
+##### Parameters
 `~/ROBOTIS-THORMANG-MPC/thormang3_manager/config/offset.yaml`   
   Saved offset value   
 
@@ -1943,7 +1943,7 @@ It does not need to the server, it works with `thormang3_tuning_module` under th
 :::
 
 
-#### Run  
+#### Run
 ```
 $ rosrun thormang3_tuner_client thormang3_tuner_client
 ```  
@@ -1967,7 +1967,7 @@ $ rosrun thormang3_tuner_client thormang3_tuner_client
 `/robotis/tuning_module/tuning_pose` ([std_msgs/String])    
   The topic transfers pose name to tune gain.  
 
-##### Subscribed Topics  
+##### Subscribed Topics
 `/robotis/tuning_module/present_joints_data` ([thormang3_tuning_module_msgs/JointsOffsetPositionData][thormang3_tuning_module_msgs/JointsOffsetPositionData.msg])    
   ...  
 
@@ -1984,7 +1984,7 @@ $ rosrun thormang3_tuner_client thormang3_tuner_client
 `/robotis/tuning_module/get_present_joint_offset_data` ([thormang3_tuning_module_msgs/GetPresentJointOffsetData][thormang3_tuning_module_msgs/GetPresentJointOffsetData.srv])  
   The service obtains saved joint offset
 
-##### Parameters  
+##### Parameters
 `/thormang3_tuner_client/config/tm3_joint_data.yaml`   
   joint list for making UI  
 
@@ -2028,7 +2028,7 @@ It is used with the [thormang3_offset_tuner_client].
 :::
 
 
-#### Run  
+#### Run
 Execute the launch file.  
 ```
 $ roslaunch thormang3_offset_tuner_server thormang3_offset_tuner_server.launch
@@ -2078,7 +2078,7 @@ The action file contains 256 pages. Each page can store up to 7 stages (or steps
 :::
 
 
-#### Run  
+#### Run
 Execute the launch file on the MPC.
 ```
 $ roslaunch thormang3_action_editor thormang3_action_editor.launch

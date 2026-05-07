@@ -14,7 +14,7 @@ import TutorialsRev2 from '@site/docs/_partials/platform/op3/tutorials_rev2.mdx'
 
 # Tutorials
 ## ROBOTIS-OP3 Bringup
-### Overview   
+### Overview
 This chapter explains how to operate the ROBOTIS-OP3. The `op3_bringup` demo launches `op3_manager`.   
 Several modules of `op3_manager` are used to control the ROBOTIS-OP3 and various topics and services transmit commands and report current status.  
 The `op3_manager` cooperates with other programs such as `op3_demo` and `op3_gui_demo`.  
@@ -154,12 +154,12 @@ def generate_launch_description():
 
   # Launch description 
   # joint_state_publisher 
-#   ld.add_action(Node(
-#     package='joint_state_publisher',
-#     executable='joint_state_publisher',
-#     parameters=[{'source_list': ['/robotis/present_joint_states']}],
-#     remappings=[('/joint_states', '/robotis/present_joint_states')])
-#   )
+# ld.add_action(Node(
+# package='joint_state_publisher',
+# executable='joint_state_publisher',
+# parameters=[{'source_list': ['/robotis/present_joint_states']}],
+# remappings=[('/joint_states', '/robotis/present_joint_states')])
+# )
 
   # joint_state_publisher_gui
   ld.add_action(Node(
@@ -196,7 +196,7 @@ def generate_launch_description():
 ### Description
 This section explains configuration files used in the `op3_manager` (within `op3_bringup.launch.py`).  
 
-#### Robot file(`.robot`)  
+#### Robot file(`.robot`)
 Information required for the robot to operate.  
 Control frequency, communication interface, baud rate, available devices and their properties are defined here.
 
@@ -299,7 +299,7 @@ The offset file contains offset angles for each joint, in radians, to correct di
 
 
 ## How to execute Default Demo
-### Overview   
+### Overview
 This chapter explains how to use the basic demonstrations of the OP3.
 There are three available demos; playing soccer, vision and a sequence of various actions.
 > Reference : [op3_demo]
@@ -455,7 +455,7 @@ Clicking the button surrounded by the red dashed rectangle will let the `base_mo
   ![](/img/platform/op3/op3_gui_get_module_ros2.png)
 
 ### How to use walking tuner
-#### Overview   
+#### Overview
 This chapter explains how to configure walking parameters and test them with ROBOTIS-OP3.  
 The basic demo uses these saved walking parameters.  
 
@@ -469,7 +469,7 @@ Confirm that the joints used for walking are set in the `walking_module`, then m
 When the walking module is activated, ROBOTIS-OP3 will take the initial posture for walking.  
 ![](/img/platform/op3/op3_gui_walking_tuner_02.png)
 
-##### Start / Stop Walking  
+##### Start / Stop Walking
 1. `start` button : Initiate walking  
 2. `stop` button : Stop walking. When stopped, walking related parameters will be reset.  
 
@@ -483,7 +483,7 @@ When the walking module is activated, ROBOTIS-OP3 will take the initial posture 
   ![](/img/platform/op3/op3_gui_walking_tuner_04_ros2.png)
 
 ### How to play the motions
-#### Overview   
+#### Overview
 This chapter explains how to play predefined actions.  
 The `action_module` controls each joint of ROBOTIS-OP3.  
 
@@ -500,18 +500,18 @@ The `action_module` controls each joint of ROBOTIS-OP3.
 
     ![](/img/platform/op3/op3_gui_action_02_ros2.png)
 
-##### Creating and editing actions for `action_module`  
+##### Creating and editing actions for `action_module`
 
 > Reference : [How to create the motions]
 
 ### How to control the head joints
-#### Overview   
+#### Overview
 This chapter explains how to control the head joint of ROBOTIS-OP3.  
 The operator can get different camera view angles by controlling head joints.  
 
 > Reference : [op3_head_control_module]
 
-#### Head Joint Control  
+#### Head Joint Control
 
 1. Setting the Module : Click `head_control_module` button  
 2. Select `Head Control` tab of the gui demo program.  
@@ -534,7 +534,7 @@ This version does not support this feature.
 
   
 ## How to use offset tuner
-### Overview  
+### Overview
   
 
 :::note
@@ -551,7 +551,7 @@ This chapter has been merged into [How to use tuner client](#how-to-use-tuner-cl
 ![](/img/platform/op3/op3_offset_tuner_diagram.png)  
   
 ## How to use tuner client
-### Overview     
+### Overview
 this chapter explains how to adjust kinematic offset and position gain of ROBOTIS-OP3.
 In the past, we were able to adjust the offset by using op3_offset_server and op3_offset_client. Now we can set both offset and gain using new op3_tuning_module and op3_tuner_client. We made an op3_tuning_module and used it with op3_manager, so you do not need to run the server just to tune the offset.
  
@@ -563,9 +563,9 @@ In the past, we were able to adjust the offset by using op3_offset_server and op
 - After   
 ![](/img/platform/op3/op3_tuner_diagram.png)  
 
-### Run Tuner Program   
+### Run Tuner Program
 
-### How to launch programs  
+### How to launch programs
 #### Launching `op3_manager` and `op3_tuner_client` program separately
 The tuner consists of op3_manager and client programs so that other PC in the same ROS network can tune offsets and gains.  
 
@@ -593,12 +593,12 @@ $ ros2 launch op3_tuner_client op3_tuner.launch.xml
 !<a href="/img/platform/op3/op3_tuner_execution_ros2.png" target="_blank">launch image</a>
 
 ### Configuration Files
-#### `op3_manager` configuration files   
+#### `op3_manager` configuration files
 - config/`OP3.robot` : Contains the description of ROBOTIS-OP3.  
 - config/`dxl_init_OP3.yaml` : Stores DYNAMIXEL configurations, included gains, used for joint initialization. 
 - config/`offset.yaml` : Saves offset data.  
  
-#### `op3_tuning_module` configuration files  
+#### `op3_tuning_module` configuration files
 - data/`tune_pose.yaml` : Stores offset adjustment posture data and gain tuning posture data.  
 
   ```
@@ -627,11 +627,11 @@ $ ros2 launch op3_tuner_client op3_tuner.launch.xml
       ...  
   ```
 
-#### `op3_tuner_client` configuration file  
+#### `op3_tuner_client` configuration file
 - config/`joint_data.yaml` : GUI menu configuration file  
 
-### How to use tuner client GUI program   
-#### How to tune the offset  
+### How to use tuner client GUI program
+#### How to tune the offset
 ![](/img/platform/op3/op3_tuner_offset_01.png)  
 1. Go to the `Initial Pose`   
 2. Select the `Kinematics Group` tab
@@ -639,7 +639,7 @@ $ ros2 launch op3_tuner_client op3_tuner.launch.xml
 4. Tune the offset of joints  
 5. Click the `Save Offset` button for saving to file.  
 
-#### How to tune the gain  
+#### How to tune the gain
 ![](/img/platform/op3/op3_tuner_gain_01.png)  
 1. go `Initial Pose`   
 2. Select tab of `Kinematics Group`  
@@ -680,7 +680,7 @@ $ ros2 launch op3_tuner_client op3_tuner.launch.xml
   ```
 
 ## How to create the motions
-### Overview   
+### Overview
 ROBOTIS-OP3 Action Editor Node.  
 This chapter explains how to create and edit action files used in the [op3_action_module] of ROBOTIS-OP3.   
 
@@ -814,11 +814,11 @@ After typing "help", the commend list will appear as shown below.
 9. Type `play` and check the ROBOTIS-OP3's action  
 
 ## How to use ball detector
-### Overview   
+### Overview
 This chapter explains how to calibrate the `ball_detector_node` to find a ball. The `ball_detector_node` detects a ball by the designated color and Hough Circle Transform.  
 
-### Getting started  
-#### Run the program  
+### Getting started
+#### Run the program
 
 ```
 $ ros2 launch op3_ball_detector ball_detector_from_usb_cam.launch.py
@@ -830,7 +830,7 @@ or
 $ ros2 launch op3_demo demo.launch.xml
 ```
 
-#### How to change the parameters  
+#### How to change the parameters
 1. Dynamic Reconfigure and Image View  
     - run the `rqt`  
 
@@ -900,7 +900,7 @@ This version does not support it.
 
 
 ## How to use Web Setting Tool
-### Overview   
+### Overview
   This chapter explains how to set the parameters of ROBOTIS-OP3 through a web page.
 
   > Reference : [ROBOT WEB TOOL]  
@@ -908,7 +908,7 @@ This version does not support it.
   > Reference : [rosbridge_suite - ros2]  
 
 
-### Getting started  
+### Getting started
 #### Installation
 - web_video_server  
   ```
@@ -973,7 +973,7 @@ Connect to ROBOTIS-OP3 WiFi with below information
 
 
 #### How to set parameters
-##### Menu  
+##### Menu
 
 ![](/img/platform/op3/op3_web_setting_01.png)
 
@@ -983,7 +983,7 @@ Connect to ROBOTIS-OP3 WiFi with below information
 4. Action : Testing ROBOTIS-OP3 actions.   
 5. Camera : Change the parameters of ROBOTIS-OP3 camera.  
 
-##### Ball Detector parameters  
+##### Ball Detector parameters
   ![](/img/platform/op3/op3_web_setting_02.png)
   > Modified parameter values will be saved automatically.  
 
@@ -1008,13 +1008,13 @@ Connect to ROBOTIS-OP3 WiFi with below information
 
   > Reference : [detail of parameter]  
 
-##### Camera Setting parameters  
+##### Camera Setting parameters
   ![](/img/platform/op3/op3_web_setting_06.png)
   > Modified parameter values will be saved automatically.  
 
 
 ## Read-Write Tutorial
-### Overview   
+### Overview
 This chapter explains to user how to get joint angles of ROBOTIS-OP3 and how to set their values.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6Rle7U84vHM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -1048,8 +1048,8 @@ This is a framework diagram. The framework(op3_manager) works in the following w
       5. Call `process()` function of each motion module  
       6. Publish a topic that contains present & goal joint states  
 
-### Description  
-#### How to Get Joint States  
+### Description
+#### How to Get Joint States
 - `motion_module` uses joint states inside of the `op3_manager`.  
   If user creates and uses a motion_module, user can get additional information by adding a bulkread item.  
   bulkread item is added by modifying [OP3.robot] file.   
@@ -1063,7 +1063,7 @@ This is a framework diagram. The framework(op3_manager) works in the following w
   - Containing Information : present position, present velocity, present effort, goal position, goal velocity, goal effort  
 
 
-#### How to Set Joint States  
+#### How to Set Joint States
 op3_manager provides a way to control each joint of the robot with the following two methods.  
 
 - `robotis_controller`  
@@ -1080,10 +1080,10 @@ op3_manager provides a way to control each joint of the robot with the following
 > If user send a `SyncWriteItem` message with the name of `/robotis/sync_write_item`, Framework try to sync-write to devices with those message.  
 
 ### Read-Write Demo
-#### Download & Build  
+#### Download & Build
  > Reference : [Installing ROBOTIS ROS Package]
 
-#### How to Run Demo  
+#### How to Run Demo
 Stop the default demo  
 
 ```
@@ -1096,7 +1096,7 @@ Run read-write demo
 $ ros2 launch op3_read_write_demo op3_read_write.launch.xml
 ```
 
-#### op3_read_write.launch.xml  
+#### op3_read_write.launch.xml
 ```xml
 <?xml version="1.0" ?>
 <launch>
@@ -1136,7 +1136,7 @@ $ ros2 launch op3_read_write_demo op3_read_write.launch.xml
  - rqt_graph  
    ![](/img/platform/op3/op3_read_write_graph_rev3.png)
 
-#### How to Operate  
+#### How to Operate
 
  - Description : Buttons  
    From the left : `mode` button, `start` button, `user` button, `reset` button  
@@ -1145,7 +1145,7 @@ $ ros2 launch op3_read_write_demo op3_read_write.launch.xml
    - `user` button : torque on all joints  
    - `reset` button : torque off all joints  
 
-#### Source Code  
+#### Source Code
 - [read_write.cpp `branch:jazzy-devel`]  
 
   ```cpp

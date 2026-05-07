@@ -143,7 +143,7 @@ URDF defines a robot using the following key elements:
   
 For a more detailed understanding of URDF, we recommend referring to the [URDF Tutorial](https://docs.ros.org/en/rolling/Tutorials/Intermediate/URDF/Building-a-Visual-Robot-Model-with-URDF-from-Scratch.html) on the ROS 2 Wiki. The best way to understand and learn URDF is to build a simple robot yourself.
 
-### Visualizing the OpenManipulator-X URDF Structure  
+### Visualizing the OpenManipulator-X URDF Structure
 Understanding the **hierarchical structure** of the OpenManipulator-X is crucial before diving into the URDF breakdown. The following URDF graph visually represents the **parent-child relationships** between links and joints.
 
 ![](/img/platform/openmanipulator_x/omx_urdf_graph.png)  
@@ -165,7 +165,7 @@ The following image shows the OpenManipulator-X URDF model as visualized in RViz
 ![](/img/platform/openmanipulator_x/rviz_om_view.png) 
 
 
-### URDF with Xacro  
+### URDF with Xacro
 The provided URDF uses **Xacro (XML Macros)** to simplify and modularize the robot description. Xacro allows **reusing components** and making the URDF more maintainable.  
 The following explanation is based on the Xacro file:
 ```bash
@@ -179,7 +179,7 @@ At the beginning of the file, a **macro** is defined:
 This allows the reuse of the same structure with different prefixes, making it flexible for multi-robot environments.
 
 
-###  Defining a Link  
+### Defining a Link
 A **link** represents a rigid body in the robot. Each link has **visual, collision, and inertial properties**.
 
 **Example of `link1` in OpenManipulator-X:**
@@ -215,7 +215,7 @@ A **link** represents a rigid body in the robot. Each link has **visual, collisi
 - **`<inertial>`**: Defines the mass, center of gravity, and inertia tensor, which are crucial for realistic physics simulations.  
 
 
-### Defining a Joint  
+### Defining a Joint
 A **joint** connects two links and defines how they move relative to each other.
 
 **Example of `joint1` in OpenManipulator-X:**
@@ -258,7 +258,7 @@ Prismatic joints allow **linear motion** rather than rotation.
 - **Used for**: The gripper’s movement (opening and closing).  
 
 
-### Using a Fixed Joint  
+### Using a Fixed Joint
 Fixed joints are used when a link **does not move** relative to another.  
 
 **Example:**
