@@ -442,13 +442,13 @@ If you force the download once, the board should be recovered and normal downloa
 Hold down the User Button on the OpenCM9.04 and connect the board to a PC using an USB cable.  
 Please have any other power source disconnected, and just connect to the USB while having the User Button held down.
 
-![](/img/software/opencm_ide/opencm_ide_074.jpg)
+![](/img/software/opencm_ide/opencm_ide_074.webp)
 
 > Hold down the User Button when entering recovery mode.
 
 When successful, the green LED should stay on as shown in the image below. When the download is completed the board will reset and the LED will turn off.
 
-![](/img/software/opencm_ide/opencm_ide_075.jpg)
+![](/img/software/opencm_ide/opencm_ide_075.webp)
 
 If unable to download, you must remove any code that may disturb the USB interrupt in the code you wrote.
 
@@ -490,16 +490,16 @@ If you compile the code above and download it, it will read the values of the EE
 Since there are no data all values will be printed as 0xffff.  
 In contrast with the BKP, the initialization of the flash memory will set all bits to 1.
 
-![](/img/software/opencm_ide/opencm_ide_076.jpg)
+![](/img/software/opencm_ide/opencm_ide_076.webp)
 
 Therefore 0xffff is printed. And pressing any key will input a value between 0~12 to the virtual addresses 0~9.  
 Now press the Reset button to restart.     
 
-![](/img/software/opencm_ide/opencm_ide_077.jpg)
+![](/img/software/opencm_ide/opencm_ide_077.webp)
 
 Now we unplug the power and plug in again to check.
 
-![](/img/software/opencm_ide/opencm_ide_078.jpg)
+![](/img/software/opencm_ide/opencm_ide_078.webp)
 
 ## Sensor Module
 All Robotis sensor modules can be connected to 5-pin ports. Please refer to the OpenCM9.04 Hardware Manual for the connection method.  
@@ -509,7 +509,7 @@ For the A-type you will need to separately solder the 5-pin connector, but for t
 
 Please note that the pins assigned to the 5-pin are also shared with the 40-pin IO on both sides, so in the header you must not use the IO pins assigned to the ports used below.
 
-![](/img/software/opencm_ide/opencm_ide_080.jpg)
+![](/img/software/opencm_ide/opencm_ide_080.webp)
 
 For example, if you connect the IR sensor to Port 1, you must not use Pins 2, 6, and 7 in the header.
 
@@ -550,7 +550,7 @@ For example, if you connect the IR sensor to Port 1, you must not use Pins 2, 6,
 2. Confirming Operation  
     In File --> Examples --> 07. Sensors, you can download example OLLO_DMS_Read and check using the serial monitor.
 
-    ![](/img/software/opencm_ide/opencm_ide_084.jpg)
+    ![](/img/software/opencm_ide/opencm_ide_084.webp)
 
 3. Operation Code  
     Sensors such as the DMS sensor module which are comprised of 3 pins from the 5 pin only need to keep on Reading the analog input. They do not need a separate initial code.
@@ -573,7 +573,7 @@ For example, if you connect the IR sensor to Port 1, you must not use Pins 2, 6,
 
     As for the DMS sensor module, you simply need to read the analog pin value from the loop.
 
-    ![](/img/software/opencm_ide/opencm_ide_088.jpg)
+    ![](/img/software/opencm_ide/opencm_ide_088.webp)
 
 ### LED Module
 1. Connectivity and Internal Structure  
@@ -607,7 +607,7 @@ For example, if you connect the IR sensor to Port 1, you must not use Pins 2, 6,
 
 Connect the LED and resistor to OpenCM9.04 as shown below. Connect to Port 13.
 
-![](/img/software/opencm_ide/opencm_ide_092.jpg)
+![](/img/software/opencm_ide/opencm_ide_092.webp)
 
 For digital output you must use pinMode(13, OUTPUT) in setup() to set Pin 13 as OUTPUT. And use the function digitalWrite() to assign HIGH/LOW value.
 
@@ -635,7 +635,7 @@ You will see the LED blink every 0.1 second.
 ### Let us make the Status LED blink.
 In OpenCM9.04 you can even test using the green Status LED built-in to the board without having to connect the LED as in the example above.
 
-![](/img/software/opencm_ide/opencm_ide_093.jpg)
+![](/img/software/opencm_ide/opencm_ide_093.webp)
 
 The Status LED is connected to Pin 14 and you can use the predefined function BOARD_LED_PIN to control it. This provides the advantage that if you write a sketch code using BOARD_LED_PIN then even if the board is changed you do not have to modify the code.   
 Open an example file by selecting File --> Examples --> 01. Basics --> b_Blink_LED.
@@ -647,7 +647,7 @@ If you download it then the green Status LED will blink.
 ### Let us receive a digital input in Pin 7.
 Connect the button and pull-down resistor as shown below. Use Port 7 to receive the digital input.
 
-![](/img/software/opencm_ide/opencm_ide_095.jpg)
+![](/img/software/opencm_ide/opencm_ide_095.webp)
 
 For digital input on the I/O Pin of OpenCM9.04 you must use pinMode(7, INPUT) in setup() to configure Pin 7 as INPUT. Then receive HIGH/LOW values with the function digitalRead() as shown below.
 
@@ -676,7 +676,7 @@ void loop(){
 If you change the circuit above to a pull-up circuit as shown below, it will work in the opposite way. If the button is pressed then LOW will be detected, and if it is separated then HIGH will be detected.
 The reason why HIGH is detected when the button is separated is because there is a 3.3V voltage connected to the pull-up resistor.
 
-![](/img/software/opencm_ide/opencm_ide_096.jpg)
+![](/img/software/opencm_ide/opencm_ide_096.webp)
 
 ### Let us receive digital input without either pull-up or pull-down resistors.
 In OpenCM9.04 it is possible to configure a switch circuit in digital input without a pull-down or pull-up resistor. The 26 GPIO Pins in OpenCM9.04 have internal input Pull-up/Pull-down resistors that you can configure with the software.  
@@ -684,7 +684,7 @@ If you need an internal pull-up you can configure as pinMode(7, INPUT_PULLUP) an
 If you define as INPUT then it would mean digital input made as floating so there will need to be an exterior pull-up or pull-down circuit. Let us look at an example.  
 The circuit shown below is a circuit that receives digital input through Pin 7 but the button is directly connected to GND. In this case we can define Pin 7 as INPUT_PULLUP in order for the button to work normally.
 
-![](/img/software/opencm_ide/opencm_ide_097.jpg)
+![](/img/software/opencm_ide/opencm_ide_097.webp)
 
 In this case if the button in pressed then LOW will be detected, and if the switch is separated then HIGH will be detected due to the internal pull-up.
 
@@ -705,7 +705,7 @@ void loop(){
 
 For the opposite case connect the button directly to the 3.3V as shown in the connectivity below.
 
-![](/img/software/opencm_ide/opencm_ide_098.jpg)
+![](/img/software/opencm_ide/opencm_ide_098.webp)
 
 In this case if the button is pressed then HIGH will be detected, and if the switch is separated then LOW will be detected due to the internal pull-down.
 
@@ -727,7 +727,7 @@ void loop(){
 ### Let us receive an input using the User Button.
 Similar to the built-in Status LED, there is a built-in User Button that can be used without the need to make a separate button circuit. If you look at the circuit diagram you can see the built-in pull-down input being used.
 
-![](/img/software/opencm_ide/opencm_ide_099.jpg)
+![](/img/software/opencm_ide/opencm_ide_099.webp)
 
 The User Button is connected to Pin 23 so you can designate Pin 23 directly or use BOARD_BUTTON_PIN.
 
@@ -1123,9 +1123,9 @@ void loop()&#123;
 ## External Interrupt
 Let us write a code that turns the LED off and on when the signal input to Pin 7 changes. Connect the switch connected to the 3.3V to Pin 7 as shown below. We will use the internal input pull-down option without using the external pull-down circuit. In the same way connect the LED and resistor to the 3.3V and then connect it to Pin 13. Be cautious of the direction of the LED.
 
-![](/img/software/opencm_ide/opencm_ide_112.jpg)
+![](/img/software/opencm_ide/opencm_ide_112.webp)
 
-![](/img/software/opencm_ide/opencm_ide_113.jpg)
+![](/img/software/opencm_ide/opencm_ide_113.webp)
 
 Let us use a global variable to make a flag and apply the method of toggling the flag in the interrupt routine whenever the signal from Pin 7 changes.
 
@@ -1395,7 +1395,7 @@ Please refer to the RC-100 for information on the RC-100 communication packet.
 
 ### Bluetooth connection using RC-100B + BT-100 or BT-210
 
-![](/img/software/opencm_ide/opencm_ide_130.jpg)
+![](/img/software/opencm_ide/opencm_ide_130.webp)
 
 > Connecting to the RC100 controller using Bluetooth
 
@@ -1519,9 +1519,9 @@ void loop()&#123;
 An important property of the BKP Memory is that even if you press Reset and the CPU restarts, the BKP Memory values will remain the same.
 However if you unplug the power and then plug in the power again the data will disappear. Below you can check the property of the BKP Memory using the output value.
 
-![](/img/software/opencm_ide/opencm_ide_139.jpg)
+![](/img/software/opencm_ide/opencm_ide_139.webp)
 
-![](/img/software/opencm_ide/opencm_ide_140.jpg)
+![](/img/software/opencm_ide/opencm_ide_140.webp)
 
-![](/img/software/opencm_ide/opencm_ide_141.jpg)
+![](/img/software/opencm_ide/opencm_ide_141.webp)
 

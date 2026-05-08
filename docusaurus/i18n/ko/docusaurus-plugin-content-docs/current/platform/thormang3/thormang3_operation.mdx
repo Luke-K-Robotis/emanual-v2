@@ -369,19 +369,19 @@ Instructions about how to calibrate FT Sensors on THORMANG3's feet. Balance Algo
 1. Move to Robot Init Pose
   - Click `Robot Init Pose` button on the top.  
 
-    ![](/img/platform/thormang3/thormang3_051.jpg)
+    ![](/img/platform/thormang3/thormang3_051.webp)
 
 2. Measure FT Air  
   - After reaching to Robot Init Pose, click `FT Air` button to measure the Force Torque value in the air.
   - **THORMANG3 must be hanging on the lift for this procedure.**
 
-    ![](/img/platform/thormang3/thormang3_052.jpg)
+    ![](/img/platform/thormang3/thormang3_052.webp)
 
 3. Measure FT Ground  
     - After completing previous procedure, click `FT Ground` button to measure the Force Torque on the ground.
     - **THORMANG3 must be standing on the ground for this procedure.**
 
-    ![](/img/platform/thormang3/thormang3_053.jpg)
+    ![](/img/platform/thormang3/thormang3_053.webp)
 
     - **Measured values are displayed on the left of GUID.**
     - **If measured Fz value on the ground is greater than the measured value in the air by more than around 210N, it is normal.**
@@ -391,12 +391,12 @@ Instructions about how to calibrate FT Sensors on THORMANG3's feet. Balance Algo
   - After completing above procedures, click `Apply Init FT` button.
   - Measured Force Torque values in the air and on the ground are transmitted to [thormang3_feet_ft_module] and FT Sensor calibration is completed.
 
-    ![](/img/platform/thormang3/thormang3_054.jpg)
+    ![](/img/platform/thormang3/thormang3_054.webp)
 
 5. Save FT Calibration
   - If you want to save current calibration, click `Save FT calibration` button.
 
-    ![](/img/platform/thormang3/thormang3_055.jpg)
+    ![](/img/platform/thormang3/thormang3_055.webp)
 
 ### Operate Head Module
 Instructions about controlling head of THORMANG3.  
@@ -493,7 +493,7 @@ Manipulation Control Mode can control and receive feedback of the upper body.
 Examples to control walking by using [thormang3_demo] and [thormang3_foot_step_generator].   
 Structure looks like the below figure.  
 
-![](/img/platform/thormang3/thormang3_060.jpg)
+![](/img/platform/thormang3/thormang3_060.webp)
 
 ##### Install & Build
 
@@ -520,7 +520,7 @@ Structure looks like the below figure.
 3. Set Mode
   - Click the `Walking Module` button to switch to Walking Mode.
 
-    ![](/img/platform/thormang3/thormang3_062.jpg)
+    ![](/img/platform/thormang3/thormang3_062.webp)
 
 4. Balance On
   - Select the `Walking` tab from the demo program.
@@ -531,23 +531,23 @@ Structure looks like the below figure.
     - Balance is turned on by configuring [Balance Parameter] with the `/robotis/walking/set_balance_param` service.
     - Balance Parameter is updated with the saved value in the [thormang3_foot_step_generator/data/balance_param.yaml].
 
-    ![](/img/platform/thormang3/thormang3_064.jpg)
+    ![](/img/platform/thormang3/thormang3_064.webp)
 
 5. Walking Control
   - Configure Walking Parameters on the right of the `Direction Walking` panel.
   - After configuring parameters, clicking one of Walking Directions will initiate walking of THORMANG3.
 
-    ![](/img/platform/thormang3/thormang3_065.jpg)
+    ![](/img/platform/thormang3/thormang3_065.webp)
 
     - The procedure flows as below.
 
-    ![](/img/platform/thormang3/thormang3_066.jpg)
+    ![](/img/platform/thormang3/thormang3_066.webp)
 
 
 #### Walking with [thormang3_demo] and [footstep_planner]
 A walking example that follows StepData using [footstep_planner].
 
-![](/img/platform/thormang3/thormang3_067.jpg)
+![](/img/platform/thormang3/thormang3_067.webp)
 
 ##### Install & Build
 
@@ -569,37 +569,37 @@ A walking example that follows StepData using [footstep_planner].
   - Click the `Add` button on the Rviz window.
   - Select the `By Topic` tab and select the `/demo/foot_step_marker/MarkerArray`, then click `OK`.
 
-    ![](/img/platform/thormang3/thormang3_068.jpg)
+    ![](/img/platform/thormang3/thormang3_068.webp)
 
 3. Interactive Marker
   - Click the `Publish Point` button on the Rviz window.
   - Click one of the THORMANG's feet on the Rviz window.
 
-    ![](/img/platform/thormang3/thormang3_069.jpg)
+    ![](/img/platform/thormang3/thormang3_069.webp)
 
     - Click `Set Marker` button.
     - The Interactive Marker is activated on the Rviz window as below figure.
 
-    ![](/img/platform/thormang3/thormang3_070.jpg)
+    ![](/img/platform/thormang3/thormang3_070.webp)
 
 4. StepData Planning
   - Move the Interative Marker and click `Publish Pose` button.  
   - `Walking` tab of the [thormang3_demo] GUI should be selected ahead.  
 
-    ![](/img/platform/thormang3/thormang3_071.jpg)
+    ![](/img/platform/thormang3/thormang3_071.webp)
 
     - After checking "Get Pose for Step" message from the GUI and activated `Plan` button, click `Plan` button.  
 
-    ![](/img/platform/thormang3/thormang3_072.jpg)
+    ![](/img/platform/thormang3/thormang3_072.webp)
 
     - When planning is completed, planned StepData can be seen on the Rviz GUI window.  
 
-    ![](/img/platform/thormang3/thormang3_073.jpg)
+    ![](/img/platform/thormang3/thormang3_073.webp)
 
 5. Start Walking
   - Confirm planned StepData from the [thormang3_demo] GUI and click `GO!` button.
 
-    ![](/img/platform/thormang3/thormang3_074.jpg)
+    ![](/img/platform/thormang3/thormang3_074.webp)
 
 
 

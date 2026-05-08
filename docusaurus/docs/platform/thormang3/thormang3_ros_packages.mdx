@@ -350,7 +350,7 @@ THORMANG3 manipulation module for the upper body.
     A service that reads the pose of end effector from a specific kinematics group.
 
 ### thormang3_walking_module
-![](/img/platform/thormang3/thormang3_walking_module_diagram.jpg)
+![](/img/platform/thormang3/thormang3_walking_module_diagram.webp)
 
 As seen from the above figure, thormang3_walking_module is one of the MotionModules from ROS Framework.
 THROMANG3 can be controlled with Topics and Services.
@@ -360,12 +360,12 @@ Users can designate almost all Step Parameters.([thormang3_walking_module_msgs/S
 
     thormang3_walking_module includes online walking pattern generator.
     The pattern is generated from Foot Step Data input.
-    ![](/img/platform/thormang3/thormang3_walking_module_algorithm_diagram.jpg)
+    ![](/img/platform/thormang3/thormang3_walking_module_algorithm_diagram.webp)
 
 2. Balance Algorithm
 
     The balance algorithm is included as shown below.([thormang3_walking_module_msgs/BalanceParam])
-    ![](/img/platform/thormang3/thormang3_walking_module_balance_diagram.jpg)
+    ![](/img/platform/thormang3/thormang3_walking_module_balance_diagram.webp)
 
 #### Download & Build
 
@@ -2086,7 +2086,7 @@ $ roslaunch thormang3_action_editor thormang3_action_editor.launch
 
 #### UI
 
-![](/img/platform/thormang3/thormang3_038.jpg)
+![](/img/platform/thormang3/thormang3_038.webp)
 
 - **Page number**: Page number is the listed page number. If user wants to create a new action poses, user can use any empty page.  
 - **Page title**: We'd like to recommend to user that they use a page title, if they will make a new action on an empty page.  
@@ -2126,7 +2126,7 @@ The below table shows the contents of the default action file.
 #### Basic Command of Action Editor
 After typing "help", the commend list will appear as shown below.  
 
-![](/img/platform/thormang3/thormang3_039.jpg)
+![](/img/platform/thormang3/thormang3_039.webp)
 
 - **exit**: exits the program.  
 - **re**: refreshes the screen.  
@@ -2151,28 +2151,28 @@ After typing "help", the commend list will appear as shown below.
 1. Run the thormang3_action_editor on MPC  
 2. Find the page where the "walking_init page" is by typing "list"  
 
-    ![](/img/platform/thormang3/thormang3_040.jpg)
+    ![](/img/platform/thormang3/thormang3_040.webp)
 
 3. Exit the list and go to any blank page by typing "page [x]"(for example, page 15).
 
-    ![](/img/platform/thormang3/thormang3_041.jpg)
+    ![](/img/platform/thormang3/thormang3_041.webp)
 
 4. And copy the page 1 to page [x].  
 
-    ![](/img/platform/thormang3/thormang3_042.jpg)
+    ![](/img/platform/thormang3/thormang3_042.webp)
 
 5. Go to "walking_init" pose by typing "play"  
 6. Turn off the torque of ID 2, 4 and 8 by typing "off 2 4 8"  
 
-    ![](/img/platform/thormang3/thormang3_043.jpg)
+    ![](/img/platform/thormang3/thormang3_043.webp)
 
 7. After getting the desired pose turn torque on again by simple typing on. And insert the pose to step 1 by typing "i 1"  
 
-    ![](/img/platform/thormang3/thormang3_044.jpg)
+    ![](/img/platform/thormang3/thormang3_044.webp)
 
 8. Edit "Pause Time", "Time" of STP1 and "Page Step" as shown below.  
 
-    ![](/img/platform/thormang3/thormang3_045.jpg)
+    ![](/img/platform/thormang3/thormang3_045.webp)
 
 9. Type "play" and check the THORMANG3's action  
 

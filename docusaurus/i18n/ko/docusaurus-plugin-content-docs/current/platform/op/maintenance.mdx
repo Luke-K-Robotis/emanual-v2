@@ -19,7 +19,7 @@ The fuse is rated at 12V (volts) and 10A (amps).
 Replacing the fuse requires requires disassembly of DARWIN-OP's main body and expose the sub-controller CM-730.   
 Once the sub-controller is exposed locate the fuse. The diagram below shows the fuse location enclosed by the red rectangle.
 
-![](/img/platform/op/op_231.jpg)
+![](/img/platform/op/op_231.webp)
 
 Carefully remove the fuse with a pair of tweezers. Afterwards carefully insert a new fuse.
 
@@ -95,14 +95,14 @@ Please refer to the [Assembly Guide](http://sourceforge.net/projects/darwinop/fi
 
 Every MX-28 on DARWIN-OP comes comes installed with the horn (front side of actuator). Some of the MX-28's come with the bearing set (rear side of actuator) installed as well. You will need a wrench for 2.5mm thick bolt (provided).
 
-![](/img/dxl/x/horn_bearing.jpg)
+![](/img/dxl/x/horn_bearing.webp)
 
 #### Installing the Horn
 
 Place the thrust horn washer into the actuator before inserting the horn.
 You must carefully align the horn to the wheel gear serration by aligning dots.
 
-![](/img/dxl/x/horn_alignment.jpg)
+![](/img/dxl/x/horn_alignment.webp)
 
 Once alignment is properly done, gently push the center of the horn toward the actuator.
 Make sure that the horn washer is in place as you tighten the bolt.
@@ -114,7 +114,7 @@ You may need to remove the bearing set from the previous actuator and reinstall 
 The bearing set can also be purchased separately.
 As bearing set is rotating freely, therefore alignment is not required when assembling to DYNAMIXEL.
 
-![](/img/dxl/x/bearing.jpg)
+![](/img/dxl/x/bearing.webp)
 
 For more information on the bearing set please click [here](http://robotis-shop-en.com/shop/step1.php?number=824). Note that the bearing set is for the RX-28, which will fit perfectly on the MX-28 as they both share the exact physical dimensions.
 
@@ -129,7 +129,7 @@ You have USB2DYNAMIXEL and a Robotis dedicated robot controller (CM-5, CM-510, o
 4. Change the ID number from 1 to the proper number.
 5. Change the baud rate from 34 (576000 bps) to 1 (1 Mbps).
 
-  ![](/img/platform/op/op_232.jpg)
+  ![](/img/platform/op/op_232.webp)
 
 6. After replacement is done. Run [DXL Monitor] and reset all DYNAMIXEL.
 
@@ -147,19 +147,19 @@ You will need 2 separate 3-pin TTL cables (they come supplied with every DARWIN-
 
 2. Disconnect both Interface Board cables.
 
-  ![](/img/platform/op/op_233.jpg)
+  ![](/img/platform/op/op_233.webp)
 
 3. Temporarily disconnect ALL currently connected cables. You can choose any TTL port. Do not disconnect the power cable from sub-controller to main controller. Doing so will not allow Dynamixel Wizard proper DYNAMIXEL search.
 
-  ![](/img/platform/op/op_234.jpg)
+  ![](/img/platform/op/op_234.webp)
 
-  ![](/img/platform/op/op_235.jpg)
+  ![](/img/platform/op/op_235.webp)
 
 4. Connect a spare TTL cable to any open port and the other end to the new MX-28.
 
 5. Connect a second TTL cable to the other port of the MX-28. Connect the other end of the cable to the USB2DYNAMIXEL controller. Afterwards connect USB2DYNAMIXEL to the PC.
 
-  ![](/img/platform/op/op_236.jpg)
+  ![](/img/platform/op/op_236.webp)
 
 6. Turn the switch on on DARWIN-OP and let Ubuntu load (this process may take up to 2 minutes).  
   **NOTE** : The head LED will remain green and will not turn amber. The demo program will not run automatically.
@@ -167,19 +167,19 @@ You will need 2 separate 3-pin TTL cables (they come supplied with every DARWIN-
 7. Connect to DARWIN-OP and run DYNAMIXEL Monitor.  
   Once DYNAMIXEL Monitor is running all actuators will show as "fail" even with the new MX-28 connected. Do not exit DYNAMIXEL Monitor. Leave the program running.
 
-  ![](/img/platform/op/op_237.jpg)
+  ![](/img/platform/op/op_237.webp)
 
 8. On Windows run DYNAMIXEL Wizard.  
   Change address 4 (baud rate) from the default value of 34 to 1. You must perform this operation with DYNAMIXEL Wizard as DYNAMIXEL Monitor does not support this function currently. If you do not change the baud rate then DYNAMIXEL Monitor will fail to scan the actuator.
   Change address 3 (ID) from the default value of 1 to the desired value. You may also use DYNAMIXEL Monitor to change ID as well.
 
-  ![](/img/platform/op/op_238.jpg)
+  ![](/img/platform/op/op_238.webp)
 
   **NOTE** : RoboPlus Manager does not currently support the CM-730 controller because it lacks the Serial Connector input.
 
 Once the baud rate value is set to 1 you may return to DYNAMIXEL Monitor and type scan to verify success on baud rate change (the first attempt may show the new actuator as "fail" if so type scan again until "OK" shows on screen).
 
-![](/img/platform/op/op_239.jpg)
+![](/img/platform/op/op_239.webp)
 
 Once all changes are made you still need to exit DYNAMIXEL Monitor and [Shut down DARWIN-OP] properly.
 Once shut down and powered off replace DYNAMIXEL actuator and restore all connections.
@@ -200,53 +200,53 @@ If so let's assume we need to replace the right elbow (ID 5) and already replace
 
 1. Run [DXL Monitor] You will see the following appear on screen
 
-  ![](/img/platform/op/op_240.jpg)
+  ![](/img/platform/op/op_240.webp)
 
   > Despite installing the new actuator replacement for ID 5 the software still displays as "fail." Now its time to make the proper changes.
 
 2. Go to ID 1 by typing id 1 and temporarily assign a different ID number. You may assign numbers between 21 and 199 but refrain from numbers between 1 and 20.
 let's say change to 39 so type **wr 3 39**.
 
-  ![](/img/platform/op/op_241.jpg)
+  ![](/img/platform/op/op_241.webp)
 
   > Notice that the command prompt changed from ID:1 R_SHOULDER_PITCH to ID:39 UNKNOWN.
 
 3. Return to the CM-730 command prompt by typing id 200.
 4. Type scan and notice the "extra" ID on ID 39. You'll also notice that ID 1 and 5 failed.
 
-  ![](/img/platform/op/op_242.jpg)
+  ![](/img/platform/op/op_242.webp)
 
 5. Type the command **wr 4 34** while remaining in ID 200. This means that the communications baud rate between the CM-730 and MX-28 switched from 1Mbps to 576000 bps.
 6. Type scan and the following will appear onscreen
 
-  ![](/img/platform/op/op_243.jpg)
+  ![](/img/platform/op/op_243.webp)
 
   > Notice that all actuators fail except ID 1 (remember that the default values on a new DYNAMIXEL is ID 1 and baud rate 34). Notice that ID 39 does not appear anymore. No need to worry this is because ID 39 does not currently have a specific function in DARWIN-OP and the baud rate of said ID is 1 Mbps; whereas the current baud rate between the CM-730 and and MX-28 is 57600 bps.
 
 7. go to ID 1 by typing **id 1**
 8. The command prompt will change from ID 200 to ID 1
 
-  ![](/img/platform/op/op_244.jpg)
+  ![](/img/platform/op/op_244.webp)
 
 9. change the baud rate from 34 to 1 by typing **wr 4 1**
 
-  ![](/img/platform/op/op_245.jpg)
+  ![](/img/platform/op/op_245.webp)
 
 10. Once baud rate of the new actuator matches with the rest of the actuators return to to ID 200 by typing **id 200**
 
-  ![](/img/platform/op/op_246.jpg)
+  ![](/img/platform/op/op_246.webp)
 
 11. Change the baud rate between CM-730 and MX-28 back to 1 Mbps by typing **wr 4 1**
 12. Return to ID 1 by typing **id 1**; change the ID from 1 to desired ID. In this case to ID 5 by typing **wr 3 5**
 13. Return to ID 200 and type **scan**. Notice that ID 5 has been set, but ID 1 still failed and there's ID 39. Go to ID 39 by typing **id 39**
 
-  ![](/img/platform/op/op_247.jpg)
+  ![](/img/platform/op/op_247.webp)
 
   > Remember that ID 39 is a temporary ID change for ID 1. Now its time to revert the change back.
 
 14. Go to ID 39 by typing **id 39**. Restore ID 1 again by typing **wr 3 1**. Return to ID 200 and run **scan**.
 
-  ![](/img/platform/op/op_248.jpg)
+  ![](/img/platform/op/op_248.webp)
 
 15. Run **reset all** and all DARWIN-OP will be back to normal again.
 
@@ -262,20 +262,20 @@ However in this case instead of the need for 2 3-pin TTL cables you'll only need
 2. Turn DARWIN-OP on and run [DXL Monitor]. Do not worry about setting DARWIN-OP in the kneeling position during this procedure as the demo program will fail to run automatically due to the disconnected DYNAMIXEL. Please set DARWIN-OP in a stable position (either sitting or laying down on its belly).
 3. Run **scan** and you will notice that all ID's will fail
 
-  ![](/img/platform/op/op_249.jpg)
+  ![](/img/platform/op/op_249.webp)
 
 4. Change the baud rate on ID 200 from 1 Mbps to 57,600 bps by typing **wr 4 34**
 5. Run **scan** again and you'll notice the OK on ID 1 (remember that all new DYNAMIXEL have default values 1 for ID and 34 for baud rate).
 
-  ![](/img/platform/op/op_250.jpg)
+  ![](/img/platform/op/op_250.webp)
 
 6. Go to ID 1. Change the baud rate of ID 1 from 57,600 bps to 1 Mbps by typing **wr 4 1**
 
-  ![](/img/platform/op/op_251.jpg)
+  ![](/img/platform/op/op_251.webp)
 
 7. Return to ID 200 and change the baud rate back to 1 Mbps
 
-  ![](/img/platform/op/op_252.jpg)
+  ![](/img/platform/op/op_252.webp)
 
 8. Return to ID 1 and make the ID change. In this case change to ID 5 by typing **wr 3 5**
 9. Return to ID 200.
@@ -316,7 +316,7 @@ You can verify the connection by the following:
   - Running any program from the source code should output a message about CM-730 not detected.
   - go the the '/dev' directory, type ls and look for ttyUSB0. If its not there then there's a connection loss. In such case simply restart DARWIN-OP.
 
-![](/img/platform/op/op_253.jpg)
+![](/img/platform/op/op_253.webp)
 
 If problem persists contact ROBOTIS for an RMA Procedure.
 
@@ -327,7 +327,7 @@ To verify camera connection with Linux OS perform the following.
 1. On a terminal window go to the '**/dev**' directory.
 2. Type **ls** and you'll see a list of devices and look for '**video0**' This is the camera as an USB device.
 
-![](/img/platform/op/op_254.jpg)
+![](/img/platform/op/op_254.webp)
 
 If you do not see a '**video0**' device then you may need to replace the camera cable and/or camera. in such case you may replace the USB cable, the camera, or contact ROBOTIS for an arrangement.
 
@@ -780,36 +780,36 @@ You can recover the operating system in DARWIN-OP via Clonezilla. The recovery s
   - Turn on DARWIN-OP and press the ‘F2’ key to enter the BIOS menu.  
   - From the menu enter Primary Master(4GB NANDrive(PM))
 
-    ![](/img/platform/op/op_036.jpg)
+    ![](/img/platform/op/op_036.webp)
 
   - Check the capacity as shown below. Then download a matching image.
 
 |SSD Capacity 3.6GB|SSD Capacity 4GB|
 |:---:|:---:|
-|![](/img/platform/op/op_037.jpg)|![](/img/platform/op/op_038.jpg)|
+|![](/img/platform/op/op_037.webp)|![](/img/platform/op/op_038.webp)|
 
 #### NEW: Create Recovery USB
 
 1. Create a Clonezilla Live USB via Tuxboot.  
   Download Tuxboot : [https://sourceforge.net/projects/tuxboot/files/0.6/](https://sourceforge.net/projects/tuxboot/files/0.6/)
 
-    ![](/img/platform/op/op_039.jpg)
+    ![](/img/platform/op/op_039.webp)
 
-    ![](/img/platform/op/op_040.jpg)
+    ![](/img/platform/op/op_040.webp)
 
     Oldfiles folder -> 2.0.1-5 folder select and download `clonezilla-live-2.0.1-5-i486.iso`
 
-    ![](/img/platform/op/op_041.jpg)
+    ![](/img/platform/op/op_041.webp)
 
-    ![](/img/platform/op/op_042.jpg)
+    ![](/img/platform/op/op_042.webp)
 
     Select pre-downloaded and look for the file `clonezilla-live-2.0.1-5-i486.iso`, then click OK
 
-    ![](/img/platform/op/op_043.jpg)
+    ![](/img/platform/op/op_043.webp)
 
     Once complete click on Exit
 
-    ![](/img/platform/op/op_044.jpg)
+    ![](/img/platform/op/op_044.webp)
 
 2. Place the image under `/home/partimag` of your USB drive. That is copy into the directory DARwIn_Recovery_2012-03-19
 

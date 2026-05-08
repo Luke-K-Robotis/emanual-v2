@@ -42,33 +42,33 @@ Connecting to DARWIN-OP wirelessly may be differentdepending on the access point
 1. Connect to DARWIN-OP either directly or via wired LAN
 2. If connected via wired LAN access DARWIN-OP with remote desktop (VNC)
 
-  ![](/img/platform/op/op_045.jpg)
+  ![](/img/platform/op/op_045.webp)
 
 3. Access DARWIN-OP's Ubuntu's desktop
 4. Access network connections (on the upper right part of the desktop) and select the wireless SSID
 
-  ![](/img/platform/op/op_046.jpg)
+  ![](/img/platform/op/op_046.webp)
 
 5. Make sure you established connection
 
-  ![](/img/platform/op/op_047.jpg)
+  ![](/img/platform/op/op_047.webp)
 
 6. Afterwards you will need to check for DHCP assigned IP address
 7. Open a terminal window and type ifconfig
 
-  ![](/img/platform/op/op_048.jpg)
+  ![](/img/platform/op/op_048.webp)
 
 8. Check for inet addr under wlan0 (it is highly recommended that you write this number down).
 
-  ![](/img/platform/op/op_049.jpg)
+  ![](/img/platform/op/op_049.webp)
 
 9. Use this number to connect to DARWIN-OP wirelessly. You may connect via any method using this number (VNC, PuTTY, SAMBA drive, ZOC, etc).
 
-  ![](/img/platform/op/op_050.jpg)
+  ![](/img/platform/op/op_050.webp)
 
-  ![](/img/platform/op/op_051.jpg)
+  ![](/img/platform/op/op_051.webp)
 
-  ![](/img/platform/op/op_052.jpg)
+  ![](/img/platform/op/op_052.webp)
 
 10. You can save the wifi settings by properly shutting down DARWIN-OP. Shut-down information can be found here. The shut-down procedure is essential so that wifi connection settings are saved in the PC. The next time connecting to DARWIN-OP wirelessly you may skip steps 1 through 8.
 
@@ -99,7 +99,7 @@ You may use existing terminal client software (i.e. PuTTY, ZOC, etc) to connect 
 
 ROBOTIS recommends that users connect via terminal client.
 
-![](/img/platform/op/op_053.jpg)
+![](/img/platform/op/op_053.webp)
 
 ##### Remote Desktop (VNC)
 
@@ -112,7 +112,7 @@ You may connect via remote desktop if you prefer graphical interfaces.
 
 Accessing DARWIN-OP via remote desktop may result inslower performance. This is a limitation from Intel's platform.
 
-![](/img/platform/op/op_054.jpg)
+![](/img/platform/op/op_054.webp)
 
 ##### Samba
 
@@ -123,16 +123,16 @@ Samba server is installed in DARWIN-OP. Samba is an implementation of the SMB/CI
   2. Type \\192.168.123.1 on the address bar
   3. "root directory" is root directory( "/" ) of DARWIN-OP
 
-![](/img/platform/op/op_055.jpg)
+![](/img/platform/op/op_055.webp)
 
 You can map network drive.
 
-![](/img/platform/op/op_056.jpg)
+![](/img/platform/op/op_056.webp)
 
 ### Source Code
 You may find the source code directory at "/darwin" from DARWIN-OP's PC.
 
-![](/img/platform/op/op_057.jpg)
+![](/img/platform/op/op_057.webp)
 
 The pre-installed source code may be updated without prior notice. Please check for updates periodically.  
 You may obtain updated source code at the following:  
@@ -140,7 +140,7 @@ https://sourceforge.net/projects/darwinop/files/
 
 You may also update the source code via Subversion with the command "svn up" from the directory /darwin in DARWIN-OP. This method assumes DARWIN-OP has internet access.
 
-![](/img/platform/op/op_058.jpg)
+![](/img/platform/op/op_058.webp)
 
 ### Terminate Demo Program
 - If you wish to run other programs, such as the tools, customization, continue running DARwIn-OP without the installed demo program; then you need to terminate the demo program.
@@ -154,7 +154,7 @@ To initiate a kill process following the procedure below:
 3. Enter the password '**111111**' (six ones) (assuming you're under "darwin" username). Keep in mind that keystrokes are not shown on this step.
 4. Type '**killall demo**'.
 
-![](/img/platform/op/op_059.jpg)
+![](/img/platform/op/op_059.webp)
 
 Once the kill process is complete you may rerun the demo program or any other programs.
 
@@ -166,12 +166,12 @@ The PC inside DARwIn-OP is set to run the demo program by default. However, user
 2. With a text editor open the file rc.local (You shoud be root user.)  
   The file content looks like the image below.
 
-  ![](/img/platform/op/op_060.jpg)
+  ![](/img/platform/op/op_060.webp)
 
 3. Modify the file by adding # at the beggining of the /darwin/Linux/project/demo/demo  
 Afterwards the contents should look like the image below
 
-  ![](/img/platform/op/op_061.jpg)
+  ![](/img/platform/op/op_061.webp)
 
 Adding the # sign means that the line has been commented out. After insertion of the # sign save the changes. On the next booting of DARwIn-OP the demo program will no longer run automatically.
 
@@ -184,7 +184,7 @@ To rerun the demo program follow the procedure below:
 2. Connect to DARWIN-OP either directly or via networking (recommended).
 3. Obtain root user privileges (sudo su procedure).
 
-![](/img/platform/op/op_062.jpg)
+![](/img/platform/op/op_062.webp)
 
 The illustration above depicts the re-execution of the demo program
 
@@ -1176,7 +1176,7 @@ Motion Class shares data between classes
 
 - Joint ID is the same as DYNAMIXEL ID
 
-![](/img/platform/op/op_id_map.jpg)
+![](/img/platform/op/op_id_map.webp)
 
 ###### Compliance Slope
 
@@ -3301,7 +3301,7 @@ Look for the file "**read_write**" If not type make and the compiler will autoge
 Execute the read/write by typing **./read_write**.  
 Once running the read/write you will see the following  
 
-![](/img/platform/op/op_063.jpg)
+![](/img/platform/op/op_063.webp)
 
 - Grab DARWIN-OP's right hand and move it around. You should notice that the left hand mimics the movement of the right hand.
 - You should also notice that the head and eye LED constantly change color.
@@ -3359,7 +3359,7 @@ Connect to DARwIn-OP via IP address and port 8080 to stream motion images from t
 
 Camera's gain and exposure values can be can be changed by clicking the buttons.
 
-![](/img/platform/op/op_064.jpg)
+![](/img/platform/op/op_064.webp)
 
 #### Tutorial Procedure
 
@@ -3379,7 +3379,7 @@ Look for the file "**camera_tutorial**". If not type make and the compiler will 
 Execute the camera tutorial by typing **./camera_tutorial**.
 Once running the camera tutorial you will see the following
 
-![](/img/platform/op/op_065.jpg)
+![](/img/platform/op/op_065.webp)
 
 From your computer open a web browser (Firefox recommended, do not use Chrome due to memory leak) and type http://192.168.123.1:8080 on the address bar.  
 The IP address 192.168.123.1 is the default IP address assuming you've established a wired LAN connection with DARwIn-OP.
@@ -3432,7 +3432,7 @@ posx: 169.000000, posy: 104.000000
 
 From the capture screen color RGB(255, 0, 0) (color) replacement is shown
 
-![](/img/platform/op/op_066.jpg)
+![](/img/platform/op/op_066.webp)
 
 #### Tutorial procedure
 
@@ -3452,7 +3452,7 @@ Look for the file "**color_filtering**". If not type make and the compiler will 
 Execute the image processing tutorial by typing **./color_filtering**.  
 Once tutorial is running you will see the following screen
 
-![](/img/platform/op/op_067.jpg)
+![](/img/platform/op/op_067.webp)
 
 From your computer open a web browser (Firefox recommended, do not use Chrome due to memory leak) and type http://192.168.123.1:8080 on the address bar.  
 The IP address 192.168.123.1 is the default IP address and assuming you've established a wired LAN connection with DARWIN-OP.  
@@ -3468,11 +3468,11 @@ You can change the color of the ball to the desired color by manipulating the pa
 Example: chang the ball color from red (default) to blue.   
 Please refer to the table [here](#camera-calibration) for reference for values for blue.
 
-![](/img/platform/op/op_068.jpg)
+![](/img/platform/op/op_068.webp)
 
 Under default values for the ball DARWIN-OP would view a blue ball like the image above.
 
-![](/img/platform/op/op_069.jpg)
+![](/img/platform/op/op_069.webp)
 
 - After manipulating the values DARWIN-OP would view a blue ball like the image above. Notice that a bright reddish orange patch covers most of the blue ball. The orange patch over blue is an indication that DARWIN-OP detects blue as the target color.
 - You will also notice the change in values for posx and posy. This is because DARWIN-OP is able to "detect" the ball therefore calculate the position of center of mass for the ball color.
@@ -3571,7 +3571,7 @@ Look for the file "**head_tracking**". If not type make and the compiler will au
 Execute the head control tutorial by typing **./head_tracking**.  
 Once running the tutorial you will see the following
 
-![](/img/platform/op/op_070.jpg)
+![](/img/platform/op/op_070.webp)
 
 DARWIN-OP's head LED will change from green to amber.
 - DARWIN-OP tracks the red ball. However, the body remains still and only the head moves (DYNAMIXEL ID 19 and 20).
@@ -3584,15 +3584,15 @@ the IP address 192.168.123.1 is the default IP address and assuming you've estab
 By Default DARWIN-OP will track a red ball.
 Please refer to the table [here](#camera-calibration) for ball, red, blue, and yellow.
 
-![](/img/platform/op/op_071.jpg)
+![](/img/platform/op/op_071.webp)
 
 If you replace the red ball with another color DARWIN-OP will ignore it
 
-![](/img/platform/op/op_072.jpg)
+![](/img/platform/op/op_072.webp)
 
 As you adjust the color of the ball, from the web browser, you can also see DARWIN-OP's camera track the ball in real-time once values are properly adjusted.
 
-![](/img/platform/op/op_073.jpg)
+![](/img/platform/op/op_073.webp)
 
 Over the course of the head control tutorial you will notice that the actuators LED blink as if they have an error. Disregard this notification during this tutorial.
 
@@ -3705,20 +3705,20 @@ Look for the file "**ball_following**". If not type make and the compiler will a
 Execute the walking control tutorial by typing **./ball_following**.  
 The following message will appear on screen and DARWIN-OP will stand up from its kneeling position.
 
-![](/img/platform/op/op_074.jpg)
+![](/img/platform/op/op_074.webp)
 
 - DARWIN-OP's head LED will change from green to amber.
 - Place the ball (default red) in front of DARWIN-OP.
 - Press the "ENTER" key to continue
 
-![](/img/platform/op/op_075.jpg)
+![](/img/platform/op/op_075.webp)
 
 - DARWIN-OP will walk towards the ball, but will not perform the kick.
 - Watch the display as DARWIN-OP walks towards the ball but halts when is ready to kick.
 - The line following "Start to press ENTER!" is DARWIN-OP surrent status. This line changes with DARWIN-OP's motion. "[KICK] Right STOP" means that DARWIN-OP is ready to kick the ball with its right foot but has halted.
 - Move the ball a little and DARWIN-OP will resume walking until is gets close enough ready to kick.
 
-![](/img/platform/op/op_076.jpg)
+![](/img/platform/op/op_076.webp)
 
 You may also change the ball color DArwIn-OP tracks by opening our web browser.  
 From your computer open a web browser (Firefox recommended, do not use Chrome due to memory leak) and type http://192.168.123.1:8080 on the address bar.  
@@ -3802,7 +3802,7 @@ Look for the file "**action_script**". If not type make and the compiler will au
 Execute the tutorial by typing **./action_script**.  
 Once running the tutorial you will see the following
 
-![](/img/platform/op/op_077.jpg)
+![](/img/platform/op/op_077.webp)
 
 - Follow the instructions by pressing the "ENTER" key.
 - DARWIN-OP stands up.
@@ -3819,7 +3819,7 @@ Once running the tutorial you will see the following
   - OOPS!
   - Bye bye!
 
-  ![](/img/platform/op/op_078.jpg)
+  ![](/img/platform/op/op_078.webp)
 
 - Once DARWIN-OP finishes Interactive Motion Mode the tutorial ends automatically.
 - DARWIN-OP's head LED returns to green, but its body remains in standing position.
@@ -3958,7 +3958,7 @@ streamer->send_image(img_send);
 
 Connect to DARWIN-OP via IP address and port 8080.
 
-![](/img/platform/op/op_080.jpg)
+![](/img/platform/op/op_080.webp)
 
 the red cross represent the weight centered on each foot; while the blue cross for both feet combined.
 DARWIN-OP can be aimed at several directions LX, LY, RX, RY. These values are modifiable.
@@ -3989,7 +3989,7 @@ Tools, such as action editor, walking tuner, etc. can be found at `/darwin/Linux
 If you wish to use the tools is recommended that you connect to DARWIN-OP via SSH. Please go to "A. Ready" for example on how to connect.
 
 ### Action Editor
-![](/img/platform/op/op_081.jpg)
+![](/img/platform/op/op_081.webp)
 
 Action Editor allows the user to control and edit DARWIN-OP's motions and poses via command line. This process is done by manipulating values of the MX-28 actuator(s).  
 For more information about the MX-28, please refer to [MX-28 manual](/docs/dxl/mx/mx-28).  
@@ -4078,11 +4078,11 @@ Remember that motion files are located at `/darwin/Data`
 6. From there you may follow the options given to you.
 7. To exit the program type **exit**.
 
-![](/img/platform/op/op_082.jpg)
+![](/img/platform/op/op_082.webp)
 
-![](/img/platform/op/op_083.jpg)
+![](/img/platform/op/op_083.webp)
 
-![](/img/platform/op/op_084.jpg)
+![](/img/platform/op/op_084.webp)
 
 Please note the following:
 - **STP7** is the current value of the actuators. ???? means that torque has been released.
@@ -4091,7 +4091,7 @@ Please note the following:
 
 After typing help the following list will appear.
 
-![](/img/platform/op/op_085.jpg)
+![](/img/platform/op/op_085.webp)
 
 The menu options are very extensive so you may not be able to memorize every command. At any time you type help to invoke the options list.
 - **exit**: exits the program. After exiting the program press the "RESET" button on DARwin-OP.
@@ -4107,21 +4107,21 @@ The menu options are very extensive so you may not be able to memorize every com
 - **play**: plays motion(s) of current page.
 - **name**: changes the name of the current page. You can view the name of the page at the top right portion of the screen. For example, page 2 is titled ok; to change the name type name and press the "ENTER" key. name: will appear at the bottom of the screen. Input the desired name for the page, good for instance, and press the "ENTER" key again.
 
-  ![](/img/platform/op/op_086.jpg)
+  ![](/img/platform/op/op_086.webp)
 
   > before changing the page name
 
-  ![](/img/platform/op/op_087.jpg)
+  ![](/img/platform/op/op_087.webp)
 
   > after changing the page name to good.
 
 - **w [index]**: overwrites STP[index] with data from STP7 (the very first column on the page). For example page 4 has data on 4 steps (4 columns excluding STP7). typing w 1 overwrites STP1 data with STP7 data.
 
-  ![](/img/platform/op/op_088.jpg)
+  ![](/img/platform/op/op_088.webp)
 
   > before typing w 1
 
-  ![](/img/platform/op/op_089.jpg)
+  ![](/img/platform/op/op_089.webp)
 
   > after applying w 1. Notice that STP1 data is identical to STP7.
 
@@ -4132,15 +4132,15 @@ The menu options are very extensive so you may not be able to memorize every com
 - **on/off**: turns on/off torque from all DYNAMIXEL's.
 - **on/off [index1] [index2] [index3] ...**: turns torque on/off from ID[index1] ID[index2] ID[index3]. For example off 20 releases torque from ID20. Notice that STP7 for ID20 will read [????]. Typing on 20 turns torque from ID20 on again and the screen outputs the current position data of ID20.
 
-  ![](/img/platform/op/op_090.jpg)
+  ![](/img/platform/op/op_090.webp)
 
   > Before off 20 command. Value of ID20 is 549 (observe STP7).
 
-  ![](/img/platform/op/op_091.jpg)
+  ![](/img/platform/op/op_091.webp)
 
   > ID20 is off. Type re to refresh the screen. During this time you may manually move the head up and down.
 
-  ![](/img/platform/op/op_092.jpg)
+  ![](/img/platform/op/op_092.webp)
 
   > ID20 is on again after typing on 20. notice the value of ID20 is 624 and not 453 (the head has been tilted upwards a bit). Type re to refresh the screen.
 
@@ -4159,31 +4159,31 @@ Let's modify DARWIN-OP's pose when kneeling. Let's change the position of the le
 1. Run Action Editor
 2. Find the page where the kneeling (sit down) motion is by typing list
 
-  ![](/img/platform/op/op_093.jpg)
+  ![](/img/platform/op/op_093.webp)
 
   > Notice that the motion data is on page 15.
 
 3. Exit the list and go tp page 15 by typing page 15.
 
-  ![](/img/platform/op/op_094.jpg)
+  ![](/img/platform/op/op_094.webp)
 
   With the current data values from page 15 DARWIN-OP's pose will look like this. Do so by typing **play**
 
-  ![](/img/platform/op/op_095.jpg)
+  ![](/img/platform/op/op_095.webp)
 
 4. Once on page 15 edit the values on ID 2, 4, 6. One of the easiest ways to edit values is to release the torque on DYNAMIXEL's from the left arm.
 5. release the torque on ID 2, 4, and 6 by typing **off 2 4 6**
 
-  ![](/img/platform/op/op_096.jpg)
+  ![](/img/platform/op/op_096.webp)
 
 6. after getting the desired pose turn torque on again by simple typing on. Afterwards match the values for ID2, ID4, ID6 on STP0 match those from STP7 (save your work).
 7. Type **play** and you you will notice the newly updated values for ID 2, 4, and 6
 
-  ![](/img/platform/op/op_097.jpg)
+  ![](/img/platform/op/op_097.webp)
 
   > The values translate into DARWINOP pose as following
 
-  ![](/img/platform/op/op_098.jpg)
+  ![](/img/platform/op/op_098.webp)
 
 8. Type **save** if you want this pose to be new sitting pose whenever DARWIN-OP is kneeling (sit down).
 
@@ -4197,14 +4197,14 @@ Run the program by typing **./dxl_monitor**
 Once in the program type **help** for information.  
 To exit the program type **exit**
 
-![](/img/platform/op/op_099.jpg)
+![](/img/platform/op/op_099.webp)
 
 After inputting help the screen outputs the offered option.
 - **exit**: exits the program. After exiting the program press the "RESET" button on DArwIn-OP.
 - **scan**: outputs the current status of all DYNAMIXEL's.
 - **id [ID]**: go to DYNAMIXEL ID:[ID]. The default ID is ID:200 (CM-730 controller). For example, if you wish to go to ID20 (head tilt) then type id 20.
 
-![](/img/platform/op/op_100.jpg)
+![](/img/platform/op/op_100.webp)
 
 Now the current working ID is ID20.
 - **d**: displays the current control table of the CM-730 and all DYNAMIXEL's. Use this option if there is(are) any anomaly(anomalies) with DARWIN-OP.
@@ -4212,7 +4212,7 @@ Now the current working ID is ID20.
 - **reset all**: defaults the value of all DYNAMIXEL's. Use this option if the current(s) or all Dymanixel(s) has(have) operating error(s) or is(are) malfunctioning.
 - **wr [ADDR] [VALUE]**: writes value [VALUE] to address [ADDR] of current DYNAMIXEL. For further information on DYNAMIXEL addresses and values click here. For example, go to ID18 (left ankle roll) and type wr 25 1. This means that address 25 (LED) has been turned on (1). You will notice that the actuator on DARWIN-OP left foot LED is turned on. To turn the LED off type wr 25 0.
 
-![](/img/platform/op/op_101.jpg)
+![](/img/platform/op/op_101.webp)
 
 If all goes well you will see "Success to write!"
 - on/off: turns torque on/off off current DYNAMIXEL.
@@ -4228,18 +4228,18 @@ If any of the values display larger than 1023 then the resolution is 4096.
 4. ALL DYNAMIXEL actuators installed in DARWIN-OP are set to either 1024 or 4096 resolution. Some actuators being set at 1024 and others at 4096 is not allowed. in such case the demo program will not run.
 5. To ensure all DYNAMIXEL actuators installed in DARWIN-OP are at the same resolution please refer to the firmware installer procedure.
 
-![](/img/platform/op/op_102.jpg)
+![](/img/platform/op/op_102.webp)
 
 This illustration indicates a resolution of 1024.
 
-![](/img/platform/op/op_103.jpg)
+![](/img/platform/op/op_103.webp)
 
 This illustration indicates a resolution of 4096.
 
 ### RoboPlus
 For DARWIN-OP support with RoboPlus Motion and DYNAMIXEL's MX-28 at 4096-resolution you need version 1.0.23.0
 
-![](/img/platform/op/op_104.jpg)
+![](/img/platform/op/op_104.webp)
 
 
 
@@ -4285,7 +4285,7 @@ To modify motion data with RoboPlus perform the following:
 
 The following illustrations will guide you to properly set the parameters for a successful connection with RoboPlus.
 
-![](/img/platform/op/op_105.jpg)
+![](/img/platform/op/op_105.webp)
 
 The illustrations on IP, under the TCP/IP tab, assumes you've establiched a connection with DARWIN-OP via wired LAN under default settings.
 
@@ -4309,24 +4309,24 @@ When interfacing with DARWIN-OP wirelessly make sure you:
 - keep devices that adversely affect communications signal between your access point/router and DARWIN-OP and computer (i.e. operating microwave ovens, active bluetooth devices).
 - make sure you remember the IP address assigned by DHCP. If you don't remember type **ifconfig**.
 
-![](/img/platform/op/op_106.jpg)
+![](/img/platform/op/op_106.webp)
 
 1. Run Roboplus from DARWIN-OP2) After running Roboplus from DARWIN-OP run RoboPlus Motion from your PC
 2. In RoboPlus Motion click on "Tool(T)" and select "Option(O)"
 3. If necessary change the IP address to the one assigned by DHCP. Ensure that the port number is **6501**
 4. On Port make sure to select **TCP/IP** as the port. Then click on the connect icon.
 
-  ![](/img/platform/op/op_107.jpg)
+  ![](/img/platform/op/op_107.webp)
 
 5. Proceed with editing. For more information on RoboPlus Motion click here.
 
-  ![](/img/platform/op/op_108.jpg)
+  ![](/img/platform/op/op_108.webp)
 
 6. To save changes click on the save icon or go to File(F) => Save(S). Do not select Save As(A), because the mtn file is not compatible with DARWIN-OP. When saving the changes the file is "motion_4096.bin" (located at /darwin/Data directory).
 
 You may continue making changes with Action Editor.
 
-![](/img/platform/op/op_109.jpg)
+![](/img/platform/op/op_109.webp)
 
 ### Walking Tuner
 :::warning
@@ -4369,31 +4369,31 @@ To tune walking parameters go to the directory `/darwin/Linux/project/walk_tuner
 
 The following screen will appear after executing the program
 
-![](/img/platform/op/op_110.jpg)
+![](/img/platform/op/op_110.webp)
 
 Ensure you resize the window so that information displayed on screen is not truncated.
 
 #### Command line-based
 
-![](/img/platform/op/op_111.jpg)
+![](/img/platform/op/op_111.webp)
 
 > This screen is truncated (notice that Y offset (mm) has the OFF option instead of 5). To undo truncation just resize the window and type re to refresh the screen.  
 It is very important to have a proper size window for this program. Any misread in values due to improper window size by the user could result in undesired consequences.
 
-![](/img/platform/op/op_112.jpg)
+![](/img/platform/op/op_112.webp)
 
 > A properly resized window. notice that Y offset(mm) properly display the value of 5, whereas Walking Mode (on/off) displays OFF.
 
 Type help to bring the help menu.
 
-![](/img/platform/op/op_113.jpg)
+![](/img/platform/op/op_113.webp)
 
 - **exit**: exits the program
 - **re**: refreshes the screen
 - **save**: saves any changes made ( /darwin/Data/config.ini ).
 - **mon**: outputs and updates DARWIN-OP's gyroscope and accelerometer values on screen
 
-![](/img/platform/op/op_114.jpg)
+![](/img/platform/op/op_114.webp)
 
 Pressing the space bar will reset the values enclose by ( and )  
 To observe changes in value for the gyroscope and accelerometer push DARWIN-OP gently and slightly forward, backwards, to the left, to the right; grab DARWIN-OP by the carrying handle and shake it very slightly.  
@@ -4408,23 +4408,23 @@ Hold the `shift key` and press `[` or `]` to decrease or increase values by 10x.
 
 - **X offset (mm)**: DARWIN-OP's offset in the x-direction (front and back).
 
-  ![](/img/platform/op/op_115.jpg)
+  ![](/img/platform/op/op_115.webp)
 
 - **Y offset (mm)**: DARWIN-OP's offset in the y-direction (left and right).
 
-  ![](/img/platform/op/op_116.jpg)
+  ![](/img/platform/op/op_116.webp)
 
 - **Z offset (mm)**: DARWIN-OP's offset in the z-direction (up and down).
 
-  ![](/img/platform/op/op_117.jpg)
+  ![](/img/platform/op/op_117.webp)
 
 - **Roll(x) offset (degree)**: DARWIN-OP's roll offset (x-coordinate).
 
-  ![](/img/platform/op/op_118.jpg)
+  ![](/img/platform/op/op_118.webp)
 
 - **Pitch(y) offset (degree)**: DARWIN-OP's pitch offset (y-coordinate).
 
-  ![](/img/platform/op/op_119.jpg)
+  ![](/img/platform/op/op_119.webp)
 
 - **Yaw(z) offset (degree)**: DARWIN-OP's yaw offset (z-coordinate).
 
@@ -4432,24 +4432,24 @@ Hold the `shift key` and press `[` or `]` to decrease or increase values by 10x.
 
 - **Hip pitch offset (motor)**: DARWIN-OP's pitch offset (y-coordinate) at the hip level. Values are for DYNAMIXEL position values for ID11 and ID12.
 
-  ![](/img/platform/op/op_121.jpg)
+  ![](/img/platform/op/op_121.webp)
 
 - **Auto balance (on/off)**: Turns DARWIN-OP balancing on and off.
 - **Period time (msec)**: Time required for DArwIn-Op to complete two full steps (left and right foot)
 
-  ![](/img/platform/op/op_122.jpg)
+  ![](/img/platform/op/op_122.webp)
 
 - **DSP (Double Stance Period) ratio**: time ratio of both feet on ground to one foot (either left or right) on ground.
 
-  ![](/img/platform/op/op_123.jpg)
+  ![](/img/platform/op/op_123.webp)
 
 - **Step forward/back (mm)**: Differential distance (x-direction) between DARWIN-OP's left and right foot during walk.
 
-  ![](/img/platform/op/op_124.jpg)
+  ![](/img/platform/op/op_124.webp)
 
 - **Step right/left (mm)**: Differential distance (y-direction) between DARWIN-OP's left and right foot during walk.
 
-  ![](/img/platform/op/op_125.jpg)
+  ![](/img/platform/op/op_125.webp)
 
 - **Step Direction (degree)**: Direction of DARWIN-OP's stepping (towards left or right). The head also aims at the direction,
 
@@ -4461,19 +4461,19 @@ Hold the `shift key` and press `[` or `]` to decrease or increase values by 10x.
 
 - **Foot height (mm)**: This is DARWIN-OP's foot elevation during walk.
 
-  ![](/img/platform/op/op_128.jpg)
+  ![](/img/platform/op/op_128.webp)
 
 - **Swing right/left (mm)**: This is DARWIN-OP's swing to either left or right during walk.
 
-  ![](/img/platform/op/op_129.jpg)
+  ![](/img/platform/op/op_129.webp)
 
 - **Swing top/down (mm)**: This is DARWIN-OP's up and down body swing during walk.
 
-  ![](/img/platform/op/op_130.jpg)
+  ![](/img/platform/op/op_130.webp)
 
 - **Pelvis offset (motor)**: DARWIN-OP's roll offset (x-coordinate) at the pelvis level. Values are for DYNAMIXEL position values for ID9 and ID10.
 
-  ![](/img/platform/op/op_131.jpg)
+  ![](/img/platform/op/op_131.webp)
 
 - **Arm swing gain**: Arm swing gain with respect to Step forward/back. If the left left moves forward then the right arm swings.
 - **Balance knee gain**: Gain with respect to the gyroscope pitch.
@@ -4481,7 +4481,7 @@ Hold the `shift key` and press `[` or `]` to decrease or increase values by 10x.
 - **Balance hip roll gain**: Gain with respect to the gyroscope roll.
 - **Balance ankle roll gain**: Gain with respect to the gyroscope roll.
 
-  ![](/img/platform/op/op_132.jpg)
+  ![](/img/platform/op/op_132.webp)
 
 - **P gain**: Gain with respect to P (proportional) band for the MX28.
 - **I gain**: Gain with respect to I (integral) action for the MX28.
@@ -4523,15 +4523,15 @@ When interfacing with DARWIN-OP wirelessly make sure you:
 :::
 
 
-  ![](/img/platform/op/op_133.jpg)
+  ![](/img/platform/op/op_133.webp)
 
 3. For this example, you need to type http://192.168.0.179:8080 on the address bar.
 
-  ![](/img/platform/op/op_134.jpg)
+  ![](/img/platform/op/op_134.webp)
 
   > However, there may be times when some or all fields are empty
 
-  ![](/img/platform/op/op_135.jpg)
+  ![](/img/platform/op/op_135.webp)
 
   > In any case simply double click on the empty area(s) and the initial value will appear.
 
@@ -4540,7 +4540,7 @@ When interfacing with DARWIN-OP wirelessly make sure you:
   - Clicking on the `<<` button decreases the value by 10 units
   - Clicking on the `>>` button decreases the value by 10 units
 
-  ![](/img/platform/op/op_136.jpg)
+  ![](/img/platform/op/op_136.webp)
 
 ##### Accessing Walk Tuner from a mobile device or tablet (via wifi interface)
 1. Ensure that Walk Tuner is running
@@ -4548,11 +4548,11 @@ When interfacing with DARWIN-OP wirelessly make sure you:
 
 Here are some sample screenshots
 
-![](/img/platform/op/op_137.jpg)
+![](/img/platform/op/op_137.webp)
 
 > from an iOS device
 
-![](/img/platform/op/op_138.jpg)
+![](/img/platform/op/op_138.webp)
 
 > from a tablet (QNX)
 
@@ -4568,7 +4568,7 @@ To download firmware software into the sub controller or actuator at the directo
 1. Make sure that there is an executable file named "**firmware_installer**".
 2. Input **-h** or **-help** argument for usage.
 
-  ![](/img/platform/op/op_139.jpg)
+  ![](/img/platform/op/op_139.webp)
 
 3. If there is no said file then create it by typing **make** the compiler will automatically generate the file.
 4. Ensure that "**cm730_0x12.hex**" and "**mx28_0x1C_4096.hex**" are present.
@@ -4576,23 +4576,23 @@ To download firmware software into the sub controller or actuator at the directo
   By default the installer will choose cm730_0x12.hex and mx28_0x1C_4096.  
   To load mx28_0x1A_1024.hex then you must type **./firmware_installer -a mx28_0x1A_1024.hex**
 
-  ![](/img/platform/op/op_140.jpg)
+  ![](/img/platform/op/op_140.webp)
 
   > Install the CM-730 firmware by selecting the first option.
 
 6. Press the CM-730's "**RESET**" button.
 
-  ![](/img/platform/op/op_141.jpg)
+  ![](/img/platform/op/op_141.webp)
 
   > Ensure that download succeed.
 
 7. To install the firmware for the RX-28M actuators select the second option from **firmware_installer**.
 
-  ![](/img/platform/op/op_142.jpg)
+  ![](/img/platform/op/op_142.webp)
 
 8. Press the CM-730's "**RESET**" button.
 
-  ![](/img/platform/op/op_143.jpg)
+  ![](/img/platform/op/op_143.webp)
 
   > The installer automatically lists connected ID's and installs the firmware of each ID individually. Afterwards verify success.
 
@@ -4619,30 +4619,30 @@ To download firmware software into the sub controller or actuator at the directo
 1. Make sure that there is an executable file named "**firmware_installer**".
 2. Input **-h** or **-help** argument for usage.
 
-  ![](/img/platform/op/op_144.jpg)
+  ![](/img/platform/op/op_144.webp)
 
 3. If there is no said file then create it by typing **make** the compiler will automatically generate the file.
 4. Ensure that "**cm730_rx28m_4096.hex**" and "**cm730_rx28m_1024.hex**" are present.
 5. Run the program by typing **./firmware_installer **
   By default the installer will choose cm730_4096.hex. To load cm730_1024.hex thenyou must type **./firmware_installer -f cm730_1024.hex**
 
-  ![](/img/platform/op/op_145.jpg)
+  ![](/img/platform/op/op_145.webp)
 
   > Install the CM-730 firmware by selecting the first option. This option also includes installation firmware for the MX-28 actuators. Please note that DYNAMIXEL firmware will only be installed into the controller.
 
 6. Press the CM-730's "**RESET**" button.
 
-  ![](/img/platform/op/op_146.jpg)
+  ![](/img/platform/op/op_146.webp)
 
   > The installer will assign 2 blocks of 128KB/each for firmware download. Ensure that both blocks succeed.
 
 7. To install the firmware for the MX-28 actuators (from controller to actuators) select the second option from **firmware_installer**. Note that this option installs the firmware that is currently installed on the CM-730 sub controller. This process does not include any actuator firmware installed in the main controller (PC).
 
-  ![](/img/platform/op/op_147.jpg)
+  ![](/img/platform/op/op_147.webp)
 
 8. Press the CM-730's "**RESET**" button.
 
-  ![](/img/platform/op/op_148.jpg)
+  ![](/img/platform/op/op_148.webp)
 
   > The installer automatically lists connected ID's and installs the firmware of each ID individually. Afterwards verify success.
 
@@ -4696,11 +4696,11 @@ For more information about Actuator ID Map of DARWIN-OP, please refer to [ID Map
 
 Ensure that you have a properly sized window
 
-![](/img/platform/op/op_149.jpg)
+![](/img/platform/op/op_149.webp)
 
 Afterwards the following window appears
 
-![](/img/platform/op/op_150.jpg)
+![](/img/platform/op/op_150.webp)
 
 - **GOAL**: is the value set for DYNAMIXEL ID. For more information about Goal refer to dxl_monitor. If you modify this value MODVAL value will modify automatically. For example if you decrease ID 11 by 13 units then MODVAL from ID 11 will automatically decrease its value by 13 units. Changes made here will not be saved.
 - **OFFSET**: is the value set for DYNAMIXEL offset. to change poses edit Offset value(s). This is the difference between MODVAL and GOAL. You may edit this value directly or via MODVAL. Changes made here can be saved
@@ -4713,7 +4713,7 @@ Afterwards the following window appears
 
 type **help** and the following window appears
 
-![](/img/platform/op/op_151.jpg)
+![](/img/platform/op/op_151.webp)
 
 - **exit**: exits the program. After exiting the program press the "RESET" button on DARwin-OP.
 - **re**: refreshes the screen.
@@ -4731,15 +4731,15 @@ type **help** and the following window appears
 Let's make some changes of the upper body so that DARWIN-OP appears in a more relaxed pose.  
 The ID's involved in this change are 1, 2, 5, and 6.
 
-![](/img/platform/op/op_152.jpg)
+![](/img/platform/op/op_152.webp)
 
 Once you run the program you will notice that DARWIN-OP remains in the standing pose.
 
-![](/img/platform/op/op_153.jpg)
+![](/img/platform/op/op_153.webp)
 
 and the following screen provides information on the MX-28 at the current pose
 
-![](/img/platform/op/op_154.jpg)
+![](/img/platform/op/op_154.webp)
 
 The current pose may not look as relaxed so let's make some changes in the arm joints.
 
@@ -4747,47 +4747,47 @@ Use the directional keys to move the cursor over to the OFFSET column. Use the [
 
 You can visually see the changes of pose on DARWIN-OP as you increase/decrease the values.
 
-![](/img/platform/op/op_155.jpg)
+![](/img/platform/op/op_155.webp)
 
 DARWIN-OP;s standing pose is now more relaxed.  
 The following screenshot is information on the MX-28 with the new pose
 
-![](/img/platform/op/op_156.jpg)
+![](/img/platform/op/op_156.webp)
 
 Notice that only OFFSET on ID's 1, 2, 5, and 6 has been changed. During the changes if you think the errors are too large (like ERRORS of 8 for ID 1 and -8 for ID 2, then adjust the P I D gain values. Please keep in mind that changes in P I D gain values will not be saved.
 
 Type **save** to save changes. to view the saved file go to `/darwin/Data` and read the "**config.ini**" file by typing **cat config.ini**
 
-![](/img/platform/op/op_157.jpg)
+![](/img/platform/op/op_157.webp)
 
 As you can see only OFFSET values are saved.  
 Since this is an offset tuner program any position data on ID's 1, 2, 5, and 6 from the motion_4096.bin file will be offset by the amount edited. In other words any other program will be affected by the changes (i.e. the demo program).
 
-![](/img/platform/op/op_158.jpg)
+![](/img/platform/op/op_158.webp)
 
 Notice the arms as DARWIN-OP pursues the ball. Compare this pose with an unedited version of the offset.
 
-![](/img/platform/op/op_159.jpg)
+![](/img/platform/op/op_159.webp)
 
 Another picture showing DARWIN-OP with the new arm pose.
 
 Let's compare 2 DARWIN-OP's (left DARWIN-OP unchanged, right DARWIN-OP with the edited offset). Both DARWIN-OP running under Interactive Mode of the demo program synchronized.
 
-![](/img/platform/op/op_160.jpg)
+![](/img/platform/op/op_160.webp)
 
 Notice how the changes take effect as soon as the demo program is loaded.  
 Select Interactive Mode on both DARwIn's and press the Start button simultaneously.
 
-![](/img/platform/op/op_161.jpg)
+![](/img/platform/op/op_161.webp)
 
 Both are about to say "thank you" (notice the arms from each DARwIn). The DARwIn on the right appears more relaxed.
 
-![](/img/platform/op/op_162.jpg)
+![](/img/platform/op/op_162.webp)
 
 The arms and shoulders from DARwIn on the right are affected as a result of Offset Tuner.
 
-![](/img/platform/op/op_163.jpg)
+![](/img/platform/op/op_163.webp)
 
 As both DARwIn's announce "wow!"
 
-![](/img/platform/op/op_164.jpg)
+![](/img/platform/op/op_164.webp)

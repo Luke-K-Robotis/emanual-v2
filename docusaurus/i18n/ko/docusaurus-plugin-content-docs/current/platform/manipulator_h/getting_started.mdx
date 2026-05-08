@@ -27,19 +27,19 @@ The Manipulator requires 24V for operations. Ensure the power supply is capable 
 ### 4P Cable
 The 4P Cable connects the Manipulator and USB2DYNAMIXEL.
 
-![](/img/platform/manipulator_h/manipulator_h_006.jpg)
+![](/img/platform/manipulator_h/manipulator_h_006.webp)
 
 ### Power Cable
 The power cable supplies power to the Manipulator.
 
-![](/img/platform/manipulator_h/manipulator_h_007.jpg)
+![](/img/platform/manipulator_h/manipulator_h_007.webp)
 
 For additional power or 4P cables contact ROBOTIS or obtain them with the specifications listed above. 
 
 ### USB2DYNAMIXEL
 The USB2DYNAMIXEL sends ArmSDK commands to the Manipulator. Connect the USB2DYNAMIXEL to the PC via USB hub.
 
-![](/img/platform/manipulator_h/manipulator_h_008.jpg)
+![](/img/platform/manipulator_h/manipulator_h_008.webp)
 
 ## Product Assembly
 :::note
@@ -49,11 +49,11 @@ The USB2DYNAMIXEL sends ArmSDK commands to the Manipulator. Connect the USB2DYNA
 :::
 
 
-![](/img/platform/manipulator_h/manipulator_h_009.jpg)
+![](/img/platform/manipulator_h/manipulator_h_009.webp)
 
 - Rest and fix joint 1 of the Manipulator.
 
-![](/img/platform/manipulator_h/manipulator_h_010.jpg)
+![](/img/platform/manipulator_h/manipulator_h_010.webp)
 
 ![](/img/platform/manipulator_h/manipulator_h_011.webp)
 
@@ -71,7 +71,7 @@ The USB2DYNAMIXEL sends ArmSDK commands to the Manipulator. Connect the USB2DYNA
 
 - Once connections are complete fix the arm to the base plate as shown on the photo above. The joint fixed to the plate is joint 1.
 
-![](/img/platform/manipulator_h/manipulator_h_016.jpg)
+![](/img/platform/manipulator_h/manipulator_h_016.webp)
 
 - Connect USB2DYNAMIXEL to the hub with 4P cable; connect another port of the 4P hub to the extension.
 
@@ -111,11 +111,11 @@ The USB2DYNAMIXEL sends ArmSDK commands to the Manipulator. Connect the USB2DYNA
 :::
 
 
-  ![](/img/platform/manipulator_h/manipulator_h_018.jpg)
+  ![](/img/platform/manipulator_h/manipulator_h_018.webp)
 
 - Install and run RoboPlus; click on DYNAMIXEL Wizard button to start DYNAMIXEL Wizard.
 
-  ![](/img/platform/manipulator_h/manipulator_h_019.jpg)
+  ![](/img/platform/manipulator_h/manipulator_h_019.webp)
 
 ### Operating the Manipulator
 
@@ -129,11 +129,11 @@ The USB2DYNAMIXEL sends ArmSDK commands to the Manipulator. Connect the USB2DYNA
 
 - USB2DYNAMIXEL to the PC after wiring is complete. From the PC check the COM port number of USB2DYNAMIXEL.
 
-  ![](/img/platform/manipulator_h/manipulator_h_020.jpg)
+  ![](/img/platform/manipulator_h/manipulator_h_020.webp)
 
-  ![](/img/platform/manipulator_h/manipulator_h_021.jpg)
+  ![](/img/platform/manipulator_h/manipulator_h_021.webp)
 
-  ![](/img/platform/manipulator_h/manipulator_h_022.jpg)
+  ![](/img/platform/manipulator_h/manipulator_h_022.webp)
 
 - Select the Port Settings tab and click on the Advanced button-> change the latency time from 16 (default) to 1.
 - After changing the COM port settings supply the 24V to the arm (of course, this means wiring is complete).
@@ -141,40 +141,40 @@ The USB2DYNAMIXEL sends ArmSDK commands to the Manipulator. Connect the USB2DYNA
 **CAUTION** : Always ensure before powering on. While power is on do not change wires; otherwise it may cause undesired operations.
 
 
-  ![](/img/platform/manipulator_h/manipulator_h_023.jpg)
+  ![](/img/platform/manipulator_h/manipulator_h_023.webp)
 
-  ![](/img/platform/manipulator_h/manipulator_h_024.jpg)
+  ![](/img/platform/manipulator_h/manipulator_h_024.webp)
 
 - The picture on the left is the COM port number of USB2DYNAMIXEL (which should be connected to the arm). Click on the   to continue
 
-  ![](/img/platform/manipulator_h/manipulator_h_025.jpg)
+  ![](/img/platform/manipulator_h/manipulator_h_025.webp)
 
 - Once connected make sure that 1000000bps box is checked and “DXL 2.0” is selected. Then click on Search. The arm’s default baud rate is 1 Mbps.
 
-  ![](/img/platform/manipulator_h/manipulator_h_026.jpg)
+  ![](/img/platform/manipulator_h/manipulator_h_026.webp)
 
-  ![](/img/platform/manipulator_h/manipulator_h_027.jpg)
+  ![](/img/platform/manipulator_h/manipulator_h_027.webp)
 
 - Once search is complete the arm’s components (DYNAMIXEL PROs) are listed on the left. Click on an individual DYNAMIXEL PRO to display the contents of its Control Table.
 
-  ![](/img/platform/manipulator_h/manipulator_h_028.jpg)
+  ![](/img/platform/manipulator_h/manipulator_h_028.webp)
 
-  ![](/img/platform/manipulator_h/manipulator_h_029.jpg)
+  ![](/img/platform/manipulator_h/manipulator_h_029.webp)
 
 - DYNAMIXEL Pro will only move (operate) when Torque Mode is on. So always make sure the Torque Mode is on prior to sending moving commands.  
   Torque Enable is located on address number 562. A value of 1 means on and 0 means off.
 
-  ![](/img/platform/manipulator_h/manipulator_h_030.jpg)
+  ![](/img/platform/manipulator_h/manipulator_h_030.webp)
 
-  ![](/img/platform/manipulator_h/manipulator_h_031.jpg)
+  ![](/img/platform/manipulator_h/manipulator_h_031.webp)
 
-  ![](/img/platform/manipulator_h/manipulator_h_032.jpg)
+  ![](/img/platform/manipulator_h/manipulator_h_032.webp)
 
-  ![](/img/platform/manipulator_h/manipulator_h_033.jpg)
+  ![](/img/platform/manipulator_h/manipulator_h_033.webp)
 
 - Turn ‘Torque Enable’ on to all joints. The pose of the arm will become rigid (check by applying a small force). Afterwards click on joint 6.
 
-  ![](/img/platform/manipulator_h/manipulator_h_034.jpg)
+  ![](/img/platform/manipulator_h/manipulator_h_034.webp)
 
 - Now verify the arm moves properly by changing Goal Position. Move the end effector (joint 6) +90 degrees.  
   To move joint 6 to +90 degrees set Goal Position of DYNAMIXEL PRO model H42-20-S300-R to 75938 or L42-10-S300-R to 1024.
@@ -182,7 +182,7 @@ The USB2DYNAMIXEL sends ArmSDK commands to the Manipulator. Connect the USB2DYNA
 - To actually get DYNAMIXEL PRO to move to its respective Goal Position, click on the Apply button after setting the value. If there is no movement, make sure Torque Enable is turned on (set to 1).
 - Set Goal Position back to 0 to set position to its original position.
 
-  ![](/img/platform/manipulator_h/manipulator_h_035.jpg)
+  ![](/img/platform/manipulator_h/manipulator_h_035.webp)
 
 - Click on ID. Set the Goal Position to 1000 (500 for L42 model).
 - To actually get DYNAMIXEL PRO to move to its respective Goal Position, click on the Apply button after setting the value. If there is no movement, make sure Torque Enable is turned on (set to 1).
@@ -195,11 +195,11 @@ The USB2DYNAMIXEL sends ArmSDK commands to the Manipulator. Connect the USB2DYNA
 
 |             Model Name             |                                                               Relationship between angle(deg) and position value                                                                |
 |:----------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| H54-200-S500-R<br />H54-100-S500-R | -180 ~ 180 (deg) → -251000 ~ 251000<br />![](/img/platform/manipulator_h/manipulator_h_036.jpg)<br />![](/img/platform/manipulator_h/manipulator_h_037.gif) |
-|           H42-20-S300-R            | -180 ~ 180 (deg) → -151875 ~ 151875<br />![](/img/platform/manipulator_h/manipulator_h_038.jpg)<br />![](/img/platform/manipulator_h/manipulator_h_039.gif) |
-|           L54-50-S500-R            | -180 ~ 180 (deg) → -125700 ~ 125700<br />![](/img/platform/manipulator_h/manipulator_h_040.jpg)<br />![](/img/platform/manipulator_h/manipulator_h_041.gif) |
-|           L54-30-S500-R            | -180 ~ 180 (deg) → -144180 ~ 144180<br />![](/img/platform/manipulator_h/manipulator_h_042.jpg)<br />![](/img/platform/manipulator_h/manipulator_h_043.gif) |
-|           L42-20-S300-R            |   -180 ~ 180 (deg) → -2048 ~ 2048<br />![](/img/platform/manipulator_h/manipulator_h_044.jpg)<br />![](/img/platform/manipulator_h/manipulator_h_045.gif)   |
+| H54-200-S500-R<br />H54-100-S500-R | -180 ~ 180 (deg) → -251000 ~ 251000<br />![](/img/platform/manipulator_h/manipulator_h_036.webp)<br />![](/img/platform/manipulator_h/manipulator_h_037.gif) |
+|           H42-20-S300-R            | -180 ~ 180 (deg) → -151875 ~ 151875<br />![](/img/platform/manipulator_h/manipulator_h_038.webp)<br />![](/img/platform/manipulator_h/manipulator_h_039.gif) |
+|           L54-50-S500-R            | -180 ~ 180 (deg) → -125700 ~ 125700<br />![](/img/platform/manipulator_h/manipulator_h_040.webp)<br />![](/img/platform/manipulator_h/manipulator_h_041.gif) |
+|           L54-30-S500-R            | -180 ~ 180 (deg) → -144180 ~ 144180<br />![](/img/platform/manipulator_h/manipulator_h_042.webp)<br />![](/img/platform/manipulator_h/manipulator_h_043.gif) |
+|           L42-20-S300-R            |   -180 ~ 180 (deg) → -2048 ~ 2048<br />![](/img/platform/manipulator_h/manipulator_h_044.webp)<br />![](/img/platform/manipulator_h/manipulator_h_045.gif)   |
 
 
 [http://www.robotis.com/xe/download]: http://www.robotis.com/xe/download
