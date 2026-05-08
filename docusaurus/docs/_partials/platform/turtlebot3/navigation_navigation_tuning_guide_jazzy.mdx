@@ -6,13 +6,13 @@ The Navigation2 stack has many parameters to change performances for different r
 - Defined in `turtlebot3_navigation2/param/${TB3_MODEL}.yaml`
 - This parameter defines an inflation area of inaccesability around detected obstacles. Generated paths will be planned not to cross this area. It is safe to set this value to be slightly bigger than robot radius. For more information, please refer to [costmap_2d wiki](http://wiki.ros.org/costmap_2d#Inflation).
 
-![](/img/platform/turtlebot3/navigation/tuning_inflation_radius.png)
+![](/img/platform/turtlebot3/navigation/tuning_inflation_radius.webp)
 
 #### inflation_layer.cost_scaling_factor
 - Defined in `turtlebot3_navigation2/param/${TB3_MODEL}.yaml`
 - This is an inverse proportional factor that is multiplied by the value of the costmap. If this parameter is increased, the value of the costmap is decreased. 
 
-![](/img/platform/turtlebot3/navigation/tuning_cost_scaling_factor.png)
+![](/img/platform/turtlebot3/navigation/tuning_cost_scaling_factor.webp)
 
   The optimal path for the robot to pass through obstacles is to take a median path between them. Setting a smaller value for this parameter will create a farther path from the obstacles.
 
@@ -90,7 +90,7 @@ The Navigation2 stack has many parameters to change performances for different r
 - Defined in `turtlebot3_navigation2/param/${TB3_MODEL}.yaml`
 - This factor sets forward simulation time in seconds. Setting this too small makes it difficult for the robot to pass through narrow spaces while large values limit dynamic turns. You can observe the differences in length of the yellow line in the below image that representing the simulation path.
 
-![](/img/platform/turtlebot3/navigation/tuning_sim_time.png)  
+![](/img/platform/turtlebot3/navigation/tuning_sim_time.webp)  
     
 [Basic Navigation Tuning Guide (ROS Wiki)]: http://wiki.ros.org/navigation/Tutorials/Navigation%20Tuning%20Guide
 [nav2]: https://navigation.ros.org/

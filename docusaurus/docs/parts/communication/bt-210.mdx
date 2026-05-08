@@ -7,7 +7,7 @@ tags: [parts, communication]
 ---
 
 # Introduction
-![](/img/parts/communication/bt-210_product.png)
+![](/img/parts/communication/bt-210_product.webp)
 
 > BT-210
 
@@ -102,11 +102,11 @@ Utilizes a pairing mechanism that allows reliable 1:1 communication.
 
     [With references to add "OpenCM9.04" Board Manager to Arduino IDE](/docs/parts/controller/opencm904#arduino-ide)  
 
-    ![img](/img/parts/communication/bt-210_02_arduino.png)
+    ![img](/img/parts/communication/bt-210_02_arduino.webp)
 
     > When using Arduino IDE
     
-    ![](/img/parts/communication/bt-210_02.png)
+    ![](/img/parts/communication/bt-210_02.webp)
     
 
 :::warning
@@ -122,25 +122,25 @@ Utilizes a pairing mechanism that allows reliable 1:1 communication.
 
     - `Download` [Tera Term](https://osdn.net/projects/ttssh2/releases/)
 
-    ![](/img/parts/communication/bt-210_03.png)
+    ![](/img/parts/communication/bt-210_03.webp)
 
-    ![](/img/parts/communication/bt-210_04.png)
+    ![](/img/parts/communication/bt-210_04.webp)
 
 3. Once connection is complete baud rate can be any.
 
-    ![](/img/parts/communication/bt-210_05.png)
+    ![](/img/parts/communication/bt-210_05.webp)
 
 4. Go to Setup->Terminal and check local echo.
 
-    ![](/img/parts/communication/bt-210_06.png)
+    ![](/img/parts/communication/bt-210_06.webp)
 
 5. Enter `!` in terminal and if `OK` is returned, BT-210 is in `Command Mode`. Enter `AT` and if `OK` is returned, now BT-210 is ready for the setting.  
     
-    ![](/img/parts/communication/bt-210_07.png)
+    ![](/img/parts/communication/bt-210_07.webp)
     
 6. Once setup is completed, reconnect the BT-210 with the controller. The picture shows BT-210 is set as a Master.
 
-    ![](/img/parts/communication/bt-210_08.png)
+    ![](/img/parts/communication/bt-210_08.webp)
 
 # AT Commands
 The following are AT terminal commands for the BT-210  
@@ -159,7 +159,7 @@ If the BT module is not detected, then the controller or firmware needs to be re
 1. System reset
   Enter ATZ press the Enter key and the BT-210 resets.if settings have changed the mode will change upon reset.
 
-    ![](/img/parts/communication/bt-210_09.png)
+    ![](/img/parts/communication/bt-210_09.webp)
 
 2. Mode change
     - Use this command to switch between master and slave modes for the BT-210.
@@ -167,49 +167,49 @@ If the BT module is not detected, then the controller or firmware needs to be re
       - AT+BTROLE=S -> Slave mode
     - Afterwards enter ATZ to reset.
 
-    ![](/img/parts/communication/bt-210_10.png)
+    ![](/img/parts/communication/bt-210_10.webp)
 
     > MASTER Mode
 
-    ![](/img/parts/communication/bt-210_11.png)
+    ![](/img/parts/communication/bt-210_11.webp)
 
     > SLAVE Mode
 
 3. Peripheral device search
   This is possible only in master mode. Enter AT+BTINQ followed by the Enter key the device class comes as 0x1F00(SPP).
 
-    ![](/img/parts/communication/bt-210_12.png)
+    ![](/img/parts/communication/bt-210_12.webp)
 
 4. Connecting devices (pairing)
   Once devices have been found they can be connected via its 12-digit hex MAC address.
   for example a device with MAC address of abc2-ff-123458 enter ATDabc2ff123458 (ignore the – sign). When asked for pin code enter 0000.
 
-    ![](/img/parts/communication/bt-210_13.png)
+    ![](/img/parts/communication/bt-210_13.webp)
 
 5. Change pin code
   - AT+BTKEY=digit Pin Code
   - To change pin code follow the procedure below.
 
-    ![](/img/parts/communication/bt-210_14.png)
+    ![](/img/parts/communication/bt-210_14.webp)
 
     - then enter AT+BTKEY (ignore the = sign)
 
-    ![](/img/parts/communication/bt-210_15.png)
+    ![](/img/parts/communication/bt-210_15.webp)
 
 6. Output current device class
   Output of SPP (serial port profile) 0x1f00
 
-    ![](/img/parts/communication/bt-210_16.png)
+    ![](/img/parts/communication/bt-210_16.webp)
 
 7. Change Bluetooth device name
   AT+BTNAME = for name change
 
-    ![](/img/parts/communication/bt-210_17.png)
+    ![](/img/parts/communication/bt-210_17.webp)
 
 8. Device Under Test (DUT) mode
   Under this mode the device is a “test” device and not suited for applications.
 
-    ![](/img/parts/communication/bt-210_18.png)
+    ![](/img/parts/communication/bt-210_18.webp)
 
     Enter AT+BTDUT then ATZ  (make sure is in slave mode)
     To get out of DUT mode enter AT+BTDUT one more time then ATZ
@@ -223,7 +223,7 @@ If the BT module is not detected, then the controller or firmware needs to be re
 > BT-210 Pairing with cmd  
 
 # Pinout
-![](/img/parts/communication/bt-210_01.png)
+![](/img/parts/communication/bt-210_01.webp)
 
 | Pin No. | Name |       Description       |  I/O   |
 |:-------:|:----:|:-----------------------:|:------:|

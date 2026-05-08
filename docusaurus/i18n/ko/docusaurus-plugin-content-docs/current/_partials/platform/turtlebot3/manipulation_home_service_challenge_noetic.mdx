@@ -10,7 +10,7 @@
 :::
 
 
-![](/img/platform/turtlebot3/manipulation/home_service_challenge/kinetic/hsc_stadium_2.png)
+![](/img/platform/turtlebot3/manipulation/home_service_challenge/kinetic/hsc_stadium_2.webp)
 
 > Home Service Challenge Stadium and Objects
 
@@ -51,7 +51,7 @@ $ roslaunch turtlebot3_manipulation_description turtlebot3_manipulation_view.lau
     **NOTE**: Specify `${TB3_MODEL}`: `waffle`, `waffle_pi` before excuting the command. Set the permanent export setting by following [Export TURTLEBOT3_MODEL](/docs/platform/turtlebot3/export_turtlebot3_model) instruction.
     
 
-    !<a href="/img/platform/turtlebot3/manipulation/home_service_challenge/noetic/TurtleBot3_with_Open_Manipulator.png" target="_blank">turtlebot3_manipulation_view</a>
+    !<a href="/img/platform/turtlebot3/manipulation/home_service_challenge/noetic/TurtleBot3_with_Open_Manipulator.webp" target="_blank">turtlebot3_manipulation_view</a>
 
     > Rviz View. Specify $&#123;TB3_MODEL&#125; : waffle_pi
 
@@ -75,7 +75,7 @@ $ roslaunch turtlebot3_home_service_challenge_simulation competition.launch
 $ roslaunch turtlebot3_home_service_challenge_tools turtlebot3_home_service_challenge_demo_simulation.launch
 ```
 
-    !<a href="/img/platform/turtlebot3/manipulation/home_service_challenge/noetic/simulation_rviz.png" target="_blank">simulation_rviz</a>
+    !<a href="/img/platform/turtlebot3/manipulation/home_service_challenge/noetic/simulation_rviz.webp" target="_blank">simulation_rviz</a>
 
 2. **[Remote PC]** Run the manager package used to carry out Home Service Challenge's mission.
 ```bash
@@ -207,17 +207,17 @@ Using the demo package, the process of moving objects in Home Service Challenge 
 1. Navigating to a target in the living room.
   - Find a target, and reach it using a Navigation package.  
     
-    ![demo_1](/img/platform/turtlebot3/manipulation/home_service_challenge/noetic/demo_1.PNG)
+    ![demo_1](/img/platform/turtlebot3/manipulation/home_service_challenge/noetic/demo_1.webp)
 
 2. Approaching the target.
   - For the approach to the target with precise, TurtleBot3 wheels are directly controlled by computing target's location from AR marker. (Used Topic : `/tb3_hsc/cmd_vel`). To produce a reliable performance, Closed-loop and control system can be used for the specified number of times.
     
-    ![demo_2](/img/platform/turtlebot3/manipulation/home_service_challenge/noetic/demo_2.PNG)
+    ![demo_2](/img/platform/turtlebot3/manipulation/home_service_challenge/noetic/demo_2.webp)
 
 3. Picking the target with OpenMANIPULATOR-X's gripper.
   - Pick the target object using the moveit package (Joint space control, Task space control and Gripper control)
 
-    !<a href="/img/platform/turtlebot3/manipulation/home_service_challenge/kinetic/manipulation_diagram.png" target="_blank">manipulation_diagram</a>
+    !<a href="/img/platform/turtlebot3/manipulation/home_service_challenge/kinetic/manipulation_diagram.webp" target="_blank">manipulation_diagram</a>
     > MoveIt Diagram
 
 4. Leaving for the next room to place the object (Used Topic : `/tb3_hsc/cmd_vel`)
@@ -226,7 +226,7 @@ Using the demo package, the process of moving objects in Home Service Challenge 
 5. Navigating to the place where the object will be placed.
    - Find a next target, and reach it using a Navigation package.
     
-    ![demo_3](/img/platform/turtlebot3/manipulation/home_service_challenge/noetic/demo_3.PNG)
+    ![demo_3](/img/platform/turtlebot3/manipulation/home_service_challenge/noetic/demo_3.webp)
 
 6. Approaching the target.
 
@@ -234,7 +234,7 @@ Using the demo package, the process of moving objects in Home Service Challenge 
 
 8. Returning to the starting point using the navigation package.
 
-   ![demo_4](/img/platform/turtlebot3/manipulation/home_service_challenge/noetic/demo_4.PNG)
+   ![demo_4](/img/platform/turtlebot3/manipulation/home_service_challenge/noetic/demo_4.webp)
 
 
 
@@ -246,14 +246,14 @@ Simulate TurtleBot3 with OpenMANIPULATOR-X in Gazebo.
 $ roslaunch turtlebot3_home_service_challenge_simulation competition.launch
 ```
 
-   !<a href="/img/platform/turtlebot3/manipulation/home_service_challenge/noetic/simulation_gazebo.png" target="_blank">gazebo</a>
+   !<a href="/img/platform/turtlebot3/manipulation/home_service_challenge/noetic/simulation_gazebo.webp" target="_blank">gazebo</a>
 
 2. **[Remote PC]** Run a simulation demo for Gazebo.
 ```bash
 $ roslaunch turtlebot3_home_service_challenge_tools turtlebot3_home_service_challenge_demo_simulation.launch
 ```
 
-   !<a href="/img/platform/turtlebot3/manipulation/home_service_challenge/noetic/simulation_rviz.png" target="_blank">simulation_rviz</a>
+   !<a href="/img/platform/turtlebot3/manipulation/home_service_challenge/noetic/simulation_rviz.webp" target="_blank">simulation_rviz</a>
 
 3. **[Remote PC]** Run Home Service Manager.
 ```bash

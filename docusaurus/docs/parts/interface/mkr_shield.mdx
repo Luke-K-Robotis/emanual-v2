@@ -47,7 +47,7 @@ Please refer to [DYNAMIXEL Shield Libraries](#dynamixel-shield-libraries) sectio
 |    Operating Temperature     | -10 ~ +80 [&deg;C]                                                                                                                                            |
 |    Connectors<sup>2</sup>    | JST([S3B-EH]), Molex([5268-03A])<br />Battery Connector<sup>3</sup>([SMW250-02])<br />Terminal Block([DG350-3.5-02P-14])                                          |
 |     Physical Connection      | TTL Multidrop Bus (5V Level)                                                                                                                                  |
-|            Cables            | ![](/img/parts/interface/mkr_shield/dc_jack_polarity.png)<br />DC Jack Harness (Type A, O.D: 5.5 [mm], I.D: 2.5 [mm])<br />Convertible cable for XL-320 |
+|            Cables            | ![](/img/parts/interface/mkr_shield/dc_jack_polarity.webp)<br />DC Jack Harness (Type A, O.D: 5.5 [mm], I.D: 2.5 [mm])<br />Convertible cable for XL-320 |
 |          Dimensions          | 65 x 25 [mm]                                                                                                                                                  |
 |            Weight            | 11 [g]                                                                                                                                                        |
 
@@ -67,7 +67,7 @@ Please refer to [DYNAMIXEL Shield Libraries](#dynamixel-shield-libraries) sectio
 
 :::danger
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **DANGER**  
 (Ignoring these warnings may cause serious injury or death)
 
@@ -87,7 +87,7 @@ Please refer to [DYNAMIXEL Shield Libraries](#dynamixel-shield-libraries) sectio
 
 :::warning
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **CAUTION**  
 (Ignoring these warnings may cause mild injury or damage to the product)
  - Always comply with the product's offical operating environment specifications including input voltage, current, and operating temperature. 
@@ -100,7 +100,7 @@ Please refer to [DYNAMIXEL Shield Libraries](#dynamixel-shield-libraries) sectio
 
 :::warning
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **ATTENTION**  
 (Ignoring these warnings may cause minor injury or damage to the product)
 - Do not disassemble or modify the product.
@@ -141,7 +141,7 @@ DYNAMIXEL Shield MKR Schematics can be downloaded in the link below.
 
 - [DYNAMIXEL Shield MKR Schematic](https://www.robotis.com/service/download.php?no=1988)
 
-![](/img/parts/interface/mkr_shield/pinmap.png)
+![](/img/parts/interface/mkr_shield/pinmap.webp)
 
 > The DYNAMIXEL Shield MKR header pinout is based on the Aruduino MKR boards.
 
@@ -160,7 +160,7 @@ DYNAMIXEL Shield MKR Schematics can be downloaded in the link below.
 :::
 
 
-![](/img/parts/interface/mkr_shield/mkr_pinmap.png)
+![](/img/parts/interface/mkr_shield/mkr_pinmap.webp)
 
 > Arduino MKR board pinout example. Please refer to each product in [Arduino Products](https://www.arduino.cc/en/Main/Products) for more details.
 
@@ -208,7 +208,7 @@ After uploading the program, 1 cell Lithium battery(3.7V) can be used to power t
 # Power Select Jumper
 |                                                              Use VIN(DXL) from external power source(SMPS)                                                               |                                                                                  Use +5V from Arduino MKR                                                                                  |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|                                                     ![](/img/parts/interface/mkr_shield/select_vindxl.png)                                                     |                                                                ![](/img/parts/interface/mkr_shield/select_5v.png)                                                                |
+|                                                     ![](/img/parts/interface/mkr_shield/select_vindxl.webp)                                                     |                                                                ![](/img/parts/interface/mkr_shield/select_5v.webp)                                                                |
 | When using `VIN(DXL)` from external power source, please be aware of the polarity of terminal block. **Additional power source for Arduino MKR board will be required.** | When using `+5V` from Arduino MKR, be aware that some Arduino MKR board has a built in fuse that prevents excessive use of 5V power. Please refer to each Arduino MKR board specification. |
 
 
@@ -249,19 +249,19 @@ There are three ways to add libraries to the Arduino IDE.
 Each way is described in detail in the [Arduino Official Guide], so please refer to it if necessary.  
 Below is an example of **using the Library Manager** from Arduino IDE.
 
-![](/img/parts/interface/dynamixel_shield/library_manager_01.png)
+![](/img/parts/interface/dynamixel_shield/library_manager_01.webp)
 
 Search for `dynamixel shield` from the Library Manager and install the latest version.
 
-![](/img/parts/interface/dynamixel_shield/library_manager_03.png)
+![](/img/parts/interface/dynamixel_shield/library_manager_03.webp)
 
 Click `Install all` to install the dependent library `Dynamixel2Arduino`.
 
-![](/img/parts/interface/dynamixel_shield/library_manager_04.png)
+![](/img/parts/interface/dynamixel_shield/library_manager_04.webp)
 
 If you have successfully installed both libraries, you'll be able to find several examples of DynamixelShield in the examples.
 
-![](/img/parts/interface/dynamixel_shield/examples.png)
+![](/img/parts/interface/dynamixel_shield/examples.webp)
 
 
 :::warning
@@ -386,7 +386,7 @@ The `CAN Standard Protocol 2.0` used in this example is shown as below.
 
 The Transmit section of IXXAT canAnalyser3 Mini software requires `ID (hex)` and `Data (hex)` while other fields are automatically generated as shown below.
 
-![](/img/parts/interface/mkr_shield/can2dynamixel_ixxat_cananalyser3_mini_example.png)
+![](/img/parts/interface/mkr_shield/can2dynamixel_ixxat_cananalyser3_mini_example.webp)
 
 ## RCPWM2DYNAMIXEL
 RCPWM2DYNAMIXEL is the example to control DYNAMIXEL using RC controller.  
@@ -428,7 +428,7 @@ Please match the baudrate of DYNAMIXEL and the examplel code.
 :::
 
 ### Connection Diagram
-![](/img/parts/interface/mkr_shield/examples_rcpwm2dynamixel_diagram.png)
+![](/img/parts/interface/mkr_shield/examples_rcpwm2dynamixel_diagram.webp)
 
 ### Wiring
 The RC receiver and the DYNAMIXEL Shield MKR can be connected as below.
@@ -437,7 +437,7 @@ The RC receiver and the DYNAMIXEL Shield MKR can be connected as below.
 
 # Download
 - [DYNAMIXEL Shield MKR Schematic(PDF)](https://www.robotis.com/service/download.php?no=1988)  
-  ![](/img/parts/interface/mkr_shield/mkr_schematic.png)
+  ![](/img/parts/interface/mkr_shield/mkr_schematic.webp)
 
 
 [ax-12w]: /docs/dxl/ax/ax-12w

@@ -44,15 +44,15 @@ The CM-530 SDK can be found on our [Download Center](https://robotis.s3.ap-north
 ### Install JRE
 JRE(Java Runtime Environment) is a required component to run Eclipse.
 
-![](/img/software/sdk/embedded_050.png)
+![](/img/software/sdk/embedded_050.webp)
  
 To verify whether JRE has been installed input ‘java’ at the command prompt. You can download JRE here.  
 
 `Download` [JRE](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
-![](/img/software/sdk/embedded_051.png)
+![](/img/software/sdk/embedded_051.webp)
 
-![](/img/software/sdk/embedded_052.png)
+![](/img/software/sdk/embedded_052.webp)
 
 Select the version that best matches your working system.
 
@@ -63,17 +63,17 @@ You can download WinARM
  
 The downloaded file is a compressed file. Decompressed the file in C:\WinARM directory.
 
-![](/img/software/sdk/embedded_053.png)
+![](/img/software/sdk/embedded_053.webp)
 
 You must register WinARM to complete installation.  
 Go to [Control Panel] > [System] > [Advanced system settings] and select [Advanced] tab. Click on the [Environment Variables] button.
 
-![](/img/software/sdk/embedded_054.png)
+![](/img/software/sdk/embedded_054.webp)
 
 Find "Path" variable in the [System variables] group and edit its value.  
 If the "Path" variable is not exist then create new path by clicking on the "New" button.
 
-![](/img/software/sdk/embedded_055.png)
+![](/img/software/sdk/embedded_055.webp)
  
 Click on the [New] button and add below items at the end of path lists for Windows 10 users.
 
@@ -88,21 +88,21 @@ Other than Windows 10, append below items at the end of the variable value. Don'
 C:\WinArm\bin;C:\WinARM\utils\bin;
 ```
 
-![](/img/software/sdk/embedded_056.png)
+![](/img/software/sdk/embedded_056.webp)
 
 To verify proper installation, open the command window and type ‘arm-eabi-gcc –v’.  
 If it does not work well, turn off the cmd window and re-run cmd, then try again.
 
-![](/img/software/sdk/embedded_057.png)
+![](/img/software/sdk/embedded_057.webp)
 
 ### Install Eclipse
 You can download Eclipse here.  
 
 `Download` [Eclipse Helios SR2](http://www.eclipse.org/downloads/packages/release/helios/sr2)
 
-![](/img/software/sdk/embedded_058.png)
+![](/img/software/sdk/embedded_058.webp)
 
-![](/img/software/sdk/embedded_059.png)
+![](/img/software/sdk/embedded_059.webp)
  
 Select the version that best matches your working system.  
 To run Eclipse just run the eclipse.exe file.  
@@ -111,7 +111,7 @@ To run Eclipse just run the eclipse.exe file.
 Verify successful installation.by opening a sample project.  
 Decompress the file (no root user rights needed).
 
-![](/img/software/sdk/embedded_060.png)
+![](/img/software/sdk/embedded_060.webp)
 
 When you first run Eclipse, it requires to set up workspace like the picture below.
  
@@ -122,20 +122,20 @@ Click on the left lower box to prevent this window.
  
 Run Eclipse and go to File – New – Makefile Project with Existing Code.
 
-![](/img/software/sdk/embedded_062.png)
+![](/img/software/sdk/embedded_062.webp)
  
 Click on Browse select 01 LED and click on Verify.
 
-![](/img/software/sdk/embedded_063.png)
+![](/img/software/sdk/embedded_063.webp)
  
 After selecting the project go to Project – Clean, Build
 
-![](/img/software/sdk/embedded_064.png)
+![](/img/software/sdk/embedded_064.webp)
  
 To see progress check the terminal window.  
 If progress is not as shown below then check the working development environment.
 
-![](/img/software/sdk/embedded_065.png)
+![](/img/software/sdk/embedded_065.webp)
 
 
 
@@ -166,9 +166,9 @@ Macros and libraries for the STM32F10X ports and internal functionalities are pr
  
 #### CM-530
 
-![](/img/software/sdk/embedded_066.png)
+![](/img/software/sdk/embedded_066.webp)
  
-![](/img/software/sdk/embedded_067.png)
+![](/img/software/sdk/embedded_067.webp)
  
 | Pin # | Pin Name |   NET NAME   |         Description         |
 |:-----:|:--------:|:------------:|:---------------------------:|
@@ -239,9 +239,9 @@ Macros and libraries for the STM32F10X ports and internal functionalities are pr
  
 The external ports of the CM-530 are listed below from 1 to 6. Please refer to [CM-530] controller for reference regarding ports.
 
-![](/img/software/sdk/embedded_068.png)
+![](/img/software/sdk/embedded_068.webp)
 
-![](/img/software/sdk/embedded_069.png)
+![](/img/software/sdk/embedded_069.webp)
 
 1. OUT1 : Output voltage 3.3V (0.3A max)
 2. VCC (5V)
@@ -249,27 +249,27 @@ The external ports of the CM-530 are listed below from 1 to 6. Please refer to [
 4. GND
 5. OUT2 : Output voltage 3.3V (0.3A max)
 
-![](/img/software/sdk/embedded_070.png)
+![](/img/software/sdk/embedded_070.webp)
 
 ### Open Project
 #### Open 01 LED project
 
 Run Eclipse and go to Fle – New – makefile Project with existing code.
 
-![](/img/software/sdk/embedded_071.png)
+![](/img/software/sdk/embedded_071.webp)
  
 Click on Browse select 01 LED and click on Verify.
 
-![](/img/software/sdk/embedded_072.png)
+![](/img/software/sdk/embedded_072.webp)
  
 After selecting the project go to Project – Clean, Build
 
-![](/img/software/sdk/embedded_073.png)
+![](/img/software/sdk/embedded_073.webp)
  
 To see progress check the terminal window.  
 If progress is not as shown below then check the working development environment.
 
-![](/img/software/sdk/embedded_074.png)
+![](/img/software/sdk/embedded_074.webp)
 
 ### Download bin File
 After a successful build the bin file will be located at the sample directory.  
@@ -281,7 +281,7 @@ Boot Loader makes the users possible to use the controller. Boot Loader cannot b
 
 The available commands in Boot Loader can be found using "Help" command.
 
-![](/img/software/sdk/embedded_075.png)
+![](/img/software/sdk/embedded_075.webp)
 
 #### Entering/Exiting Boot Loader
 
@@ -290,7 +290,7 @@ The available commands in Boot Loader can be found using "Help" command.
 To enter into the boot loader, while pressing the  '#' button(Shift + 3), turn on the controller or press down the reset switch.  
 If you did correctly, following screen page will be shown.
 
-![](/img/software/sdk/embedded_076.png)
+![](/img/software/sdk/embedded_076.webp)
  
 ##### Exiting Boot Loader
 
@@ -302,7 +302,7 @@ The program start position can be set by APP/SYS command. Once the program start
  
 The memory map using STM32F103RE is as below.
  
-![](/img/software/sdk/embedded_077.png)
+![](/img/software/sdk/embedded_077.webp)
  
 - If you input APP command on the window after entering Boot Loader, User Application Area is executed first after the next reset.  
   (Most programs such as provided firmware, user program etc. start from 0 address, if there are no specific reasons.)
@@ -322,11 +322,11 @@ A firmware of the controller can be installed according to the procedure below.
  
 1. Input "L" command (or Load) in Boot Loader.
 
-    ![](/img/software/sdk/embedded_078.png)
+    ![](/img/software/sdk/embedded_078.webp)
  
 2. Select "Transmit File" in the Files menu of RoboPlus Terminal, and then select the prepared firmware. (bin file)
 
-    ![](/img/software/sdk/embedded_079.png)
+    ![](/img/software/sdk/embedded_079.webp)
  
 3. The file is transmitted.  Please do not let the power of the controller turn off, and be careful the cable does not take off while the file is being transmitted.
  
@@ -339,30 +339,30 @@ A firmware of the controller can be installed according to the procedure below.
 
 The newly made file can be changed from the sample\makefile designation. From makefile you can rename the file after ‘MAIN_OUT =’.
 
-![](/img/software/sdk/embedded_080.png)
+![](/img/software/sdk/embedded_080.webp)
  
 #### Object file list
 
 From the illustration ‘sample\app\src’ directory object files are produced from the .c files; where the Makefile requires these object files.
 
-![](/img/software/sdk/embedded_081.png)
+![](/img/software/sdk/embedded_081.webp)
  
 #### Firmware start address
 
 The memory maps and bootloader domain are divided into the following.
 
-![](/img/software/sdk/embedded_077.png)
+![](/img/software/sdk/embedded_077.webp)
  
 The firmware starting address is 0X8003000 by default user-modifiable.  
 The following example is with address 0X8003000
  
 1. changing stm32.ld
 
-    ![](/img/software/sdk/embedded_082.png)
+    ![](/img/software/sdk/embedded_082.webp)
  
 2. changing the vector table
 
-    ![](/img/software/sdk/embedded_083.png)
+    ![](/img/software/sdk/embedded_083.webp)
 
 ## Examples
 ### LED Control
@@ -520,7 +520,7 @@ int main(void)
 - Result
   - Press the w for welcome and g key for goodbye.
 
-    ![](/img/software/sdk/embedded_084.png)
+    ![](/img/software/sdk/embedded_084.webp)
 
 ### Buzzer
 Buzzer on the controller can be used.
@@ -664,9 +664,9 @@ Learning ollo servo motor rotation direction
 - Theory
   - The controller controls rotation direction with MOT1+ and MOT1- via SIG_MOT1+ and SIG_MOT1-
 
-    ![](/img/software/sdk/embedded_085.png)
+    ![](/img/software/sdk/embedded_085.webp)
     
-    ![](/img/software/sdk/embedded_086.png)
+    ![](/img/software/sdk/embedded_086.webp)
 
  
 Refer to [controller’s port](#hardware-port-map) for port and pin number in 06 OLLO MOTOR ROTATE\APP\src\main.c
@@ -716,9 +716,9 @@ Learning ollo servo motor position reading
   - The controller can change input analog signals into digital form. This example converts the motor’s analog position signal.
   - Refer to [controller’s port](#hardware-port-map) for port and pin number in  06 OLLO MOTOR ROTATE\APP\src\main.c
 
-    ![](/img/software/sdk/embedded_087.png)
+    ![](/img/software/sdk/embedded_087.webp)
     
-    ![](/img/software/sdk/embedded_088.png)
+    ![](/img/software/sdk/embedded_088.webp)
 
   - The ANALOG MUX (74HC4052D) blocks impedance and converts voltage from 5V to 3.3V.
   - ADX MUX circuit combines signal from ADC_SELECT0, and ADC_SELECT1; SIG_ADC0 selects a signal from ADC1, ADC2, or ADC3 and feeds it into the microcontroller; SIG_ADC1 selects a signal from ADC4, ADC5, or ADC6 and feeds it into the microcontroller; then this signal gets converted into digital.
@@ -803,7 +803,7 @@ int main(void)
 - Result
   - From any port the controller can read the position value of the servo motor. The range is from 0 to 0x03FF. The following illustration is with a servo motor in port 3.
 
-    ![](/img/software/sdk/embedded_089.png)
+    ![](/img/software/sdk/embedded_089.webp)
  
 ### IR Sensor
 Here you can learn how t o use the ADC of external ports.
@@ -815,9 +815,9 @@ Here you can learn how t o use the ADC of external ports.
 - Theory
   - The controller can change input analog signals into digital form. This example converts the motor’s analog position signal.
 
-    ![](/img/software/sdk/embedded_087.png)
+    ![](/img/software/sdk/embedded_087.webp)
     
-    ![](/img/software/sdk/embedded_088.png)
+    ![](/img/software/sdk/embedded_088.webp)
  
   - The ANALOG MUX (74HC4052D) blocks impedance and converts voltage from 5V to 3.3V.
   - The ADX MUX circuit combines signal from ADC_SELECT0, and ADC_SELECT1; SIG_ADC0 selects a signal from ADC1, ADC2, or ADC3 and feeds it into the microcontroller; SIG_ADC1 selects a signal from ADC4, ADC5, or ADC6 and feeds it into the microcontroller; then this signal gets converted into digital.
@@ -880,7 +880,7 @@ The location of DYNAMIXEL can be set and read. (For more details refer to DYNAMI
   - the diagram below show a circuit for DYNAMIXEL comm for a half-duplex buffer.
   - Refer to [controller’s port](#hardware-port-map) for port and pin number in 09 DXL READ_WRITE\APP\src\main.c
  
-    ![](/img/software/sdk/embedded_090.png)
+    ![](/img/software/sdk/embedded_090.webp)
  
 - Source
 
@@ -946,7 +946,7 @@ Multiple DYNAMIXEL can be controlled by synchronization. (For more details refer
   - the diagram below show a circuit for DYNAMIXEL comm for a half-duplex buffer.
   - Refer to controller’s port for port and pin number in 10 DXL SYNC WRITE\APP\src\main.c
 
-    ![](/img/software/sdk/embedded_090.png)
+    ![](/img/software/sdk/embedded_090.webp)
 
 - Source
 
@@ -1020,7 +1020,7 @@ The controller can be operated using RC-100.
   - The controller can be controlled by RC100 remote controller equipped with Zig 100.
   - The microcontroller and RC-100 comm are in USART channel 5
  
-    ![](/img/software/sdk/embedded_091.png)
+    ![](/img/software/sdk/embedded_091.webp)
  
   - The diagram above show Zigbee’s connector and power supply circuit.
   - Refer to controller’s port for port and pin number in  11 RC100 ZIGBEE\APP\src\main.c

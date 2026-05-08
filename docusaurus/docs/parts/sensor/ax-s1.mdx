@@ -6,7 +6,7 @@ sidebar_position: 10
 tags: [parts, sensor]
 ---
 
-![](/img/parts/sensors/ax-s1_product.png)
+![](/img/parts/sensors/ax-s1_product.webp)
 
 > Integrated Sensor(AX-S1)
 
@@ -262,14 +262,14 @@ The bit each sensor represents is equal to the object detection value. (See Addr
 ### Sound Level
 The level of the sound which is coming into the mic of AX-S1 is measured and converted into numerical value. Because the sound level is fulctuated up and down as below, if there is no sound, the numerical value of 127~128 (0x7F~0x80) is got, and it gets closer to 0 or 255 (0xFF) as the sound gets louder. The sound level is entered about 3800 times per second.
 
-![](/img/parts/sensors/ax-s1_01.png)
+![](/img/parts/sensors/ax-s1_01.webp)
  
 <a id="sound-max-data"></a>
 ### Maximum Sound Level
 The loudest sound level is saved separately among the sound levels of AX-S1.  That is, if current sound level is louder than the saved maximum sound level, the current sound is copied as maximum sound level.
 Therefore, the sound level lower than 128 is actually ignored, and it is assumed that the loudest sound level at the moment is accumulated and saved. See the following picutre for better understanding.
  
-![](/img/parts/sensors/ax-s1_02.png)
+![](/img/parts/sensors/ax-s1_02.webp)
  
 Be careful if the maximum sound leve becomes 255 (0xFF) while being accumulated, the maximum sound level remains 255 because it cannot exceed 255.  Therefore, '0' must be written on the maximum sound level part to measure the maximum sound level.
  
@@ -278,7 +278,7 @@ Be careful if the maximum sound leve becomes 255 (0xFF) while being accumulated,
 AX-S1 has a function to count 1 time if a certain level of sound is made.  For instance, it is possible to count the number of claps.  However, to prevent 1 clap from being counted as multiple claps, once claps are counted one time, the claps are not counted for 80msec.  After the last count, the counted value is saved as sound detected count in 800msec.
 To recognize the time when the sound detected count is increased, count the number internally, and then save the value in the sound detected count in 800msec while initializing the internal count as '0.'  See the following picture for better understanding.
  
-![](/img/parts/sensors/ax-s1_03.png)
+![](/img/parts/sensors/ax-s1_03.webp)
  
  
 <a id="sound-time"></a>
@@ -287,7 +287,7 @@ AX-S1 has a function to save the time of the moment whenever sound detected coun
 Sound detected time is counted internally (Repeating the count of 0~65535), and the currently counted value is saved when sound detected count is increased.  Thus, after initializing sound detected time simultaneously to '0' using Broadcasting command by separating 2 units of AX-S1 properly from each other, if sounds are made, the time difference between the two AX-S1s occurs pursuant to the directions of sounds.
 If the sound source is in the front, the sound is detected almost at the same time, but if the sound source is not in the front, the time difference occurs pursuant to the apart distance of AX-S1.  The direction of sound sources can be roughly estimated using the principle above.  See the following picture for better understanding.
  
-![](/img/parts/sensors/ax-s1_04.png)
+![](/img/parts/sensors/ax-s1_04.webp)
  
 The sound counted time of AX-S1 is counted about every 4.096 msec and it is counted again from '0.'  Therefore, calculating by the speed of sound, the sound moves about 0.02mm per count, and the distance between two AX-S1s must be within 70cm.  For example, if the two AX-S1s are 10cm apart, in case of using the method above, the difference of sound detected time between two AX-S1s may vary up to 5000.  (If the difference is about 5000, it means the sound source is located at 90 degrees left or right of the two AX-S1s)
  
@@ -295,7 +295,7 @@ The sound counted time of AX-S1 is counted about every 4.096 msec and it is coun
 ### Buzzer Notes
 A buzzer is installed in AX-S1, and simple beep sounds can be made.  Total 52 musical notes can be made in Buzzer Notes, and various notes can be made because there are whole tones and halftones in each octave.  The values of Buzzer Notes are assigned as the table below.
  
-![](/img/parts/sensors/ax-s1_05.png)
+![](/img/parts/sensors/ax-s1_05.webp)
  
  
 <a id="buzzer-ring"></a>
@@ -361,15 +361,15 @@ Light Detect Compare Value of Address 0x15 is saved in RAM Area of Control Table
 # How to Assemble
 The types of AX-S1 option frames are as follows. The frame of AX-S1 is compatible with the frame of AX-12/12+.
 
-![](/img/parts/sensors/ax-s1_06.png)
+![](/img/parts/sensors/ax-s1_06.webp)
 
-![](/img/parts/sensors/ax-s1_07.png)
+![](/img/parts/sensors/ax-s1_07.webp)
 
-![](/img/parts/sensors/ax-s1_08.png)
+![](/img/parts/sensors/ax-s1_08.webp)
 
 # References
 ## Drawings
-![](/img/parts/sensors/ax-s1_09.png)
+![](/img/parts/sensors/ax-s1_09.webp)
 
 [DYNAMIXEL Communication]: /docs/dxl/protocol1#communication-overview/
 [Communication Hardware Composition]: /docs/dxl/ax/ax-12w#pin-assignment/

@@ -7,8 +7,8 @@ tags: [parts, controller]
 ---
 
 # Overview
-![](/img/parts/controller/openrb-150/openrb_fonts.png)  
-![](/img/parts/controller/openrb-150/openrb_overview_01.png)
+![](/img/parts/controller/openrb-150/openrb_fonts.webp)  
+![](/img/parts/controller/openrb-150/openrb_overview_01.webp)
 
 The OpenRB-150 is a new open source Arduino compatible embedded controller.
 
@@ -89,7 +89,7 @@ The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAM
 
 :::danger
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **DANGER**  
 (Ignoring these warnings may cause serious injury or death)
 
@@ -109,7 +109,7 @@ The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAM
 
 :::warning
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **CAUTION**  
 (Ignoring these warnings may cause mild injury or damage to the product)
  
@@ -122,7 +122,7 @@ The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAM
 
 :::warning
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **ATTENTION**  
 (Ignoring these warnings may cause minor injury or damage to the product)
 - Do not disassemble or modify the product.
@@ -135,7 +135,7 @@ The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAM
 
 # Hardware Layout
 ## Pinout
-![](/img/parts/controller/openrb-150/openrb-150_pinout.png)
+![](/img/parts/controller/openrb-150/openrb-150_pinout.webp)
 
 ## Reset Button
 Pressing the `Reset Button` hard reboots the microcontroller, double pressing the `Reset Button` reboots the microcontroller into bootloader mode. 
@@ -156,7 +156,7 @@ The FET can enable and disable the power to the connected ports, by default the 
 
 When the FET is turned on, the `DXL` RED LED will also be turned on to confirm the power supply status.
 
-![](/img/parts/controller/openrb-150/openrb-150_switch.png)
+![](/img/parts/controller/openrb-150/openrb-150_switch.webp)
 
 ## Terminal VIN
 The included terminal block provides compatiblity with a wide range of input power sources.  
@@ -164,10 +164,10 @@ ROBOTIS recommends using the terminal block to supply power when possible.
 
 To supply power to the OpenRB-150 controller via the Terminal VIN, set the jumper to `VIN(DXL)` side as shown below.
 
-![](/img/parts/controller/openrb-150/openrb-150_jumper.png)  
+![](/img/parts/controller/openrb-150/openrb-150_jumper.webp)  
 > Terminal VIN jumper setting
 
-![](/img/parts/controller/openrb-150/openrb-150_power_inputs.png)  
+![](/img/parts/controller/openrb-150/openrb-150_power_inputs.webp)  
 > Power input circuitry
 
 
@@ -184,7 +184,7 @@ Do not charge the battery when connected to the controller.
 The XT60 connector is widely used in the RC products and it can be assembled on the back of the OpenRB-150 controller.  
 Please remove the Terminal Block before soldering the XT60 right angle connector.
 
-![](/img/parts/controller/openrb-150/openrb-150_power_xt60.png)  
+![](/img/parts/controller/openrb-150/openrb-150_power_xt60.webp)  
 > XT60 Connector Ready
 
 
@@ -194,7 +194,7 @@ In order to properly supply power to the controller and DYNAMIXEL, the power sou
 
 |                             When using USB or VIN                              |                          When using Terminal Block or XT60                           |
 |:------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
-| ![](/img/parts/controller/openrb-150/openrb-150_power_jumper_5v.png) | ![](/img/parts/controller/openrb-150/openrb-150_power_jumper_terminal.png) |
+| ![](/img/parts/controller/openrb-150/openrb-150_power_jumper_5v.webp) | ![](/img/parts/controller/openrb-150/openrb-150_power_jumper_terminal.webp) |
 
 ## DYNAMIXEL Ports
 4 DYNAMIXEL Ports are ready for any TTL supported DYNAMIXEL.  
@@ -203,9 +203,9 @@ In order to properly supply power to the controller and DYNAMIXEL, the power sou
 |           Item           |                             TTL                              |
 |:------------------------:|:------------------------------------------------------------:|
 |          Pinout          |                `1` GND<br />`2` VDD<br />`3` DATA                |
-|         Diagram          |        ![](/img/dxl/jst_b3beha_diagram.png)        |
-|         Housing          |   ![](/img/dxl/JST_EHR-3.png)<br />[JST EHR-03]    |
-|        PCB Header        | ![](/img/dxl/JST_B3B_EH-A.png)<br />[JST B3B-EH-A] |
+|         Diagram          |        ![](/img/dxl/jst_b3beha_diagram.webp)        |
+|         Housing          |   ![](/img/dxl/JST_EHR-3.webp)<br />[JST EHR-03]    |
+|        PCB Header        | ![](/img/dxl/JST_B3B_EH-A.webp)<br />[JST B3B-EH-A] |
 |      Crimp Terminal      |                     [JST SEH-001T-P0.6]                      |
 | Wire Gauge for DYNAMIXEL |                            21 AWG                            |
 
@@ -214,7 +214,7 @@ In order to properly supply power to the controller and DYNAMIXEL, the power sou
 [JST SEH-001T-P0.6]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 
 
-![](/img/dxl/x/x_series_ttl_pin.png)
+![](/img/dxl/x/x_series_ttl_pin.webp)
 
 
 :::note
@@ -226,13 +226,13 @@ In order to properly supply power to the controller and DYNAMIXEL, the power sou
 
 RS-485 supported DYNAMIXEL can also be used when connected with the [DYNAMIXEL Communication Bridge].
 
-![](/img/parts/interface/dxl_bridge/dxl_bridge_product_front.png)
+![](/img/parts/interface/dxl_bridge/dxl_bridge_product_front.webp)
 > DYNAMIXEL Communication Bridge
 
 ## Serial Port
 The Serial Port assigned to `Serial2` can be used to connect various devices for debugging the code or controlling the controller.
 
-![](/img/parts/controller/openrb-150/openrb-150_serial_port.png)
+![](/img/parts/controller/openrb-150/openrb-150_serial_port.webp)
 
 ## LEDs
 Three LED indicates the status of the OpenRB-150 controller.
@@ -241,7 +241,7 @@ Three LED indicates the status of the OpenRB-150 controller.
 - `USER` (Orange) : This LED can be controlled by user via Pin `32` or `LED_BUILTIN` in the Arduino sketch code.
 - `DXL` (Red) : This LED will be turned on when the DYNAMIXEL port is powered on.
 
-![](/img/parts/controller/openrb-150/openrb-150_leds.png)
+![](/img/parts/controller/openrb-150/openrb-150_leds.webp)
 
 # Pin Name Definitions
 ```cpp
@@ -260,13 +260,13 @@ Three LED indicates the status of the OpenRB-150 controller.
 OpenRB-150 controller can be powered with three power sources.
 
 ## USB C
-  ![](/img/parts/controller/openrb-150/openrb-150_power_usb.png)
+  ![](/img/parts/controller/openrb-150/openrb-150_power_usb.webp)
 
 ## VIN
-  ![](/img/parts/controller/openrb-150/openrb-150_power_vin.png)
+  ![](/img/parts/controller/openrb-150/openrb-150_power_vin.webp)
 
 ## Terminal VIN
-  ![](/img/parts/controller/openrb-150/openrb-150_power_terminal_vin.png)
+  ![](/img/parts/controller/openrb-150/openrb-150_power_terminal_vin.webp)
 
 
 
@@ -277,7 +277,7 @@ OpenRB-150 controller can be powered with three power sources.
 
 ## Connection Examples
 ### When running 5V DYNAMIXEL with the USB power
-![](/img/parts/controller/openrb-150/openrb-150_connection_example01.png)
+![](/img/parts/controller/openrb-150/openrb-150_connection_example01.webp)
 
 
 
@@ -287,10 +287,10 @@ OpenRB-150 controller can be powered with three power sources.
 
 
 ### When running 12V TTL DYNAMIXEL
-![](/img/parts/controller/openrb-150/openrb-150_connection_example02.png)
+![](/img/parts/controller/openrb-150/openrb-150_connection_example02.webp)
 
 ### When running 12V RS-485 DYNAMIXEL
-![](/img/parts/controller/openrb-150/openrb-150_connection_example03.png)
+![](/img/parts/controller/openrb-150/openrb-150_connection_example03.webp)
 
 # Development Environment
 ## DYNAMIXEL Wizard 2.0
@@ -307,27 +307,27 @@ Up to `1 Mbps` baudrate is supported with usb_to_dynamixel sketch.
 :::
 
 
-![](/img/parts/controller/openrb-150/openrb-150_wizard2_connection.png)  
+![](/img/parts/controller/openrb-150/openrb-150_wizard2_connection.webp)  
 > Connect the USB C cable to OpenRB-150 and Upload the usb_to_dynamixel sketch
 
 OpenRB-150 supports most features of DYNAMIXEL Wizard 2.0 including testing DYNAMIXEL, firmware management, packet analyzing, data plotting, control table backup, etc.
 
-![](/img/parts/controller/openrb-150/openrb-150_wizard2_connection02.png)  
+![](/img/parts/controller/openrb-150/openrb-150_wizard2_connection02.webp)  
 > Various baudrates up to 1 Mbps are supported
 
-![](/img/parts/controller/openrb-150/openrb-150_wizard2_fw_recovery.png)  
+![](/img/parts/controller/openrb-150/openrb-150_wizard2_fw_recovery.webp)  
 > DYNAMIXEL Firmware Recovery and Update are supported
 
-![](/img/parts/controller/openrb-150/openrb-150_wizard2_graph.png)  
+![](/img/parts/controller/openrb-150/openrb-150_wizard2_graph.webp)  
 > Graphing feature is supported
 
-![](/img/parts/controller/openrb-150/openrb-150_wizard2_packet.png)  
+![](/img/parts/controller/openrb-150/openrb-150_wizard2_packet.webp)  
 > Analyzing DYNAMIXEL packet is supported
 
 ## Install the Arduino IDE
 ### Installl on Linux
 1. Download the `Linux 64 bit` version of Arduino IDE from the official Arduino download page.  
-  ![](/img/icon_download.png) [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
+  ![](/img/icon_download.webp) [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
 
 2. Extract the downloaded file to the desired folder and execute the install script as below in the terminal.
 ```text
@@ -341,7 +341,7 @@ $ arduino
 
 ### Install on Mac
 1. Download the `Mac OS X version` of Arduino IDE from the official Arduino download page.  
-  ![](/img/icon_download.png) [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
+  ![](/img/icon_download.webp) [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
 
 2. Drag the downloaded Arduino file into the `Applications`.
 
@@ -349,7 +349,7 @@ $ arduino
 
 ### Install on Windows
 1. Download the `Windows Installer version` of Arduino IDE from the official Arduino download page.  
-  ![](/img/icon_download.png) [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
+  ![](/img/icon_download.webp) [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
 
 2. Install the downloaded file.
 
@@ -365,7 +365,7 @@ When the Preferences window appears, copy and paste following address in the `Ad
 https://raw.githubusercontent.com/ROBOTIS-GIT/OpenRB-150/master/package_openrb_index.json
 ```
 
-![](/img/parts/controller/openrb-150/openrb-150_board_manager_index.png)
+![](/img/parts/controller/openrb-150/openrb-150_board_manager_index.webp)
 
 ### Arduino SAMD Board Manager
 
@@ -375,7 +375,7 @@ Follow the instructions below to install the Arduino SAMD Board Manager.
 1. Go to Tools > Board > Boards Manager.
 2. Search for `Arduino SAMD` and Install the latest version.
 
-![](/img/parts/controller/openrb-150/arduino_samd_board_manager.png)
+![](/img/parts/controller/openrb-150/arduino_samd_board_manager.webp)
 
 ### OpenRB-150 Board Manager
 
@@ -384,7 +384,7 @@ Follow the instructions below to install the OpenRB-150 Board Manager.
 1. Go to Tools > Board > Boards Manager.
 2. Search for `OpenRB` and Install the latest version.
 
-![](/img/parts/controller/openrb-150/openrb-150_board_manager.png)
+![](/img/parts/controller/openrb-150/openrb-150_board_manager.webp)
 
 
 ## Library API
@@ -397,11 +397,11 @@ There are three ways to add libraries to the Arduino IDE.
 Each way is described in detail in the [Arduino Official Guide], so please refer to it if necessary.  
 Below is an example of using the Library Manager.
 
-![](/img/parts/interface/dynamixel_shield/library_manager_01.png)
+![](/img/parts/interface/dynamixel_shield/library_manager_01.webp)
 
 Search for `DYNAMIXEL2Arduino` from the Library Manager and install the library.
 
-![](/img/parts/interface/dynamixel_shield/library_manager_02.png)
+![](/img/parts/interface/dynamixel_shield/library_manager_02.webp)
 
 If the DYNAMIXEL2Arduino library has been successfully installed, useful examples to control DYNAMIXEL can be found under the DYNAMIXEL2Arduino category.
 
@@ -479,7 +479,7 @@ DYNAMIXEL2Arduino class inherits below public functions from the Master class.
 Uploading a sketch to the OpenRB-150 is similar with Arduino controllers.  
 Connect the OpenRB-150 to the PC via USB cable, select the OpenRB-150 board and the port that is connected to the OpenRB-150, then click on the `Upload` icon. 
 
-![](/img/parts/controller/opencm904/oencm904_upload_01.png)
+![](/img/parts/controller/opencm904/oencm904_upload_01.webp)
 
 
 :::note

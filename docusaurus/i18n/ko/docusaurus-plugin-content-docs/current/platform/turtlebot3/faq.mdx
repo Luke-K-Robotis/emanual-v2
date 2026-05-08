@@ -45,7 +45,7 @@ $ sudo ufw allow ssh
 
 Before starting to connect SSH, you need to check `host name`. Redbox in below image shows it.
 
-![](/img/platform/turtlebot3/faq/computer_name.png)
+![](/img/platform/turtlebot3/faq/computer_name.webp)
 
 Then, you can use SSH following command in `Remote PC`.
 
@@ -53,7 +53,7 @@ Then, you can use SSH following command in `Remote PC`.
 $ ssh ${HOSTNAME}@xxx.xxx.xx.xx
 ```
 
-![](/img/platform/turtlebot3/faq/connection_ssh.png)
+![](/img/platform/turtlebot3/faq/connection_ssh.webp)
 
 
 ## Timesync between TurtleBot3 and Remote PC
@@ -78,38 +78,38 @@ $ sudo ntpdate ntp.ubuntu.com
 3. **Upload Setup Firmware to OpenCR**  
 As shown in the below image, find `Examples` > `turtlebot3` > `turtlebot3_setup` > `turtlebot3_setup_motor` and open the example.  
 
-    ![](/img/platform/turtlebot3/faq/dynamixel_setup_1.png)
+    ![](/img/platform/turtlebot3/faq/dynamixel_setup_1.webp)
 
 2. **Click the Upload button on the Arduino IDE.**  
 If example upload to the OpenCR is completed, connect **ONE** DYNAMIXEL to the OpenCR.  
 Click the `Serial Monitor` icon in the upper right corner as shown in the below image.  
 
-    ![](/img/platform/turtlebot3/faq/dynamixel_setup_2.png)
+    ![](/img/platform/turtlebot3/faq/dynamixel_setup_2.webp)
 
 3. **Reset OpenCR**  
 Press the `RESET` button if the example does not run properly.
 
-    ![](/img/parts/controller/opencr10/bootloader_19.png)
+    ![](/img/parts/controller/opencr10/bootloader_19.webp)
 
 4. **Select an Option**  
 When the `Serial Monitor` is running, menu for DYNAMIXEL setup will be displayed as shown below.  
 TurtleBot3 consists of two DYNAMIXEL's actuators for the left and right wheels, so select the proper option based on the assembled position.  
 For example, to set up the left side DYNAMIXEL, enter `1` to the input textbox.
 
-    ![](/img/platform/turtlebot3/faq/dynamixel_setup_3.png)
+    ![](/img/platform/turtlebot3/faq/dynamixel_setup_3.webp)
 
 5. **Confirmation**  
 To prevent any mistakes, a confirmation will be required.  
 To proceed the configuration, enter `Y` to the input textbox.
 
-    ![](/img/platform/turtlebot3/faq/dynamixel_setup_4.png)
+    ![](/img/platform/turtlebot3/faq/dynamixel_setup_4.webp)
 
 6. **Configure DYNAMIXEL**  
 The setup tool starts searching the connected DYNAMIXEL using different IDs and Baudrates.  
 If DYNAMIXEL is detected, it will be automatically set up for TurtleBot3.  
 When the setup is completed, `OK` message is printed on the screen.
 
-    ![](/img/platform/turtlebot3/faq/dynamixel_setup_5.png)
+    ![](/img/platform/turtlebot3/faq/dynamixel_setup_5.webp)
 
 7. **Test DYNAMIXEL**  
 Complete the setup procedure and verify if the change has been properly made.  
@@ -117,7 +117,7 @@ Select one of the test options, then selected DYNAMIXEL will iterate rotation an
 To end the test, press the `Enter`.  
 For example, to test the left DYNAMIXEL, enter `3` as shown in below, or enter `4` for the right wheel test.
 
-    ![](/img/platform/turtlebot3/faq/dynamixel_setup_6.png)
+    ![](/img/platform/turtlebot3/faq/dynamixel_setup_6.webp)
 
 8. **Upload TurtleBot3 Core**  
 If DYNAMIXEL setup is completed, TurtleBot3 Core example should be uploaded to OpenCR.  
@@ -148,9 +148,9 @@ So, you can download the STL files directly from each Onshape address as shown i
 5. Click the "Export..."
 6. Finally, you can download the output file type you want.
 
-![](/img/platform/turtlebot3/faq/download_the_stl_files_01.png)
+![](/img/platform/turtlebot3/faq/download_the_stl_files_01.webp)
 
-![](/img/platform/turtlebot3/faq/download_the_stl_files_02.png)
+![](/img/platform/turtlebot3/faq/download_the_stl_files_02.webp)
 
 
 ## Intel® Joule™ USB-C Port is not Recognized on Windows 10
@@ -168,7 +168,7 @@ If BIOS firmware is not properly installed, this might happen. Please burn the B
 - [Download BIOS Firmware #193](https://downloadmirror.intel.com/26206/eng/joule-firmware-2017-02-19-193-public.zip)
 3. Make sure that you see the message in the red box.
 
-![](/img/platform/turtlebot3/faq/nvstorage.png)
+![](/img/platform/turtlebot3/faq/nvstorage.webp)
 
 ## How to Update Software
 **[TurtleBot3]**

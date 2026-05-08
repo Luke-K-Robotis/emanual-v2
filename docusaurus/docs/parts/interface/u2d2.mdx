@@ -7,7 +7,7 @@ tags: [parts, interface]
 ---
 
 # Introduction
-![](/img/parts/interface/u2d2_product.png)
+![](/img/parts/interface/u2d2_product.webp)
 
 > U2D2
 
@@ -48,7 +48,7 @@ Please check PC and other devices are grounded properly. Failing to do so might 
 
 
 # Specifications
-![](/img/parts/interface/u2d2_03.png)
+![](/img/parts/interface/u2d2_03.webp)
 
 |    Item    |                                                                                          Description                                                                                          |
 | :--------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -63,7 +63,7 @@ Please check PC and other devices are grounded properly. Failing to do so might 
 
 :::danger
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **DANGER**  
 (Ignoring these warnings may cause serious injury or death)
 
@@ -83,7 +83,7 @@ Please check PC and other devices are grounded properly. Failing to do so might 
 
 :::warning
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **CAUTION**  
 (Ignoring these warnings may cause mild injury or damage to the product)
  
@@ -96,7 +96,7 @@ Please check PC and other devices are grounded properly. Failing to do so might 
 
 :::warning
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **ATTENTION**  
 (Ignoring these warnings may cause minor injury or damage to the product)
 - Do not disassemble or modify the product.
@@ -178,7 +178,7 @@ Caution for Power Supply
 In order to operate DYNAMIXEL with SMPS2Dynamixel, please connect DYNAMIXEL to SMPS2Dynamixel, then connect SMPS to SMPS2Dynamixel as shown below image.  
 Please compare operating voltage of DYNAMIXEL with 12V 5A ROBOTIS SMPS before supplying power.
 
-![](/img/parts/interface/u2d2_05.png)
+![](/img/parts/interface/u2d2_05.webp)
 
 ## Using ROBOTIS Controller
 
@@ -186,7 +186,7 @@ In order to operate DYNAMIXEL with OpenCM 485 Expansion board, please connect DY
 Please compare operating voltage of DYNAMIXEL with battery or 12V 5A ROBOTIS SMPS before supplying power.  
 OpenCM485 EXP board will bypass the input power source to output power.
 
-![](/img/parts/interface/u2d2_06.png)
+![](/img/parts/interface/u2d2_06.webp)
 
 ## Using Power Supply
 
@@ -194,19 +194,19 @@ In order to operate DYNAMIXEL with Power Supply, please configure the power supp
 Please check the pinout of the cable to avoid connecting to wrong pins.  
 How to check whether the USB downloader(LN-101) driver is installed correctly.
 
-![](/img/parts/interface/u2d2_07.png)
+![](/img/parts/interface/u2d2_07.webp)
 
 # Pinouts
-![](/img/parts/interface/u2d2_08.png)
+![](/img/parts/interface/u2d2_08.webp)
 
 # Data Flow Control
-![](/img/parts/interface/u2d2_09.png)
+![](/img/parts/interface/u2d2_09.webp)
 
-![](/img/parts/interface/u2d2_10.png)
+![](/img/parts/interface/u2d2_10.webp)
 
-![](/img/parts/interface/u2d2_11.png)
+![](/img/parts/interface/u2d2_11.webp)
 
-![](/img/parts/interface/u2d2_12.png)
+![](/img/parts/interface/u2d2_12.webp)
 
 When data is transmitted from the USB port in PC to peripheral devices(Tx), all connected device will receive an identical data.
 
@@ -243,7 +243,7 @@ Therefore, when connecting 3Pin TTL Level DYNAMIXEL and 4Pin RS-485 DYNAMIXEL at
 ## Internal DIP Switch
 There is a two-pole switch inside of the plastic cover. This switch is set to OFF as a default. Under normal circumstances this default setting is recommended, therefore, the switch cannot be accessed without opening the case. Please open the case and set RS-485 termination resistor and UART 3.3V power switch only after thoroughly understand its usage.
 
-![](/img/parts/interface/u2d2_13.png)
+![](/img/parts/interface/u2d2_13.webp)
 
 ### RS-485 Termination Resistor(120&Omega;) Switch
 
@@ -251,7 +251,7 @@ Transmission devices are designed to have certain impedances based on design sta
 
 If communication is suffering from frequent errors, the termination resistor might be required. The regular 120&Omega; termination resistor will be applied on the transmission line by shifting the switch to ON. If termination resistor doesn’t resolve the communication issue, the resistance value might need to be adjusted.
 
-![](/img/parts/interface/u2d2_14.png)
+![](/img/parts/interface/u2d2_14.webp)
 
 ### UART 3.3V Power Supply Switch
 
@@ -260,7 +260,7 @@ However, when connecting BT-410 that does not have an external power source need
 If the switch is turned on, second pin of the 4Pin UART connector will be able to supply 3.3V.
 
 ## Caution for Assembly
-![](/img/parts/interface/u2d2_15.png)
+![](/img/parts/interface/u2d2_15.webp)
 
 - Bolt for Mount Hole : M2 Tap bolt
 - Mount Hole Depth : Valid depth 4.7mm, Depth from the surface 5.5mm
@@ -270,9 +270,9 @@ If the switch is turned on, second pin of the 4Pin UART connector will be able t
 |           Item           |                             TTL                              |                            RS-485                            |
 |:------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
 |          Pinout          |                `1` GND<br />`2` VDD<br />`3` DATA                |         `1` GND<br />`2` VDD<br />`3` DATA+<br />`4` DATA-         |
-|         Diagram          |        ![](/img/dxl/jst_b3beha_diagram.png)        |        ![](/img/dxl/jst_b4beha_diagram.png)        |
-|         Housing          |   ![](/img/dxl/JST_EHR-3.png)<br />[JST EHR-03]    |   ![](/img/dxl/JST_EHR-4.png)<br />[JST EHR-04]    |
-|        PCB Header        | ![](/img/dxl/JST_B3B_EH-A.png)<br />[JST B3B-EH-A] | ![](/img/dxl/JST_B4B-EH-A.png)<br />[JST B4B-EH-A] |
+|         Diagram          |        ![](/img/dxl/jst_b3beha_diagram.webp)        |        ![](/img/dxl/jst_b4beha_diagram.webp)        |
+|         Housing          |   ![](/img/dxl/JST_EHR-3.webp)<br />[JST EHR-03]    |   ![](/img/dxl/JST_EHR-4.webp)<br />[JST EHR-04]    |
+|        PCB Header        | ![](/img/dxl/JST_B3B_EH-A.webp)<br />[JST B3B-EH-A] | ![](/img/dxl/JST_B4B-EH-A.webp)<br />[JST B4B-EH-A] |
 |      Crimp Terminal      |                     [JST SEH-001T-P0.6]                      |                     [JST SEH-001T-P0.6]                      |
 | Wire Gauge for DYNAMIXEL |                            21 AWG                            |                            21 AWG                            |
 
@@ -295,15 +295,15 @@ For the most reliable high-speed communication with DYNAMIXEL it is recommended 
 
 1. Open `Device Manager`. Go to `Ports` item and right click on the relative serial port to select `Properties`.
 
-    ![](/img/software/dynamixel/wizard2/wizard2_graph_008_en.png)
+    ![](/img/software/dynamixel/wizard2/wizard2_graph_008_en.webp)
 
 2. In the Properties window, go to `Port Settings` tab and click `Advanced` button.
 
-    ![](/img/software/dynamixel/wizard2/wizard2_graph_009_en.png)
+    ![](/img/software/dynamixel/wizard2/wizard2_graph_009_en.webp)
 
 3. Set the `Latency Timer (msec)` to `1ms` and click `OK` to confirm the change.
 
-    ![](/img/software/dynamixel/wizard2/wizard2_graph_010_en.png)
+    ![](/img/software/dynamixel/wizard2/wizard2_graph_010_en.webp)
 
 ### Linux
 

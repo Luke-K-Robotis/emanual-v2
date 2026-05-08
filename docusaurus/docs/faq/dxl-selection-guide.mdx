@@ -32,7 +32,7 @@ The first consideration for any DYNAMIXEL System is the actuator. Choosing a DYN
 ## Models
 DYNAMIXELs come in a variety of sizes and with a variety of capabilities, with each model especially suited for a particular purpose. Before we look into the specifics of DYNAMIXEL performance, it is helpful to understand the differences between each DYNAMIXEL model. 
 
-![](/img/dxl/x/dxl_x_productline.png)
+![](/img/dxl/x/dxl_x_productline.webp)
 > DYNAMIXEL-X Series Naming Convention
 
 ![](/img/dxl/p/dynamixel_pro_plus_lineup_table.jpg)
@@ -83,11 +83,11 @@ To communicate with DYNAMIXELs using a controller, the same communication interf
 
 <details>
 <summary>
-![](/img/icon_unfold.png) **Tip**: **Looking for a solution to combining TTL and RS-485 of DYNAMIXEL in your system ?**
+![](/img/icon_unfold.webp) **Tip**: **Looking for a solution to combining TTL and RS-485 of DYNAMIXEL in your system ?**
 </summary>
 Ordinarily, DYNAMIXELs utilizing different serial protocols can not communicate with one another over the same serial bus. This means that it is important to select servos using compatible communications protocols. In some applications, you may need to combine DYNAMIXELs with mismatched serial protocols. For these cases, you can combine mismatched serial protocols using a [DYNAMIXEL Communication Bridge](/docs/parts/interface/dxl_bridge).
 
-![](/img/parts/interface/dxl_bridge/u2d2_bridge_ttl_485.png)
+![](/img/parts/interface/dxl_bridge/u2d2_bridge_ttl_485.webp)
 
 </details>
 
@@ -96,15 +96,15 @@ TTL (Transistor-Transistor Logic), 0 to 5V logic level, is the common serial com
 
 An easy way to identify TTL DYNAMIXEL actuator is that the model name ends with a "-T" (e.g, XL330-M288-**T**) and has three pins ports.  
 
-![](/img/dxl/x/x_series_ttl_pin.png)  
+![](/img/dxl/x/x_series_ttl_pin.webp)  
 > Pin Diagram for TTL Based DYNAMIXEL, using JST connectors
 
 <details>
 <summary>
-![](/img/icon_unfold.png) **Tip**: **Communication Circuit of TTL based DYNAMIXEL**
+![](/img/icon_unfold.webp) **Tip**: **Communication Circuit of TTL based DYNAMIXEL**
 </summary>
 To control the DYNAMIXEL actuators, the main controller needs to convert its UART signals to the half duplex type. The recommended circuit diagram for this is shown below.  
-![](/img/dxl/ttl_circuit.png)  
+![](/img/dxl/ttl_circuit.webp)  
 
 
 :::note
@@ -128,12 +128,12 @@ Some higher end DYNAMIXEL servos operate using RS-485 communications protocol. I
 
 An easy way to identify RS-485 based DYNAMIXEL actuator is that the model name ends with a "-R" (e.g, XD40-T150-**R**) and has four pins ports.
 
-![](/img/dxl/x/x_series_485_pin.png)   
+![](/img/dxl/x/x_series_485_pin.webp)   
 > Pin Diagram for RS-485 Based DYNAMIXEL, using JST connectors
 
 <details>
 <summary>
-![](/img/icon_unfold.png) **Tip**: **Communication Circuit of RS-485 based DYNAMIXEL**
+![](/img/icon_unfold.webp) **Tip**: **Communication Circuit of RS-485 based DYNAMIXEL**
 </summary>
 
 To control the DYNAMIXELs, the main controller needs to convert its UART signals to the half duplex type. The recommended circuit diagram for this is shown below.  
@@ -189,13 +189,13 @@ DYNAMIXEL-P Series runs at 24.0V. This can be compatible with DYNAMIXEL-X's `V` 
 ### SMPS
 The **SMPS** is recommended power solution with ROBOTIS' providing interface and controller. Most of items offer the SMPS DC Connector that is compatible with 2.5mm / 5.5mm OD, Center Positive SMPS.
   
-![](/img/reference/selection_guide/selection_guide_smps.png)
+![](/img/reference/selection_guide/selection_guide_smps.webp)
 > SMPS 12V, 5A
 
 ### Batteries
 The **Batteries** provides more mobility than a fixed power supply can offer, in those cases batteries may be the optimal solution for your high mobility robot. If LiPo batteries are your choice, check if there is PCM (Protection Circuit Modules) are included for your system safety. 
   
-![](/img/reference/selection_guide/selection_guide_lipo.png)
+![](/img/reference/selection_guide/selection_guide_lipo.webp)
 > LiPo Battery(LB-012) 11.1V 1800mAh 
 
 ### PSU
@@ -222,11 +222,11 @@ The DYNAMIXEL [Controller Compatibility Chart](/docs/parts/controller/controller
 
 Using the inteface like U2D2 allow you to use [DYNAMIXEL Wizard 2.0](#dynamixel-wizard) and [DYNAMIXEL SDK](#dynamixel-sdk).
 
-![](/img/parts/interface/u2d2_01.png)
+![](/img/parts/interface/u2d2_01.webp)
 
 The DYNAMIXEL Starter Set includes everything you need to utilize your PC as your chosen controller, a [U2D2], [U2D2 Power Hub Board], and an SMPS 12V 5A AC Adapter 
 
-  ![](/img/dxl/dxl_quick_start_insert/dxl_control_01.png) 
+  ![](/img/dxl/dxl_quick_start_insert/dxl_control_01.webp) 
 
   > Connection Example of the DYNAMIXEL Starter Set
 
@@ -235,12 +235,12 @@ The DYNAMIXEL Starter Set includes everything you need to utilize your PC as you
 ### DYNAMIXEL Shields
 The [DYNAMIXEL Shield] and [DYNAMIXEL Shield MKR] were created to enable users to easily integrate DYNAMIXELs into their arduino based projects. Using the shields in combination with the [DynamixelShield](#dynamixelshield) library enables Arduino users to do the DYNAMIXELs with simple APIs.
 
-![](/img/dxl/dxl_quick_start_insert/dxl_control_05.png) 
+![](/img/dxl/dxl_quick_start_insert/dxl_control_05.webp) 
 > Connection Example of DYNAMIXEL with DYNAMIXEL Shield
 
 ## Embedded Controllers
 ### OpenRB-150
-![](/img/parts/controller/openrb-150/openrb_overview_01.png)
+![](/img/parts/controller/openrb-150/openrb_overview_01.webp)
 
 The [OpenRB-150] is a new open source Arduino compatible embedded controller.  
 The controller features the same pinout and the form factor as the Arduino MKR to ensure compatibility with phyisical accessories, and has support for programming using the Arduino IDE.  
@@ -251,13 +251,13 @@ The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAM
 - Dedicated 4 DYNAMIXEL TTL connectors
 - Support [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20) for easier use and maintenance of DYNAMIXEL
 
-![](/img/parts/controller/openrb-150/openrb-150_pinout.png)
+![](/img/parts/controller/openrb-150/openrb-150_pinout.webp)
 > OpenRB-150 Layout and Pin Map
 
-![](/img/parts/controller/openrb-150/openrb-150_connection_example01.png)
+![](/img/parts/controller/openrb-150/openrb-150_connection_example01.webp)
 > Power Connection Example using USB
 
-![](/img/parts/controller/openrb-150/openrb-150_connection_example02.png)
+![](/img/parts/controller/openrb-150/openrb-150_connection_example02.webp)
 > Power Connection Example using SMPS
 
 ### OpenCR1.0
@@ -265,16 +265,16 @@ The OpenRB-150 also features 4 dedicated DYNAMIXEL ports, and supports the DYNAM
 
 The OpenCR is also compatible with Arduino IDE for developing customized software for your projects ([DYNAMIXEL SDK (Arduino)](#dynamixel-sdk-arduino), [Arduino Library](#arduino-library)). 
 
-![](/img/parts/controller/opencr10/opencr_pinout.png) 
+![](/img/parts/controller/opencr10/opencr_pinout.webp) 
 > OpenCR 1.0 Layout and Pin Map
 
-![](/img/dxl/dxl_quick_start_insert/dxl_control_03.png) 
+![](/img/dxl/dxl_quick_start_insert/dxl_control_03.webp) 
 > Connection Example of DYNAMIXEL with OpenCR 1.0
 
 ### OpenCM9.04
 [OpenCM9.04] is featuring an embedded MCU from the ARM Cortex-M3 line-up. The OpenCM is compatible with the Arduino IDE([DYNAMIXEL SDK (Arduino)](#dynamixel-sdk-arduino), [Arduino Library](#arduino-library)) for development of custom software for your project.
 
-![](/img/parts/controller/opencm904/opencm904_14.png)
+![](/img/parts/controller/opencm904/opencm904_14.webp)
 
 
 
@@ -294,7 +294,7 @@ CM Series are designed for the [Educational Kits](/docs/edu) to support our dedi
 
 Most of CM Series controllers provide the OLLO Ports where [dedicated sensors for CM series](https://emanual.robotis.com/docs/en/parts/all_sensors/) can be mounted and easily controled by using R+ software. 
 
-![](/img/dxl/dxl_quick_start_insert/dxl_control_04.png)
+![](/img/dxl/dxl_quick_start_insert/dxl_control_04.webp)
 > Connection Example of DYNAMIXEL with CM series.
 
 ![](/img/parts/controller/cm-150/cm-150_002.jpg)
@@ -343,7 +343,7 @@ The following features are provided with DYNAMIXEL Wizard 2.0.
 - DYNAMIXEL Data Plotting in Real-Time
 - Generate & Monitor DYNAMIXEL Packets
 
-![](/img/software/dynamixel/wizard2/wizard2_main_001.png)
+![](/img/software/dynamixel/wizard2/wizard2_main_001.webp)
 
 ### R+ Manager 2.0
 [R+ Manager 2.0](/docs/software/rplus2/manager) is one of the [R+ Software Suite](#r-software-suite) for you to maintanance Educational Kits including [CM-Series](#cm-series) and its supported DYNAMIXELs. 
@@ -388,19 +388,19 @@ ROBOTIS provides comprehensive code APIs and basic example for Arduino users.
 - [Dynamixel2Arduino](#dynamixel2arduino)
 - [DynamixelShield](#dynamixelshield)
 
-![](/img/parts/interface/dynamixel_shield/examples.png)
+![](/img/parts/interface/dynamixel_shield/examples.webp)
 > DynamixelShield Library: Basic Examples
 
 #### Dynamixel2Arduino
 [Dynamixel2Arduino] library designed based on [DYNAMIXEL SDK](#dynamixel-sdk-arduino) provides comprehensive code APIs. Dynamixel2Arduino give you user-friendly experience than DYNAMIXEL SDK in Arduino
 - [API Reference](/docs/software/arduino_ide#dynamixel2arduino-library)
 
-![](/img/parts/interface/dynamixel_shield/library_manager_02.png)
+![](/img/parts/interface/dynamixel_shield/library_manager_02.webp)
 
 #### DynamixelShield
 [DynamixelShield] library inherits features of [Dynamixel2Arduino](#dynamixel2arduino). But this is specifially designed for [DYNAMIXEL Shields](#dynamixel-shields) to interface with Arduino boards. 
 
-![](/img/parts/interface/dynamixel_shield/library_manager_03.png)
+![](/img/parts/interface/dynamixel_shield/library_manager_03.webp)
 
 ## Educational Software
 Educational software is ROBOTIS dedicated software for our [educational kits](/docs/edu) and [CM Series](#cm-series). 
@@ -411,7 +411,7 @@ Educational software is ROBOTIS dedicated software for our [educational kits](/d
 ### R+ Software Suite
 The R+ (Roboplus) Software suite is ROBOTIS' first party robot controller software offering. R+ is offered in a variety of forms to enable users to start the programming style they feel most comfortable with. See provided [R+ Software](/docs/software#roboplus-r).
 
-![](/img/software/rplus_task3/task3_001.png)
+![](/img/software/rplus_task3/task3_001.webp)
 > R+Task 3.0
 
 [DYNAMIXEL Wizard 2.0]: /docs/software/dynamixel/dynamixel_wizard2

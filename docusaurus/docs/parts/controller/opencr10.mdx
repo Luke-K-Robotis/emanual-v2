@@ -13,7 +13,7 @@ tags: [parts, controller]
 :::
 
 
-![](/img/parts/controller/opencr10/opencr_product.png)
+![](/img/parts/controller/opencr10/opencr_product.webp)
 
 > OpenCR 1.0
 
@@ -69,7 +69,7 @@ The development environment for OpenCR1.0 is wide open from Arduino IDE and Scra
 
 :::danger
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **DANGER**  
 (Ignoring these warnings may cause serious injury or death)
 
@@ -89,7 +89,7 @@ The development environment for OpenCR1.0 is wide open from Arduino IDE and Scra
 
 :::warning
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **CAUTION**  
 (Ignoring these warnings may cause mild injury or damage to the product)
  - Always comply with the product's offical operating environment specifications including input voltage, current, and operating temperature. 
@@ -102,7 +102,7 @@ The development environment for OpenCR1.0 is wide open from Arduino IDE and Scra
 
 :::warning
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **ATTENTION**  
 (Ignoring these warnings may cause minor injury or damage to the product)
 - Do not disassemble or modify the product.
@@ -114,7 +114,7 @@ The development environment for OpenCR1.0 is wide open from Arduino IDE and Scra
 
 
 # Layout/Pin Map
-![](/img/parts/controller/opencr10/opencr_pinout.png)
+![](/img/parts/controller/opencr10/opencr_pinout.webp)
 
 
 :::danger
@@ -129,7 +129,7 @@ The development environment for OpenCR1.0 is wide open from Arduino IDE and Scra
 OpenCR includes a connector that is compatible with Arduino Uno pinmap.  
 The pins 0 to 21 are the same pin as the Arduino Uno, and thereafter they are mapped to the pins added to OpenCR.
 
-![](/img/parts/controller/opencr10/arduino_pinmap_01.png)
+![](/img/parts/controller/opencr10/arduino_pinmap_01.webp)
 
 | Pin No. | Function |     1     |     2     |   3    | etc  |
 |:-------:|:--------:|:---------:|:---------:|:------:|:----:|
@@ -167,7 +167,7 @@ The pins 0 to 21 are the same pin as the Arduino Uno, and thereafter they are ma
 ## User LED
 The OpenCR additional LEDs consist of four LEDs and are mapped to Arduino pin 22-25.
 
-![](/img/parts/controller/opencr10/arduino_pinmap_03.png)
+![](/img/parts/controller/opencr10/arduino_pinmap_03.webp)
 
 | Name    | Arduino Pin | Pin Name         |
 |:--------|:------------|:-----------------|
@@ -179,7 +179,7 @@ The OpenCR additional LEDs consist of four LEDs and are mapped to Arduino pin 22
 | Arduino | 13          | LED_BUILTIN      |
 
 ## Dip Switch
-![](/img/parts/controller/opencr10/arduino_pinmap_04.png)
+![](/img/parts/controller/opencr10/arduino_pinmap_04.webp)
 
 | Arduino Pin | Pin Name       |
 |:------------|:---------------|
@@ -189,7 +189,7 @@ The OpenCR additional LEDs consist of four LEDs and are mapped to Arduino pin 22
 ## GPIO
 It has an 18-pin common GPIO expansion connector and is mapped to the GPIO pin of the Arduino. The pin number below is the arduino pin number.
 
-![](/img/parts/controller/opencr10/arduino_pinmap_05.png)
+![](/img/parts/controller/opencr10/arduino_pinmap_05.webp)
 
 | Pin Number | Arduino Pin | Pin Name      | Pin Number | Arduino Pin | Pin Name      | etc  |
 |:-----------|:------------|:--------------|:-----------|:------------|:--------------|:-----|
@@ -221,10 +221,10 @@ It has an 18-pin common GPIO expansion connector and is mapped to the GPIO pin o
 
 
 ## ROBOTIS 5-pin Connector
-![](/img/parts/controller/opencr10/arduino_pinmap_06.png)
+![](/img/parts/controller/opencr10/arduino_pinmap_06.webp)
 
 ## Push Switch
-![](/img/parts/controller/opencr10/arduino_pinmap_08.png)
+![](/img/parts/controller/opencr10/arduino_pinmap_08.webp)
 
 | Arduino Pin | Pin Name        |
 |:------------|:----------------|
@@ -388,7 +388,7 @@ $ sudo udevadm control --reload-rules
 $ sudo udevadm trigger
 ```
 
-![](/img/platform/turtlebot3/preparation/7_1_1_usb_port_setting.png)
+![](/img/platform/turtlebot3/preparation/7_1_1_usb_port_setting.webp)
 
 ### Compiler Settings
 Since the OpenCR libraries is built for 32 bit platform, 64 bit PC needs the 32 bit compiler relevants for the ArduinoIDE.
@@ -397,7 +397,7 @@ Since the OpenCR libraries is built for 32 bit platform, 64 bit PC needs the 32 
 $ sudo apt-get install libncurses5-dev:i386
 ```
 
-![](/img/platform/turtlebot3/preparation/7_1_2_compiler_settings.png)
+![](/img/platform/turtlebot3/preparation/7_1_2_compiler_settings.webp)
 
 ### Install Arduino IDE(Linux)
 Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCR will be on service in the version 1.6.4 or later.
@@ -426,7 +426,7 @@ To run the Arduino IDE on Linux platform, type into the terminal as follows.
 $ arduino
 ```
 
-![](/img/platform/turtlebot3/preparation/ide0.png)
+![](/img/platform/turtlebot3/preparation/ide0.webp)
 
 ### Porting to Arduino IDE(Linux)
 #### Preferences
@@ -436,24 +436,24 @@ After Arduino IDE is run, click File → Preferences in the top menu of the IDE.
 https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_release/package_opencr_index.json
 ```
 
-![](/img/platform/turtlebot3/preparation/ide1.png)
+![](/img/platform/turtlebot3/preparation/ide1.webp)
 
 #### Install the OpenCR package via Boards Manager
 Click Tools → Board → Boards Manager.
 
-![](/img/platform/turtlebot3/preparation/ide2.png)
+![](/img/platform/turtlebot3/preparation/ide2.webp)
 
 Type OpenCR into the textbox to find the OpenCR by ROBOTIS package. After it finds out, click Install.
 
-![](/img/platform/turtlebot3/preparation/ide3.png)
+![](/img/platform/turtlebot3/preparation/ide3.webp)
 
 After the installation, “INSTALLED” will be appeared.
 
-![](/img/platform/turtlebot3/preparation/ide4.png)
+![](/img/platform/turtlebot3/preparation/ide4.webp)
 
 See if OpenCR Board is now on the list of Tools → Board. Click this to import the OpenCR Board source.
 
-![](/img/platform/turtlebot3/preparation/ide5.png)
+![](/img/platform/turtlebot3/preparation/ide5.webp)
 
 #### Port setting
 This step shows the port setting for the program uploads. The OpenCR should be connected to the PC and the OpenCR via the USB ports.
@@ -468,7 +468,7 @@ Select Tools → Port → /dev/ttyACM0.
 :::
 
 
-![](/img/platform/turtlebot3/preparation/ide6.png)
+![](/img/platform/turtlebot3/preparation/ide6.webp)
 
 ### Remove Modemmanager
 After programming with the Arduino IDE and uploading the program to the OpenCR, the OpenCR will be restarted and be reconnected. At the same moment, the modem-related packages of the Linux will send the AT command to manage the device. Thus indicates an connection error on the OpenCR, so this step should be done previously.
@@ -486,9 +486,9 @@ Download the latest version of Arduino IDE from the official arduino homepage, a
 ### Run Arduino IDE(Mac)
 To run the Arduino IDE on Mac platform, click the Arduino IDE icon as follows.
 
-![](/img/parts/controller/opencr10/arduino_mac_01.png)
+![](/img/parts/controller/opencr10/arduino_mac_01.webp)
 
-![](/img/parts/controller/opencr10/arduino_mac_02.png)
+![](/img/parts/controller/opencr10/arduino_mac_02.webp)
 
 ### Porting to Arduino IDE(Mac)
 #### Preferences
@@ -498,19 +498,19 @@ After Arduino IDE is run, click File → Preferences in the top menu of the IDE.
 https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_release/package_opencr_index.json
 ```
 
-![](/img/parts/controller/opencr10/arduino_mac_03.png)
+![](/img/parts/controller/opencr10/arduino_mac_03.webp)
 
 #### Install the OpenCR package via Boards Manager
 Click Tools → Board → Boards Manager.
 
-![](/img/parts/controller/opencr10/arduino_mac_04.png)
+![](/img/parts/controller/opencr10/arduino_mac_04.webp)
 
 Type OpenCR into the textbox to find the OpenCR by ROBOTIS package. Install of the OpenCR package.  
 After the installation, “INSTALLED” will be appeared.
 
 See if OpenCR Board is now on the list of Tools → Board. Click this to import the OpenCR Board source.
 
-![](/img/parts/controller/opencr10/arduino_mac_05.png)
+![](/img/parts/controller/opencr10/arduino_mac_05.webp)
 
 #### Port setting
 This step shows the port setting for the program uploads. The OpenCR should be connected to the PC and the OpenCR via the USB ports.  
@@ -524,7 +524,7 @@ Select Tools → Port → /dev/cu.usbmodem1411
 :::
 
 
-![](/img/parts/controller/opencr10/arduino_mac_06.png)
+![](/img/parts/controller/opencr10/arduino_mac_06.webp)
 
 
 :::warning
@@ -737,7 +737,7 @@ This is the PWM output test from the Arundin pin of the OpenCR board.
 
 OpenCR has the same pin configuration as Arduino Uno. The PWM output is also mapped to the same port. Therefore, analogueWrite is used to output the PWM duty ratio to the corresponding ports. The resolution is 8 bits, from 0 to 255, and the frequency is 50 KHz.
 
-![](/img/parts/controller/opencr10/exam_pwm_01.png)
+![](/img/parts/controller/opencr10/exam_pwm_01.webp)
 
 This is an example of PWM output on all six pins.
 
@@ -771,14 +771,14 @@ It is the EEPROM library test of OpenCR board.
 OpenCR does not have EEPROM memory, so it emulates a part of flash memory built in STM32F746 into EEPROM. The method of emulation was provided by ST as an example.  
 The area used as EEPROM is 0x08010000 ~ 0x08020000 as shown below. Two sectors are used.
 
-![](/img/parts/controller/opencr10/ex_eeprom_01.png)
+![](/img/parts/controller/opencr10/ex_eeprom_01.webp)
 
 32 bits are used to store one data, the lower 16 bits are the data to be stored, and the upper 16 bits indicate the address of the corresponding data. When storing data, it is always stored in the new location. When you use one page while saving the data, only the latest values ​​from the saved page are copied to the new page and the existing page is deleted.
 As a result, the number of flash memory erasures is reduced, thereby increasing the write-through life.
 
-![](/img/parts/controller/opencr10/ex_eeprom_02.png)
+![](/img/parts/controller/opencr10/ex_eeprom_02.webp)
 
-![](/img/parts/controller/opencr10/ex_eeprom_03.png)
+![](/img/parts/controller/opencr10/ex_eeprom_03.webp)
 
 To use the EEPROM library, a header must be added, and the maximum size of the current EEPROM is 4 KBytes. Since the EEPROM library has ported what is supported in Arduino, the basic usage method is the same as that used in other existing Arduino boards. For more information on how to use it, please refer to the Adunion site.
 
@@ -851,36 +851,36 @@ OpenCR develops and downloads firmware through the Arduino IDE. Therefore, you m
 
 1. To update OpenCR's firmware, open the front cover of OP3 and connect USB to PC as shown below.
 
-    ![](/img/parts/controller/opencr10/op3_01.png)
+    ![](/img/parts/controller/opencr10/op3_01.webp)
 
 2. After connecting USB, select Tools-> Board-> OpenCR Board in Arduino IDE.
 3. Change Tools-> Port to the port to which the board is connected.  
 4. In the Arduino IDE Examples, select the firmware for OP3.
 
-    ![](/img/parts/controller/opencr10/op3_02.png)
+    ![](/img/parts/controller/opencr10/op3_02.webp)
 
 5. Click on the icon in the Arduino IDE that displays the red circle in the following figure to build and download the firmware. When the download is completed, the firmware is automatically executed.
 
-    ![](/img/parts/controller/opencr10/op3_03.png)
+    ![](/img/parts/controller/opencr10/op3_03.webp)
 
 ### Editing OP3 Firmware
 The firmware that is provided as a basic example of OpenCR is read-only. If you want to edit it, you have to save it to a new folder and work on it.  
 
 1. Open the OP3 example.
 
-    ![](/img/parts/controller/opencr10/op3_02.png)
+    ![](/img/parts/controller/opencr10/op3_02.webp)
 
 2. Select File-> Save.
 
-    ![](/img/parts/controller/opencr10/op3_05.png)
+    ![](/img/parts/controller/opencr10/op3_05.webp)
 
 3. Since the example provided is Read-Only, select OK to save it as a new file.
 
-    ![](/img/parts/controller/opencr10/op3_06.png)
+    ![](/img/parts/controller/opencr10/op3_06.webp)
 
 4. Save it to a new folder and edit it. Once editing is complete, repeat the process of building and downloading the firmware.
 
-    ![](/img/parts/controller/opencr10/op3_09.png)
+    ![](/img/parts/controller/opencr10/op3_09.webp)
 
 ## Sensors
 ### Ambient Light Sensor
@@ -958,7 +958,7 @@ void loop()
 ### Tilt Sensor
 It is tilt sensor test on the OpenCR.
 
-![](/img/parts/controller/opencr10/tilt_sensor.png)
+![](/img/parts/controller/opencr10/tilt_sensor.webp)
 
 - Pinouts
   - Green : Signal
@@ -1011,7 +1011,7 @@ void loop()
 ### Rotation Sensor
 It is rotation sensor test on the OpenCR board.
 
-![](/img/parts/controller/opencr10/rotation_sensor.png)
+![](/img/parts/controller/opencr10/rotation_sensor.webp)
 
 - Specification
   - [Rotation Sensor Specification](https://www.dfrobot.com/wiki/index.php/Digital_Tilt_Sensor_SKU:DFR0028)
@@ -1212,7 +1212,7 @@ void loop()
 ### Joystic Sensor
 It is joystic test on the OpenCR board.
 
-![](/img/parts/controller/opencr10/joystick_sensor.png)
+![](/img/parts/controller/opencr10/joystick_sensor.webp)
 
 - Specification
   - [Joystic Sensor Specification](https://www.dfrobot.com/wiki/index.php/Joystick_Module_For_Arduino_(SKU:DFR0061))
@@ -1276,7 +1276,7 @@ Write the firmware by using the DFU mode which is embedded in MCU without writin
 | Supported OS | Windows, Linux, Mac |
 |   Compiler   | gcc arm 5.4 2016q2  |
 
-![](/img/parts/controller/opencr10/bootloader_19.png)
+![](/img/parts/controller/opencr10/bootloader_19.webp)
 
 - USB Port
   - Connected to PC and recognized as serial port
@@ -1289,10 +1289,10 @@ Write the firmware by using the DFU mode which is embedded in MCU without writin
 ## Memory Map
 The STM32F746 used in OpenCR has an internal flash memory of 1024KB, and each area is defined as follows. The bootloader is located at the lowest address in the flash memory and the bootloader is first executed when the power is turned on and reset.
 
-![](/img/parts/controller/opencr10/bootloader_01.png)
+![](/img/parts/controller/opencr10/bootloader_01.webp)
 
 ## Boot Sequence
-![](/img/parts/controller/opencr10/bootloader_03.png)
+![](/img/parts/controller/opencr10/bootloader_03.webp)
 
 If the board is powered on or reset, if the SW2 button is pressed, it waits for commands from the PC in the boot loader state. If the SW2 button is not pressed, jump to the firmware if the firmware exists in the firmware area of ​​the flash memory and execute it.
 
@@ -1348,7 +1348,7 @@ $ python mavgenerate.py
 
 When you run MAVLink Generator, a GUI screen will appear, select the XML file already created in XML, set the language to C, and set the protocol version to 1.0. If you select the folder name for output in Out, and select Generate, a function header file that can use the command added based on the xml file is created and can be used in the firmware
 
-![](/img/parts/controller/opencr10/bootloader_04.png)
+![](/img/parts/controller/opencr10/bootloader_04.webp)
 
 The final generated communication code can be seen in the link below.
 
@@ -1372,9 +1372,9 @@ void cmd_flash_fw_read_block( msg_t *p_msg );
 ### Download Sequence
 The main function of the boot loader is to receive the firmware file from the PC, store it in flash, and execute the stored firmware. The order of downloading is as follows, and you can check how to proceed and how to proceed by looking at it. You can do the actual implementation based on this.
 
-![](/img/parts/controller/opencr10/bootloader_05.png)
+![](/img/parts/controller/opencr10/bootloader_05.webp)
 
-![](/img/parts/controller/opencr10/bootloader_06.png)
+![](/img/parts/controller/opencr10/bootloader_06.webp)
 
 
 ### Message Processing
@@ -1427,7 +1427,7 @@ void msg_process_vcp(void)
 
 For example, the Mavlink_msg_read_version_decode() function parses the message data into the data structure of the command. If the field Responsive to parsed mav_data is active, it sends the boot loader version and revision via the ACK command.
 
-![](/img/parts/controller/opencr10/bootloader_07.png)
+![](/img/parts/controller/opencr10/bootloader_07.webp)
 
 ```cpp
 void cmd_read_version( msg_t *p_msg )
@@ -1469,7 +1469,7 @@ void cmd_read_version( msg_t *p_msg )
 | msg->xml     | The xml file folder where you defined the command            |
 | src          | Function folder required for boot loader function            |
 
-![](/img/parts/controller/opencr10/bootloader_08.png)
+![](/img/parts/controller/opencr10/bootloader_08.webp)
 
 ## Update Bootloader
 You can update the bootloader using the MCU's DFU mode on the OpenCR board.  
@@ -1489,7 +1489,7 @@ To run OpenCR in DFU mode, please follow the instruction below.
 
 OpenCR will enter the DFU mode after reset by the built-in boot loader.
 
-![](/img/parts/controller/opencr10/bootloader_19.png)
+![](/img/parts/controller/opencr10/bootloader_19.webp)
 
 ### Check Boot Mode
 #### For Linux
@@ -1499,13 +1499,13 @@ If you run lsusb, you can check if it is in DFU mode. If the MCU is in DFU mode,
 $ lsusb
 ```
 
-![](/img/parts/controller/opencr10/bootloader_10.png)
+![](/img/parts/controller/opencr10/bootloader_10.webp)
 
 #### For Windows
 Open the `Device Manager` > `Universal Serial Bus Devices` and see if **STM32 BOOTLOADER** is detected.  
 If not, please refer to [Driver Install(Optional)](#driver-installoptional) section.
 
-![](/img/parts/controller/opencr10/dfu_device_manager.png)
+![](/img/parts/controller/opencr10/dfu_device_manager.webp)
 
 
 :::warning
@@ -1520,19 +1520,19 @@ If not, please refer to [Driver Install(Optional)](#driver-installoptional) sect
 ##### Programmer Setting
 Select Tools → DFU-UTIL
 
-![](/img/parts/controller/opencr10/bootloader_19.png)
+![](/img/parts/controller/opencr10/bootloader_19.webp)
 
 ##### Run DFU mode.
 Press the `Reset Button` while the `Boot Button` is being pushed. This activates the DFU mode.  
 If you successfully entered to DFU mode, you will be able to find `STMicroelectronics STM Device in DFU Mode` text string when *lsusb* is entered in the terminal.
 
-![](/img/platform/turtlebot3/preparation/ide10.png)
+![](/img/platform/turtlebot3/preparation/ide10.webp)
 
 ##### Download Bootloader.
 
 Click Tools → Burn Bootloader to download the bootloader.
 
-![](/img/platform/turtlebot3/preparation/ide9.png)
+![](/img/platform/turtlebot3/preparation/ide9.webp)
 
 
 :::warning
@@ -1547,18 +1547,18 @@ Click Tools → Burn Bootloader to download the bootloader.
 
 Select Tools → DFU-UTIL
 
-![](/img/parts/controller/opencr10/arduino_mac_07.png)
+![](/img/parts/controller/opencr10/arduino_mac_07.webp)
 
 ##### Run DFU Mode
 Press the `Reset Button` while the `Boot Button` is being pushed. This activates the DFU mode.
 
-![](/img/parts/controller/opencr10/bootloader_19.png)
+![](/img/parts/controller/opencr10/bootloader_19.webp)
 
 ##### Download Bootloader
 
 Click Tools → Burn Bootloader to download the bootloader.
 
-![](/img/parts/controller/opencr10/arduino_mac_08.png)
+![](/img/parts/controller/opencr10/arduino_mac_08.webp)
 
 
 :::warning
@@ -1572,12 +1572,12 @@ Click Tools → Burn Bootloader to download the bootloader.
 ##### Run DFU Mode
 Press the `Reset Button` while the `Boot Button` is being pushed. This activates the DFU mode.
 
-![](/img/parts/controller/opencr10/bootloader_19.png)
+![](/img/parts/controller/opencr10/bootloader_19.webp)
 
 ##### Download Bootloader
 After setting up the Arduino IDE, run Arduino IDE and go to `Tools` > `Burn Bootloader` to download the bootloader.
 
-![](/img/parts/controller/opencr10/bootloader_12.png)
+![](/img/parts/controller/opencr10/bootloader_12.webp)
 
 #### Custom Bootloader
 If you have built a custom bootloader, move to the folder where the bin file is located and update it with dfu-util.  
@@ -1587,7 +1587,7 @@ Below command is an example where *opencr_boot.bin* is placed at the root direct
 $ sudo dfu-util -d 0483:df11 -a 0 -s 0x08000000 -D ./opencr_boot.bin
 ```
 
-![](/img/parts/controller/opencr10/bootloader_11.png)
+![](/img/parts/controller/opencr10/bootloader_11.webp)
 
 ### Driver Install(Optional)
 In order to perform Bootloader update, ST DFU driver has to be installed on your PC.
@@ -1610,11 +1610,11 @@ Error while burning bootloader.
 
 3. Go to `Options` > `List All Devices`.
 
-    ![](/img/parts/controller/opencr10/zadig_01.png)
+    ![](/img/parts/controller/opencr10/zadig_01.webp)
 
 4. Select **STM32 BOOTLOADER** and install **WinUSB** driver.
 
-    ![](/img/parts/controller/opencr10/zadig_02.png)
+    ![](/img/parts/controller/opencr10/zadig_02.webp)
 
 # Downloader
 The PC Downloader application communicates with the boot loader and downloads the firmware from the PC to the firmware area of ​​the OpenCR board flash.  
@@ -1645,7 +1645,7 @@ $ opencr_ld <Communication port> <Baudrate> <Firmware binary> <Firmware executio
 - Set `1` to execute the downloaded firmware after download. 
 - Set `0` (or not input status) to download the firmware.
 
-  ![](/img/parts/controller/opencr10/arduino_bin_export.png)
+  ![](/img/parts/controller/opencr10/arduino_bin_export.webp)
 
   > Exporting compiled binary file fron Arduino IDE
 
@@ -1688,7 +1688,7 @@ opencr_ld.exe COM1 115200 ./opencrfw.bin 1
 - 1
 
 ## Execution Result
-![](/img/parts/controller/opencr10/downloader_01.png)
+![](/img/parts/controller/opencr10/downloader_01.webp)
 
 ## Download Executable File
 Excutable file can be downloaded at the provided link.
@@ -1709,7 +1709,7 @@ To execute the boot loader, please follow the instruction below.
 
 OpenCR will enter the boot loader after reset. When the boot loader is running, the STATUS LED blinks every 100ms.
 
-![](/img/parts/controller/opencr10/bootloader_19.png)
+![](/img/parts/controller/opencr10/bootloader_19.webp)
 
 You can download the normal firmware while the boot loader is running.
 
@@ -1721,9 +1721,9 @@ Following table refers the pinout of DYNAMIXEL.
 |           Item           |                             TTL                              |                            RS-485                            |
 |:------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
 |          Pinout          |                `1` GND<br />`2` VDD<br />`3` DATA                |         `1` GND<br />`2` VDD<br />`3` DATA+<br />`4` DATA-         |
-|         Diagram          |        ![](/img/dxl/jst_b3beha_diagram.png)        |        ![](/img/dxl/jst_b4beha_diagram.png)        |
-|         Housing          |   ![](/img/dxl/JST_EHR-3.png)<br />[JST EHR-03]    |   ![](/img/dxl/JST_EHR-4.png)<br />[JST EHR-04]    |
-|        PCB Header        | ![](/img/dxl/JST_B3B_EH-A.png)<br />[JST B3B-EH-A] | ![](/img/dxl/JST_B4B-EH-A.png)<br />[JST B4B-EH-A] |
+|         Diagram          |        ![](/img/dxl/jst_b3beha_diagram.webp)        |        ![](/img/dxl/jst_b4beha_diagram.webp)        |
+|         Housing          |   ![](/img/dxl/JST_EHR-3.webp)<br />[JST EHR-03]    |   ![](/img/dxl/JST_EHR-4.webp)<br />[JST EHR-04]    |
+|        PCB Header        | ![](/img/dxl/JST_B3B_EH-A.webp)<br />[JST B3B-EH-A] | ![](/img/dxl/JST_B4B-EH-A.webp)<br />[JST B4B-EH-A] |
 |      Crimp Terminal      |                     [JST SEH-001T-P0.6]                      |                     [JST SEH-001T-P0.6]                      |
 | Wire Gauge for DYNAMIXEL |                            21 AWG                            |                            21 AWG                            |
 
@@ -1744,7 +1744,7 @@ To control the DYNAMIXEL actuators, the main controller needs to convert its UAR
 
 
 ### TTL Communication
-![](/img/dxl/ttl_circuit.png)
+![](/img/dxl/ttl_circuit.webp)
 
 > TTL Circuit
 
@@ -1756,7 +1756,7 @@ To control the DYNAMIXEL actuators, the main controller needs to convert its UAR
 :::
 
 
-![](/img/dxl/x/x_series_ttl_pin.png)
+![](/img/dxl/x/x_series_ttl_pin.webp)
 
 
 ### RS-485 Communication
@@ -1773,7 +1773,7 @@ To control the DYNAMIXEL actuators, the main controller needs to convert its UAR
 
 
 
-![](/img/dxl/x/x_series_485_pin.png)
+![](/img/dxl/x/x_series_485_pin.webp)
 
 
 

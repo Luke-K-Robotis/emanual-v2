@@ -7,7 +7,7 @@ tags: [parts, interface]
 ---
 
 # Introduction
-![](/img/parts/interface/dxl_bridge/dxl_bridge_product_front.png)
+![](/img/parts/interface/dxl_bridge/dxl_bridge_product_front.webp)
 
 The **DYNAMIXEL Communication Bridge** works as a communication converter between TTL (3 Pin JST Type connector) and RS485 (4 Pin JST Type connector) of DYNAMIXEL.
 
@@ -26,11 +26,11 @@ Thus, Instructions Packets such as **Broadcast Ping, Sync Read and Bulk Read** o
 
 - For more detailes about Instruction Packet, see [DYNAMIXEL Protocol 1.0](/docs/dxl/protocol1#instruction-packet) or [Protocol 2.0](/docs/dxl/protocol2#instruction-packet) depending on what DYNAMIXEL is in use. 
 
-![](/img/parts/interface/dxl_bridge/u2d2_separate_ttl_485.png)
+![](/img/parts/interface/dxl_bridge/u2d2_separate_ttl_485.webp)
 
 Unlike the U2D2, the DYNAMIXEL Communication Bridge features a signal conversion between TTL to RS485, which allows Broadcast Ping, Sync Read, and Bulk Read instructions from mixed types of communication. 
 
-![](/img/parts/interface/dxl_bridge/u2d2_bridge_ttl_485.png)
+![](/img/parts/interface/dxl_bridge/u2d2_bridge_ttl_485.webp)
 
 :::
 
@@ -48,7 +48,7 @@ Unlike the U2D2, the DYNAMIXEL Communication Bridge features a signal conversion
 
 :::danger
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **DANGER**  
 (Ignoring these warnings may cause serious injury or death)
 
@@ -68,7 +68,7 @@ Unlike the U2D2, the DYNAMIXEL Communication Bridge features a signal conversion
 
 :::warning
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **CAUTION**  
 (Ignoring these warnings may cause mild injury or damage to the product)
  - Always comply with the product's offical operating environment specifications including input voltage, current, and operating temperature. 
@@ -81,7 +81,7 @@ Unlike the U2D2, the DYNAMIXEL Communication Bridge features a signal conversion
 
 :::warning
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **ATTENTION**  
 (Ignoring these warnings may cause minor injury or damage to the product)
 - Do not disassemble or modify the product.
@@ -93,11 +93,11 @@ Unlike the U2D2, the DYNAMIXEL Communication Bridge features a signal conversion
 
 
 # Layout
-![](/img/parts/interface/dxl_bridge/dxl_bridge_layout_front.png)  
+![](/img/parts/interface/dxl_bridge/dxl_bridge_layout_front.webp)  
 
 > Layout - Front
 
-![](/img/parts/interface/dxl_bridge/dxl_bridge_layout_back.png)
+![](/img/parts/interface/dxl_bridge/dxl_bridge_layout_back.webp)
 
 > Layout - Back
 
@@ -119,18 +119,18 @@ Unlike the U2D2, the DYNAMIXEL Communication Bridge features a signal conversion
 # Connection Examples
 1. If the operating voltages of all DYNAMIXELs are the same, see the following images.
 
-    ![](/img/parts/interface/dxl_bridge/dxl_bridge_connection_example_same_voltage_01.png)
+    ![](/img/parts/interface/dxl_bridge/dxl_bridge_connection_example_same_voltage_01.webp)
     > Powering the DYNAMIXEL from Master Device. 
 
-    ![](/img/parts/interface/dxl_bridge/dxl_bridge_connection_example_same_voltage_02.png)
+    ![](/img/parts/interface/dxl_bridge/dxl_bridge_connection_example_same_voltage_02.webp)
     > Powering the DYNAMIXEL from external power source. 
   
 2. If the operating voltages of DYNAMIXELs are different, see the following images.
 
-    ![](/img/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_01.png)
+    ![](/img/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_01.webp)
     > Powering the DYNAMIXEL Communication Bridge from the RS485 connector side. 
 
-    ![](/img/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_02.png)
+    ![](/img/parts/interface/dxl_bridge/dxl_bridge_connection_example_different_voltage_02.webp)
     > Powering the DYNAMIXEL Communication Bridge from the TTL connector side. 
 
 
@@ -146,9 +146,9 @@ Unlike the U2D2, the DYNAMIXEL Communication Bridge features a signal conversion
 |           Item           |                             TTL                              |                            RS-485                            |
 |:------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
 |          Pinout          |                `1` GND<br />`2` VDD<br />`3` DATA                |         `1` GND<br />`2` VDD<br />`3` DATA+<br />`4` DATA-         |
-|         Diagram          |        ![](/img/dxl/jst_b3beha_diagram.png)        |        ![](/img/dxl/jst_b4beha_diagram.png)        |
-|         Housing          |   ![](/img/dxl/JST_EHR-3.png)<br />[JST EHR-03]    |   ![](/img/dxl/JST_EHR-4.png)<br />[JST EHR-04]    |
-|        PCB Header        | ![](/img/dxl/JST_B3B_EH-A.png)<br />[JST B3B-EH-A] | ![](/img/dxl/JST_B4B-EH-A.png)<br />[JST B4B-EH-A] |
+|         Diagram          |        ![](/img/dxl/jst_b3beha_diagram.webp)        |        ![](/img/dxl/jst_b4beha_diagram.webp)        |
+|         Housing          |   ![](/img/dxl/JST_EHR-3.webp)<br />[JST EHR-03]    |   ![](/img/dxl/JST_EHR-4.webp)<br />[JST EHR-04]    |
+|        PCB Header        | ![](/img/dxl/JST_B3B_EH-A.webp)<br />[JST B3B-EH-A] | ![](/img/dxl/JST_B4B-EH-A.webp)<br />[JST B4B-EH-A] |
 |      Crimp Terminal      |                     [JST SEH-001T-P0.6]                      |                     [JST SEH-001T-P0.6]                      |
 | Wire Gauge for DYNAMIXEL |                            21 AWG                            |                            21 AWG                            |
 

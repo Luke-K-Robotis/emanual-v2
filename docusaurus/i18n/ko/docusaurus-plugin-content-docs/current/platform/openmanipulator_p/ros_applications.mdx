@@ -19,9 +19,9 @@ In this example, if the user is holding the master OpenMANIPULATOR, the slave Op
 ### Setup OpenMANIPULATOR-P
 Since you need to control two OpenManipulators on one PC, use two U2D2s and two OpenManipulators to connect as shown below.
 
-![](/img/platform/openmanipulator_p/OpenManipulator-P_master_slave_connection.png)
+![](/img/platform/openmanipulator_p/OpenManipulator-P_master_slave_connection.webp)
 
-![](/img/platform/openmanipulator_x/OpenManipulator_P_master_slave.png)
+![](/img/platform/openmanipulator_x/OpenManipulator_P_master_slave.webp)
 
 #### Master OpenMANIPULATOR
 Master OpenMANIPULATOR-P is a robot that is controlled by the user. This is easy to move because no torque is applied to DYNAMIXEL. DYNAMIXEL of master OpenMANIPULATOR-P sets the ID as below and the baudrate as 1000000bps.
@@ -81,7 +81,7 @@ $ roslaunch open_manipulator_p_master_slave open_manipulator_p_master_slave.laun
 Please check each joint position before running OpenMANIPULATOR-P. It might stop operation because of joint position out of range.  
 The picture on the below is showing you the ideal pose of OpenMANIPULATOR-P. Please adjust each joints along with the following picture when DYNAMIXEL torque isn't enabled.    
   
-<img src="/img/platform/openmanipulator_p/open_manipulator_start_pose.png" width="250" />
+<img src="/img/platform/openmanipulator_p/open_manipulator_start_pose.webp" width="250" />
 
 :::
 

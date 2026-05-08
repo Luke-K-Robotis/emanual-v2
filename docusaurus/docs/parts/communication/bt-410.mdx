@@ -136,7 +136,7 @@ Can reset system, change device name, and set SLAVE address, but CAN NOT change 
 
 1. Download the "f_SerialUSB_Serial2_Converter" example for the OpenCM 9.04 using OpenCM IDE.
 
-    ![](/img/parts/communication/bt-210_02.png)
+    ![](/img/parts/communication/bt-210_02.webp)
     
 
 :::warning
@@ -150,21 +150,21 @@ Can reset system, change device name, and set SLAVE address, but CAN NOT change 
 
     - `Download` [Tera Term](https://osdn.net/projects/ttssh2/releases/)
 
-    ![](/img/parts/communication/bt-210_03.png)
+    ![](/img/parts/communication/bt-210_03.webp)
 
-    ![](/img/parts/communication/bt-210_04.png)
+    ![](/img/parts/communication/bt-210_04.webp)
 
 3. Connection is complete if the status is similar to the image shown below. The baud rate can be any value.
 
-    ![](/img/parts/communication/bt-210_05.png)
+    ![](/img/parts/communication/bt-210_05.webp)
 
 4. Go to Setup -> Terminal and check the “Local echo” box.
 
-    ![](/img/parts/communication/bt-210_06.png)
+    ![](/img/parts/communication/bt-210_06.webp)
 
 5. At the terminal, input “!” to display “OK”, to enter the command mode. Input “AT” and press enter to keep on displaying “OK”, which means the BT-410 has successfully connected.
 
-    ![](/img/parts/communication/bt-210_07.png)
+    ![](/img/parts/communication/bt-210_07.webp)
 
 6. Once terminal setup is complete, disconnect and reconnect the BT-410 to the OpenCM9.04 to check the SLAVE/MASTER mode it is in. The image below shows the MASTER mode.
 
@@ -186,19 +186,19 @@ The followings are AT terminal commands for the BT-410
 1. System Reset  
   Enter ATZ press the Enter key and the BT-410 resets.if settings have changed the mode will change upon reset.
 
-    ![](/img/parts/communication/bt-410_05.png)
+    ![](/img/parts/communication/bt-410_05.webp)
 
 2. Peripheral Device Search  
   Searching for peripheral devices only works when the BT-410 is in MASTER mode. As seen in the image below, input “AT+BTINQ” and press enter to display devices nearby with the device class 0x1F00(SPP).             
 
-    ![](/img/parts/communication/bt-410_06.png)
+    ![](/img/parts/communication/bt-410_06.webp)
 
 3. Connecting devices (pairing)  
   For connecting the device, search for the device with the “AT+BTINQ” command, then enter the Bluetooth address that is displayed (hexadecimal number, 12 digits) to pair.  
   For example, for the image above, enter the same address abc2-ff-123458 without the “-“ (i.e. ATDabc2ff123458) then press enter to attempt a connection.  
   Pairing won’t work if the PIN code between the devices doesn’t match, so please check the code first (default is 0000).
 
-    ![](/img/parts/communication/bt-410_07.png)
+    ![](/img/parts/communication/bt-410_07.webp)
 
 4. Changing Bluetooth device name  
   AT+BTNAME = "NAME OF NEW DEVICE NAME"
@@ -212,19 +212,19 @@ The followings are AT terminal commands for the BT-410
 6. Enable/Disable Auto Pairing (**REV2, Only applicable for MASTER module with a blue marker**)  
   - `Disable` Enter the command "AT+BTAUTOPAIR=0"
 
-    ![](/img/parts/communication/bt-410_10.png)
+    ![](/img/parts/communication/bt-410_10.webp)
 
     After a few seconds, below message will be displayed.
 
-    ![](/img/parts/communication/bt-410_11.png)
+    ![](/img/parts/communication/bt-410_11.webp)
 
     - `Enable` Enter the command "AT+BTAUTOPAIR=1"
 
-    ![](/img/parts/communication/bt-410_12.png)
+    ![](/img/parts/communication/bt-410_12.webp)
 
     After a few seconds, below message will be displayed.
 
-    ![](/img/parts/communication/bt-410_13.png)
+    ![](/img/parts/communication/bt-410_13.webp)
 
 7. Change Baudrate  
   `AT+BTUART`,`baudrate`,`parity_bit`,`stop_bit`   

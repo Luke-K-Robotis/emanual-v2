@@ -7,14 +7,14 @@ You can get more information about Navigation tuning from [Basic Navigation Tuni
 - Defined in `turtlebot3_navigation/param/costmap_common_param_${TB3_MODEL}.yaml`
 - This parameter makes inflation area from the obstacle. Path would be planned in order that it don't across this area. It is safe that to set this to be bigger than robot radius. For more information, please refer to the [costmap_2d wiki](http://wiki.ros.org/costmap_2d#Inflation).
 
-![](/img/platform/turtlebot3/navigation/tuning_inflation_radius.png)
+![](/img/platform/turtlebot3/navigation/tuning_inflation_radius.webp)
 
 ### cost_scaling_factor
 
 - Defined in `turtlebot3_navigation/param/costmap_common_param_${TB3_MODEL}.yaml`
 - This factor is a reciprical proportional parameter used to multiply the cost values. When this parameter is increased, the cost generated decreases.
 
-![](/img/platform/turtlebot3/navigation/tuning_cost_scaling_factor.png)
+![](/img/platform/turtlebot3/navigation/tuning_cost_scaling_factor.webp)
 
 The best path is for the robot to pass through a central point between obstacles. Set this factor to be smaller in order to pass farther from obstacles.
 
@@ -73,4 +73,4 @@ The best path is for the robot to pass through a central point between obstacles
 - Defined in `turtlebot3_navigation/param/dwa_local_planner_params_${TB3_MODEL}.yaml`
 - This factor sets forward simulation time in seconds. Setting this too small makes it difficult for the robot to pass through narrow spaces while large values limit dynamic turns. You can observe the differences in length of the yellow line in the below image that representing the simulation path.
 
-![](/img/platform/turtlebot3/navigation/tuning_sim_time.png)
+![](/img/platform/turtlebot3/navigation/tuning_sim_time.webp)

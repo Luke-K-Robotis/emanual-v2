@@ -7,7 +7,7 @@ tags: [parts, interface]
 ---
 
 # Introduction
-![](/img/parts/interface/dynamixel_shield/with_arduino.png)
+![](/img/parts/interface/dynamixel_shield/with_arduino.webp)
 
 DYNAMIXEL Shield  was created to use [RC-100] and DYNAMIXEL on arduino board. We provide dynamixel library for DYNAMIXEL Shield, it can help you to use DYNAMIXEL easily.
 
@@ -31,7 +31,7 @@ DYNAMIXEL Shield  was created to use [RC-100] and DYNAMIXEL on arduino board. We
 
 :::danger
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **DANGER**  
 (Ignoring these warnings may cause serious injury or death)
 
@@ -51,7 +51,7 @@ DYNAMIXEL Shield  was created to use [RC-100] and DYNAMIXEL on arduino board. We
 
 :::warning
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **CAUTION**  
 (Ignoring these warnings may cause mild injury or damage to the product)
  
@@ -64,7 +64,7 @@ DYNAMIXEL Shield  was created to use [RC-100] and DYNAMIXEL on arduino board. We
 
 :::warning
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **ATTENTION**  
 (Ignoring these warnings may cause minor injury or damage to the product)
 - Do not disassemble or modify the product.
@@ -100,7 +100,7 @@ DYNAMIXEL Shield  was created to use [RC-100] and DYNAMIXEL on arduino board. We
 `1` RX, DX, EX series are by default disabled and require [config.h](https://github.com/ROBOTIS-GIT/Dynamixel2Arduino/blob/master/src/utility/config.h#L6) modification in DYNAMIXEL2Arduino to be used.
 
 # Layout
-![](/img/parts/interface/dynamixel_shield/pinmap.png)
+![](/img/parts/interface/dynamixel_shield/pinmap.webp)
 
 
 :::warning
@@ -174,7 +174,7 @@ Check the type of your arduino board, and select the either of listed solution t
 # Connecting Power
 |                            Connect VIN                            |                          Disconnect VIN                           |
 |:-----------------------------------------------------------------:|:-----------------------------------------------------------------:|
-| ![](/img/parts/interface/dynamixel_shield/power_01.png) | ![](/img/parts/interface/dynamixel_shield/power_02.png) |
+| ![](/img/parts/interface/dynamixel_shield/power_01.webp) | ![](/img/parts/interface/dynamixel_shield/power_02.webp) |
 
 - The power input is divided as follows depending on whether the jumper cap is connected or not.
   1. Connect VIN : Power supply using with Arduino's SMPS connector
@@ -183,11 +183,11 @@ Check the type of your arduino board, and select the either of listed solution t
 - Since DYNAMIXEL power can not be connected to the USB power of the Arduino board, you need to connect the external power.
 -	When using the power input connector, **be sure to check the polarity of the power supply**.
 
-  ![](/img/parts/interface/dynamixel_shield/power_polarity.png)
+  ![](/img/parts/interface/dynamixel_shield/power_polarity.webp)
 
 
 # Switches
-![](/img/parts/interface/dynamixel_shield/switches.png)
+![](/img/parts/interface/dynamixel_shield/switches.webp)
 
 ## Upload Switch
 -	For DYNAMIXEL control, the hardware serial port of the arduino board is used. Because the downloading is done to the same port, the two ports may collide. Therefore, to download, use serial port switch to move to upload position and download.
@@ -220,19 +220,19 @@ There are three ways to add libraries to the Arduino IDE.
 Each way is described in detail in the [Arduino Official Guide], so please refer to it if necessary.  
 Below is an example of using the Library Manager.
 
-![](/img/parts/interface/dynamixel_shield/library_manager_01.png)
+![](/img/parts/interface/dynamixel_shield/library_manager_01.webp)
 
 Search for `dynamixel shield` from the Library Manager and install the latest version.
 
-![](/img/parts/interface/dynamixel_shield/library_manager_03.png)
+![](/img/parts/interface/dynamixel_shield/library_manager_03.webp)
 
 Click `Install all` to install the dependent library `Dynamixel2Arduino`.
 
-![](/img/parts/interface/dynamixel_shield/library_manager_04.png)
+![](/img/parts/interface/dynamixel_shield/library_manager_04.webp)
 
 If you have successfully installed both libraries, you'll be able to find several examples of DynamixelShield in the examples.
 
-![](/img/parts/interface/dynamixel_shield/examples.png)
+![](/img/parts/interface/dynamixel_shield/examples.webp)
 
 
 
@@ -352,9 +352,9 @@ bool syncWriteEnd(void);
 |           Item           |                             TTL                              |                            RS-485                            |                            XL-320 (TTL)                             |
 |:------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|:-------------------------------------------------------------------:|
 |          Pinout          |                `1` GND<br />`2` VDD<br />`3` DATA                |         `1` GND<br />`2` VDD<br />`3` DATA+<br />`4` DATA-         |                   `1` GND<br />`2` VDD<br />`3` DATA                    |
-|         Diagram          |        ![](/img/dxl/jst_b3beha_diagram.png)        |        ![](/img/dxl/jst_b4beha_diagram.png)        |         ![](/img/dxl/molex_532530370_diagram.png)         |
-|         Housing          |   ![](/img/dxl/JST_EHR-3.png)<br />[JST EHR-03]    |   ![](/img/dxl/JST_EHR-4.png)<br />[JST EHR-04]    | ![](/img/dxl/molex_510650300.png)<br />[MOLEX 51065-0300] |
-|        PCB Header        | ![](/img/dxl/JST_B3B_EH-A.png)<br />[JST B3B-EH-A] | ![](/img/dxl/JST_B4B-EH-A.png)<br />[JST B4B-EH-A] | ![](/img/dxl/molex_532530370.png)<br />[MOLEX 53253-0370] |
+|         Diagram          |        ![](/img/dxl/jst_b3beha_diagram.webp)        |        ![](/img/dxl/jst_b4beha_diagram.webp)        |         ![](/img/dxl/molex_532530370_diagram.webp)         |
+|         Housing          |   ![](/img/dxl/JST_EHR-3.webp)<br />[JST EHR-03]    |   ![](/img/dxl/JST_EHR-4.webp)<br />[JST EHR-04]    | ![](/img/dxl/molex_510650300.webp)<br />[MOLEX 51065-0300] |
+|        PCB Header        | ![](/img/dxl/JST_B3B_EH-A.webp)<br />[JST B3B-EH-A] | ![](/img/dxl/JST_B4B-EH-A.webp)<br />[JST B4B-EH-A] | ![](/img/dxl/molex_532530370.webp)<br />[MOLEX 53253-0370] |
 |      Crimp Terminal      |                     [JST SEH-001T-P0.6]                      |                     [JST SEH-001T-P0.6]                      |                         [MOLEX 50212-8000]                          |
 | Wire Gauge for DYNAMIXEL |                            21 AWG                            |                            21 AWG                            |                               24 AWG                                |
 
@@ -363,7 +363,7 @@ To control the DYNAMIXEL actuators, the main controller needs to convert its UAR
 
 
 ### TTL Communication
-![](/img/dxl/ttl_circuit.png)
+![](/img/dxl/ttl_circuit.webp)
 
 > TTL Circuit
 
@@ -375,7 +375,7 @@ To control the DYNAMIXEL actuators, the main controller needs to convert its UAR
 :::
 
 
-![](/img/dxl/x/x_series_ttl_pin.png)
+![](/img/dxl/x/x_series_ttl_pin.webp)
 
 
 ### RS-485 Communication
@@ -392,7 +392,7 @@ To control the DYNAMIXEL actuators, the main controller needs to convert its UAR
 
 
 
-![](/img/dxl/x/x_series_485_pin.png)
+![](/img/dxl/x/x_series_485_pin.webp)
 
 
 
@@ -406,8 +406,8 @@ In case of DIRECTION485 Level = Low: The signal of D+ and D- is output to RxD
 
 # Download
 - [DYNAMIXEL Shield Schematic(PDF)](https://www.robotis.com/service/download.php?no=2206)
-  ![](/img/parts/interface/dynamixel_shield/dynamixel_shield_schematic01.png)
-  ![](/img/parts/interface/dynamixel_shield/dynamixel_shield_schematic02.png)
+  ![](/img/parts/interface/dynamixel_shield/dynamixel_shield_schematic01.webp)
+  ![](/img/parts/interface/dynamixel_shield/dynamixel_shield_schematic02.webp)
 
 
 [AX-12W]: /docs/dxl/ax/ax-12w

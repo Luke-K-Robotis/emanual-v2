@@ -86,42 +86,42 @@ The BT-430 Dongle can establish reliable 1:1 communication through pairing.
 
     - [Download] [Tera Term](http://www.robotis.com/download/software/teraterm-4.73.zip)
 
-    ![img](/img/parts/communication/bt-410_dongle_02.png)
+    ![img](/img/parts/communication/bt-410_dongle_02.webp)
 
     - Run the Tera Term terminal program(ttermpro.exe), then click File > New Connection.
 
-    ![img](/img/parts/communication/ttermpro-exe.png)
+    ![img](/img/parts/communication/ttermpro-exe.webp)
 
-    ![img](/img/parts/communication/bt-410_dongle_03.png)
+    ![img](/img/parts/communication/bt-410_dongle_03.webp)
 
 2. Select the COM port number for the BT-430 Dongle.
 
-    ![img](/img/parts/communication/bt-410_dongle_04.png)
+    ![img](/img/parts/communication/bt-410_dongle_04.webp)
 
 3. Enter the Serial Port Configuration Window.
 
-    ![img](/img/parts/communication/bt-410_dongle_05.png)
+    ![img](/img/parts/communication/bt-410_dongle_05.webp)
 
 4. Set the communication speed to 57600.
 
-    ![img](/img/parts/communication/bt-410_dongle_06.png)
+    ![img](/img/parts/communication/bt-410_dongle_06.webp)
 
 5. Enter the Terminal Configuration Window.
 
-    ![img](/img/parts/communication/bt-410_dongle_07.png)
+    ![img](/img/parts/communication/bt-410_dongle_07.webp)
 
 6. Activate the Local Echo feature.
 
-    ![img](/img/parts/communication/bt-410_dongle_08.png)
+    ![img](/img/parts/communication/bt-410_dongle_08.webp)
 
 7. Enter `!` as shown below in the terminal to enter command mode. Here, if OK continues to appear after entering `AT`, it means that the BT-430 Dongle has successfully connected, and you can now configure it.
 
-    ![img](/img/parts/communication/bt-410_dongle_09.png)
+    ![img](/img/parts/communication/bt-410_dongle_09.webp)
 
 
 8. Enter AT+BTINQ=DBE7DF000001 and press Enter to search for devices with MAC addresses greater than or equal to DBE7DF000001 among nearby BLE devices.
 
-    ![img](/img/parts/communication/bt-410_dongle_10.png)
+    ![img](/img/parts/communication/bt-410_dongle_10.webp)
 
 9. Device connection is done by searching for nearby devices with the AT+BTINQ command, and then pairing with the displayed Bluetooth address (12 digits in hexadecimal) without dashes. For example, if you enter `ATDDBE7DF000001` and press Enter, it will attempt to connect to the listed BLE device.
 
@@ -139,7 +139,7 @@ If you enter '?' in the terminal, the BT-430 version will be displayed as `BT-43
   - Once the copy is complete, the BT-430 dongle will automatically reboot.
   - For BT-430 dongles using an older version of the bootloader, the following warning window may appear after copying the firmware, but the firmware update has been completed successfully.  
 
-  ![img](/img/parts/communication/bt-430_dongle_fw_copy_warning_en.png)
+  ![img](/img/parts/communication/bt-430_dongle_fw_copy_warning_en.webp)
 
   - If you cannot find the COM port of the BT-430 after rebooting, please try the following methods:
     1. Disconnect and reconnect the USB connection of the BT-430 dongle.
@@ -153,7 +153,7 @@ If you enter '?' in the terminal, the BT-430 version will be displayed as `BT-43
 ## Device discovery
   Enter `AT+BTINQ=DBE7DF000001` as shown below and press Enter to search for devices with MAC addresses greater than or equal to DBE7DF000001 among nearby BLE devices.
 
-  ![img](/img/parts/communication/bt-410_dongle_12.png)
+  ![img](/img/parts/communication/bt-410_dongle_12.webp)
 
 ## Automatic pairing
   Unpaired BT-430 SLAVE modules will automatically pair when brought close to the BT-430 Dongle (within about 10cm).
@@ -161,20 +161,20 @@ If you enter '?' in the terminal, the BT-430 version will be displayed as `BT-43
 ## Disable automatic pairing
   Enter `AT+BTAUTOPAIR=0` and press ENTER.
 
-  ![img](/img/parts/communication/bt-410_dongle_13.png)
+  ![img](/img/parts/communication/bt-410_dongle_13.webp)
 
   A success message will be displayed after a few seconds.
 
-  ![img](/img/parts/communication/bt-410_dongle_14.png)
+  ![img](/img/parts/communication/bt-410_dongle_14.webp)
 
 ## Enable automatic pairng
   Enter `AT+BTAUTOPAIR=1` and press ENTER.
 
-  ![img](/img/parts/communication/bt-410_dongle_15.png)
+  ![img](/img/parts/communication/bt-410_dongle_15.webp)
 
   A success message will be displayed after a few seconds.
 
-  ![img](/img/parts/communication/bt-410_dongle_16.png)
+  ![img](/img/parts/communication/bt-410_dongle_16.webp)
 
 ## Multi-Pairing
   (__Available from Firmware V2.2.1__)  
@@ -200,7 +200,7 @@ To check if the BT-430 Dongle driver is correctly installed on your PC, follow t
 
 1. Connect the BT-430 Dongle to a USB port on your PC.
 
-    ![img](/img/parts/communication/bt-410_dongle_17.png)
+    ![img](/img/parts/communication/bt-410_dongle_17.webp)
 
 2. Right-click on "My Computer" and select "Manage" from the popup menu.
 

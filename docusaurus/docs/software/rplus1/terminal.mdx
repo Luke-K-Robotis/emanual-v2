@@ -9,7 +9,7 @@ tags: [software, rplus1]
 # Introduction
 RoboPlus Terminal is a tool to help users to manipulate the controller by themselves through text-baed User-Interface. The terminal program communicates with the controller in the basis of ASCII code, and it prints various information transmitted by the controller for users.
 
-![](/img/software/rplus1/terminal/roboplus_terminal_001.png)
+![](/img/software/rplus1/terminal/roboplus_terminal_001.webp)
 
 # Serial Port Setting
 The communication port must be set to connect to the controller using RoboPlus Terminal.
@@ -21,7 +21,7 @@ If `Setup` > `Connect` are executed while the communication port is not connecte
 **NOTE** : The basic connection speed of the controller is `57,600bps`.
 
  
-![](/img/software/rplus1/terminal/roboplus_terminal_002.png)
+![](/img/software/rplus1/terminal/roboplus_terminal_002.webp)
  
 The serial communication setting of RoboPlus is as below.
 - Parity bit : no parity
@@ -51,12 +51,12 @@ RoboPlus Terminal receives keyboard inputs and transmits the signals to PC and t
 ## Clearing Screen
 Screen clearing function is supported in RoboPlus Terminal.  Execute "Clear Screen" command in the menu to erase the complete screen.
 
-![](/img/software/rplus1/terminal/roboplus_terminal_003.png)
+![](/img/software/rplus1/terminal/roboplus_terminal_003.webp)
 
 # Processing Controller Output
 RoboPlus Terminal receives signals from connected controller and prints the contents on the screen.
  
-![](/img/software/rplus1/terminal/roboplus_terminal_004.png)
+![](/img/software/rplus1/terminal/roboplus_terminal_004.webp)
  
 ## Controlling Cursor
 - The size of terminal screen is 80x36.(Width x Length)
@@ -78,7 +78,7 @@ RoboPlus Terminal receives signals from connected controller and prints the cont
 # Transmitting/Receiving Data
 RoboPlus Terminal can transmit/receive large data to/from the connected controller.  There is no data transmission protocol.
 
-![](/img/software/rplus1/terminal/roboplus_terminal_005.png)
+![](/img/software/rplus1/terminal/roboplus_terminal_005.webp)
 
 ## Transmitting Data
 RoboPlus Terminal can transmit the contents of files to the connected controller as binary format.  
@@ -90,14 +90,14 @@ The file transmission procedure is as below.
 - If the recently transmitted file is just used, "Page Down" key can be used as the shortcut.
 - The transmission status can be checked on the bottom part of RoboPlus Terminal.
 
-  ![](/img/software/rplus1/terminal/roboplus_terminal_006.png)
+  ![](/img/software/rplus1/terminal/roboplus_terminal_006.webp)
  
 ### ByteSum
 The loss possibility of transmitted data can be checked using ByteSum.  
 ByteSum means the last 1 byte of the sum when all transmitted byte-unit data are added.  
 For example, if FD 23 4D 2D is transmitted, the sum of each data is 01 9A.  From the sum, 9A (the lowest byte) is ByteSum.
  
-![](/img/software/rplus1/terminal/roboplus_terminal_007.png)
+![](/img/software/rplus1/terminal/roboplus_terminal_007.webp)
  
 In the menu, if Bytesum is marked, Bytesum packet is added to the last part of the file packet and when it is transmitted.  
 The loss possibility of data can be checked by comparing the bytesum received from RoboPlus Terminal and calculated bytesum in the data-received controller.
@@ -110,7 +110,7 @@ RoboPlus Terminal can receive data from the connected controller and save them a
 - Data transmission is started in the controller.
 - The reception status can be checked on the bottom part of RoboPlus Terminal.
 
-  ![](/img/software/rplus1/terminal/roboplus_terminal_008.png)
+  ![](/img/software/rplus1/terminal/roboplus_terminal_008.webp)
 
 - When the data reception is completed, press "End" key to quit the data reception.
 
@@ -120,5 +120,5 @@ The options of RoboPlus Terminal can be set.
 ## Setting Colors
 The background and text colors of RoboPlus Terminal can be set.
 
-![](/img/software/rplus1/terminal/roboplus_terminal_009.png)
+![](/img/software/rplus1/terminal/roboplus_terminal_009.webp)
 

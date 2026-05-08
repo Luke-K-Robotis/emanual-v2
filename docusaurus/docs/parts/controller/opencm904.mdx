@@ -14,7 +14,7 @@ tags: [parts, controller]
 
 
 # Introduction
-![](/img/parts/controller/opencm904/opencm904_product.png)
+![](/img/parts/controller/opencm904/opencm904_product.webp)
 
 > OpenCM 9.04
 
@@ -92,7 +92,7 @@ tags: [parts, controller]
 
 :::danger
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **DANGER**  
 (Ignoring these warnings may cause serious injury or death)
 
@@ -112,7 +112,7 @@ tags: [parts, controller]
 
 :::warning
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **CAUTION**  
 (Ignoring these warnings may cause mild injury or damage to the product)
  
@@ -125,7 +125,7 @@ tags: [parts, controller]
 
 :::warning
 
-![](/img/icon_warning.png)  
+![](/img/icon_warning.webp)  
 **ATTENTION**  
 (Ignoring these warnings may cause minor injury or damage to the product)
 - Do not disassemble or modify the product.
@@ -243,7 +243,7 @@ ID 200 will be assigned to OpenCM9.04 in the factory default firmware.
 
 # Hardware
 ## Memory Map
-![](/img/parts/controller/opencm904/memory_map.png)
+![](/img/parts/controller/opencm904/memory_map.webp)
 
 ## Block Diagram
 OpenCM9.04’s block diagram is shown below. OpenCM9.04’s schematic is based on 32bit Cortex-M3 core STM32F103CB microcontroller.  
@@ -252,11 +252,11 @@ OpenCM9.04 supports USB2.0 FS. Micro-B connector is used to download the program
 Pin 11(TX1) & Pin 12(RX1) cannot be used simultaneously because USART Channel 1 is assigned to DYNAMIXEL TTL Bus.  
 USART channel 1 is registered under DYNAMIXEL TTL Bus and cannot be used simultaneously with pin 11(TX1) & 12(RX1).
 
-![](/img/parts/controller/opencm904/opencm904_01.png)
+![](/img/parts/controller/opencm904/opencm904_01.webp)
 
 
 ## Layout/Pin Map
-![](/img/parts/controller/opencm904/opencm904_02.png)
+![](/img/parts/controller/opencm904/opencm904_02.webp)
 
 ### Power Switch
 Switch used to control the power supplied to the board and DYNAMIXEL on/off. (Note: the board is always powered ON when USB cable is connected.)
@@ -290,19 +290,19 @@ Used from wired/wireless communication using peripheral devices (i.e. [BT-410], 
 
 > 4-pin communication port pinmap
 
-![](/img/parts/controller/opencm904/opencm904_04.png)
+![](/img/parts/controller/opencm904/opencm904_04.webp)
 
 > Example : Wireless communication between OpenCM9.04 and a smartphone
 
-![](/img/parts/controller/opencm904/opencm904_05.png)
+![](/img/parts/controller/opencm904/opencm904_05.webp)
 
 > Example : Bluetooth communication using OpenCM9.04 and RC100
 
-![](/img/parts/controller/opencm904/opencm904_06.png)
+![](/img/parts/controller/opencm904/opencm904_06.webp)
 
 > Example : Zigbee communication using OpenCM9.04 and RC100
 
-![](/img/parts/controller/opencm904/opencm904_07.png)
+![](/img/parts/controller/opencm904/opencm904_07.webp)
 
 > Example : Wired communication using OpenCM9.04 and LN-101
 
@@ -310,7 +310,7 @@ Used from wired/wireless communication using peripheral devices (i.e. [BT-410], 
 A button that can be controlled/programmed by the user. Can be used as pin 23 or BOARD_BUTTON_PIN. It can be initialized in setup() as pinMode(23, INPUT_PULLDOWN).  
 If OpenCM9.04 does not download the program, connect the USB cable while holding down the “User Button”. Status LED will stay lit and the download will be initiated.
 
-![](/img/parts/controller/opencm904/opencm904_08.png)
+![](/img/parts/controller/opencm904/opencm904_08.webp)
 
 > OpenCM9.04 can enter a “Emergency Recovery Mode” by using the “User button”
 
@@ -322,12 +322,12 @@ Used to download programs onto OpenCM9.04 and used to communicate with other dev
 Upon connecting the battery, 5V power from USB is automatically disconnected and power is supplied from the battery.  
 If excessive current is drawn, internal fuse cuts off the current drawn from the 5V USB connection to protect the user’s PC from damage.
 
-![](/img/parts/controller/opencm904/opencm904_09.png)
+![](/img/parts/controller/opencm904/opencm904_09.webp)
 
 ### [Status LED]
 LED used to test OpenCM9.04’s program. The LED turns ON when Pin 14 or BOARD_LED_PIN is HIGH and turns OFF when it’s LOW. PWM control is possible.
 
-![](/img/parts/controller/opencm904/opencm904_10.png)
+![](/img/parts/controller/opencm904/opencm904_10.webp)
 
 > Status LED Position
 
@@ -338,18 +338,18 @@ Imitates the CPU to reset.
 Used to connect ST-LINK or other In-Circuit Debugger/Programmer.  
 JTAG/SWD 4-pin port can be used for various developments by advanced users. ST-LINK connection example is shown below.
 
-![](/img/parts/controller/opencm904/opencm904_11.png)
+![](/img/parts/controller/opencm904/opencm904_11.webp)
 
 > Example: ST-LINK and OpenCM9.04 connection
 
 ### ROBOTIS 5-Pin Port
 Used to connect ROBOTIS 5-pin devices (modules).
 
-![](/img/parts/controller/opencm904/opencm904_12.png)
+![](/img/parts/controller/opencm904/opencm904_12.webp)
 
 > 5-pin port number and instructions
 
-![](/img/parts/controller/opencm904/opencm904_13.png)
+![](/img/parts/controller/opencm904/opencm904_13.webp)
 
 > 5-pin cable direction
 
@@ -376,7 +376,7 @@ Digital pins can only tolerate up to 3.3V; any voltage input greater than 3.3V m
 The maximum current these pins can tolerate is 25mA. (exception: pin 22 & 23 can only tolerate 3mA.)  
 All of OpenCM9.04’s GPIO pins can internally “pull-up” or “pull-down” and can be modified via software. “Pull-up” and “pull-up” resistance is 40K&Omega;(Typical).
 
-![](/img/parts/controller/opencm904/opencm904_14.png)
+![](/img/parts/controller/opencm904/opencm904_14.webp)
 
 > OpenCM9.04 GPIO PinMap
 
@@ -445,11 +445,11 @@ All of OpenCM9.04’s GPIO pins can internally “pull-up” or “pull-down” 
 - **5V** : 5V output pin. JP2 jumper can be modified to connect to AREF pin and change the default voltage to 5V.
 - **AREF** : Connect to CPU’s Analog Reference pin. Voltage can be modified from 3.3V by changing the JP2 jumper (Maximum 5V). Refer to STM32F103CB datasheet for specifications.)
 
-![](/img/parts/controller/opencm904/opencm904_15.png)
+![](/img/parts/controller/opencm904/opencm904_15.webp)
 
 > JP2 jumper location and instructions
 
-![](/img/parts/controller/opencm904/opencm904_16.png)
+![](/img/parts/controller/opencm904/opencm904_16.webp)
 
 > Example: Changing default Analog Reference voltage(AREF) to 5V by modifying JP2
 
@@ -535,11 +535,11 @@ OpenCM board can be powered using 3 types of voltage input:
 2. Power supplied via +- header pins
 3. Micro-B USB cable
 
-![](/img/parts/controller/opencm904/opencm904_17.png)
+![](/img/parts/controller/opencm904/opencm904_17.webp)
 
 We recommend using 2 LBS-40 batteries when operating the XL-320.
 
-![](/img/parts/controller/opencm904/opencm904_18.png)
+![](/img/parts/controller/opencm904/opencm904_18.webp)
 
 > Example: OpenCM9.04, XL-320, and LBS-40(Li-Ion Battery) connection
 
@@ -549,7 +549,7 @@ We recommend using 2 LBS-40 batteries when operating the XL-320.
 
 We recommend using +- pin to power DYNAMIXEL's other than XL-320.
 
-![](/img/parts/controller/opencm904/opencm904_19.png)
+![](/img/parts/controller/opencm904/opencm904_19.webp)
 
 > Example: OpenCM9.04 and AX12 connection
 
@@ -577,7 +577,7 @@ incorrect battery to the battery socket. Only connect LBS-40 onto the battery so
 
 > CAUTION: Don’t used different types of batteries
 
-![](/img/parts/controller/opencm904/opencm904_24.png)
+![](/img/parts/controller/opencm904/opencm904_24.webp)
 
 It is possible to simultaneously connect the USB port, LBS-40 battery, and +- pin.(Built-in protection)  
 We recommend supplying the recommended voltage of the DYNAMIXEL when supplying power via +- pin or battery. Higher voltage usage may reduce the DYNAMIXEL’s lifespan or damage the product.  
@@ -589,11 +589,11 @@ CAUTION: do NOT charge the LBS-40 battery while it is connected to the board and
 OpenCM9.04 Type A is sold without a power switch and JP1 shorted. To add the power switch, remove the solder connection of JP1 and solder the 2.54mm pitch power switch.  
 Power switch is included in the OpenCM accessory kit or other switches with the similar pitch can be used.  
 
-![](/img/parts/controller/opencm904/opencm904_25.png)
+![](/img/parts/controller/opencm904/opencm904_25.webp)
 
 > JP1& Power Switch schematics : Power is supplied to the board if JP1 is connected even without a switch
 
-![](/img/parts/controller/opencm904/opencm904_26.png)
+![](/img/parts/controller/opencm904/opencm904_26.webp)
 
 > OpenCM9.04 Type A needs to have JP1 disconnected when soldering the switch for it to operate properly
 
@@ -602,7 +602,7 @@ Power switch is included in the OpenCM accessory kit or other switches with the 
 OpenCM9.04’s DYNAMIXEL 3-Pin TTL pins are all compatible with DYNAMIXEL 3-pin TTL and XL-320 3-pin TTL(mini-type). Thus, both type of pins can be soldered and used.  
 Both types of 3-pin TTL pins are included in OpenCM Accessory Set.
 
-![](/img/parts/controller/opencm904/opencm904_27.png)
+![](/img/parts/controller/opencm904/opencm904_27.webp)
 
 > OpenCM9.04 Type A can have 2 types of 3-pin connectors soldered onto the board
 
@@ -680,25 +680,25 @@ After Arduino IDE is run, click File → Preferences in the top menu of the IDE.
 
 [https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json](https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json)
 
-![](/img/parts/controller/opencm904/opencm9.04_linux_1.png)
+![](/img/parts/controller/opencm904/opencm9.04_linux_1.webp)
 
 
 ##### Install the OpenCM9.04 package via Boards Manager (Linux)
 Click Tools → Board → Boards Manager.
 
-![](/img/parts/controller/opencm904/opencm9.04_linux_2.png)
+![](/img/parts/controller/opencm904/opencm9.04_linux_2.webp)
 
 Type OpenCM9.04 into the textbox to find the OpenCM9.04 by ROBOTIS package. After it finds out, click Install.
 
-![](/img/parts/controller/opencm904/opencm9.04_linux_3.png)
+![](/img/parts/controller/opencm904/opencm9.04_linux_3.webp)
 
 After the installation, “INSTALLED” will be appeared.
 
-![](/img/parts/controller/opencm904/opencm9.04_linux_4.png)
+![](/img/parts/controller/opencm904/opencm9.04_linux_4.webp)
 
 See if OpenCM9.04 Board is now on the list of Tools → Board. Click this to import the OpenCM9.04 Board source.
 
-![](/img/parts/controller/opencm904/opencm9.04_linux_5.png)
+![](/img/parts/controller/opencm904/opencm9.04_linux_5.webp)
 
 ##### Port setting (Linux)
 This step shows the port setting for the program uploads. The OpenCM9.04 should be connected to the PC and the OpenCM9.04 via the USB ports.
@@ -714,7 +714,7 @@ The value of /dev/ttyACM0 may be different depending on the environment connecte
 
 
 
-![](/img/parts/controller/opencm904/opencm9.04_linux_6.png)
+![](/img/parts/controller/opencm904/opencm9.04_linux_6.webp)
 
 ### Install on Mac
 #### Install the Arduino IDE (Mac)
@@ -725,9 +725,9 @@ Download the latest version of Arduino IDE from the official arduino homepage, a
 #### Run the Arduino IDE (Mac)
 To run the Arduino IDE on Mac platform, click the Arduino IDE icon as follows.
 
-![](/img/parts/controller/opencm904/arduino_mac_01.png)
+![](/img/parts/controller/opencm904/arduino_mac_01.webp)
 
-![](/img/parts/controller/opencm904/arduino_mac_02.png)
+![](/img/parts/controller/opencm904/arduino_mac_02.webp)
 
 #### Porting the OpenCM9.04 board to the Arduino IDE (Mac)
 ##### Preferences (Mac)
@@ -735,20 +735,20 @@ After Arduino IDE is run, click File → Preferences in the top menu of the IDE.
 
 [https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json](https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json)
 
-![](/img/parts/controller/opencm904/opencm9.04_mac_1.png)
+![](/img/parts/controller/opencm904/opencm9.04_mac_1.webp)
 
 ##### Install the OpenCM9.04 package via Boards Manager (Mac)
 Click Tools → Board → Boards Manager.
 
-![](/img/parts/controller/opencm904/opencm9.04_mac_2.png)
+![](/img/parts/controller/opencm904/opencm9.04_mac_2.webp)
 
 Type OpenCM9.04 into the textbox to find the OpenCM9.04 by ROBOTIS package. After it finds out, click Install.
 
-![](/img/parts/controller/opencm904/opencm9.04_mac_3.png)
+![](/img/parts/controller/opencm904/opencm9.04_mac_3.webp)
 
 After the installation, “INSTALLED” will be appeared.
 
-![](/img/parts/controller/opencm904/opencm9.04_mac_4.png)
+![](/img/parts/controller/opencm904/opencm9.04_mac_4.webp)
 
 See if OpenCM9.04 Board is now on the list of Tools → Board. Click this to import the OpenCM9.04 Board source.
 
@@ -765,7 +765,7 @@ The value of /dev/ttyACM0 may be different depending on the environment connecte
 :::
 
 
-![](/img/parts/controller/opencm904/opencm9.04_mac_6.png)
+![](/img/parts/controller/opencm904/opencm9.04_mac_6.webp)
 
 ### Install on Windows
 #### Install Virtual COM Port Driver
@@ -785,24 +785,24 @@ After Arduino IDE is run, click File → Preferences in the top menu of the IDE.
 
 [https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json](https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json)
 
-![](/img/parts/controller/opencm904/opencm904_win_1.png)
+![](/img/parts/controller/opencm904/opencm904_win_1.webp)
 
 ##### Install the OpenCM9.04 package via Boards Manager (Windows)
 Click Tools → Board → Boards Manager.
 
-![](/img/parts/controller/opencm904/opencm904_win_2.png)
+![](/img/parts/controller/opencm904/opencm904_win_2.webp)
 
 Type OpenCM9.04 into the textbox to find the OpenCM9.04 by ROBOTIS package. After it finds out, click Install.
 
-![](/img/parts/controller/opencm904/opencm904_win_3.png)
+![](/img/parts/controller/opencm904/opencm904_win_3.webp)
 
 After the installation, “INSTALLED” will be appeared.
 
-![](/img/parts/controller/opencm904/opencm904_win_4.png)
+![](/img/parts/controller/opencm904/opencm904_win_4.webp)
 
 See if OpenCM9.04 Board is now on the list of Tools → Board. Click this to import the OpenCM9.04 Board source.
 
-![](/img/parts/controller/opencm904/opencm904_win_5.png)
+![](/img/parts/controller/opencm904/opencm904_win_5.webp)
 
 ##### Port setting (Windows)
 This step shows the port setting for the program uploads. The OpenCM9.04 should be connected to the PC and the OpenCM9.04 via the USB ports.
@@ -824,7 +824,7 @@ Connect the OpenCM9.04 to the PC via USB cable and click on the Upload icon.
 
 Make sure that the board is properly entering the Bootloader (See the resulting output from the Arduino IDE), otherwise the OpenCM9.04 will fail to download the sketch. 
 
-![](/img/parts/controller/opencm904/oencm904_upload_01.png)
+![](/img/parts/controller/opencm904/oencm904_upload_01.webp)
 
 
 :::note
@@ -845,11 +845,11 @@ There are three ways to add libraries to the Arduino IDE.
 Each way is described in detail in the [Arduino Official Guide], so please refer to it if necessary.  
 Below is an example of using the Library Manager.
 
-![](/img/parts/interface/dynamixel_shield/library_manager_01.png)
+![](/img/parts/interface/dynamixel_shield/library_manager_01.webp)
 
 Search for `DYNAMIXEL2Arduino` from the Library Manager and install the library.
 
-![](/img/parts/interface/dynamixel_shield/library_manager_02.png)
+![](/img/parts/interface/dynamixel_shield/library_manager_02.webp)
 
 If the DYNAMIXEL2Arduino library has been successfully installed, useful examples to control DYNAMIXEL can be found under the DYNAMIXEL2Arduino category.
 
@@ -996,7 +996,7 @@ void loop(){
 Buzzer can be driven using Arduino tone API. Buzzer-enabled pins are available on all I / O pins in OpenCM 9.04.
 
 ### Connection with Buzzer
-![](/img/parts/controller/opencm904/buzzer_bb.png)
+![](/img/parts/controller/opencm904/buzzer_bb.webp)
 
 
 ### Arduino code for Buzzer
@@ -1075,14 +1075,14 @@ It is the EEPROM library test of OpenCM9.04 board.
 OpenCM9.04 does not have EEPROM memory, so it emulates a part of flash memory built in STM32F103 into EEPROM. The method of emulation was provided by ST as an example.  
 The area used as EEPROM is 0x0801F800 ~ 0x08020000 (2KBytes) as shown below. Two sectors are used.
 
-![](/img/parts/controller/opencm904/memory_map.png)
+![](/img/parts/controller/opencm904/memory_map.webp)
 
 32 bits are used to store one data, the lower 16 bits are the data to be stored, and the upper 16 bits indicate the address of the corresponding data. When storing data, it is always stored in the new location. When you use one page while saving the data, only the latest values ​​from the saved page are copied to the new page and the existing page is deleted.
 As a result, the number of flash memory erasures is reduced, thereby increasing the write-through life.
 
-![](/img/parts/controller/opencm904/ex_eeprom_02.png)
+![](/img/parts/controller/opencm904/ex_eeprom_02.webp)
 
-![](/img/parts/controller/opencm904/ex_eeprom_03.png)
+![](/img/parts/controller/opencm904/ex_eeprom_03.webp)
 
 To use the EEPROM library, a header must be added, and the maximum size of the current EEPROM is 512bytes. Since the EEPROM library has ported what is supported in Arduino, the basic usage method is the same as that used in other existing Arduino boards. For more information on how to use it, please refer to the Arduino site.
 
@@ -1158,7 +1158,7 @@ void loop() {
 ```
 
 ### Connection with Servo
-![](/img/parts/controller/opencm904/servo_bb.png)
+![](/img/parts/controller/opencm904/servo_bb.webp)
 
 ### Arduino code for servo
 This is an example of a Servo library and uses the A2 pin of OpenCM9.04. The range of the input value is 0 to 180 degrees.
@@ -1186,7 +1186,7 @@ The Arduino IDE includes an SD card control library using the SPI library. OpenC
 ### Connection with SD Card
 - SD Card Connection(SPI port)
 
-  ![](/img/parts/controller/opencm904/sdcard_bb.png)
+  ![](/img/parts/controller/opencm904/sdcard_bb.webp)
 
 ### Arduino code for SD Card
 The cardInfo example from the SD library and displays the file list after initializing the SD card. OpenCM9.04 SPI1 is used, and CS pin is used as No. 4.
@@ -2191,7 +2191,7 @@ void testscrolltext(void) {
   ![](/img/software/mobile/mini_firmware_02.jpg)
   > User Button
 
-  ![](/img/parts/controller/opencm904/opencm904_08.png)
+  ![](/img/parts/controller/opencm904/opencm904_08.webp)
 
 - If you enter recovery mode as shown below, the green LED will be turned on. When download is completed normally, the board will be reset and the green LED is turned off.
 
@@ -2262,15 +2262,15 @@ Change DYNAMIXEL Channel's item to use various DYNAMIXEL-X series.
 
 1. Open R+ Manager, and select **OpenCM 9.04** in the **Home** tab.
 
-    ![](/img/software/rplus2/manager/rplus_manager2_dxl_channel_setting_01.png)
+    ![](/img/software/rplus2/manager/rplus_manager2_dxl_channel_setting_01.webp)
 
 2. Select **Update & Test**.  
 
-    ![](/img/software/rplus2/manager/rplus_manager2_dxl_channel_setting_02.png)
+    ![](/img/software/rplus2/manager/rplus_manager2_dxl_channel_setting_02.webp)
 
 3. When the control table appears, select an DYNAMIXEL's bus channel on the list of **Dynamixel Channel**. For example, select **EXP Board(X-Series)** to use DYNAMIXEL-X series on the expansion board.
   
-    ![](/img/software/rplus2/manager/rplus_manager2_dxl_channel_setting_03.png)
+    ![](/img/software/rplus2/manager/rplus_manager2_dxl_channel_setting_03.webp)
             
   | Item                    | Description                                                                                                    |
   |:------------------------|:---------------------------------------------------------------------------------------------------------------|
@@ -2289,7 +2289,7 @@ Change DYNAMIXEL Channel's item to use various DYNAMIXEL-X series.
 
 
 ## Dimension
-![](/img/parts/controller/opencm904/opencm904_28.png)
+![](/img/parts/controller/opencm904/opencm904_28.webp)
 
 
 

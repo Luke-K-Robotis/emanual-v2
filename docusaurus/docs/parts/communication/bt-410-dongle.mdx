@@ -107,40 +107,40 @@ Can reset system, change device name, and set SLAVE address, but **CANNOT** chan
 ## Setup
 1. Connect the BT-410 dongle to PC and check assigned port number from the Device Manager. Then connect using the Tera Term terminal program through the respective COM port.
 
-    ![](/img/parts/communication/bt-410_dongle_02.png)
+    ![](/img/parts/communication/bt-410_dongle_02.webp)
 
     - Run Tera Term terminal program and select `New Connection...` under the File menu.
     - `Download` [Tera Term](https://osdn.net/projects/ttssh2/releases/)
 
-    ![](/img/parts/communication/bt-410_dongle_03.png)
+    ![](/img/parts/communication/bt-410_dongle_03.webp)
 
 2. Select assigned COM port for BT-410 dongle.
 
-    ![](/img/parts/communication/bt-410_dongle_04.png)
+    ![](/img/parts/communication/bt-410_dongle_04.webp)
 
 3. Go to Setup > Serial port.
 
-    ![](/img/parts/communication/bt-410_dongle_05.png)
+    ![](/img/parts/communication/bt-410_dongle_05.webp)
 
 4. Set the Baud rate to 57600.
 
-    ![](/img/parts/communication/bt-410_dongle_06.png)
+    ![](/img/parts/communication/bt-410_dongle_06.webp)
 
 5. Go to Setup > Terminal.
 
-    ![](/img/parts/communication/bt-410_dongle_07.png)
+    ![](/img/parts/communication/bt-410_dongle_07.webp)
 
 6. Enable Local echo.
 
-    ![](/img/parts/communication/bt-410_dongle_08.png)
+    ![](/img/parts/communication/bt-410_dongle_08.webp)
 
 7. If an exclamation mark("!") is entered, "OK" will be returned and command mode becomes available. If entering "AT" on the terminal returns "OK", BT-410 dongle is successfully connected and ready to be configured.
 
-    ![](/img/parts/communication/bt-410_dongle_09.png)
+    ![](/img/parts/communication/bt-410_dongle_09.webp)
 
 8. The command "AT+BTINQ=DBE7DF000001" will search for the BLE devices whose MAC address is higher than DBE7DF000001.
 
-    ![](/img/parts/communication/bt-410_dongle_10.png)
+    ![](/img/parts/communication/bt-410_dongle_10.webp)
 
 9. After searching for available devices with "AT+BTINQ" command, use returned MAC address to pair with the device. For example, in order to pair with above searched device, use "ATD" command followed by the MAC address: "ATDDBE7DF00512B".
 
@@ -150,12 +150,12 @@ The followings are AT terminal commands for the BT-410 Dongle.
 1. System Reset  
   Enter ATZ to reset BT-410 dongle. If settings are modified, the modified setting will be applied on reset.
 
-    ![](/img/parts/communication/bt-410_dongle_11.png)
+    ![](/img/parts/communication/bt-410_dongle_11.webp)
 
 2. Search Device  
   Enter "AT+BTINQ=DBE7DF000001" to search for the Bluetooth devices whose MAC address is higher than DBE7DF000001.             
 
-    ![](/img/parts/communication/bt-410_dongle_12.png)
+    ![](/img/parts/communication/bt-410_dongle_12.webp)
 
 3. Auto Pairing  
   Unpaired BT-410 Slave module can be automatically paired if it is located within 10 cm to the BT-410 dongle.  
@@ -163,20 +163,20 @@ The followings are AT terminal commands for the BT-410 Dongle.
 4. Disable Auto Pairing  
   Enter "AT+BTAUTOPAIR=0"
 
-    ![](/img/parts/communication/bt-410_dongle_13.png)
+    ![](/img/parts/communication/bt-410_dongle_13.webp)
 
     A few seconds later, below message will be displayed.
 
-    ![](/img/parts/communication/bt-410_dongle_14.png)
+    ![](/img/parts/communication/bt-410_dongle_14.webp)
 
 5. Enable Auto Pairing  
   Enter "AT+BTAUTOPAIR=1"
 
-    ![](/img/parts/communication/bt-410_dongle_15.png)
+    ![](/img/parts/communication/bt-410_dongle_15.webp)
 
     A few seconds later, below message will be displayed.
 
-    ![](/img/parts/communication/bt-410_dongle_16.png)
+    ![](/img/parts/communication/bt-410_dongle_16.webp)
 
 6. Change Baudrate  
   AT+BTUART,baudrate,parity_bit,stop_bit  
@@ -187,7 +187,7 @@ How to check whether the BT-410 Dongle driver is installed correctly is as follo
 
 1. Connect **BT-410 Dongle** to the **USB Port** of PC.
 
-    ![](/img/parts/communication/bt-410_17.png)
+    ![](/img/parts/communication/bt-410_17.webp)
 
 2. Select Manage in the popped-up menu shown by right-clicking My Computer.
 
@@ -238,12 +238,12 @@ Please inquire us for information regarding unlisted certifications.
 [CM-200]: /docs/parts/controller/cm-200
 [CM-530]: /docs/parts/controller/cm-530
 [OpenCM9.04]: /docs/parts/controller/opencm904
-[img_04]: /img/parts/interface/ln101_01.png
-[img_05]: /img/parts/interface/ln101_02.png
-[img_06]: /img/parts/interface/ln101_03.png
-[img_07]: /img/parts/interface/ln101_04.png
-[img_08]: /img/parts/interface/ln101_05.png
-[img_09]: /img/parts/interface/ln101_06.png
-[img_10]: /img/parts/interface/ln101_07.png
-[img_11]: /img/parts/interface/ln101_08.png
+[img_04]: /img/parts/interface/ln101_01.webp
+[img_05]: /img/parts/interface/ln101_02.webp
+[img_06]: /img/parts/interface/ln101_03.webp
+[img_07]: /img/parts/interface/ln101_04.webp
+[img_08]: /img/parts/interface/ln101_05.webp
+[img_09]: /img/parts/interface/ln101_06.webp
+[img_10]: /img/parts/interface/ln101_07.webp
+[img_11]: /img/parts/interface/ln101_08.webp
 
