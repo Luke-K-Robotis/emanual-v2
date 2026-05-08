@@ -429,5 +429,11 @@
   },
   "home.quick.software": {
     "message": "소프트웨어 & SDK"
+  },
+  "home.quick.edu": {
+    "message": "교육용 키트"
+  },
+  "home.quick.faq": {
+    "message": "FAQ"
   }
 }

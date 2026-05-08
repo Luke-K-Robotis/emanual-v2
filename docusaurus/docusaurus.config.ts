@@ -95,7 +95,8 @@ const config: Config = {
       title: 'ROBOTIS e-Manual',
       logo: {
         alt: 'ROBOTIS Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo_r.png',
+        srcDark: 'img/logo_w.svg',
       },
       items: [
         {

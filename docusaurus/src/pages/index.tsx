@@ -36,16 +36,17 @@ function HomeHero(): ReactNode {
 
 type CardProps = {
   to: string;
-  emoji: string;
+  imageSrc: string;
+  imageAlt: string;
   title: ReactNode;
   desc: ReactNode;
 };
 
-function ProductCard({to, emoji, title, desc}: CardProps): ReactNode {
+function ProductCard({to, imageSrc, imageAlt, title, desc}: CardProps): ReactNode {
   return (
     <Link to={to} className={styles.productCard}>
-      <div className={styles.productEmoji} aria-hidden>
-        {emoji}
+      <div className={styles.productImageWrap}>
+        <img src={imageSrc} alt={imageAlt} className={styles.productImage} />
       </div>
       <Heading as="h3" className={styles.productTitle}>
         {title}
@@ -65,7 +66,8 @@ function ProductGrid(): ReactNode {
         <div className={styles.productGrid}>
           <ProductCard
             to="/docs/dxl/"
-            emoji="⚙️"
+            imageSrc="/img/home/dxl.png"
+            imageAlt="DYNAMIXEL"
             title={<Translate id="home.card.dxl.title">DYNAMIXEL</Translate>}
             desc={
               <Translate id="home.card.dxl.desc">
@@ -75,7 +77,8 @@ function ProductGrid(): ReactNode {
           />
           <ProductCard
             to="/docs/platform/"
-            emoji="🤖"
+            imageSrc="/img/home/platform.png"
+            imageAlt="Platform"
             title={<Translate id="home.card.platform.title">Platform</Translate>}
             desc={
               <Translate id="home.card.platform.desc">
@@ -85,7 +88,8 @@ function ProductGrid(): ReactNode {
           />
           <ProductCard
             to="/docs/software/"
-            emoji="🛠️"
+            imageSrc="/img/home/software.png"
+            imageAlt="Software"
             title={<Translate id="home.card.software.title">Software</Translate>}
             desc={
               <Translate id="home.card.software.desc">
@@ -95,31 +99,12 @@ function ProductGrid(): ReactNode {
           />
           <ProductCard
             to="/docs/parts/"
-            emoji="🔩"
+            imageSrc="/img/home/parts.png"
+            imageAlt="Parts"
             title={<Translate id="home.card.parts.title">Parts</Translate>}
             desc={
               <Translate id="home.card.parts.desc">
                 Frames, brackets, controllers, sensors and accessories.
-              </Translate>
-            }
-          />
-          <ProductCard
-            to="/docs/edu/"
-            emoji="🎓"
-            title={<Translate id="home.card.edu.title">Education</Translate>}
-            desc={
-              <Translate id="home.card.edu.desc">
-                STEAM kits and curriculum-friendly platforms.
-              </Translate>
-            }
-          />
-          <ProductCard
-            to="/docs/faq/"
-            emoji="❓"
-            title={<Translate id="home.card.faq.title">FAQ</Translate>}
-            desc={
-              <Translate id="home.card.faq.desc">
-                Frequently asked questions and troubleshooting.
               </Translate>
             }
           />
@@ -167,6 +152,14 @@ function PopularGuides(): ReactNode {
           <QuickLink
             to="/docs/software/"
             label={<Translate id="home.quick.software">Software & SDKs</Translate>}
+          />
+          <QuickLink
+            to="/docs/edu/"
+            label={<Translate id="home.quick.edu">Education kits</Translate>}
+          />
+          <QuickLink
+            to="/docs/faq/"
+            label={<Translate id="home.quick.faq">FAQ</Translate>}
           />
         </ul>
       </div>

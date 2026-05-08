@@ -429,5 +429,11 @@
   },
   "home.quick.software": {
     "message": "Software & SDKs"
+  },
+  "home.quick.edu": {
+    "message": "Education kits"
+  },
+  "home.quick.faq": {
+    "message": "FAQ"
   }
 }
