@@ -105,6 +105,12 @@ const config: Config = {
         },
         {
           type: 'docSidebar',
+          sidebarId: 'protocolSidebar',
+          position: 'left',
+          label: 'Protocol',
+        },
+        {
+          type: 'docSidebar',
           sidebarId: 'platformSidebar',
           position: 'left',
           label: 'Platform',
