@@ -20,7 +20,7 @@ function HomeHero(): ReactNode {
         </Heading>
         <p className={styles.heroSubtitle}>
           <Translate id="home.hero.subtitle">
-            Documentation for ROBOTIS hardware, firmware, and developer tools.
+            Documentation for ROBOTIS hardware, firmware, and developer tools. From smart actuators to robot platforms and developer SDKs — pick a category to dive in.
           </Translate>
         </p>
       </div>
@@ -59,15 +59,7 @@ function ProductCard({to, imageSrc, imageAlt, title, desc}: CardProps): ReactNod
 function ProductGrid(): ReactNode {
   return (
     <section className={styles.section}>
-      <div className="container">
-        <span className={styles.sectionEyebrow}>
-          <Translate id="home.products.eyebrow">Browse by category</Translate>
-        </span> 
-        <p className={styles.sectionLead}>
-          <Translate id="home.products.lead">
-            From smart actuators to robot platforms and developer SDKs — pick a category to dive in.
-          </Translate>
-        </p>
+      <div className="container"> 
         <div className={styles.productGrid}>
           <ProductCard
             to="/docs/dxl/"

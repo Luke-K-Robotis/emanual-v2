@@ -3,16 +3,13 @@
     "message": "ROBOTIS Docs"
   },
   "home.hero.subtitle": {
-    "message": "ROBOTIS 하드웨어, 펌웨어, 개발 도구 매뉴얼"
+    "message": "ROBOTIS 하드웨어, 펌웨어, 개발 도구 매뉴얼. 스마트 액추에이터부터 로봇 플랫폼, 개발자 SDK까지 — 원하는 카테고리를 선택하세요."
   },
   "home.hero.ctaPrimary": {
     "message": "문서 둘러보기"
   },
   "home.hero.ctaSecondary": {
     "message": "매뉴얼 검색"
-  },
-  "home.products.heading": {
-    "message": "카테고리별 둘러보기"
   },
   "home.popular.heading": {
     "message": "인기 가이드"
@@ -441,12 +438,6 @@
   },
   "home.card.cta": {
     "message": "둘러보기"
-  },
-  "home.products.eyebrow": {
-    "message": "카테고리별"
-  },
-  "home.products.lead": {
-    "message": "스마트 액추에이터부터 로봇 플랫폼, 개발자 SDK까지 — 원하는 카테고리를 선택하세요."
   },
   "home.popular.eyebrow": {
     "message": "바로가기"
