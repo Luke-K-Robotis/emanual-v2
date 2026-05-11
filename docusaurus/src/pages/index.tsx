@@ -13,26 +13,16 @@ function HomeHero(): ReactNode {
       <div className="container">
         <span className={styles.heroBadge}>
           <span className={styles.heroBadgeDot} aria-hidden />
-          <Translate id="home.hero.badge">v2.0 · EN / 한국어 / 日本語</Translate>
+          <Translate id="home.hero.badge">v2.0 · EN / 한국어</Translate>
         </span>
         <Heading as="h1" className={styles.heroTitle}>
-          <Translate id="home.hero.title">ROBOTIS e-Manual</Translate>
+          <Translate id="home.hero.title">Build with ROBOTIS</Translate>
         </Heading>
         <p className={styles.heroSubtitle}>
           <Translate id="home.hero.subtitle">
             Documentation for ROBOTIS hardware, firmware, and developer tools.
           </Translate>
         </p>
-        <div className={styles.heroActions}>
-          <Link className="button button--primary button--lg" to="/docs/dxl/">
-            <Translate id="home.hero.ctaPrimary">Browse documentation</Translate>
-          </Link>
-          <Link
-            className={`button button--lg ${styles.heroSecondary}`}
-            to="/search">
-            <Translate id="home.hero.ctaSecondary">Search the manuals</Translate>
-          </Link>
-        </div>
       </div>
     </header>
   );
@@ -72,10 +62,7 @@ function ProductGrid(): ReactNode {
       <div className="container">
         <span className={styles.sectionEyebrow}>
           <Translate id="home.products.eyebrow">Browse by category</Translate>
-        </span>
-        <Heading as="h2" className={styles.sectionTitle}>
-          <Translate id="home.products.heading">Build with ROBOTIS</Translate>
-        </Heading>
+        </span> 
         <p className={styles.sectionLead}>
           <Translate id="home.products.lead">
             From smart actuators to robot platforms and developer SDKs — pick a category to dive in.
