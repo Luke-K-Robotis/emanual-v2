@@ -192,10 +192,7 @@
 }
 .mega-menu__product-thumb {
   width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  background: var(--ifm-background-color);
-  border: 1px solid var(--ifm-color-emphasis-200);
+  height: 72px; 
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -204,8 +201,7 @@
 .mega-menu__product-thumb img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  border-radius: 50%;
+  object-fit: contain; 
   display: block;
 }
 .mega-menu__product-thumb--sm {
