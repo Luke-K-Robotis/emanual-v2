@@ -110,10 +110,50 @@ const config: Config = {
           label: 'Protocol',
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'platformSidebar',
-          position: 'left',
+          type: 'dropdown',
           label: 'Platform',
+          position: 'left',
+          items: [
+            {
+              type: 'html',
+              value: '<div class="navbar-dropdown-category">Humanoid</div>',
+              className: 'dropdown-category-item',
+            },
+            {label: 'AI Worker', to: '/docs/platform/aiworker'},
+            {label: 'AI Sapiens', to: '/docs/platform/aisapiens'},
+            {label: 'ROBOTIS OP', to: '/docs/platform/op/getting_started'},
+            {label: 'THORMANG3', to: '/docs/platform/thormang3/introduction'},
+
+            {
+              type: 'html',
+              value: '<div class="navbar-dropdown-category">Robot Hands</div>',
+              className: 'dropdown-category-item',
+            },
+            {label: 'HX5-D20', to: '/docs/platform/hx5_d20'},
+            {label: 'RH-P12-RN(A)', to: '/docs/platform/rh_p12_rn'},
+            {label: 'RH-P12-RN-UR', to: '/docs/platform/rh_p12_rn/rh_p12_rn_ur'},
+
+            {
+              type: 'html',
+              value: '<div class="navbar-dropdown-category">Manipulator</div>',
+              className: 'dropdown-category-item',
+            },
+            {
+              type: 'html',
+              value: '<div class="navbar-dropdown-subcategory">AI Manipulator</div>',
+              className: 'dropdown-subcategory-item',
+            },
+            {label: 'OMX', to: '/docs/platform/omx'},
+            {label: 'OMY', to: '/docs/platform/omy/overview'},
+            {
+              type: 'html',
+              value: '<div class="navbar-dropdown-subcategory">OpenManipulator</div>',
+              className: 'dropdown-subcategory-item',
+            },
+            {label: 'OpenMANIPULATOR-P', to: '/docs/platform/openmanipulator_p/overview'},
+            {label: 'OpenMANIPULATOR-X', to: '/docs/platform/openmanipulator_x/overview'},
+            {label: 'Manipulator-H', to: '/docs/platform/manipulator_h/introduction'},
+          ],
         },
         {
           type: 'docSidebar',

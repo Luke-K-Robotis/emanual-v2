@@ -50,6 +50,45 @@
   display: none;
 }
 
+/* navbar dropdown 안의 카테고리 헤더 (비활성, 시각 그룹화 용도) */
+.dropdown__menu .dropdown-category-item,
+.dropdown__menu .dropdown-subcategory-item {
+  list-style: none;
+  pointer-events: none;
+}
+.dropdown__menu .dropdown-category-item:not(:first-child) {
+  margin-top: 0.6rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  padding-top: 0.6rem;
+}
+.navbar-dropdown-category {
+  padding: 0.35rem 1rem 0.25rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ifm-color-emphasis-600);
+  cursor: default;
+  user-select: none;
+}
+.navbar-dropdown-subcategory {
+  padding: 0.4rem 1rem 0.2rem 1.25rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-primary);
+  cursor: default;
+  user-select: none;
+}
+/* AI Manipulator / OpenManipulator 같은 sub-category 직후 항목 들여쓰기 */
+.dropdown__menu .dropdown-subcategory-item + li .dropdown__link,
+.dropdown__menu .dropdown-subcategory-item ~ li .dropdown__link {
+  /* 단순 들여쓰기는 next sibling 들에 모두 적용되면 부정확하므로 — 일단 first sub만 padding */
+}
+.dropdown__menu li:has(+ .dropdown-subcategory-item) {
+  /* placeholder for future tweaks */
+}
+
 [data-theme='dark'] {
   --ifm-color-primary: #4b7cfd;
   --ifm-color-primary-dark: #2160fd;
