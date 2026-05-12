@@ -113,46 +113,102 @@ const config: Config = {
           type: 'dropdown',
           label: 'Platform',
           position: 'left',
+          className: 'mega-menu-trigger',
           items: [
             {
               type: 'html',
-              value: '<div class="navbar-dropdown-category">Humanoid</div>',
-              className: 'dropdown-category-item',
+              className: 'mega-menu-wrapper',
+              value: `
+                <div class="mega-menu">
+                  <div class="mega-menu__left">
+                    <div class="mega-menu__category" data-cat="humanoid" tabindex="0">
+                      <h4>Humanoid</h4>
+                      <p>Guides and open sources</p>
+                    </div>
+                    <div class="mega-menu__category" data-cat="hand" tabindex="0">
+                      <h4>Robot Hand</h4>
+                      <p>Guides and open sources</p>
+                    </div>
+                    <div class="mega-menu__category" data-cat="manip" tabindex="0">
+                      <h4>Manipulator</h4>
+                      <p>Guides and open sources</p>
+                    </div>
+                  </div>
+                  <div class="mega-menu__right">
+                    <div class="mega-menu__panel" data-panel="humanoid">
+                      <div class="mega-menu__grid">
+                        <a class="mega-menu__product" href="/docs/platform/aiworker">
+                          <div class="mega-menu__product-thumb"></div>
+                          <span>AI Worker</span>
+                        </a>
+                        <a class="mega-menu__product" href="/docs/platform/aisapiens">
+                          <div class="mega-menu__product-thumb"></div>
+                          <span>AI Sapiens</span>
+                        </a>
+                        <a class="mega-menu__product" href="/docs/platform/op/getting_started">
+                          <div class="mega-menu__product-thumb"></div>
+                          <span>ROBOTIS OP</span>
+                        </a>
+                        <a class="mega-menu__product" href="/docs/platform/thormang3/introduction">
+                          <div class="mega-menu__product-thumb"></div>
+                          <span>THORMANG3</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="mega-menu__panel" data-panel="hand">
+                      <div class="mega-menu__grid">
+                        <a class="mega-menu__product" href="/docs/platform/hx5_d20">
+                          <div class="mega-menu__product-thumb"></div>
+                          <span>HX5-D20</span>
+                        </a>
+                        <a class="mega-menu__product" href="/docs/platform/rh_p12_rn">
+                          <div class="mega-menu__product-thumb"></div>
+                          <span>RH-P12-RN(A)</span>
+                        </a>
+                        <a class="mega-menu__product" href="/docs/platform/rh_p12_rn/rh_p12_rn_ur">
+                          <div class="mega-menu__product-thumb"></div>
+                          <span>RH-P12-RN-UR</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="mega-menu__panel" data-panel="manip">
+                      <div class="mega-menu__group">
+                        <h5 class="mega-menu__group-title">AI Manipulator</h5>
+                        <p class="mega-menu__group-desc">designed for physical AI research</p>
+                        <div class="mega-menu__grid">
+                          <a class="mega-menu__product" href="/docs/platform/omy/overview">
+                            <div class="mega-menu__product-thumb"></div>
+                            <span>OMY</span>
+                          </a>
+                          <a class="mega-menu__product" href="/docs/platform/omx">
+                            <div class="mega-menu__product-thumb"></div>
+                            <span>OMX</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="mega-menu__group">
+                        <h5 class="mega-menu__group-title">OpenManipulator</h5>
+                        <p class="mega-menu__group-desc">Open-Source Manipulator System</p>
+                        <div class="mega-menu__list">
+                          <a class="mega-menu__product mega-menu__product--row" href="/docs/platform/openmanipulator_p/overview">
+                            <div class="mega-menu__product-thumb mega-menu__product-thumb--sm"></div>
+                            <span>OpenMANIPULATOR-P</span>
+                          </a>
+                          <a class="mega-menu__product mega-menu__product--row" href="/docs/platform/openmanipulator_x/overview">
+                            <div class="mega-menu__product-thumb mega-menu__product-thumb--sm"></div>
+                            <span>OpenMANIPULATOR-X</span>
+                          </a>
+                          <a class="mega-menu__product mega-menu__product--row" href="/docs/platform/manipulator_h/introduction">
+                            <div class="mega-menu__product-thumb mega-menu__product-thumb--sm"></div>
+                            <span>Manipulator-H</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              `,
             },
-            {label: 'AI Worker', to: '/docs/platform/aiworker'},
-            {label: 'AI Sapiens', to: '/docs/platform/aisapiens'},
-            {label: 'ROBOTIS OP', to: '/docs/platform/op/getting_started'},
-            {label: 'THORMANG3', to: '/docs/platform/thormang3/introduction'},
-
-            {
-              type: 'html',
-              value: '<div class="navbar-dropdown-category">Robot Hands</div>',
-              className: 'dropdown-category-item',
-            },
-            {label: 'HX5-D20', to: '/docs/platform/hx5_d20'},
-            {label: 'RH-P12-RN(A)', to: '/docs/platform/rh_p12_rn'},
-            {label: 'RH-P12-RN-UR', to: '/docs/platform/rh_p12_rn/rh_p12_rn_ur'},
-
-            {
-              type: 'html',
-              value: '<div class="navbar-dropdown-category">Manipulator</div>',
-              className: 'dropdown-category-item',
-            },
-            {
-              type: 'html',
-              value: '<div class="navbar-dropdown-subcategory">AI Manipulator</div>',
-              className: 'dropdown-subcategory-item',
-            },
-            {label: 'OMX', to: '/docs/platform/omx'},
-            {label: 'OMY', to: '/docs/platform/omy/overview'},
-            {
-              type: 'html',
-              value: '<div class="navbar-dropdown-subcategory">OpenManipulator</div>',
-              className: 'dropdown-subcategory-item',
-            },
-            {label: 'OpenMANIPULATOR-P', to: '/docs/platform/openmanipulator_p/overview'},
-            {label: 'OpenMANIPULATOR-X', to: '/docs/platform/openmanipulator_x/overview'},
-            {label: 'Manipulator-H', to: '/docs/platform/manipulator_h/introduction'},
           ],
         },
         {

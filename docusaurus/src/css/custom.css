@@ -50,43 +50,192 @@
   display: none;
 }
 
-/* navbar dropdown 안의 카테고리 헤더 (비활성, 시각 그룹화 용도) */
-.dropdown__menu .dropdown-category-item,
-.dropdown__menu .dropdown-subcategory-item {
+/* ============================================================
+   Mega-menu (Platform navbar dropdown — 2-column with category hover)
+   ============================================================ */
+.dropdown__menu:has(.mega-menu-wrapper) {
+  min-width: 760px;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.mega-menu-wrapper {
   list-style: none;
-  pointer-events: none;
+  padding: 0;
+  margin: 0;
 }
-.dropdown__menu .dropdown-category-item:not(:first-child) {
-  margin-top: 0.6rem;
-  border-top: 1px solid var(--ifm-color-emphasis-200);
-  padding-top: 0.6rem;
+.mega-menu {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 320px;
+  background: var(--ifm-background-color);
 }
-.navbar-dropdown-category {
-  padding: 0.35rem 1rem 0.25rem;
-  font-size: 0.7rem;
+
+/* Left column — category list */
+.mega-menu__left {
+  padding: 1.25rem 0.75rem;
+  border-right: 1px solid var(--ifm-color-emphasis-200);
+}
+.mega-menu__category {
+  padding: 0.85rem 1rem;
+  border-left: 3px solid transparent;
+  border-radius: 6px;
+  cursor: default;
+  transition: background 0.15s ease, border-color 0.15s ease;
+  margin-bottom: 0.25rem;
+}
+.mega-menu__category h4 {
+  margin: 0 0 0.15rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--ifm-color-emphasis-600);
-  cursor: default;
-  user-select: none;
+  color: var(--ifm-heading-color);
 }
-.navbar-dropdown-subcategory {
-  padding: 0.4rem 1rem 0.2rem 1.25rem;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+.mega-menu__category p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--robotis-muted);
+}
+.mega-menu__category:hover,
+.mega-menu__category:focus {
+  border-left-color: var(--ifm-color-primary);
+  background: var(--ifm-color-emphasis-100);
+  outline: none;
+}
+.mega-menu__category:hover h4,
+.mega-menu__category:focus h4 {
   color: var(--ifm-color-primary);
-  cursor: default;
-  user-select: none;
 }
-/* AI Manipulator / OpenManipulator 같은 sub-category 직후 항목 들여쓰기 */
-.dropdown__menu .dropdown-subcategory-item + li .dropdown__link,
-.dropdown__menu .dropdown-subcategory-item ~ li .dropdown__link {
-  /* 단순 들여쓰기는 next sibling 들에 모두 적용되면 부정확하므로 — 일단 first sub만 padding */
+
+/* Right column — panel content */
+.mega-menu__right {
+  background: var(--ifm-color-emphasis-100);
+  padding: 1.5rem;
+  position: relative;
 }
-.dropdown__menu li:has(+ .dropdown-subcategory-item) {
-  /* placeholder for future tweaks */
+.mega-menu__panel {
+  display: none;
+}
+/* Default: first panel visible (Humanoid) */
+.mega-menu:not(:has(.mega-menu__category:hover)):not(:has(.mega-menu__category:focus))
+  .mega-menu__panel:first-child {
+  display: block;
+}
+/* Hover switching */
+.mega-menu:has(.mega-menu__category[data-cat='humanoid']:hover)
+  .mega-menu__panel[data-panel='humanoid'],
+.mega-menu:has(.mega-menu__category[data-cat='humanoid']:focus)
+  .mega-menu__panel[data-panel='humanoid'] {
+  display: block;
+}
+.mega-menu:has(.mega-menu__category[data-cat='hand']:hover)
+  .mega-menu__panel[data-panel='hand'],
+.mega-menu:has(.mega-menu__category[data-cat='hand']:focus)
+  .mega-menu__panel[data-panel='hand'] {
+  display: block;
+}
+.mega-menu:has(.mega-menu__category[data-cat='manip']:hover)
+  .mega-menu__panel[data-panel='manip'],
+.mega-menu:has(.mega-menu__category[data-cat='manip']:focus)
+  .mega-menu__panel[data-panel='manip'] {
+  display: block;
+}
+
+/* Product grid */
+.mega-menu__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+.mega-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.mega-menu__product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s ease;
+}
+.mega-menu__product:hover {
+  background: var(--ifm-background-color);
+  text-decoration: none;
+  color: var(--ifm-color-primary);
+}
+.mega-menu__product span {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.mega-menu__product-thumb {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+.mega-menu__product-thumb--sm {
+  width: 36px;
+  height: 36px;
+}
+
+/* Row layout (OpenManipulator sub-group) */
+.mega-menu__product--row {
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0.4rem 0.6rem;
+}
+.mega-menu__product--row span {
+  font-size: 0.9rem;
+}
+
+/* Sub-group inside Manipulator panel */
+.mega-menu__group {
+  margin-bottom: 1.25rem;
+}
+.mega-menu__group:last-child {
+  margin-bottom: 0;
+}
+.mega-menu__group-title {
+  margin: 0 0 0.1rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+.mega-menu__group-desc {
+  margin: 0 0 0.65rem;
+  font-size: 0.8rem;
+  color: var(--robotis-muted);
+}
+
+/* Mobile: collapse to single column with all panels visible */
+@media (max-width: 996px) {
+  .dropdown__menu:has(.mega-menu-wrapper) {
+    min-width: 0;
+  }
+  .mega-menu {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .mega-menu__left {
+    border-right: none;
+    border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  }
+  .mega-menu__panel {
+    display: block !important;
+    border-top: 1px dashed var(--ifm-color-emphasis-200);
+    padding-top: 0.75rem;
+    margin-top: 0.75rem;
+  }
+  .mega-menu__panel:first-child {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
 }
 
 [data-theme='dark'] {
