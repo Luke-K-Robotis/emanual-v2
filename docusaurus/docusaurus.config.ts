@@ -23,6 +23,9 @@ const config: Config = {
   // 살아있지만 Docusaurus 검증 알고리즘은 heading id만 인식. 실제 브라우저
   // anchor scroll 동작 정상이므로 워닝을 끄고 진짜 broken은 시각 검증으로 처리.
   onBrokenAnchors: 'ignore',
+
+  // 클라이언트 사이드 모듈: navbar mega-menu sticky behaviour
+  clientModules: [require.resolve('./src/clients/mega-menu-sticky.js')],
   markdown: {
     hooks: {
       onBrokenMarkdownLinks: 'warn',
