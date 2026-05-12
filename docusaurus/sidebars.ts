@@ -6,10 +6,13 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
  *   DYNAMIXEL overview → Quick start → Y, P, X, MX, AX → Protocol/CRC → EX, DX, RX (legacy) → PRO
  */
 const sidebars: SidebarsConfig = {
-  dxlSidebar: [
+  dxlQuickStartSidebar: [
     'dxl/index',
     'dxl/dxl-quick-start-guide',
+    'dxl/dxl-quick-start-insert',
+  ],
 
+  dxlSidebar: [
     {
       type: 'category',
       label: 'Y Series',

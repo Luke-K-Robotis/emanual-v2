@@ -54,7 +54,7 @@
    Mega-menu (Platform navbar dropdown — 2-column with category hover)
    ============================================================ */
 .dropdown__menu:has(.mega-menu-wrapper) {
-  min-width: 760px;
+  min-width: 840px;
   padding: 0;
   overflow: hidden;
   border-radius: 12px;
@@ -139,12 +139,47 @@
   .mega-menu__panel[data-panel='manip'] {
   display: block;
 }
+/* DYNAMIXEL mega-menu hover transitions */
+.mega-menu:has(.mega-menu__category[data-cat='dxl-quickstart']:hover)
+  .mega-menu__panel[data-panel='dxl-quickstart'],
+.mega-menu:has(.mega-menu__category[data-cat='dxl-quickstart']:focus)
+  .mega-menu__panel[data-panel='dxl-quickstart'] {
+  display: block;
+}
+.mega-menu:has(.mega-menu__category[data-cat='dxl-series']:hover)
+  .mega-menu__panel[data-panel='dxl-series'],
+.mega-menu:has(.mega-menu__category[data-cat='dxl-series']:focus)
+  .mega-menu__panel[data-panel='dxl-series'] {
+  display: block;
+}
+.mega-menu:has(.mega-menu__category[data-cat='dxl-protocol']:hover)
+  .mega-menu__panel[data-panel='dxl-protocol'],
+.mega-menu:has(.mega-menu__category[data-cat='dxl-protocol']:focus)
+  .mega-menu__panel[data-panel='dxl-protocol'] {
+  display: block;
+}
 
 /* Product grid */
 .mega-menu__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.75rem;
+}
+.mega-menu__grid--3col {
+  grid-template-columns: repeat(3, 1fr);
+}
+/* Text-only row (no thumbnail), bold label */
+.mega-menu__product--text {
+  padding: 0.55rem 0.75rem;
+  border-radius: 6px;
+}
+.mega-menu__product--text span {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ifm-heading-color);
+}
+.mega-menu__product--text:hover span {
+  color: var(--ifm-color-primary);
 }
 .mega-menu__list {
   display: flex;

@@ -98,20 +98,103 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'dxlSidebar',
-          position: 'left',
+          type: 'dropdown',
           label: 'DYNAMIXEL',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'protocolSidebar',
           position: 'left',
-          label: 'Protocol',
+          className: 'mega-menu-trigger',
+          items: [
+            {
+              type: 'html',
+              className: 'mega-menu-wrapper',
+              value: `
+                <div class="mega-menu">
+                  <div class="mega-menu__left">
+                    <div class="mega-menu__category" data-cat="dxl-quickstart" tabindex="0">
+                      <h4>Quick Start</h4>
+                      <p>Guides and open sources</p>
+                    </div>
+                    <div class="mega-menu__category" data-cat="dxl-series" tabindex="0">
+                      <h4>DYNAMIXEL</h4>
+                      <p>Guides and open sources</p>
+                    </div>
+                    <div class="mega-menu__category" data-cat="dxl-protocol" tabindex="0">
+                      <h4>Protocol</h4>
+                      <p>Guides and open sources</p>
+                    </div>
+                  </div>
+                  <div class="mega-menu__right">
+                    <div class="mega-menu__panel" data-panel="dxl-quickstart">
+                      <div class="mega-menu__list">
+                        <a class="mega-menu__product mega-menu__product--row mega-menu__product--text" href="/docs/dxl">
+                          <span>All DYNAMIXEL</span>
+                        </a>
+                        <a class="mega-menu__product mega-menu__product--row mega-menu__product--text" href="/docs/dxl/dxl-quick-start-guide">
+                          <span>Quick Start</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="mega-menu__panel" data-panel="dxl-series">
+                      <div class="mega-menu__grid mega-menu__grid--3col">
+                        <a class="mega-menu__product" href="/docs/dxl/y">
+                          <div class="mega-menu__product-thumb"></div>
+                          <span>Y Series</span>
+                        </a>
+                        <a class="mega-menu__product" href="/docs/dxl/p">
+                          <div class="mega-menu__product-thumb"></div>
+                          <span>P Series</span>
+                        </a>
+                        <a class="mega-menu__product" href="/docs/dxl/x/x">
+                          <div class="mega-menu__product-thumb"></div>
+                          <span>X Series</span>
+                        </a>
+                        <a class="mega-menu__product" href="/docs/dxl/mx">
+                          <div class="mega-menu__product-thumb"></div>
+                          <span>MX Series</span>
+                        </a>
+                        <a class="mega-menu__product" href="/docs/dxl/ax">
+                          <div class="mega-menu__product-thumb"></div>
+                          <span>AX Series</span>
+                        </a>
+                        <a class="mega-menu__product" href="/docs/dxl/ex">
+                          <div class="mega-menu__product-thumb"></div>
+                          <span>EX Series</span>
+                        </a>
+                        <a class="mega-menu__product" href="/docs/dxl/dx">
+                          <div class="mega-menu__product-thumb"></div>
+                          <span>DX Series</span>
+                        </a>
+                        <a class="mega-menu__product" href="/docs/dxl/rx">
+                          <div class="mega-menu__product-thumb"></div>
+                          <span>RX Series</span>
+                        </a>
+                        <a class="mega-menu__product" href="/docs/dxl/pro/pro">
+                          <div class="mega-menu__product-thumb"></div>
+                          <span>PRO Series</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="mega-menu__panel" data-panel="dxl-protocol">
+                      <div class="mega-menu__list">
+                        <a class="mega-menu__product mega-menu__product--row mega-menu__product--text" href="/docs/dxl/protocol1">
+                          <span>DYNAMIXEL Protocol 1.0</span>
+                        </a>
+                        <a class="mega-menu__product mega-menu__product--row mega-menu__product--text" href="/docs/dxl/protocol2">
+                          <span>DYNAMIXEL Protocol 2.0</span>
+                        </a>
+                        <a class="mega-menu__product mega-menu__product--row mega-menu__product--text" href="/docs/dxl/crc">
+                          <span>CRC Calculation</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              `,
+            },
+          ],
         },
         {
           type: 'dropdown',
-          label: 'Platform',
+          label: 'Systems',
           position: 'left',
           className: 'mega-menu-trigger',
           items: [
