@@ -196,6 +196,17 @@
   border-radius: 50%;
   background: var(--ifm-background-color);
   border: 1px solid var(--ifm-color-emphasis-200);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mega-menu__product-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+  display: block;
 }
 .mega-menu__product-thumb--sm {
   width: 36px;

@@ -139,39 +139,39 @@ const config: Config = {
                     <div class="mega-menu__panel" data-panel="dxl-series">
                       <div class="mega-menu__grid mega-menu__grid--3col">
                         <a class="mega-menu__product" href="/docs/dxl/y">
-                          <div class="mega-menu__product-thumb"></div>
+                          <div class="mega-menu__product-thumb"><img src="/img/mega-menu/Y-series.webp" alt="Y Series" /></div>
                           <span>Y Series</span>
                         </a>
                         <a class="mega-menu__product" href="/docs/dxl/p">
-                          <div class="mega-menu__product-thumb"></div>
+                          <div class="mega-menu__product-thumb"><img src="/img/mega-menu/p-series.webp" alt="P Series" /></div>
                           <span>P Series</span>
                         </a>
                         <a class="mega-menu__product" href="/docs/dxl/x/x">
-                          <div class="mega-menu__product-thumb"></div>
+                          <div class="mega-menu__product-thumb"><img src="/img/mega-menu/x-series.webp" alt="X Series" /></div>
                           <span>X Series</span>
                         </a>
                         <a class="mega-menu__product" href="/docs/dxl/mx">
-                          <div class="mega-menu__product-thumb"></div>
+                          <div class="mega-menu__product-thumb"><img src="/img/mega-menu/mx-series.webp" alt="MX Series" /></div>
                           <span>MX Series</span>
                         </a>
                         <a class="mega-menu__product" href="/docs/dxl/ax">
-                          <div class="mega-menu__product-thumb"></div>
+                          <div class="mega-menu__product-thumb"><img src="/img/mega-menu/ax-series.webp" alt="AX Series" /></div>
                           <span>AX Series</span>
                         </a>
                         <a class="mega-menu__product" href="/docs/dxl/ex">
-                          <div class="mega-menu__product-thumb"></div>
+                          <div class="mega-menu__product-thumb"><img src="/img/mega-menu/ex-series.webp" alt="EX Series" /></div>
                           <span>EX Series</span>
                         </a>
                         <a class="mega-menu__product" href="/docs/dxl/dx">
-                          <div class="mega-menu__product-thumb"></div>
+                          <div class="mega-menu__product-thumb"><img src="/img/mega-menu/dx-series.webp" alt="DX Series" /></div>
                           <span>DX Series</span>
                         </a>
                         <a class="mega-menu__product" href="/docs/dxl/rx">
-                          <div class="mega-menu__product-thumb"></div>
+                          <div class="mega-menu__product-thumb"><img src="/img/mega-menu/rx-series.webp" alt="RX Series" /></div>
                           <span>RX Series</span>
                         </a>
                         <a class="mega-menu__product" href="/docs/dxl/pro/pro">
-                          <div class="mega-menu__product-thumb"></div>
+                          <div class="mega-menu__product-thumb"><img src="/img/mega-menu/pro-series.webp" alt="PRO Series" /></div>
                           <span>PRO Series</span>
                         </a>
                       </div>
@@ -224,19 +224,19 @@ const config: Config = {
                     <div class="mega-menu__panel" data-panel="humanoid">
                       <div class="mega-menu__grid">
                         <a class="mega-menu__product" href="/docs/platform/aiworker">
-                          <div class="mega-menu__product-thumb"></div>
+                          <div class="mega-menu__product-thumb"><img src="/img/mega-menu/ai-worker.webp" alt="AI Worker" /></div>
                           <span>AI Worker</span>
                         </a>
                         <a class="mega-menu__product" href="/docs/platform/aisapiens">
-                          <div class="mega-menu__product-thumb"></div>
+                          <div class="mega-menu__product-thumb"><img src="/img/mega-menu/ai-sapiens.webp" alt="AI Sapiens" /></div>
                           <span>AI Sapiens</span>
                         </a>
                         <a class="mega-menu__product" href="/docs/platform/op/getting_started">
-                          <div class="mega-menu__product-thumb"></div>
+                          <div class="mega-menu__product-thumb"><img src="/img/mega-menu/robotos-op.webp" alt="ROBOTIS OP" /></div>
                           <span>ROBOTIS OP</span>
                         </a>
                         <a class="mega-menu__product" href="/docs/platform/thormang3/introduction">
-                          <div class="mega-menu__product-thumb"></div>
+                          <div class="mega-menu__product-thumb"><img src="/img/mega-menu/thormang3.webp" alt="THORMANG3" /></div>
                           <span>THORMANG3</span>
                         </a>
                       </div>
@@ -244,15 +244,15 @@ const config: Config = {
                     <div class="mega-menu__panel" data-panel="hand">
                       <div class="mega-menu__grid">
                         <a class="mega-menu__product" href="/docs/platform/hx5_d20">
-                          <div class="mega-menu__product-thumb"></div>
+                          <div class="mega-menu__product-thumb"><img src="/img/mega-menu/hx5-d20.webp" alt="HX5-D20" /></div>
                           <span>HX5-D20</span>
                         </a>
                         <a class="mega-menu__product" href="/docs/platform/rh_p12_rn">
-                          <div class="mega-menu__product-thumb"></div>
+                          <div class="mega-menu__product-thumb"><img src="/img/mega-menu/rh-p12-rn.webp" alt="RH-P12-RN(A)" /></div>
                           <span>RH-P12-RN(A)</span>
                         </a>
                         <a class="mega-menu__product" href="/docs/platform/rh_p12_rn/rh_p12_rn_ur">
-                          <div class="mega-menu__product-thumb"></div>
+                          <div class="mega-menu__product-thumb"><img src="/img/mega-menu/rh-p12-rn.webp" alt="RH-P12-RN-UR" /></div>
                           <span>RH-P12-RN-UR</span>
                         </a>
                       </div>
@@ -263,11 +263,11 @@ const config: Config = {
                         <p class="mega-menu__group-desc">designed for physical AI research</p>
                         <div class="mega-menu__grid">
                           <a class="mega-menu__product" href="/docs/platform/omy/overview">
-                            <div class="mega-menu__product-thumb"></div>
+                            <div class="mega-menu__product-thumb"><img src="/img/mega-menu/omy.webp" alt="OMY" /></div>
                             <span>OMY</span>
                           </a>
                           <a class="mega-menu__product" href="/docs/platform/omx">
-                            <div class="mega-menu__product-thumb"></div>
+                            <div class="mega-menu__product-thumb"><img src="/img/mega-menu/omx.webp" alt="OMX" /></div>
                             <span>OMX</span>
                           </a>
                         </div>
@@ -277,15 +277,15 @@ const config: Config = {
                         <p class="mega-menu__group-desc">Open-Source Manipulator System</p>
                         <div class="mega-menu__list">
                           <a class="mega-menu__product mega-menu__product--row" href="/docs/platform/openmanipulator_p/overview">
-                            <div class="mega-menu__product-thumb mega-menu__product-thumb--sm"></div>
+                            <div class="mega-menu__product-thumb mega-menu__product-thumb--sm"><img src="/img/mega-menu/openmanipulator-p.webp" alt="OpenMANIPULATOR-P" /></div>
                             <span>OpenMANIPULATOR-P</span>
                           </a>
                           <a class="mega-menu__product mega-menu__product--row" href="/docs/platform/openmanipulator_x/overview">
-                            <div class="mega-menu__product-thumb mega-menu__product-thumb--sm"></div>
+                            <div class="mega-menu__product-thumb mega-menu__product-thumb--sm"><img src="/img/mega-menu/openmanipulator-x.webp" alt="OpenMANIPULATOR-X" /></div>
                             <span>OpenMANIPULATOR-X</span>
                           </a>
                           <a class="mega-menu__product mega-menu__product--row" href="/docs/platform/manipulator_h/introduction">
-                            <div class="mega-menu__product-thumb mega-menu__product-thumb--sm"></div>
+                            <div class="mega-menu__product-thumb mega-menu__product-thumb--sm"><img src="/img/mega-menu/manipulator-h.webp" alt="Manipulator-H" /></div>
                             <span>Manipulator-H</span>
                           </a>
                         </div>
