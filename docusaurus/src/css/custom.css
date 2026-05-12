@@ -54,7 +54,7 @@
    Mega-menu (Platform navbar dropdown — 2-column with category hover)
    ============================================================ */
 .dropdown__menu:has(.mega-menu-wrapper) {
-  min-width: 840px;
+  min-width: 720px;
   padding: 0;
   overflow: hidden;
   border-radius: 12px;
@@ -66,7 +66,8 @@
 }
 .mega-menu {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  /* 우측 폭 20% 축소: 1fr (600px) → 480px */
+  grid-template-columns: 240px 480px;
   min-height: 320px;
   background: var(--ifm-background-color);
 }
