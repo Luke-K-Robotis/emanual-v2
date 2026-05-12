@@ -322,11 +322,6 @@ const config: Config = {
           type: 'localeDropdown',
           position: 'right',
         },
-        {
-          href: 'https://github.com/Luke-K-Robotis/emanual-v2',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {

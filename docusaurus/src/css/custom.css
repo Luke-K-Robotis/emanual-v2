@@ -115,46 +115,61 @@
 .mega-menu__panel {
   display: none;
 }
-/* Default: first panel visible (Humanoid) */
-.mega-menu:not(:has(.mega-menu__category:hover)):not(:has(.mega-menu__category:focus))
+/* Default: first panel visible (when no hover/focus 어디에도 없음) */
+.mega-menu:not(:has(.mega-menu__category:hover))
+         :not(:has(.mega-menu__category:focus))
+         :not(:has(.mega-menu__panel:hover))
   .mega-menu__panel:first-child {
   display: block;
 }
-/* Hover switching */
+/* Hover switching — 카테고리 hover OR 우측 패널 자체에 hover 시 모두 표시 유지
+   (마우스가 좌측 카테고리에서 우측 panel 로 이동해도 sticky) */
 .mega-menu:has(.mega-menu__category[data-cat='humanoid']:hover)
   .mega-menu__panel[data-panel='humanoid'],
 .mega-menu:has(.mega-menu__category[data-cat='humanoid']:focus)
+  .mega-menu__panel[data-panel='humanoid'],
+.mega-menu:has(.mega-menu__panel[data-panel='humanoid']:hover)
   .mega-menu__panel[data-panel='humanoid'] {
   display: block;
 }
 .mega-menu:has(.mega-menu__category[data-cat='hand']:hover)
   .mega-menu__panel[data-panel='hand'],
 .mega-menu:has(.mega-menu__category[data-cat='hand']:focus)
+  .mega-menu__panel[data-panel='hand'],
+.mega-menu:has(.mega-menu__panel[data-panel='hand']:hover)
   .mega-menu__panel[data-panel='hand'] {
   display: block;
 }
 .mega-menu:has(.mega-menu__category[data-cat='manip']:hover)
   .mega-menu__panel[data-panel='manip'],
 .mega-menu:has(.mega-menu__category[data-cat='manip']:focus)
+  .mega-menu__panel[data-panel='manip'],
+.mega-menu:has(.mega-menu__panel[data-panel='manip']:hover)
   .mega-menu__panel[data-panel='manip'] {
   display: block;
 }
-/* DYNAMIXEL mega-menu hover transitions */
+/* DYNAMIXEL mega-menu hover transitions (sticky) */
 .mega-menu:has(.mega-menu__category[data-cat='dxl-quickstart']:hover)
   .mega-menu__panel[data-panel='dxl-quickstart'],
 .mega-menu:has(.mega-menu__category[data-cat='dxl-quickstart']:focus)
+  .mega-menu__panel[data-panel='dxl-quickstart'],
+.mega-menu:has(.mega-menu__panel[data-panel='dxl-quickstart']:hover)
   .mega-menu__panel[data-panel='dxl-quickstart'] {
   display: block;
 }
 .mega-menu:has(.mega-menu__category[data-cat='dxl-series']:hover)
   .mega-menu__panel[data-panel='dxl-series'],
 .mega-menu:has(.mega-menu__category[data-cat='dxl-series']:focus)
+  .mega-menu__panel[data-panel='dxl-series'],
+.mega-menu:has(.mega-menu__panel[data-panel='dxl-series']:hover)
   .mega-menu__panel[data-panel='dxl-series'] {
   display: block;
 }
 .mega-menu:has(.mega-menu__category[data-cat='dxl-protocol']:hover)
   .mega-menu__panel[data-panel='dxl-protocol'],
 .mega-menu:has(.mega-menu__category[data-cat='dxl-protocol']:focus)
+  .mega-menu__panel[data-panel='dxl-protocol'],
+.mega-menu:has(.mega-menu__panel[data-panel='dxl-protocol']:hover)
   .mega-menu__panel[data-panel='dxl-protocol'] {
   display: block;
 }
