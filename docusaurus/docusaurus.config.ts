@@ -219,6 +219,10 @@ const config: Config = {
                       <h4>Manipulator</h4>
                       <p>Guides and open sources</p>
                     </div>
+                    <div class="mega-menu__category" data-cat="turtlebot3" tabindex="0">
+                      <h4>TurtleBot3</h4>
+                      <p>Guides and open sources</p>
+                    </div>
                   </div>
                   <div class="mega-menu__right">
                     <div class="mega-menu__panel" data-panel="humanoid">
@@ -289,6 +293,14 @@ const config: Config = {
                             <span>Manipulator-H</span>
                           </a>
                         </div>
+                      </div>
+                    </div>
+                    <div class="mega-menu__panel" data-panel="turtlebot3">
+                      <div class="mega-menu__grid">
+                        <a class="mega-menu__product" href="/docs/category/turtlebot3">
+                          <div class="mega-menu__product-thumb"><img src="/img/mega-menu/turtlebot3.webp" alt="TurtleBot3" /></div>
+                          <span>TurtleBot3</span>
+                        </a>
                       </div>
                     </div>
                   </div>
