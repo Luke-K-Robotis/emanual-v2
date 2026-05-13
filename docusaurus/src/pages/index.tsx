@@ -55,7 +55,7 @@ function ProductCard({to, imageSrc, imageAlt, title, desc}: CardProps): ReactNod
     </Link>
   );
 }
-
+ 
 function ProductGrid(): ReactNode {
   return (
     <section className={styles.section}>
@@ -76,10 +76,10 @@ function ProductGrid(): ReactNode {
             to="/docs/platform/"
             imageSrc="/img/home/platform.png"
             imageAlt="Platform"
-            title={<Translate id="home.card.platform.title">Echosystem</Translate>}
+            title={<Translate id="home.card.platform.title">Ecosystem</Translate>}
             desc={
               <Translate id="home.card.platform.desc">
-                Robot Echosystem — Humanoid, Manipulator, Mobile, and etc. platforms.
+                Robot Ecosystem — Humanoid, Manipulator, Mobile, and etc. platforms.
               </Translate>
             }
           />
