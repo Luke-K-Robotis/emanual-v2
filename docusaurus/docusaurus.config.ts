@@ -146,7 +146,7 @@ const config: Config = {
                           <div class="mega-menu__product-thumb"><img src="/img/mega-menu/p-series.webp" alt="P Series" /></div>
                           <span>P Series</span>
                         </a>
-                        <a class="mega-menu__product" href="/docs/dxl/x/x">
+                        <a class="mega-menu__product" href="/docs/dxl/x">
                           <div class="mega-menu__product-thumb"><img src="/img/mega-menu/x-series.webp" alt="X Series" /></div>
                           <span>X Series</span>
                         </a>
@@ -170,7 +170,7 @@ const config: Config = {
                           <div class="mega-menu__product-thumb"><img src="/img/mega-menu/rx-series.webp" alt="RX Series" /></div>
                           <span>RX Series</span>
                         </a>
-                        <a class="mega-menu__product" href="/docs/dxl/pro/pro">
+                        <a class="mega-menu__product" href="/docs/dxl/pro">
                           <div class="mega-menu__product-thumb"><img src="/img/mega-menu/pro-series.webp" alt="PRO Series" /></div>
                           <span>PRO Series</span>
                         </a>
