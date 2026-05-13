@@ -3196,10 +3196,6 @@
     "to": "/docs/software/embedded_sdk/zigbee_sdk"
   },
   {
-    "from": "/docs/en/software/mobile_app/mini_app",
-    "to": "/docs/software/mobile_app/mini_app"
-  },
-  {
     "from": "/docs/en/software/opencm_ide/api_reference",
     "to": "/docs/software/opencm_ide/api_reference"
   },
